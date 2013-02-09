@@ -34,7 +34,7 @@ In your vimrc file, first add the following line to enable filetype plugins:
 
 then make sure you set "g:pydiction_location" to the full path of where you installed complete-dict, i.e.:
     
-    let g:pydiction_location = 'C:/vim/vimfiles/ftplugin/pydiction/complete-dict'
+    let g:pydiction_location = '/path/to/complete-dict'
 
 You can optionally set the height of the completion menu by setting "g:pydiction_menu_height" in your vimrc. For example:
     
