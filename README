@@ -13,13 +13,14 @@ Install Details
 ===============
 If you have Pathogen installed:
 
-   cd ~/.vim/bundle
-   git clone https://github.com/rkulla/pydiction.git
+    cd ~/.vim/bundle
+    git clone https://github.com/rkulla/pydiction.git
 
 Otherwise:
 
-Unix/Linux: Put python_pydiction.vim in ~/.vim/after/ftplugin/   (If this directory doesn't already exist, create it. Vim will know to look there automatically.)
-Windows: Put python_pydiction.vim in C:\vim\vimfiles\ftplugin  (Assuming you installed Vim to C:\vim\).
+UNIX/LINUX: Put python_pydiction.vim in ~/.vim/after/ftplugin/   (If this directory doesn't already exist, create it. Vim will know to look there automatically.)
+
+WINDOWS: Put python_pydiction.vim in C:\vim\vimfiles\ftplugin  (Assuming you installed Vim to C:\vim\).
 
 You may install the other files (complete-dict and pydiction.py) anywhere you want. For this example, we'll assume you put them in "C:\vim\vimfiles\ftplugin\pydiction\" (Do not put any file but python_pydiction.vim in the ftplugin\ directory, only .vim files should go there.)
 
