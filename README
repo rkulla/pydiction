@@ -4,9 +4,9 @@ Pydiction allows you to Tab-complete Python code in Vim, including keywords, the
 
 It consists of three main files:
     
-    python_pydiction.vim -- This is an ftplugin you put in your non-system ftplugin directory (i.e., ~/.vim/after/ftplugin/, on Unix or C:\vim\vimfiles\ftplugin\, on Windows)
-    complete-dict -- This is a vim dictionary file that consists of Python keywords and modules. This is what python_pydiction.vim looks at to know which things are completable.
-    pydiction.py -- (Not required) This is a Python script that was used to generate complete-dict. You can optionally run this script to add more modules to complete-dict.
+    python_pydiction.vim -- Vim plugin.
+    complete-dict -- Dictionary file that consists of Python keywords and modules. This is what the plugin refers to.
+    pydiction.py -- Python script you can optionally run to add more modules to complete-dict.
 
 
 Install Details
