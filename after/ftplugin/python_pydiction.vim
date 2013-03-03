@@ -3,9 +3,8 @@
 " ============================================================================
 "
 " Author: Ryan Kulla (rkulla AT gmail DOT com)
-" Version: 1.2, for Vim 7
+" Version: 1.2.1, for Vim 7
 " URL: http://www.vim.org/scripts/script.php?script_id=850
-" Last Modified: July 22th, 2009
 " Installation: On Linux, put this file in ~/.vim/after/ftplugin/
 "               On Windows, put this file in C:\vim\vimfiles\ftplugin\
 "                        (assuming you installed vim in C:\vim\).
@@ -22,7 +21,7 @@
 "        exists in the complete-dict file.
 "        You can also use Shift-Tab to Tab backwards.
 " License: BSD
-" Copyright: Copyright (c) 2003-2009 Ryan Kulla
+" Copyright: Copyright (c) 2003-2013 Ryan Kulla
 "            All rights reserved.
 "
 "            Redistribution and use in source and binary forms, with or without

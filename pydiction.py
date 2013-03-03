@@ -1,10 +1,9 @@
 #!/usr/bin/env python
-# Last modified: July 23rd, 2009
 """
 
-pydiction.py 1.2 by Ryan Kulla (rkulla AT gmail DOT com).
+pydiction.py 1.2.1 by Ryan Kulla (rkulla AT gmail DOT com).
 
-Description: Creates a Vim dictionary of Python module attributes for Vim's 
+Description: Creates a Vim dictionary of Python module attributes for Vim's
              completion feature.  The created dictionary file is used by
              the Vim ftplugin "python_pydiction.vim".
 
@@ -13,8 +12,8 @@ Example: The following will append all the "time" and "math" modules'
          attributes to a file, in the current directory, called "pydiction"
          with and without the "time." and "math." prefix:
              $ python pydiction.py time math
-         To print the output just to stdout, instead of appending to the file, 
-         supply the -v option: 
+         To print the output just to stdout, instead of appending to the file,
+         supply the -v option:
              $ python pydiction.py -v time math
 
 License: BSD.
@@ -22,8 +21,8 @@ License: BSD.
 
 
 __author__ = "Ryan Kulla (rkulla AT gmail DOT com)"
-__version__ = "1.2"
-__copyright__ = "Copyright (c) 2003-2009 Ryan Kulla"
+__version__ = "1.2.1"
+__copyright__ = "Copyright (c) 2003-2013 Ryan Kulla"
 
 
 import os
@@ -47,13 +46,13 @@ def get_submodules(module_name, submodules):
     # Try to import a given module, so we can dir() it:
     try:
         imported_module = my_import(module_name)
-    except ImportError, err:
+    except ImportError:
         return submodules
 
     mod_attrs = dir(imported_module)
 
     for mod_attr in mod_attrs:
-        if type(getattr(imported_module, mod_attr)) is types.ModuleType:
+        if isinstance(getattr(imported_module, mod_attr), types.ModuleType):
             submodules.append(module_name + '.' + mod_attr)
 
     return submodules
@@ -68,12 +67,12 @@ def write_dictionary(module_name):
 
     try:
         imported_module = my_import(module_name)
-    except ImportError, err:
+    except ImportError:
         return
 
     mod_attrs = dir(imported_module)
 
-    # Generate fully-qualified module names: 
+    # Generate fully-qualified module names:
     write_to.write('\n--- import %s ---\n' % module_name)
     for mod_attr in mod_attrs:
         if callable(getattr(imported_module, mod_attr)):
@@ -93,7 +92,7 @@ def write_dictionary(module_name):
         # Get the "import" part of the module. E.g., 'expat'
         # if the module name was 'xml.parsers.expat'
         second_part = module_name[module_name.rfind('.') + 1:]
-        write_to.write('\n--- from %s import %s ---\n' % 
+        write_to.write('\n--- from %s import %s ---\n' %
                        (first_part, second_part))
         for mod_attr in mod_attrs:
             if callable(getattr(imported_module, mod_attr)):
@@ -102,7 +101,7 @@ def write_dictionary(module_name):
                 format = prefix_on
             write_to.write(format % (second_part, mod_attr) + '\n')
 
-    # Generate non-fully-qualified module names: 
+    # Generate non-fully-qualified module names:
     write_to.write('\n--- from %s import * ---\n' % module_name)
     for mod_attr in mod_attrs:
         if callable(getattr(imported_module, mod_attr)):
@@ -126,11 +125,11 @@ def remove_duplicates(seq, keep=()):
 
     Remove duplicates from a sequence while perserving order.
 
-    The optional tuple argument "keep" can be given to specificy 
+    The optional tuple argument "keep" can be given to specificy
     each string you don't want to be removed as a duplicate.
     """
     seq2 = []
-    seen = set();
+    seen = set()
     for i in seq:
         if i in (keep):
             seq2.append(i)
@@ -143,7 +142,7 @@ def remove_duplicates(seq, keep=()):
 
 def get_yesno(msg="[Y/n]?"):
     """
-    
+
     Returns True if user inputs 'n', 'Y', "yes", "Yes"...
     Returns False if user inputs 'n', 'N', "no", "No"...
     If they enter an invalid option it tells them so and asks again.
@@ -174,7 +173,7 @@ def main(write_to):
 
     for module_name in sys.argv[1:]:
         try:
-            imported_module = my_import(module_name)
+            my_import(module_name)
         except ImportError, err:
             print "Couldn't import: %s. %s" % (module_name, err)
             sys.argv.remove(module_name)
@@ -213,7 +212,7 @@ def main(write_to):
 
     # Delete the original file:
     os.unlink(PYDICTION_DICT)
-    
+
     # Recreate the file, this time it won't have any duplicates lines:
     f = open(PYDICTION_DICT, 'w')
     for attr in file_lines:
@@ -229,8 +228,8 @@ if __name__ == '__main__':
         sys.exit("You need a Python 2.x version of at least Python 2.3")
 
     if len(sys.argv) <= 1:
-        sys.exit("%s requires at least one argument. None given." % 
-                  sys.argv[0])
+        sys.exit("%s requires at least one argument. None given." %
+                 sys.argv[0])
 
     if '-v' in sys.argv:
         write_to = sys.stdout
@@ -244,7 +243,7 @@ if __name__ == '__main__':
                 for line in file_lines:
                     if line.find('--- import %s ' % module_name) != -1:
                         print '"%s" already exists in %s. Skipping...' % \
-                               (module_name, PYDICTION_DICT)
+                            (module_name, PYDICTION_DICT)
                         sys.argv.remove(module_name)
                         break
             f.close()
@@ -252,13 +251,13 @@ if __name__ == '__main__':
             if len(sys.argv) < 2:
                 # Check if there's still enough command-line arguments:
                 sys.exit("Nothing new to do. Aborting.")
-            
+
             if os.path.exists(PYDICTION_DICT_BACKUP):
-                answer = get_yesno('Overwrite existing backup "%s" [Y/n]? ' % \
-                                    PYDICTION_DICT_BACKUP)
+                answer = get_yesno('Overwrite existing backup "%s" [Y/n]? ' %
+                                   PYDICTION_DICT_BACKUP)
                 if (answer):
                     print "Backing up old dictionary to: %s" % \
-                           PYDICTION_DICT_BACKUP
+                        PYDICTION_DICT_BACKUP
                     try:
                         shutil.copyfile(PYDICTION_DICT, PYDICTION_DICT_BACKUP)
                     except IOError, err:
@@ -269,14 +268,13 @@ if __name__ == '__main__':
                 print 'Appending to: "%s"' % PYDICTION_DICT
             else:
                 print "Backing up current %s to %s" % \
-                       (PYDICTION_DICT, PYDICTION_DICT_BACKUP)
+                    (PYDICTION_DICT, PYDICTION_DICT_BACKUP)
                 try:
                     shutil.copyfile(PYDICTION_DICT, PYDICTION_DICT_BACKUP)
                 except IOError, err:
                     print "Couldn't back up %s. %s" % (PYDICTION_DICT, err)
     else:
         print 'Creating file: "%s"' % PYDICTION_DICT
-
 
     if not STDOUT_ONLY:
         write_to = open(PYDICTION_DICT, 'a')
