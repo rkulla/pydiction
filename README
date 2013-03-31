@@ -336,11 +336,11 @@ Tips
     
          S = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-you can complete dynamic object methods, such as "S.send()", by using Vim 7's omni-completion ftplugin (a.k.a "pythoncomplete.vim") by doing:
+you can complete dynamic object methods, such as "S.send()", by using Vim 7's omni-completion ftplugin "pythoncomplete.vim" (requires Vim to be compiled with Python support) by doing:
 
         S.s<Ctrl-x><Ctrl-o>
 
--You may get unexpected results if you use autocomplpop.vim, supertab.vim or other completion or python plugins. Try disabling them individually to find out the culprit and please don't hesitate to e-mail me any workarounds or suggestions. Thanks.
+You must import the module for this to work. (e.g. import socket). You may get unexpected results if you use autocomplpop.vim, supertab.vim or other completion or python plugins. Try disabling them individually to find out the culprit and please don't hesitate to e-mail me any workarounds or suggestions. Thanks.
 
 
 License
