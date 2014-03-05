@@ -1,6 +1,6 @@
 Description
 ===========
-Pydiction allows you to Tab-complete Python code in Vim, including keywords, the standard library, and third-party modules.  
+Started in 2003, Pydiction was created to allow you to Tab-complete Python code in Vim, including keywords, the standard library, and third-party modules.  
 
 It consists of three main files:
     
