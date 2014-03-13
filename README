@@ -24,8 +24,6 @@ WINDOWS: Put python_pydiction.vim in C:\vim\vimfiles\ftplugin  (Assuming you ins
 
 You may install the other files (complete-dict and pydiction.py) anywhere you want. For this example, we'll assume you put them in "C:\vim\vimfiles\ftplugin\pydiction\" (Do not put any file but python_pydiction.vim in the ftplugin\ directory, only .vim files should go there.)
 
-Note that the official mirror of pydiction is https://github.com/vim-scripts/Pydiction and has a lot more forks.
-
 Configuring
 ===========
 In your vimrc file, first add the following line to enable filetype plugins:
