@@ -5,7 +5,7 @@ Started in 2003, Pydiction allows you to Tab-complete Python code in Vim, includ
 It consists of three main files:
     
     python_pydiction.vim -- Vim plugin.
-    complete-dict -- Dictionary file that consists of Python keywords and modules. This is what the plugin refers to.
+    complete-dict -- Dictionary file that consists of Python keywords & modules.
     pydiction.py -- Python script you can optionally run to add more modules to complete-dict.
 
 
