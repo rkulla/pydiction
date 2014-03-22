@@ -1,6 +1,6 @@
 Description
 ===========
-Started in 2003, Pydiction allows you to Tab-complete Python code in Vim, including keywords, the standard library, and third-party modules.  
+Pydiction allows you to Tab-complete Python code in Vim, including keywords, the standard library, and third-party modules.  
 
 It consists of three main files:
     
@@ -330,7 +330,9 @@ Pydiction doesn't ignore "private" attributes or methods. I.e., those starting (
 
 Tips
 ====
--Say you create a custom object, called "S" by doing something like:
+- If you want to have case-insensitive menu searches, :set ignorecase. Otherwise :set noic. Or add them to your vimrc.
+
+- Say you create a custom object, called "S" by doing something like:
     
          S = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
