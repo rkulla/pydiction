@@ -340,12 +340,7 @@ you can complete dynamic object methods, such as "S.send()", by using Vim 7's om
 
         S.s<Ctrl-x><Ctrl-o>
 
-You must import the module for this to work. (e.g. import socket). You may get unexpected results if you use autocomplpop.vim, supertab.vim or other completion or python plugins. Try disabling them individually to find out the culprit and please don't hesitate to e-mail me any workarounds or suggestions. Thanks.
-
-
-License
-=======
-As of version 1.0, Pydiction is now under a BSD license instead of GPL.
+You must import the module for this to work. (e.g. import socket). You may get unexpected results if you use rope.vim, python-mode.vim, autocomplpop.vim, supertab.vim or other completion or python plugins. Try disabling them individually to find out the culprit.
 
 
 Further reading
