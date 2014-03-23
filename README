@@ -1,16 +1,14 @@
 Description
 ===========
-Pydiction allows you to Tab-complete Python code in Vim, including keywords, the standard library, and third-party modules.  
-
-It consists of three main files:
+Pydiction allows you to Tab-complete Python code (keywords, standard library, and third-party modules) in Vim. It consists of three main files:
     
     python_pydiction.vim -- Vim plugin.
     complete-dict -- Dictionary file that consists of Python keywords & modules.
     pydiction.py -- Python script you can optionally run to add more modules to complete-dict.
 
 
-Install Details
-===============
+Installing
+==========
 If you have Pathogen installed:
 
     cd ~/.vim/bundle
@@ -18,11 +16,11 @@ If you have Pathogen installed:
 
 Otherwise:
 
-UNIX/LINUX: Put python_pydiction.vim in ~/.vim/after/ftplugin/   (If this directory doesn't already exist, create it. Vim will know to look there automatically.)
+UNIX/LINUX/OSX: Put python_pydiction.vim in ~/.vim/after/ftplugin/   (If this directory doesn't already exist, create it. Vim will know to look there automatically.)
 
 WINDOWS: Put python_pydiction.vim in C:\vim\vimfiles\ftplugin  (Assuming you installed Vim to C:\vim\).
 
-You may install the other files (complete-dict and pydiction.py) anywhere you want. For this example, we'll assume you put them in "C:\vim\vimfiles\ftplugin\pydiction\" (Do not put any file but python_pydiction.vim in the ftplugin\ directory, only .vim files should go there.)
+You may install complete-dict and pydiction.py anywhere you want, but do not put any file but python_pydiction.vim in the ftplugin\ directory. Only .vim files should go there.
 
 Configuring
 ===========
@@ -30,11 +28,11 @@ In your vimrc file, first add the following line to enable filetype plugins:
   
     filetype plugin on
 
-then make sure you set "g:pydiction_location" to the full path of where you installed complete-dict, i.e.:
+then make sure you set g:pydiction_location to the full path of where you installed complete-dict. Ex:
     
     let g:pydiction_location = '/path/to/complete-dict'
 
-You can optionally set the height of the completion menu by setting "g:pydiction_menu_height" in your vimrc. For example:
+You can change the height of the completion menu by setting g:pydiction_menu_height in your vimrc:
     
     let g:pydiction_menu_height = 20
 
@@ -49,9 +47,7 @@ Note: If you were using a version of Pydiction less than 1.0, make sure you dele
 
 Usage
 =====
-Type part of a Python keyword, module name, attribute or method in "insert mode" in Vim, then hit the TAB key and it will auto-complete.
-
-For example, typing:
+In Vim's INSERT mode, type part of a Python keyword, module name, attribute or method, then hit TAB:
 
     raw<Tab>
 
@@ -86,8 +82,6 @@ pops up:
     compile(
     ...
 
-and so on.
-
 As of Pydiction 1.2, there's support for completing modules that were imported via "from module import submodule". For example, you could do:
 
     from xml.parsers import expat
@@ -96,6 +90,8 @@ As of Pydiction 1.2, there's support for completing modules that were imported v
 which expands to:
 
     expat.ParserCreate(
+
+Python's newer "import module as X" syntax isn't supported by default, since it would be impossible for Pydiction to know what you'll alias a module to. However, you can either add the alias to complete-dict or just use pythoncomplete.vim's Omnicompletition by typing <C-X><C-O>.
 
 You can also now use Shift-Tab to Tab backwards through the popup menu.
 
@@ -123,13 +119,13 @@ The Tab key will work as normal for everything else. Pydiction will only try to 
 Pydiction doesn't even require Python support to be compiled into your version of Vim.
 
 
-python_pydiction.vim (filetype plugin)
-======================================
+python_pydiction.vim
+====================
 Pydiction version 1.0 and greater uses a file called python_pydiction.vim, which is an ftplugin that only activates when you're editing a python file (e.g., you're editing a file with a .py extension or you've manually typed ":set filetype=python"). 
 
 Past versions of pydiction didn't use a plugin but only required you to change the value of "isk" in your vimrc, which was not desirable. Version 1.0 and greater do not require you to manually change the value of isk. It now safely changes isk for you temporarily by only setting it while you're doing Tab-completion of Python code. It automatically changes isk back to its original value whenever Tab-completion isn't being activated. Again, only Tab-completion causes Pydiction to activate; not even other forms of ins-completion, such as <Ctrl-x> or <Ctrl-n> completion will activate Pydiction. So you're still free to use those other types of completion whenever you want to.
 
-Pydiction works by using Vim's ins-completion functionality by temporarily remapping the Tab key to do the same thing as I_CTRL-X_CTRL_K (dictionary only completion). This means that when you are editing a Python file and you start typing the name of a Python keyword or module, you can press the Tab key to complete it. For example, if you type os.pa and then press Tab, Pydiction will pop up a completion menu in Vim that will look something like:
+Pydiction works by using Vim's ins-completion functionality by temporarily remapping the Tab key to do the same thing as I_CTRL-X_CTRL_K (dictionary only completion). So when you are editing a Python file and you start typing the name of a Python keyword or module, you can press the Tab key to complete it. For example, if you type os.pa then press Tab, a pop up completion menu opens with:
 
     os.pardir
     os.path
@@ -340,17 +336,39 @@ Tips
     
          S = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-you can complete dynamic object methods, such as "S.send()", by using Vim 7's omni-completion ftplugin "pythoncomplete.vim" (requires Vim to be compiled with Python support) by doing:
+  You can complete dynamic object methods, such as "S.send()", by using Vim 7's omni-completion ftplugin "pythoncomplete.vim" (requires Vim to be compiled with Python support) by doing:
 
         S.s<Ctrl-x><Ctrl-o>
 
-You must import the module for this to work. (e.g. import socket). You may get unexpected results if you use rope.vim, python-mode.vim, autocomplpop.vim, supertab.vim or other completion or python plugins. Try disabling them individually to find out the culprit. 
+ You must import the module for this to work. (e.g. import socket). You may get unexpected results if you use rope.vim, python-mode.vim, autocomplpop.vim, supertab.vim or other completion or python plugins. Try disabling them individually to find out the culprit. 
 
-I was able to get it to work with python-mode by deleting the line:
+ I was able to get it to work with python-mode by deleting the line:
 
         setlocal omnifunc=pymode#rope#completion 
         
-from python-mode/after/ftplugin/python.vim, but YMMV.
+ from python-mode/after/ftplugin/python.vim, but YMMV.
+
+- Similarly, you can use omni-completion for completing "import module as" syntax:
+
+        import itertools as itr
+        itr.<C-X><C-O>
+
+ Or, if you really want it to work with Pydiction/Tab, then add your alias to complete-dict by copying an existing block like:
+
+    ---- import itertools ---
+    itertools.chain(
+    itertools.ccombinations(
+    itertools.count(
+    ...
+
+ and paste and edit that to replace itertools with itr:
+
+    ---- import itertools as itr ---
+    itr.chain(
+    itr.ccombinations(
+    itr.count(
+    ...
+
 
 
 Further reading
