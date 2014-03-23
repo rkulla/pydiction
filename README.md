@@ -355,20 +355,19 @@ Tips
 
  Or, if you really want it to work with Pydiction/Tab, then add your alias to complete-dict by copying an existing block like:
 
-    ---- import itertools ---
-    itertools.chain(
-    itertools.ccombinations(
-    itertools.count(
-    ...
+        --- import itertools ---
+        itertools.chain(
+        itertools.ccombinations(
+        itertools.count(
+        ...
 
  and paste and edit that to replace itertools with itr:
 
-    ---- import itertools as itr ---
-    itr.chain(
-    itr.ccombinations(
-    itr.count(
-    ...
-
+        --- import itertools as itr ---
+        itr.chain(
+        itr.ccombinations(
+        itr.count(
+        ...
 
 
 Further reading
