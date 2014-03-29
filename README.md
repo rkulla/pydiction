@@ -124,7 +124,7 @@ Pydiction doesn't even require Python support to be compiled into your version o
 
 python_pydiction.vim
 ====================
-Pydiction version 1.0 and greater uses a file called python_pydiction.vim, which is an ftplugin that only activates when you're editing a python file (e.g., you're editing a file with a .py extension or you've manually typed ":set filetype=python"). 
+Pydiction version 1.0 and greater uses a file called python_pydiction.vim, which is an ftplugin that only activates when you're editing a python file (e.g., you're editing a file with a .py extension or you've manually typed `:set filetype=python`). 
 
 Past versions of pydiction didn't use a plugin but only required you to change the value of "isk" in your vimrc, which was not desirable. Version 1.0 and greater do not require you to manually change the value of isk. It now safely changes isk for you temporarily by only setting it while you're doing Tab-completion of Python code. It automatically changes isk back to its original value whenever Tab-completion isn't being activated. Again, only Tab-completion causes Pydiction to activate; not even other forms of ins-completion, such as <Ctrl-x> or <Ctrl-n> completion will activate Pydiction. So you're still free to use those other types of completion whenever you want to.
 
@@ -147,13 +147,13 @@ Pressing Tab again while the menu is open will scroll down the menu so you can c
     CTRL-E       Close the menu and not accept any match.
     ....
 
-Hitting Enter will accept the currently selected match, stop completion, and insert a newline -- which is usually not what you want. Instead, use CTRL-Y or Space. See ":help popupmenu-keys" for more options.
+Hitting Enter will accept the currently selected match, stop completion, and insert a newline -- which is usually not what you want. Instead, use `CTRL-Y` or `Space`. See `:help popupmenu-keys` for more options.
 
 As of Pydiction 1.3 you can press Shift-Tab to complete searches in backwards order.
 
 Pydiction temporarily sets completeopt to "menu,menuone", so that you can complete items that have one or more matches. It will set completeopt back to what it was originally after Tab-completion has finished.
 
-By default, Pydiction ignores case while doing Tab-completion. If you want it to do case-sensitive searches, then set noignorecase (:set noic).
+By default, Pydiction ignores case while doing Tab-completion. If you want it to do case-sensitive searches, then `set noignorecase` (:set noic).
 
 
 pydiction.py
@@ -335,15 +335,15 @@ Tips
 ====
 - If you want to have case-insensitive menu searches, :set ignorecase. Otherwise :set noic. Or add them to your vimrc.
 
-- Say you create a custom object, called "S" by doing something like:
+- Say you create a custom object, called `S` by doing something like:
     
          S = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-  You can complete dynamic object methods, such as "S.send()", by using Vim 7's omni-completion ftplugin "pythoncomplete.vim" (requires Vim to be compiled with Python support) by doing:
+  You can complete dynamic object methods, such as `S.send()`, by using Vim 7's omni-completion ftplugin "pythoncomplete.vim" (requires Vim to be compiled with Python support) by doing:
 
         S.s<Ctrl-x><Ctrl-o>
 
- You must import the module for this to work. (e.g. import socket). You may get unexpected results if you use rope.vim, python-mode.vim, autocomplpop.vim, supertab.vim or other completion or python plugins. Try disabling them individually to find out the culprit. 
+ You must import the module for this to work. (e.g. `import socket`). You may get unexpected results if you use rope.vim, python-mode.vim, autocomplpop.vim, supertab.vim or other completion or python plugins. Try disabling them individually to find out the culprit. 
 
  I was able to get it to work with python-mode by deleting the line:
 
