@@ -383,4 +383,5 @@ Further reading
 `:help popupmenu-completion`
 `:help popupmenu-keys`
 `:help iskeyword`
-`http://docs.python.org/2/py-modindex.html`
+
+http://docs.python.org/2/py-modindex.html
