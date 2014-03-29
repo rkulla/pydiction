@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """
 
-pydiction.py 1.2.1 by Ryan Kulla (rkulla AT gmail DOT com).
+pydiction.py 1.2.2 by Ryan Kulla (rkulla AT gmail DOT com).
 
 Description: Creates a Vim dictionary of Python module attributes for Vim's
              completion feature.  The created dictionary file is used by
@@ -21,8 +21,8 @@ License: BSD.
 
 
 __author__ = "Ryan Kulla (rkulla AT gmail DOT com)"
-__version__ = "1.2.1"
-__copyright__ = "Copyright (c) 2003-2013 Ryan Kulla"
+__version__ = "1.2.2"
+__copyright__ = "Copyright (c) 2003-2014 Ryan Kulla"
 
 
 import os

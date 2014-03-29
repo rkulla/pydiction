@@ -3,9 +3,13 @@
 " ============================================================================
 "
 " Author: Ryan Kulla (rkulla AT gmail DOT com)
-" Version: 1.2.1, for Vim 7
+" Version: 1.2.2, for Vim 7
 " URL: http://www.vim.org/scripts/script.php?script_id=850
-" Installation: On Linux, put this file in ~/.vim/after/ftplugin/
+" Installation: The easiest way is to use Pathogen and simply install
+"               everything to ~/.vim/bundle
+"               
+"               Otherwise:
+"               On Linux, put this file in ~/.vim/after/ftplugin/
 "               On Windows, put this file in C:\vim\vimfiles\ftplugin\
 "                        (assuming you installed vim in C:\vim\).
 "               You may install the other files anywhere. 

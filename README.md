@@ -100,7 +100,10 @@ If you feel you're getting different results in your completion menu, it's proba
 
 Pydiction vs other forms of completion
 ======================================
-Pydiction can complete Python Keywords, as well as Python module names and their attributes and methods. It can also complete both the fully-qualified module names (module.method), as well as non-fully qualified names (method).
+Pydiction can complete Python Keywords, as well as Python module names and
+their attributes and methods. It can also complete both the fully-qualified
+and non-fully qualified names. For example: `string.upper(`, `upper(`,
+`''.upper(`, and so forth.
 
 Pydiction only uses the "Tab" key to complete, uses a special dictionary file to complete from, and only attempts to complete while editing Python files. This has the advantage of only requiring one keystroke to do completion and of not polluting all of the completion menus that you might be using for other types of completion, such as Vim's regular omni-completion or other completion scripts that you may be running.
 
