@@ -109,7 +109,7 @@ Pydiction only uses the "Tab" key to complete, uses a special dictionary file to
 
 Since pydiction uses a dictionary file of possible completion items, it can complete 3rd party modules more accurately than other methods. You have full control over what it can and cannot complete. If it's unable to complete anything you can use pydiction.py to add a new module's contents to the dictionary, or you can manually add them using a text editor.
 
-The dictionary is just a plain text file, which also makes it portable across all platforms.  For example, if you're a PyQT user you can add all the PyQT related modules to the dictionary file (complete-dict) by using pydiction.py. The latest default complete-dict already contains most of the standard library, all Python 2.x keywords, Pygame, OpenGL, wxPython, Twisted, PyQT4, ZSI, LDAP, numarray, PyGTK, MySQLdb, PyGreSQL, pyPgSQL, PythonCard, pyvorbis, bcrypt, openid, GnuPGInterface, OpenSSl, pygments and more. However, they may be a little out of date by the time you read this.
+The dictionary is just a plain text file, which also makes it portable across all platforms.  For example, if you're a PyQT user you can add all the PyQT related modules to the dictionary file (complete-dict) by using pydiction.py. The latest default complete-dict already contains most of the standard library, all Python keywords, Pygame, OpenGL, wxPython, Twisted, PyQT4, ZSI, LDAP, numarray, PyGTK, MySQLdb, PyGreSQL, pyPgSQL, PythonCard, pyvorbis, bcrypt, openid, GnuPGInterface, OpenSSl, pygments and more. However, they may be a little out of date by the time you read this.
 
 Because Pydiction uses a dictionary file, you don't have to import a module before you can complete it, nor do you even have to have the module installed on your machine. This makes completion very fast since it doesn't need to do any type deducing.
 
@@ -372,6 +372,8 @@ Tips
         itr.count(
         ...
 
+- Because pydiction.py will complain if you try to add a module that already exists, this can make updating an existing module a little harder.
+The workaround is to edit complete-dict and manually delete the related module sections. For example, to update `__future__`, delete the sections `-- import __future ---` and `--- from __future__ import * ---`.
 
 Further reading
 ===============
