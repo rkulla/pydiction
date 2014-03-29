@@ -64,6 +64,7 @@ def write_dictionary(module_name):
     prefix_on_callable = '%s.%s('
     prefix_off = '%s'
     prefix_off_callable = '%s('
+    python_version = '%s.%s.%s' % get_python_version()
 
     try:
         imported_module = my_import(module_name)
@@ -73,7 +74,8 @@ def write_dictionary(module_name):
     mod_attrs = dir(imported_module)
 
     # Generate fully-qualified module names:
-    write_to.write('\n--- import %s ---\n' % module_name)
+    write_to.write('\n--- import %s (python v%s) ---\n' % (module_name,
+        python_version))
     for mod_attr in mod_attrs:
         if callable(getattr(imported_module, mod_attr)):
             # If an attribute is callable, show an opening parentheses:
@@ -221,11 +223,16 @@ def main(write_to):
     print "Done."
 
 
+def get_python_version():
+    """Returns the major, minor, micro python version as a tuple"""
+    return sys.version_info[0:3]
+
+
 if __name__ == '__main__':
     """Process the command line."""
 
-    if sys.version_info[0:2] < (2, 3):
-        sys.exit("You need a Python 2.x version of at least Python 2.3")
+    if get_python_version() < (2, 3):
+        sys.exit("You need at least Python 2.3")
 
     if len(sys.argv) <= 1:
         sys.exit("%s requires at least one argument. None given." %
