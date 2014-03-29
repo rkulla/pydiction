@@ -377,11 +377,10 @@ The workaround is to edit complete-dict and manually delete the related module s
 
 Further reading
 ===============
-:help ftplugin
-:help 'complete
-:help compl-dictionary
-:help popupmenu-completion
-:help popupmenu-keys
-:help iskeyword
-http://docs.python.org/modindex.html
-
+`:help ftplugin`
+`:help 'complete`
+`:help compl-dictionary`
+`:help popupmenu-completion`
+`:help popupmenu-keys`
+`:help iskeyword`
+`http://docs.python.org/2/py-modindex.html`
