@@ -373,7 +373,7 @@ Tips
         ...
 
 - Because pydiction.py will complain if you try to add a module that already exists, this can make updating an existing module a little harder.
-The workaround is to edit complete-dict and manually delete the related module sections. For example, to update `__future__`, delete the sections `-- import __future ---` and `--- from __future__ import * ---`.
+The workaround is to edit complete-dict and manually delete the related module sections. For example to update `__future__`, delete the sections `-- import __future__ ---` and `--- from __future__ import * ---`.
 
 Further reading
 ===============
