@@ -175,19 +175,6 @@ str.translate(
 str.upper(
 str.zfill(
 
---- import atexit ---
-atexit.__all__
-atexit.__builtins__
-atexit.__doc__
-atexit.__file__
-atexit.__name__
-atexit.__package__
-atexit.register(
-atexit.sys
-
---- from atexit import * ---
-register(
-
 --- import readline ---
 readline.__doc__
 readline.__file__
@@ -93847,3 +93834,20 @@ strcoll(
 strxfrm(
 textdomain(
 windows_locale
+
+--- import atexit (py2.7.3/linux2/root module) ---
+atexit.__all__
+atexit.__builtins__
+atexit.__doc__
+atexit.__file__
+atexit.__name__
+atexit.__package__
+atexit._exithandlers
+atexit._run_exitfuncs(
+atexit.register(
+atexit.sys
+
+--- from atexit import * ---
+_exithandlers
+_run_exitfuncs(
+register(
