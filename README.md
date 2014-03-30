@@ -45,8 +45,8 @@ Note: If you were using a version of Pydiction less than 1.0, make sure you dele
         endif " has("autocmd") 
 
 
-Usage
-=====
+Usage (Vim)
+===========
 In Vim's INSERT mode, type part of a Python keyword, module name, attribute or method, then hit TAB:
 
     raw<Tab>
@@ -97,67 +97,8 @@ You can also now use Shift-Tab to Tab backwards through the popup menu.
 
 If you feel you're getting different results in your completion menu, it's probably because you don't have Vim set to ignore case. You can remedy this with ":set noic"
         
-
-Pydiction vs other forms of completion
-======================================
-Pydiction can complete Python Keywords, as well as Python module names and
-their attributes and methods. It can also complete both the fully-qualified
-and non-fully qualified names. For example: `string.upper(`, `upper(`,
-`''.upper(`, and so forth.
-
-Pydiction only uses the "Tab" key to complete, uses a special dictionary file to complete from, and only attempts to complete while editing Python files. This has the advantage of only requiring one keystroke to do completion and of not polluting all of the completion menus that you might be using for other types of completion, such as Vim's regular omni-completion or other completion scripts that you may be running.
-
-Since pydiction uses a dictionary file of possible completion items, it can complete 3rd party modules more accurately than other methods. You have full control over what it can and cannot complete. If it's unable to complete anything you can use pydiction.py to add a new module's contents to the dictionary, or you can manually add them using a text editor.
-
-The dictionary is just a plain text file, which also makes it portable across all platforms.  For example, if you're a PyQT user you can add all the PyQT related modules to the dictionary file (complete-dict) by using pydiction.py. The latest default complete-dict already contains most of the standard library, all Python keywords, Pygame, OpenGL, wxPython, Twisted, PyQT4, ZSI, LDAP, numarray, PyGTK, MySQLdb, PyGreSQL, pyPgSQL, PythonCard, pyvorbis, bcrypt, openid, GnuPGInterface, OpenSSl, pygments and more. However, they may be a little out of date by the time you read this.
-
-Because Pydiction uses a dictionary file, you don't have to import a module before you can complete it, nor do you even have to have the module installed on your machine. This makes completion very fast since it doesn't need to do any type deducing.
-
-If you like, you can still use Vim 7's built-in omni-completion for Python (pythoncomplete.vim), and other forms of ins-completion, with Pydiction. In fact, they can all make a great team.
-
-Pydiction knows when you're completing a callable method, and if you are, it will automatically insert an opening parentheses.
-
-The Tab key will work as normal for everything else. Pydiction will only try to use the Tab key to complete Python code if you're editing a Python file and you first type part of some Python module or keyword.
-
-Pydiction doesn't even require Python support to be compiled into your version of Vim.
-
-
-python_pydiction.vim
-====================
-Pydiction version 1.0 and greater uses a file called python_pydiction.vim, which is an ftplugin that only activates when you're editing a python file (e.g., you're editing a file with a .py extension or you've manually typed `:set filetype=python`). 
-
-Past versions of pydiction didn't use a plugin but only required you to change the value of "isk" in your vimrc, which was not desirable. Version 1.0 and greater do not require you to manually change the value of isk. It now safely changes isk for you temporarily by only setting it while you're doing Tab-completion of Python code. It automatically changes isk back to its original value whenever Tab-completion isn't being activated. Again, only Tab-completion causes Pydiction to activate; not even other forms of ins-completion, such as <Ctrl-x> or <Ctrl-n> completion will activate Pydiction. So you're still free to use those other types of completion whenever you want to.
-
-Pydiction works by using Vim's ins-completion functionality by temporarily remapping the Tab key to do the same thing as I_CTRL-X_CTRL_K (dictionary only completion). So when you are editing a Python file and you start typing the name of a Python keyword or module, you can press the Tab key to complete it. For example, if you type os.pa then press Tab, a pop up completion menu opens with:
-
-    os.pardir
-    os.path
-    os.pathconf(
-    os.pathconf_names
-    os.path.
-    os.path.__all__
-    os.path.__builtins__
-    os.path.__doc__
-    ...
-
-Pressing Tab again while the menu is open will scroll down the menu so you can choose whatever item you want to go with, using the popup-menu keys:
-
-    CTRL-Y       Accept the currently selected match and stop completion.
-    <Space>      Accept the currently selected match and insert a space.
-    CTRL-E       Close the menu and not accept any match.
-    ....
-
-Hitting Enter will accept the currently selected match, stop completion, and insert a newline -- which is usually not what you want. Instead, use `CTRL-Y` or `Space`. See `:help popupmenu-keys` for more options.
-
-As of Pydiction 1.3 you can press Shift-Tab to complete searches in backwards order.
-
-Pydiction temporarily sets completeopt to "menu,menuone", so that you can complete items that have one or more matches. It will set completeopt back to what it was originally after Tab-completion has finished.
-
-By default, Pydiction ignores case while doing Tab-completion. If you want it to do case-sensitive searches, then `set noignorecase` (:set noic).
-
-
-pydiction.py
-============
+Usage of pydiction.py - Updating the dictionary
+===============================================
 You can skip this section if you don't plan to add more modules to complete-dict yourself. Consult complete-dict to see if it already has the modules you intend to use.
 
 This is the Python script used to create the "complete-dict" Vim dictionary file. I have created and bundled a default complete-dict for your use. I created it using a Linux system, so there won't be any real win32 specific modules in it. You're free to run pydiction.py to add or upgrade as many modules as you need. The dictionary file will still work if you're using windows, but it won't complete win32 related modules unless you tell it to.      
@@ -273,6 +214,42 @@ now you can complete myFoo.myBar() by doing:
 Note: You don't have to restart Vim after you update complete-dict.
 
 
+python_pydiction.vim
+====================
+See the `Usage (vim)` section if you just want to know how to use Pydiction inside of Vim. This section will go into detail what this plugin does behind the scenes.
+
+Pydiction version 1.0 and greater uses a file called python_pydiction.vim, which is an ftplugin that only activates when you're editing a python file (e.g., you're editing a file with a .py extension or you've manually typed `:set filetype=python`). 
+
+Past versions of pydiction didn't use a plugin but only required you to change the value of "isk" in your vimrc, which was not desirable. Version 1.0 and greater do not require you to manually change the value of isk. It now safely changes isk for you temporarily by only setting it while you're doing Tab-completion of Python code. It automatically changes isk back to its original value whenever Tab-completion isn't being activated. Again, only Tab-completion causes Pydiction to activate; not even other forms of ins-completion, such as <Ctrl-x> or <Ctrl-n> completion will activate Pydiction. So you're still free to use those other types of completion whenever you want to.
+
+Pydiction works by using Vim's ins-completion functionality by temporarily remapping the Tab key to do the same thing as I_CTRL-X_CTRL_K (dictionary only completion). So when you are editing a Python file and you start typing the name of a Python keyword or module, you can press the Tab key to complete it. For example, if you type os.pa then press Tab, a pop up completion menu opens with:
+
+    os.pardir
+    os.path
+    os.pathconf(
+    os.pathconf_names
+    os.path.
+    os.path.__all__
+    os.path.__builtins__
+    os.path.__doc__
+    ...
+
+Pressing Tab again while the menu is open will scroll down the menu so you can choose whatever item you want to go with, using the popup-menu keys:
+
+    CTRL-Y       Accept the currently selected match and stop completion.
+    <Space>      Accept the currently selected match and insert a space.
+    CTRL-E       Close the menu and not accept any match.
+    ....
+
+Hitting Enter will accept the currently selected match, stop completion, and insert a newline -- which is usually not what you want. Instead, use `CTRL-Y` or `Space`. See `:help popupmenu-keys` for more options.
+
+As of Pydiction 1.3 you can press Shift-Tab to complete searches in backwards order.
+
+Pydiction temporarily sets completeopt to "menu,menuone", so that you can complete items that have one or more matches. It will set completeopt back to what it was originally after Tab-completion has finished.
+
+By default, Pydiction ignores case while doing Tab-completion. If you want it to do case-sensitive searches, then `set noignorecase` (:set noic).
+
+
 complete-dict
 =============
 This is the Vim dictionary file that python_pydiction.vim reads from and pydiction.py writes to. Without this file, Pydiction wouldn't know which Python keywords and modules it can Tab-complete.
@@ -283,8 +260,8 @@ The default complete-dict currently contains:
 
     Python keywords:
 
-        and, del, for, is, raise, assert, elif, from, lambda, return, break, else, global, not, try,
-        class, except, if, or, while, continue, exec, import, pass, yield, def, finally, in, print    
+        `and as assert break class continue def del elif else except exec finally for from global if import in is lambda nonlocal not or
+        pass print raise return try while with yield`
 
     Most of the standard library and built-ins:  
         
@@ -331,6 +308,29 @@ Pydiction doesn't ignore "private" attributes or methods. I.e., those starting (
     :g/^_[a-zA-Z]/d
     :g/^\%(_\=[^_]\)*\zs__\%(.\{-}__\)\@!/d
     etc...
+
+Pydiction vs other forms of completion
+======================================
+Pydiction can complete Python Keywords, as well as Python module names and
+their attributes and methods. It can also complete both the fully-qualified
+and non-fully qualified names. For example: `string.upper(`, `upper(`,
+`''.upper(`, and so forth.
+
+Pydiction only uses the "Tab" key to complete, uses a special dictionary file to complete from, and only attempts to complete while editing Python files. This has the advantage of only requiring one keystroke to do completion and of not polluting all of the completion menus that you might be using for other types of completion, such as Vim's regular omni-completion or other completion scripts that you may be running.
+
+Since pydiction uses a dictionary file of possible completion items, it can complete 3rd party modules more accurately than other methods. You have full control over what it can and cannot complete. If it's unable to complete anything you can use pydiction.py to add a new module's contents to the dictionary, or you can manually add them using a text editor.
+
+The dictionary is just a plain text file, which also makes it portable across all platforms.  For example, if you're a PyQT user you can add all the PyQT related modules to the dictionary file (complete-dict) by using pydiction.py. The latest default complete-dict already contains most of the standard library, all Python keywords, Pygame, OpenGL, wxPython, Twisted, PyQT4, ZSI, LDAP, numarray, PyGTK, MySQLdb, PyGreSQL, pyPgSQL, PythonCard, pyvorbis, bcrypt, openid, GnuPGInterface, OpenSSl, pygments and more. However, they may be a little out of date by the time you read this.
+
+Because Pydiction uses a dictionary file, you don't have to import a module before you can complete it, nor do you even have to have the module installed on your machine. This makes completion very fast since it doesn't need to do any type deducing.
+
+If you like, you can still use Vim 7's built-in omni-completion for Python (pythoncomplete.vim), and other forms of ins-completion, with Pydiction. In fact, they can all make a great team.
+
+Pydiction knows when you're completing a callable method, and if you are, it will automatically insert an opening parentheses.
+
+The Tab key will work as normal for everything else. Pydiction will only try to use the Tab key to complete Python code if you're editing a Python file and you first type part of some Python module or keyword.
+
+Pydiction doesn't even require Python support to be compiled into your version of Vim.
 
 
 Tips
