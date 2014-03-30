@@ -71,11 +71,16 @@ def write_dictionary(module_name):
     except ImportError:
         return
 
+    try:
+        module_version = '%s. ' % imported_module.__version__
+    except AttributeError:
+        module_version = ''
+
     mod_attrs = dir(imported_module)
 
     # Generate fully-qualified module names:
-    write_to.write('\n--- import %s (python v%s) ---\n' % (module_name,
-        python_version))
+    write_to.write('\n--- import %s (%spython %s) ---\n' % (module_name,
+        module_version, python_version))
     for mod_attr in mod_attrs:
         if callable(getattr(imported_module, mod_attr)):
             # If an attribute is callable, show an opening parentheses:
