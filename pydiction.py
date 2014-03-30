@@ -79,8 +79,8 @@ def write_dictionary(module_name):
     mod_attrs = dir(imported_module)
 
     # Generate fully-qualified module names:
-    write_to.write('\n--- import %s (%spython %s) ---\n' % (module_name,
-        module_version, python_version))
+    write_to.write('\n--- import %s (%spython %s. %s) ---\n' %
+                   (module_name, module_version, python_version, sys.platform))
     for mod_attr in mod_attrs:
         if callable(getattr(imported_module, mod_attr)):
             # If an attribute is callable, show an opening parentheses:
