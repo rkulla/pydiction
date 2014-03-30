@@ -1,37 +1,39 @@
---- complete-dict - Created by Ryan Kulla using Python 2.6 on Ubuntu Linux 9.04 on July 23rd 2009 ---
 
---- Python Keywords (These were manually inputted) ---
+--- Python Keywords (These were manually entered) ---
 and
-del
-for
-is
-raise
+as
 assert
-elif
-from
-lambda
-return
 break
-else
-global
-not
-try
 class
-except
-if
-or
-while
 continue
-exec
-import
-pass
-yield
 def
+del
+elif
+else
+except
+exec
 finally
+for
+from
+global
+if
+import
 in
+is
+lambda
+nonlocal
+not
+or
+pass
 print
+raise
+return
+try
+while
+with
+yield
 
---- string type attributes and methods. (These were manually inputted). Only works with quotes not objects. eg 'foo'.startswith(  ---
+--- String type attributes and methods. (These were manually entered). Only works with quotes, not objects. e.g. 'foo'.startswith(  ---
 .__add__
 .__class__
 .__contains__
@@ -63,6 +65,8 @@ print
 .__sizeof__
 .__str__
 .__subclasshook__
+._formatter_field_name_split
+._formatter_parser
 .capitalize(
 .center(
 .count(
