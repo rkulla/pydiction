@@ -175,50 +175,6 @@ str.translate(
 str.upper(
 str.zfill(
 
---- import UserDict ---
-UserDict.DictMixin(
-UserDict.IterableUserDict(
-UserDict.UserDict(
-UserDict.__builtins__
-UserDict.__doc__
-UserDict.__file__
-UserDict.__name__
-UserDict.__package__
-
---- from UserDict import * ---
-DictMixin(
-IterableUserDict(
-UserDict(
-
---- import UserList ---
-UserList.UserList(
-UserList.__builtins__
-UserList.__doc__
-UserList.__file__
-UserList.__name__
-UserList.__package__
-UserList.collections
-
---- from UserList import * ---
-UserList(
-collections
-
---- import UserString ---
-UserString.MutableString(
-UserString.UserString(
-UserString.__all__
-UserString.__builtins__
-UserString.__doc__
-UserString.__file__
-UserString.__name__
-UserString.__package__
-UserString.collections
-UserString.sys
-
---- from UserString import * ---
-MutableString(
-UserString(
-
 --- import operator ---
 operator.__abs__(
 operator.__add__(
@@ -93851,3 +93807,49 @@ TypeType(
 UnboundMethodType(
 UnicodeType(
 XRangeType(
+
+--- import UserDict (py2.7.3/linux2/root module) ---
+UserDict.DictMixin(
+UserDict.IterableUserDict(
+UserDict.UserDict(
+UserDict.__builtins__
+UserDict.__doc__
+UserDict.__file__
+UserDict.__name__
+UserDict.__package__
+UserDict._abcoll
+
+--- from UserDict import * ---
+DictMixin(
+IterableUserDict(
+UserDict(
+_abcoll
+
+--- import UserList (py2.7.3/linux2/root module) ---
+UserList.UserList(
+UserList.__builtins__
+UserList.__doc__
+UserList.__file__
+UserList.__name__
+UserList.__package__
+UserList.collections
+
+--- from UserList import * ---
+UserList(
+collections
+
+--- import UserString (py2.7.3/linux2/root module) ---
+UserString.MutableString(
+UserString.UserString(
+UserString.__all__
+UserString.__builtins__
+UserString.__doc__
+UserString.__file__
+UserString.__name__
+UserString.__package__
+UserString.collections
+UserString.sys
+
+--- from UserString import * ---
+MutableString(
+UserString(
