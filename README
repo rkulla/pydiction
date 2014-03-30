@@ -97,8 +97,8 @@ You can also now use Shift-Tab to Tab backwards through the popup menu.
 
 If you feel you're getting different results in your completion menu, it's probably because you don't have Vim set to ignore case. You can remedy this with ":set noic"
         
-Usage of pydiction.py - Updating the dictionary
-===============================================
+Usage (pydiction.py)
+====================
 You can skip this section if you don't plan to add more modules to complete-dict yourself. Consult complete-dict to see if it already has the modules you intend to use.
 
 This is the Python script used to create the "complete-dict" Vim dictionary file. I have created and bundled a default complete-dict for your use. I created it using a Linux system, so there won't be any real win32 specific modules in it. You're free to run pydiction.py to add or upgrade as many modules as you need. The dictionary file will still work if you're using windows, but it won't complete win32 related modules unless you tell it to.      
@@ -256,21 +256,11 @@ This is the Vim dictionary file that python_pydiction.vim reads from and pydicti
 
 You can create your own complete-dict if you don't want to use the default one. The default complete-dict gives you a major head start as far as what you will be able to Tab-complete.
 
-The default complete-dict currently contains:
+The default complete-dict currently contains python keywords: `and` `as` `assert` `break` `class` `continue` `def` `del` `elif` `else` `except` `exec` `finally` `for` `from` `global` `if` `import` `in` `is` `lambda` `nonlocal` `not` `or` `pass` `print` `raise` `return` `try` `while` `with` `yield`
 
-    Python keywords:
+It also contains most of the standard library and built-ins:  `__builtin__` `__future__` `os` `sys` `time` `re` `string` `str` `Tkinter` `urllib` etc.
 
-        `and as assert break class continue def del elif else except exec finally for from global if import in is lambda nonlocal not or
-        pass print raise return try while with yield`
-
-    Most of the standard library and built-ins:  
-        
-        __builtin__, __future__, os, sys, time, re, sets, string, math, Tkinter, urllib, pydoc, etc.
-
-    It also contains many third-party libraries:
-
-        SQLite, wxPython, Twisted, ZSI, LDAP, OpenGL, PyGTK, PyQT4, MySQLdb, PyGreSQL, pyPgSQL,
-        pygame, PythonCard, Numarray, pyvorbis, Bcrypt, OpenID, GnuPGInterface, OpenSSL, Pygments
+And complete-dict even comes with many third-party libraries such as: `SQLite` `wxPython` `Twisted` `ZSI` `LDAP` `OpenGL` `PyGTK` `PyQT4` `MySQLdb` `PyGreSQL` `pyPgSQL` `pygameg` `PythonCard` `Numarray` `pyvorbis` `Bcrypt` `OpenID` `GnuPGInterface` `OpenSSL` `Pygments`
 
 Make sure you download the latest version of Pydiction to get the most up-to-date version of complete-dict. New modules are usually added to it every release.
 
