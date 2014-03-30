@@ -175,30 +175,6 @@ str.translate(
 str.upper(
 str.zfill(
 
---- import linecache ---
-linecache.__all__
-linecache.__builtins__
-linecache.__doc__
-linecache.__file__
-linecache.__name__
-linecache.__package__
-linecache.cache
-linecache.checkcache(
-linecache.clearcache(
-linecache.getline(
-linecache.getlines(
-linecache.os
-linecache.sys
-linecache.updatecache(
-
---- from linecache import * ---
-cache
-checkcache(
-clearcache(
-getline(
-getlines(
-updatecache(
-
 --- import pickle ---
 pickle.APPEND
 pickle.APPENDS
@@ -93867,3 +93843,27 @@ print_list(
 print_stack(
 print_tb(
 tb_lineno(
+
+--- import linecache (py2.7.3/linux2/root module) ---
+linecache.__all__
+linecache.__builtins__
+linecache.__doc__
+linecache.__file__
+linecache.__name__
+linecache.__package__
+linecache.cache
+linecache.checkcache(
+linecache.clearcache(
+linecache.getline(
+linecache.getlines(
+linecache.os
+linecache.sys
+linecache.updatecache(
+
+--- from linecache import * ---
+cache
+checkcache(
+clearcache(
+getline(
+getlines(
+updatecache(
