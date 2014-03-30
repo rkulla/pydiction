@@ -73,16 +73,21 @@ def write_dictionary(module_name):
     except ImportError:
         return
 
-    try:
-        module_version = '%s. ' % imported_module.__version__
-    except AttributeError:
-        module_version = ''
-
     mod_attrs = dir(imported_module)
 
-    # Generate fully-qualified module names:
-    write_to.write('\n--- import %s (%spython %s. %s) ---\n' %
-                   (module_name, module_version, python_version, sys.platform))
+    # If a module was passed on the command-line we'll call it a root package
+    if module_name in sys.argv[1:]:
+        try:
+            module_version = '%s/' % imported_module.__version__
+        except AttributeError:
+            module_version = ''
+        module_info = '(%spy%s/%s/root package) ' % (
+            module_version, python_version, sys.platform)
+    else:
+        module_info = ''
+
+    write_to.write('\n--- import %s %s---\n' % (module_name, module_info))
+
     for mod_attr in mod_attrs:
         if callable(getattr(imported_module, mod_attr)):
             # If an attribute is callable, show an opening parentheses:
