@@ -75,13 +75,13 @@ def write_dictionary(module_name):
 
     mod_attrs = dir(imported_module)
 
-    # If a module was passed on the command-line we'll call it a root package
+    # If a module was passed on the command-line we'll call it a root module
     if module_name in sys.argv[1:]:
         try:
             module_version = '%s/' % imported_module.__version__
         except AttributeError:
             module_version = ''
-        module_info = '(%spy%s/%s/root package) ' % (
+        module_info = '(%spy%s/%s/root module) ' % (
             module_version, python_version, sys.platform)
     else:
         module_info = ''
