@@ -65,8 +65,6 @@ yield
 .__sizeof__
 .__str__
 .__subclasshook__
-._formatter_field_name_split
-._formatter_parser
 .capitalize(
 .center(
 .count(
@@ -138,8 +136,6 @@ str.__setattr__
 str.__sizeof__
 str.__str__
 str.__subclasshook__
-str._formatter_field_name_split
-str._formatter_parser
 str.capitalize(
 str.center(
 str.count(
