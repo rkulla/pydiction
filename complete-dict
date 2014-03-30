@@ -175,30 +175,6 @@ str.translate(
 str.upper(
 str.zfill(
 
---- import datetime ---
-datetime.MAXYEAR
-datetime.MINYEAR
-datetime.__doc__
-datetime.__file__
-datetime.__name__
-datetime.__package__
-datetime.date(
-datetime.datetime(
-datetime.datetime_CAPI
-datetime.time(
-datetime.timedelta(
-datetime.tzinfo(
-
---- from datetime import * ---
-MAXYEAR
-MINYEAR
-date(
-datetime(
-datetime_CAPI
-time(
-timedelta(
-tzinfo(
-
 --- import time ---
 time.__doc__
 time.__name__
@@ -93820,3 +93796,27 @@ subversion
 version
 version_info
 warnoptions
+
+--- import datetime (py2.7.3/linux2/root module) ---
+datetime.MAXYEAR
+datetime.MINYEAR
+datetime.__doc__
+datetime.__file__
+datetime.__name__
+datetime.__package__
+datetime.date(
+datetime.datetime(
+datetime.datetime_CAPI
+datetime.time(
+datetime.timedelta(
+datetime.tzinfo(
+
+--- from datetime import * ---
+MAXYEAR
+MINYEAR
+date(
+datetime(
+datetime_CAPI
+time(
+timedelta(
+tzinfo(
