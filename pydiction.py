@@ -2,21 +2,23 @@
 """
 
 pydiction.py 1.2.2 by Ryan Kulla (rkulla AT gmail DOT com).
+License: BSD.
 
 Description: Creates a Vim dictionary of Python module attributes for Vim's
              completion feature.  The created dictionary file is used by
              the Vim ftplugin "python_pydiction.vim".
 
-Usage: pydiction.py <module> ... [-v]
-Example: The following will append all the "time" and "math" modules'
-         attributes to a file, in the current directory, called "pydiction"
-         with and without the "time." and "math." prefix:
-             $ python pydiction.py time math
-         To print the output just to stdout, instead of appending to the file,
-         supply the -v option:
-             $ python pydiction.py -v time math
+Usage: pydiction.py <module> [<module> ...] [-v]
 
-License: BSD.
+Example: The following will append all the "time" and "math" modules'
+         attributes to a file, in the current directory, called "pydiction",
+         with and without the "time." and "math." prefix:
+
+             $ python pydiction.py time math
+
+         To output only to stdout and not append to file, use -v:
+
+             $ python pydiction.py -v time math
 """
 
 

@@ -164,7 +164,7 @@ This is the Python script used to create the "complete-dict" Vim dictionary file
 
 USAGE: At a command prompt, run:
 
-    $ python pydiction.py <module> ... [-v]
+    $ python pydiction.py <module> [<module> ...] [-v]
 
 (You need to have at least python 2.x installed.)
 
@@ -176,7 +176,9 @@ You can input more than one module name on the command-line by separating them w
 
     $ python pydiction.py mymodule1 mymodule2 mymodule3
 
-The -v option will just write the results to stdout (standard output) instead of the complete-dict file.
+The -v option will just write the results to stdout (standard output) instead of the complete-dict file:
+
+    $ ./pydiction.py -v datetime math
 
 If the backup file "complete-dict.last" doesn't exist in the current directory, pydiction.py will create it for you. You should always keep a backup of your last working dictionary in case anything goes wrong, as it can get tedious having to recreate the file from scratch.
 
