@@ -175,16 +175,6 @@ str.translate(
 str.upper(
 str.zfill(
 
---- import wsgiref ---
-wsgiref.__builtins__
-wsgiref.__doc__
-wsgiref.__file__
-wsgiref.__name__
-wsgiref.__package__
-wsgiref.__path__
-
---- from wsgiref import * ---
-
 --- import smtpd ---
 smtpd.COMMASPACE
 smtpd.DEBUGSTREAM
@@ -36450,7 +36440,6 @@ wxTR_AQUA_BUTTONS
 
 --- from wx import _controls ---
 
-
 --- from wx import _controls_ ---
 
 BitmapButton_Create(
@@ -39120,7 +39109,6 @@ new_ZipFSHandler(
 
 --- from wx import _gdi ---
 
-
 --- from wx import _gdi_ ---
 
 AlphaPixelData_Accessor_Get(
@@ -40035,7 +40023,6 @@ new_StockGDI(
 new_WindowDC(
 
 --- from wx import _misc ---
-
 
 --- from wx import _misc_ ---
 
@@ -74847,7 +74834,6 @@ lapack_mkl_info
 lapack_opt_info
 mkl_info
 
-
 --- from numpy import _import_tools ---
 
 PackageLoaderDebug(
@@ -74922,9 +74908,7 @@ open_latin1(
 py3k
 strchar
 
-
 --- from numpy.compat import _inspect ---
-
 
 --- import numpy.compat.py3k ---
 numpy.compat.py3k.__all__
@@ -75748,19 +75732,14 @@ scalarmath
 shape_base
 umath
 
-
 --- from numpy.core import _dotblas ---
-
-
 
 --- from numpy.core import _internal ---
 
 format_datetime
 format_re
 
-
 --- from numpy.core import _sort ---
-
 
 --- import numpy.core.arrayprint ---
 numpy.core.arrayprint.ComplexFormat(
@@ -78364,15 +78343,11 @@ twodim_base
 type_check
 ufunclike
 
-
 --- from numpy.lib import _compiled_base ---
-
-
 
 --- from numpy.lib import _datasource ---
 
 Repository(
-
 
 --- from numpy.lib import _iotools ---
 
@@ -102559,9 +102534,7 @@ sizeof(
 string_at(
 wstring_at(
 
-
 --- from ctypes import _endian ---
-
 
 --- import ctypes.util (py2.7.3/linux2/root module) ---
 ctypes.util.__builtins__
@@ -103231,5 +103204,272 @@ iselement(
 iterparse(
 register_namespace(
 tostringlist(
+
+--- import wsgiref (py2.7.3/linux2/root module) ---
+wsgiref.__builtins__
+wsgiref.__doc__
+wsgiref.__file__
+wsgiref.__name__
+wsgiref.__package__
+wsgiref.__path__
+wsgiref.handlers
+wsgiref.headers
+wsgiref.simple_server
+wsgiref.util
+wsgiref.validate
+
+--- from wsgiref import * ---
+handlers
+headers
+simple_server
+validate
+
+--- import wsgiref.handlers ---
+wsgiref.handlers.BaseCGIHandler(
+wsgiref.handlers.BaseHandler(
+wsgiref.handlers.CGIHandler(
+wsgiref.handlers.FileWrapper(
+wsgiref.handlers.Headers(
+wsgiref.handlers.SimpleHandler(
+wsgiref.handlers.StringType(
+wsgiref.handlers.__all__
+wsgiref.handlers.__builtins__
+wsgiref.handlers.__doc__
+wsgiref.handlers.__file__
+wsgiref.handlers.__name__
+wsgiref.handlers.__package__
+wsgiref.handlers.format_date_time(
+wsgiref.handlers.guess_scheme(
+wsgiref.handlers.is_hop_by_hop(
+wsgiref.handlers.os
+wsgiref.handlers.sys
+wsgiref.handlers.time
+
+--- from wsgiref import handlers ---
+handlers.BaseCGIHandler(
+handlers.BaseHandler(
+handlers.CGIHandler(
+handlers.FileWrapper(
+handlers.Headers(
+handlers.SimpleHandler(
+handlers.StringType(
+handlers.__all__
+handlers.__builtins__
+handlers.__doc__
+handlers.__file__
+handlers.__name__
+handlers.__package__
+handlers.format_date_time(
+handlers.guess_scheme(
+handlers.is_hop_by_hop(
+handlers.os
+handlers.sys
+handlers.time
+
+--- from wsgiref.handlers import * ---
+BaseCGIHandler(
+CGIHandler(
+SimpleHandler(
+format_date_time(
+guess_scheme(
+is_hop_by_hop(
+
+--- import wsgiref.headers (py2.7.3/linux2/root module) ---
+wsgiref.headers.Headers(
+wsgiref.headers.ListType(
+wsgiref.headers.TupleType(
+wsgiref.headers.__builtins__
+wsgiref.headers.__doc__
+wsgiref.headers.__file__
+wsgiref.headers.__name__
+wsgiref.headers.__package__
+wsgiref.headers.re
+wsgiref.headers.tspecials
+
+--- from wsgiref import headers ---
+headers.Headers(
+headers.ListType(
+headers.TupleType(
+headers.__builtins__
+headers.__doc__
+headers.__file__
+headers.__name__
+headers.__package__
+headers.re
+headers.tspecials
+
+--- from wsgiref.headers import * ---
+tspecials
+
+--- import wsgiref.simple_server (0.1/py2.7.3/linux2/root module) ---
+wsgiref.simple_server.BaseHTTPRequestHandler(
+wsgiref.simple_server.HTTPServer(
+wsgiref.simple_server.ServerHandler(
+wsgiref.simple_server.SimpleHandler(
+wsgiref.simple_server.WSGIRequestHandler(
+wsgiref.simple_server.WSGIServer(
+wsgiref.simple_server.__all__
+wsgiref.simple_server.__builtins__
+wsgiref.simple_server.__doc__
+wsgiref.simple_server.__file__
+wsgiref.simple_server.__name__
+wsgiref.simple_server.__package__
+wsgiref.simple_server.__version__
+wsgiref.simple_server.demo_app(
+wsgiref.simple_server.make_server(
+wsgiref.simple_server.server_version
+wsgiref.simple_server.software_version
+wsgiref.simple_server.sys
+wsgiref.simple_server.sys_version
+wsgiref.simple_server.urllib
+
+--- from wsgiref import simple_server ---
+simple_server.BaseHTTPRequestHandler(
+simple_server.HTTPServer(
+simple_server.ServerHandler(
+simple_server.SimpleHandler(
+simple_server.WSGIRequestHandler(
+simple_server.WSGIServer(
+simple_server.__all__
+simple_server.__builtins__
+simple_server.__doc__
+simple_server.__file__
+simple_server.__name__
+simple_server.__package__
+simple_server.__version__
+simple_server.demo_app(
+simple_server.make_server(
+simple_server.server_version
+simple_server.software_version
+simple_server.sys
+simple_server.sys_version
+simple_server.urllib
+
+--- from wsgiref.simple_server import * ---
+ServerHandler(
+WSGIRequestHandler(
+WSGIServer(
+demo_app(
+make_server(
+server_version
+software_version
+sys_version
+
+--- import wsgiref.util (py2.7.3/linux2/root module) ---
+wsgiref.util.FileWrapper(
+wsgiref.util.__all__
+wsgiref.util.__builtins__
+wsgiref.util.__doc__
+wsgiref.util.__file__
+wsgiref.util.__name__
+wsgiref.util.__package__
+wsgiref.util.application_uri(
+wsgiref.util.guess_scheme(
+wsgiref.util.is_hop_by_hop(
+wsgiref.util.posixpath
+wsgiref.util.request_uri(
+wsgiref.util.setup_testing_defaults(
+wsgiref.util.shift_path_info(
+
+--- from wsgiref import util ---
+util.FileWrapper(
+util.application_uri(
+util.guess_scheme(
+util.is_hop_by_hop(
+util.posixpath
+util.request_uri(
+util.setup_testing_defaults(
+util.shift_path_info(
+
+--- from wsgiref.util import * ---
+application_uri(
+request_uri(
+setup_testing_defaults(
+shift_path_info(
+
+--- import wsgiref.validate (py2.7.3/linux2/root module) ---
+wsgiref.validate.DictType(
+wsgiref.validate.ErrorWrapper(
+wsgiref.validate.InputWrapper(
+wsgiref.validate.IteratorWrapper(
+wsgiref.validate.ListType(
+wsgiref.validate.PartialIteratorWrapper(
+wsgiref.validate.StringType(
+wsgiref.validate.TupleType(
+wsgiref.validate.WSGIWarning(
+wsgiref.validate.WriteWrapper(
+wsgiref.validate.__all__
+wsgiref.validate.__builtins__
+wsgiref.validate.__doc__
+wsgiref.validate.__file__
+wsgiref.validate.__name__
+wsgiref.validate.__package__
+wsgiref.validate.assert_(
+wsgiref.validate.bad_header_value_re
+wsgiref.validate.check_content_type(
+wsgiref.validate.check_environ(
+wsgiref.validate.check_errors(
+wsgiref.validate.check_exc_info(
+wsgiref.validate.check_headers(
+wsgiref.validate.check_input(
+wsgiref.validate.check_iterator(
+wsgiref.validate.check_status(
+wsgiref.validate.header_re
+wsgiref.validate.re
+wsgiref.validate.sys
+wsgiref.validate.validator(
+wsgiref.validate.warnings
+
+--- from wsgiref import validate ---
+validate.DictType(
+validate.ErrorWrapper(
+validate.InputWrapper(
+validate.IteratorWrapper(
+validate.ListType(
+validate.PartialIteratorWrapper(
+validate.StringType(
+validate.TupleType(
+validate.WSGIWarning(
+validate.WriteWrapper(
+validate.__all__
+validate.__builtins__
+validate.__doc__
+validate.__file__
+validate.__name__
+validate.__package__
+validate.assert_(
+validate.bad_header_value_re
+validate.check_content_type(
+validate.check_environ(
+validate.check_errors(
+validate.check_exc_info(
+validate.check_headers(
+validate.check_input(
+validate.check_iterator(
+validate.check_status(
+validate.header_re
+validate.re
+validate.sys
+validate.validator(
+validate.warnings
+
+--- from wsgiref.validate import * ---
+ErrorWrapper(
+InputWrapper(
+IteratorWrapper(
+PartialIteratorWrapper(
+WSGIWarning(
+WriteWrapper(
+bad_header_value_re
+check_content_type(
+check_environ(
+check_errors(
+check_exc_info(
+check_headers(
+check_input(
+check_iterator(
+check_status(
+header_re
+validator(
 
 
