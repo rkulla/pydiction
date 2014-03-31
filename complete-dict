@@ -175,34 +175,6 @@ str.translate(
 str.upper(
 str.zfill(
 
---- import StringIO ---
-StringIO.EINVAL
-StringIO.StringIO(
-StringIO.__all__
-StringIO.__builtins__
-StringIO.__doc__
-StringIO.__file__
-StringIO.__name__
-StringIO.__package__
-StringIO.test(
-
---- from StringIO import * ---
-EINVAL
-
---- import cStringIO ---
-cStringIO.InputType(
-cStringIO.OutputType(
-cStringIO.StringIO(
-cStringIO.__doc__
-cStringIO.__name__
-cStringIO.__package__
-cStringIO.cStringIO_CAPI
-
---- from cStringIO import * ---
-InputType(
-OutputType(
-cStringIO_CAPI
-
 --- import textwrap ---
 textwrap.TextWrapper(
 textwrap.__all__
@@ -93848,3 +93820,33 @@ pack(
 pack_into(
 unpack(
 unpack_from(
+
+--- import StringIO (py2.7.3/linux2/root module) ---
+StringIO.EINVAL
+StringIO.StringIO(
+StringIO.__all__
+StringIO.__builtins__
+StringIO.__doc__
+StringIO.__file__
+StringIO.__name__
+StringIO.__package__
+StringIO._complain_ifclosed(
+StringIO.test(
+
+--- from StringIO import * ---
+EINVAL
+_complain_ifclosed(
+
+--- import cStringIO (py2.7.3/linux2/root module) ---
+cStringIO.InputType(
+cStringIO.OutputType(
+cStringIO.StringIO(
+cStringIO.__doc__
+cStringIO.__name__
+cStringIO.__package__
+cStringIO.cStringIO_CAPI
+
+--- from cStringIO import * ---
+InputType(
+OutputType(
+cStringIO_CAPI
