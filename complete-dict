@@ -175,51 +175,6 @@ str.translate(
 str.upper(
 str.zfill(
 
---- import code ---
-code.CommandCompiler(
-code.InteractiveConsole(
-code.InteractiveInterpreter(
-code.__all__
-code.__builtins__
-code.__doc__
-code.__file__
-code.__name__
-code.__package__
-code.compile_command(
-code.interact(
-code.softspace(
-code.sys
-code.traceback
-
---- from code import * ---
-CommandCompiler(
-InteractiveConsole(
-InteractiveInterpreter(
-compile_command(
-interact(
-softspace(
-traceback
-
---- import codeop ---
-codeop.CommandCompiler(
-codeop.Compile(
-codeop.PyCF_DONT_IMPLY_DEDENT
-codeop.__all__
-codeop.__builtins__
-codeop.__doc__
-codeop.__file__
-codeop.__future__
-codeop.__name__
-codeop.__package__
-codeop.compile_command(
-codeop.fname
-
---- from codeop import * ---
-Compile(
-PyCF_DONT_IMPLY_DEDENT
-__future__
-fname
-
 --- import pprint ---
 pprint.PrettyPrinter(
 pprint.__all__
@@ -93792,3 +93747,54 @@ simplegeneric(
 walk_packages(
 zipimport
 zipimporter(
+
+--- import code (py2.7.3/linux2/root module) ---
+code.CommandCompiler(
+code.InteractiveConsole(
+code.InteractiveInterpreter(
+code.__all__
+code.__builtins__
+code.__doc__
+code.__file__
+code.__name__
+code.__package__
+code.compile_command(
+code.interact(
+code.softspace(
+code.sys
+code.traceback
+
+--- from code import * ---
+CommandCompiler(
+InteractiveConsole(
+InteractiveInterpreter(
+compile_command(
+interact(
+softspace(
+traceback
+
+--- import codeop (py2.7.3/linux2/root module) ---
+codeop.CommandCompiler(
+codeop.Compile(
+codeop.PyCF_DONT_IMPLY_DEDENT
+codeop.__all__
+codeop.__builtins__
+codeop.__doc__
+codeop.__file__
+codeop.__future__
+codeop.__name__
+codeop.__package__
+codeop._compile(
+codeop._features
+codeop._maybe_compile(
+codeop.compile_command(
+codeop.fname
+
+--- from codeop import * ---
+Compile(
+PyCF_DONT_IMPLY_DEDENT
+__future__
+_compile(
+_features
+_maybe_compile(
+fname
