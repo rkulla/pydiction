@@ -38216,7 +38216,6 @@ unittest.__file__
 unittest.__name__
 unittest.__package__
 unittest.__path__
-unittest.__unittest
 unittest.case
 unittest.defaultTestLoader
 unittest.expectedFailure(
@@ -38247,7 +38246,6 @@ TestResult(
 TestSuite(
 TextTestResult(
 TextTestRunner(
-__unittest
 case
 defaultTestLoader
 expectedFailure(
@@ -38275,7 +38273,6 @@ unittest.case.__doc__
 unittest.case.__file__
 unittest.case.__name__
 unittest.case.__package__
-unittest.case.__unittest
 unittest.case.collections
 unittest.case.difflib
 unittest.case.expectedFailure(
@@ -38303,7 +38300,6 @@ case.__doc__
 case.__file__
 case.__name__
 case.__package__
-case.__unittest
 case.collections
 case.difflib
 case.expectedFailure(
@@ -38334,7 +38330,6 @@ unittest.loader.__doc__
 unittest.loader.__file__
 unittest.loader.__name__
 unittest.loader.__package__
-unittest.loader.__unittest
 unittest.loader.case
 unittest.loader.defaultTestLoader
 unittest.loader.findTestCases(
@@ -38356,7 +38351,6 @@ loader.__doc__
 loader.__file__
 loader.__name__
 loader.__package__
-loader.__unittest
 loader.case
 loader.defaultTestLoader
 loader.findTestCases(
@@ -38383,7 +38377,6 @@ unittest.result.__doc__
 unittest.result.__file__
 unittest.result.__name__
 unittest.result.__package__
-unittest.result.__unittest
 unittest.result.failfast(
 unittest.result.os
 unittest.result.sys
@@ -38401,7 +38394,6 @@ result.__doc__
 result.__file__
 result.__name__
 result.__package__
-result.__unittest
 result.failfast(
 result.os
 result.sys
@@ -38422,7 +38414,6 @@ unittest.runner.__doc__
 unittest.runner.__file__
 unittest.runner.__name__
 unittest.runner.__package__
-unittest.runner.__unittest
 unittest.runner.registerResult(
 unittest.runner.result
 unittest.runner.sys
@@ -38431,7 +38422,6 @@ unittest.runner.time
 --- from unittest import runner ---
 runner.TextTestResult(
 runner.TextTestRunner(
-runner.__unittest
 runner.registerResult(
 runner.result
 
@@ -38444,7 +38434,6 @@ unittest.signals.__doc__
 unittest.signals.__file__
 unittest.signals.__name__
 unittest.signals.__package__
-unittest.signals.__unittest
 unittest.signals.installHandler(
 unittest.signals.registerResult(
 unittest.signals.removeHandler(
@@ -38459,7 +38448,6 @@ signals.__doc__
 signals.__file__
 signals.__name__
 signals.__package__
-signals.__unittest
 signals.installHandler(
 signals.registerResult(
 signals.removeHandler(
@@ -38478,7 +38466,6 @@ unittest.suite.__doc__
 unittest.suite.__file__
 unittest.suite.__name__
 unittest.suite.__package__
-unittest.suite.__unittest
 unittest.suite.case
 unittest.suite.sys
 unittest.suite.util
@@ -38491,7 +38478,6 @@ suite.__doc__
 suite.__file__
 suite.__name__
 suite.__package__
-suite.__unittest
 suite.case
 suite.sys
 suite.util
@@ -38505,7 +38491,6 @@ unittest.util.__doc__
 unittest.util.__file__
 unittest.util.__name__
 unittest.util.__package__
-unittest.util.__unittest
 unittest.util.namedtuple(
 unittest.util.safe_repr(
 unittest.util.sorted_list_difference(
@@ -38513,7 +38498,6 @@ unittest.util.strclass(
 unittest.util.unorderable_list_difference(
 
 --- from unittest import util ---
-util.__unittest
 util.namedtuple(
 util.safe_repr(
 util.sorted_list_difference(
@@ -46514,7 +46498,6 @@ hashlib.__all__
 hashlib.__builtins__
 hashlib.__doc__
 hashlib.__file__
-hashlib.__get_builtin_constructor(
 hashlib.__name__
 hashlib.__package__
 hashlib.algorithms
@@ -46527,7 +46510,6 @@ hashlib.sha384(
 hashlib.sha512(
 
 --- from hashlib import * ---
-__get_builtin_constructor(
 md5(
 sha1(
 sha224(
@@ -47401,12 +47383,8 @@ turtle.__all__
 turtle.__builtins__
 turtle.__doc__
 turtle.__file__
-turtle.__forwardmethods(
-turtle.__methodDict(
-turtle.__methods(
 turtle.__name__
 turtle.__package__
-turtle.__stringBody
 turtle.acos(
 turtle.acosh(
 turtle.addshape(
@@ -47583,10 +47561,6 @@ TurtleGraphicsError(
 TurtleScreen(
 TurtleScreenBase(
 Vec2D(
-__forwardmethods(
-__methodDict(
-__methods(
-__stringBody
 addshape(
 back(
 backward(
@@ -49921,15 +49895,11 @@ pygame.YUY2_OVERLAY
 pygame.YV12_OVERLAY
 pygame.YVYU_OVERLAY
 pygame.__builtins__
-pygame.__color_constructor(
-pygame.__color_reduce(
 pygame.__doc__
 pygame.__file__
 pygame.__name__
 pygame.__package__
 pygame.__path__
-pygame.__rect_constructor(
-pygame.__rect_reduce(
 pygame.__version__
 pygame.base
 pygame.bufferproxy
@@ -50242,10 +50212,6 @@ VIDEORESIZE
 YUY2_OVERLAY
 YV12_OVERLAY
 YVYU_OVERLAY
-__color_constructor(
-__color_reduce(
-__rect_constructor(
-__rect_reduce(
 base
 bufferproxy
 cdrom
@@ -51670,12 +51636,9 @@ lost(
 put(
 
 --- import pygame.sndarray ---
-pygame.sndarray.__arraytype
 pygame.sndarray.__builtins__
 pygame.sndarray.__doc__
 pygame.sndarray.__file__
-pygame.sndarray.__hasnumeric
-pygame.sndarray.__hasnumpy
 pygame.sndarray.__name__
 pygame.sndarray.__package__
 pygame.sndarray.array(
@@ -51688,12 +51651,9 @@ pygame.sndarray.samples(
 pygame.sndarray.use_arraytype(
 
 --- from pygame import sndarray ---
-sndarray.__arraytype
 sndarray.__builtins__
 sndarray.__doc__
 sndarray.__file__
-sndarray.__hasnumeric
-sndarray.__hasnumpy
 sndarray.__name__
 sndarray.__package__
 sndarray.array(
@@ -51706,9 +51666,6 @@ sndarray.samples(
 sndarray.use_arraytype(
 
 --- from pygame.sndarray import * ---
-__arraytype
-__hasnumeric
-__hasnumpy
 get_arraytype(
 get_arraytypes(
 numpysnd
@@ -51815,12 +51772,9 @@ surface.__package__
 --- from pygame.surface import * ---
 
 --- import pygame.surfarray ---
-pygame.surfarray.__arraytype
 pygame.surfarray.__builtins__
 pygame.surfarray.__doc__
 pygame.surfarray.__file__
-pygame.surfarray.__hasnumeric
-pygame.surfarray.__hasnumpy
 pygame.surfarray.__name__
 pygame.surfarray.__package__
 pygame.surfarray.array2d(
@@ -51840,12 +51794,9 @@ pygame.surfarray.pygame
 pygame.surfarray.use_arraytype(
 
 --- from pygame import surfarray ---
-surfarray.__arraytype
 surfarray.__builtins__
 surfarray.__doc__
 surfarray.__file__
-surfarray.__hasnumeric
-surfarray.__hasnumpy
 surfarray.__name__
 surfarray.__package__
 surfarray.array2d(
@@ -59283,7 +59234,6 @@ ListCtrl_SetSingleStyle(
 ListCtrl_SetStringItem(
 ListCtrl_SetTextColour(
 ListCtrl_SortItems(
-ListCtrl__setCallbackInfo(
 ListCtrl_swiginit(
 ListCtrl_swigregister(
 ListEvent_GetCacheFrom(
@@ -59432,7 +59382,6 @@ PyControl_DoSetSize(
 PyControl_DoSetVirtualSize(
 PyControl_GetDefaultAttributes(
 PyControl_OnInternalIdle(
-PyControl__setCallbackInfo(
 PyControl_swiginit(
 PyControl_swigregister(
 PyPickerBase_GetPickerStyle(
@@ -59442,7 +59391,6 @@ PyPickerBase_SetPickerCtrl(
 PyPickerBase_SetTextCtrl(
 PyPickerBase_UpdatePickerFromTextCtrl(
 PyPickerBase_UpdateTextCtrlFromPicker(
-PyPickerBase__setCallbackInfo(
 PyPickerBase_swiginit(
 PyPickerBase_swigregister(
 RadioBox_Create(
@@ -59827,7 +59775,6 @@ TreeCtrl_ToggleItemSelection(
 TreeCtrl_Unselect(
 TreeCtrl_UnselectAll(
 TreeCtrl_UnselectItem(
-TreeCtrl__setCallbackInfo(
 TreeCtrl_swiginit(
 TreeCtrl_swigregister(
 TreeEvent_GetItem(
@@ -59997,13 +59944,7 @@ new_TreebookEvent(
 
 --- from wx import _core ---
 
-__DocFilter(
 __WXDEBUG__
-__wxMemoryFSHandler_AddFile_Data(
-__wxMemoryFSHandler_AddFile_wxBitmap(
-__wxMemoryFSHandler_AddFile_wxImage(
-__wxPyCleanup(
-__wxPyPtrTypeMap
 
 --- from wx import _core_ ---
 
@@ -60122,7 +60063,6 @@ EvtHandler_ProcessPendingEvents(
 EvtHandler_SetEvtHandlerEnabled(
 EvtHandler_SetNextHandler(
 EvtHandler_SetPreviousHandler(
-EvtHandler__setOORInfo(
 EvtHandler_swiginit(
 EvtHandler_swigregister(
 FSFile_DetachStream(
@@ -60142,7 +60082,6 @@ FileSystemHandler_GetMimeTypeFromExt(
 FileSystemHandler_GetProtocol(
 FileSystemHandler_GetRightLocation(
 FileSystemHandler_OpenFile(
-FileSystemHandler__setCallbackInfo(
 FileSystemHandler_swiginit(
 FileSystemHandler_swigregister(
 FileSystem_ChangePathTo(
@@ -60834,29 +60773,19 @@ PyApp_SetUseBestVisual(
 PyApp_SetVendorName(
 PyApp_WakeUpIdle(
 PyApp_Yield(
-PyApp__BootstrapApp(
-PyApp__setCallbackInfo(
 PyApp_swiginit(
 PyApp_swigregister(
-PyCommandEvent__GetSelf(
-PyCommandEvent__SetSelf(
 PyCommandEvent_swiginit(
 PyCommandEvent_swigregister(
-PyEvent__GetSelf(
-PyEvent__SetSelf(
 PyEvent_swiginit(
 PyEvent_swigregister(
 PyEvtHandler_ProcessEvent(
-PyEvtHandler__setCallbackInfo(
 PyEvtHandler_swiginit(
 PyEvtHandler_swigregister(
-PyImageHandler__SetSelf(
 PyImageHandler_swiginit(
 PyImageHandler_swigregister(
-PySizer__setCallbackInfo(
 PySizer_swiginit(
 PySizer_swigregister(
-PyValidator__setCallbackInfo(
 PyValidator_swiginit(
 PyValidator_swigregister(
 Quantize_swigregister(
@@ -61147,11 +61076,6 @@ Sizer_SetSizeHints(
 Sizer_SetVirtualSizeHints(
 Sizer_Show(
 Sizer_ShowItems(
-Sizer__ReplaceItem(
-Sizer__ReplaceSizer(
-Sizer__ReplaceWin(
-Sizer__SetItemMinSize(
-Sizer__setOORInfo(
 Sizer_swigregister(
 StaticBoxSizer_GetStaticBox(
 StaticBoxSizer_swiginit(
@@ -61196,9 +61120,6 @@ Validator_TransferToWindow(
 Validator_Validate(
 Validator_swiginit(
 Validator_swigregister(
-VisualAttributes__get_colBg(
-VisualAttributes__get_colFg(
-VisualAttributes__get_font(
 VisualAttributes_swiginit(
 VisualAttributes_swigregister(
 WindowCreateEvent_GetWindow(
@@ -61838,12 +61759,6 @@ DC_SetTextForeground(
 DC_SetUserScale(
 DC_StartDoc(
 DC_StartPage(
-DC__DrawEllipseList(
-DC__DrawLineList(
-DC__DrawPointList(
-DC__DrawPolygonList(
-DC__DrawRectangleList(
-DC__DrawTextList(
 DC_swigregister(
 Effects_DrawSunkenEdge(
 Effects_GetDarkShadow(
@@ -61866,7 +61781,6 @@ EncodingConverter_swiginit(
 EncodingConverter_swigregister(
 FontEnumerator_EnumerateEncodings(
 FontEnumerator_EnumerateFacenames(
-FontEnumerator__setCallbackInfo(
 FontEnumerator_swiginit(
 FontEnumerator_swigregister(
 FontList_AddFont(
@@ -62190,7 +62104,6 @@ Pen_SetDashes(
 Pen_SetJoin(
 Pen_SetStyle(
 Pen_SetWidth(
-Pen__SetDashes(
 Pen___eq__(
 Pen___ne__(
 Pen_swiginit(
@@ -62277,7 +62190,6 @@ PseudoDC_swiginit(
 PseudoDC_swigregister(
 PyLocale_GetPluralString(
 PyLocale_GetSingularString(
-PyLocale__setCallbackInfo(
 PyLocale_swiginit(
 PyLocale_swigregister(
 RegionIterator_GetH(
@@ -62573,13 +62485,9 @@ AboutDialogInfo_SetLicense(
 AboutDialogInfo_SetName(
 AboutDialogInfo_SetTranslators(
 AboutDialogInfo_SetVersion(
-AboutDialogInfo__GetWebSiteDescription(
-AboutDialogInfo__GetWebSiteURL(
-AboutDialogInfo__SetWebSite(
 AboutDialogInfo_swiginit(
 AboutDialogInfo_swigregister(
 ArtProvider_Destroy(
-ArtProvider__setCallbackInfo(
 ArtProvider_swiginit(
 ArtProvider_swigregister(
 BitmapDataObject_GetBitmap(
@@ -62677,7 +62585,6 @@ CustomDataObject_swigregister(
 DataFormat_GetType(
 DataFormat_SetId(
 DataFormat_SetType(
-DataFormat__GetId(
 DataFormat___eq__(
 DataFormat___ne__(
 DataFormat_swiginit(
@@ -62997,7 +62904,6 @@ DropSource_GetDataObject(
 DropSource_GiveFeedback(
 DropSource_SetCursor(
 DropSource_SetData(
-DropSource__setCallbackInfo(
 DropSource_swiginit(
 DropSource_swigregister(
 DropTarget_GetData(
@@ -63009,7 +62915,6 @@ DropTarget_OnEnter(
 DropTarget_OnLeave(
 DropTarget_SetDataObject(
 DropTarget_SetDefaultAction(
-DropTarget__setCallbackInfo(
 DropTarget_swiginit(
 DropTarget_swigregister(
 FileConfig_swiginit(
@@ -63024,7 +62929,6 @@ FileDropTarget_OnDrop(
 FileDropTarget_OnDropFiles(
 FileDropTarget_OnEnter(
 FileDropTarget_OnLeave(
-FileDropTarget__setCallbackInfo(
 FileDropTarget_swiginit(
 FileDropTarget_swigregister(
 FileHistory_AddFileToHistory(
@@ -63248,22 +63152,16 @@ Process_IsInputOpened(
 Process_IsRedirected(
 Process_OnTerminate(
 Process_Redirect(
-Process__setCallbackInfo(
 Process_swiginit(
 Process_swigregister(
-PyBitmapDataObject__setCallbackInfo(
 PyBitmapDataObject_swiginit(
 PyBitmapDataObject_swigregister(
-PyDataObjectSimple__setCallbackInfo(
 PyDataObjectSimple_swiginit(
 PyDataObjectSimple_swigregister(
-PyLog__setCallbackInfo(
 PyLog_swiginit(
 PyLog_swigregister(
-PyTextDataObject__setCallbackInfo(
 PyTextDataObject_swiginit(
 PyTextDataObject_swigregister(
-PyTipProvider__setCallbackInfo(
 PyTipProvider_swiginit(
 PyTipProvider_swigregister(
 SingleInstanceChecker_Create(
@@ -63314,7 +63212,6 @@ TextDropTarget_OnDrop(
 TextDropTarget_OnDropText(
 TextDropTarget_OnEnter(
 TextDropTarget_OnLeave(
-TextDropTarget__setCallbackInfo(
 TextDropTarget_swiginit(
 TextDropTarget_swigregister(
 TimeSpan_Abs(
@@ -63366,7 +63263,6 @@ Timer_Notify(
 Timer_SetOwner(
 Timer_Start(
 Timer_Stop(
-Timer__setCallbackInfo(
 Timer_swiginit(
 Timer_swigregister(
 TipProvider_GetCurrentTip(
@@ -63547,7 +63443,6 @@ Dialog_SetAffirmativeId(
 Dialog_SetEscapeId(
 Dialog_SetReturnCode(
 Dialog_ShowModal(
-Dialog__CreateButtonSizer(
 Dialog_swiginit(
 Dialog_swigregister(
 DirDialog_GetMessage(
@@ -63637,7 +63532,6 @@ HtmlListBox_Create(
 HtmlListBox_GetFileSystem(
 HtmlListBox_OnLinkClicked(
 HtmlListBox_SetItemCount(
-HtmlListBox__setCallbackInfo(
 HtmlListBox_swiginit(
 HtmlListBox_swigregister(
 LayoutAlgorithm_LayoutFrame(
@@ -63720,7 +63614,6 @@ PasswordEntryDialog_swiginit(
 PasswordEntryDialog_swigregister(
 PopupTransientWindow_Dismiss(
 PopupTransientWindow_Popup(
-PopupTransientWindow__setCallbackInfo(
 PopupTransientWindow_swiginit(
 PopupTransientWindow_swigregister(
 PopupWindow_Create(
@@ -63882,7 +63775,6 @@ Printout_SetPPIScreen(
 Printout_SetPageSizeMM(
 Printout_SetPageSizePixels(
 Printout_SetPaperRectPixels(
-Printout__setCallbackInfo(
 Printout_swiginit(
 Printout_swigregister(
 ProgressDialog_Pulse(
@@ -63902,13 +63794,11 @@ PyPanel_DoSetSize(
 PyPanel_DoSetVirtualSize(
 PyPanel_GetDefaultAttributes(
 PyPanel_OnInternalIdle(
-PyPanel__setCallbackInfo(
 PyPanel_swiginit(
 PyPanel_swigregister(
 PyPreviewControlBar_CreateButtons(
 PyPreviewControlBar_SetPrintPreview(
 PyPreviewControlBar_SetZoomControl(
-PyPreviewControlBar__setCallbackInfo(
 PyPreviewControlBar_swiginit(
 PyPreviewControlBar_swigregister(
 PyPreviewFrame_CreateCanvas(
@@ -63916,10 +63806,8 @@ PyPreviewFrame_CreateControlBar(
 PyPreviewFrame_Initialize(
 PyPreviewFrame_SetControlBar(
 PyPreviewFrame_SetPreviewCanvas(
-PyPreviewFrame__setCallbackInfo(
 PyPreviewFrame_swiginit(
 PyPreviewFrame_swigregister(
-PyPrintPreview__setCallbackInfo(
 PyPrintPreview_swiginit(
 PyPrintPreview_swigregister(
 PyScrolledWindow_DoEraseBackground(
@@ -63934,7 +63822,6 @@ PyScrolledWindow_DoSetSize(
 PyScrolledWindow_DoSetVirtualSize(
 PyScrolledWindow_GetDefaultAttributes(
 PyScrolledWindow_OnInternalIdle(
-PyScrolledWindow__setCallbackInfo(
 PyScrolledWindow_swiginit(
 PyScrolledWindow_swigregister(
 PyWindow_DoEraseBackground(
@@ -63949,7 +63836,6 @@ PyWindow_DoSetSize(
 PyWindow_DoSetVirtualSize(
 PyWindow_GetDefaultAttributes(
 PyWindow_OnInternalIdle(
-PyWindow__setCallbackInfo(
 PyWindow_swiginit(
 PyWindow_swigregister(
 QueryLayoutInfoEvent_GetAlignment(
@@ -64024,7 +63910,6 @@ ScrolledWindow_SetTargetWindow(
 ScrolledWindow_swiginit(
 ScrolledWindow_swigregister(
 SimpleHtmlListBox_Create(
-SimpleHtmlListBox__Clear(
 SimpleHtmlListBox_swiginit(
 SimpleHtmlListBox_swigregister(
 SingleChoiceDialog_GetSelection(
@@ -64099,7 +63984,6 @@ TaskBarIcon_IsOk(
 TaskBarIcon_PopupMenu(
 TaskBarIcon_RemoveIcon(
 TaskBarIcon_SetIcon(
-TaskBarIcon__setCallbackInfo(
 TaskBarIcon_swiginit(
 TaskBarIcon_swigregister(
 TextEntryDialog_GetValue(
@@ -64161,7 +64045,6 @@ VListBox_SetMarginsXY(
 VListBox_SetSelection(
 VListBox_SetSelectionBackground(
 VListBox_Toggle(
-VListBox__setCallbackInfo(
 VListBox_swiginit(
 VListBox_swigregister(
 VScrolledWindow_Create(
@@ -64180,7 +64063,6 @@ VScrolledWindow_RefreshLine(
 VScrolledWindow_RefreshLines(
 VScrolledWindow_ScrollToLine(
 VScrolledWindow_SetLineCount(
-VScrolledWindow__setCallbackInfo(
 VScrolledWindow_swiginit(
 VScrolledWindow_swigregister(
 delete_ColourData(
@@ -95119,7 +95001,6 @@ twisted.words.protocols.jabber.jid.JID(
 twisted.words.protocols.jabber.jid.__builtins__
 twisted.words.protocols.jabber.jid.__doc__
 twisted.words.protocols.jabber.jid.__file__
-twisted.words.protocols.jabber.jid.__internJIDs
 twisted.words.protocols.jabber.jid.__name__
 twisted.words.protocols.jabber.jid.__package__
 twisted.words.protocols.jabber.jid.internJID(
@@ -95135,7 +95016,6 @@ jid.JID(
 jid.__builtins__
 jid.__doc__
 jid.__file__
-jid.__internJIDs
 jid.__name__
 jid.__package__
 jid.internJID(
@@ -95147,7 +95027,6 @@ jid.resourceprep
 
 --- from twisted.words.protocols.jabber.jid import * ---
 InvalidFormat(
-__internJIDs
 internJID(
 nameprep
 nodeprep
@@ -96153,7 +96032,6 @@ twisted.words.xish.xpath.XPathQuery(
 twisted.words.xish.xpath.__builtins__
 twisted.words.xish.xpath.__doc__
 twisted.words.xish.xpath.__file__
-twisted.words.xish.xpath.__internedQueries
 twisted.words.xish.xpath.__name__
 twisted.words.xish.xpath.__package__
 twisted.words.xish.xpath.internQuery(
@@ -96174,7 +96052,6 @@ xpath.XPathQuery(
 xpath.__builtins__
 xpath.__doc__
 xpath.__file__
-xpath.__internedQueries
 xpath.__name__
 xpath.__package__
 xpath.internQuery(
@@ -96190,7 +96067,6 @@ CompareValue(
 IndexValue(
 LiteralValue(
 XPathQuery(
-__internedQueries
 internQuery(
 matches(
 queryForNodes(
