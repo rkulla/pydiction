@@ -175,144 +175,6 @@ str.translate(
 str.upper(
 str.zfill(
 
---- import future_builtins ---
-future_builtins.__doc__
-future_builtins.__file__
-future_builtins.__name__
-future_builtins.__package__
-future_builtins.ascii(
-future_builtins.filter(
-future_builtins.hex(
-future_builtins.map(
-future_builtins.oct(
-future_builtins.zip(
-
---- from future_builtins import * ---
-
---- import contextlib ---
-contextlib.GeneratorContextManager(
-contextlib.__all__
-contextlib.__builtins__
-contextlib.__doc__
-contextlib.__file__
-contextlib.__name__
-contextlib.__package__
-contextlib.closing(
-contextlib.contextmanager(
-contextlib.nested(
-contextlib.sys
-contextlib.wraps(
-
---- from contextlib import * ---
-GeneratorContextManager(
-closing(
-contextmanager(
-nested(
-
---- import abc ---
-abc.ABCMeta(
-abc.__builtins__
-abc.__doc__
-abc.__file__
-abc.__name__
-abc.__package__
-abc.abstractmethod(
-abc.abstractproperty(
-
---- from abc import * ---
-
---- import gc ---
-gc.DEBUG_COLLECTABLE
-gc.DEBUG_INSTANCES
-gc.DEBUG_LEAK
-gc.DEBUG_OBJECTS
-gc.DEBUG_SAVEALL
-gc.DEBUG_STATS
-gc.DEBUG_UNCOLLECTABLE
-gc.__doc__
-gc.__name__
-gc.__package__
-gc.collect(
-gc.disable(
-gc.enable(
-gc.garbage
-gc.get_count(
-gc.get_debug(
-gc.get_objects(
-gc.get_referents(
-gc.get_referrers(
-gc.get_threshold(
-gc.isenabled(
-gc.set_debug(
-gc.set_threshold(
-
---- from gc import * ---
-DEBUG_COLLECTABLE
-DEBUG_INSTANCES
-DEBUG_LEAK
-DEBUG_OBJECTS
-DEBUG_SAVEALL
-DEBUG_STATS
-DEBUG_UNCOLLECTABLE
-collect(
-garbage
-get_debug(
-get_objects(
-get_referents(
-get_referrers(
-get_threshold(
-isenabled(
-set_debug(
-set_threshold(
-
---- import fpectl ---
-fpectl.__doc__
-fpectl.__file__
-fpectl.__name__
-fpectl.__package__
-fpectl.error(
-fpectl.turnoff_sigfpe(
-fpectl.turnon_sigfpe(
-
---- from fpectl import * ---
-turnoff_sigfpe(
-turnon_sigfpe(
-
---- import imputil ---
-imputil.BuiltinImporter(
-imputil.DynLoadSuffixImporter(
-imputil.ImportManager(
-imputil.Importer(
-imputil.__all__
-imputil.__builtin__
-imputil.__builtins__
-imputil.__doc__
-imputil.__file__
-imputil.__name__
-imputil.__package__
-imputil.imp
-imputil.marshal
-imputil.py_suffix_importer(
-imputil.struct
-imputil.sys
-
---- from imputil import * ---
-BuiltinImporter(
-DynLoadSuffixImporter(
-ImportManager(
-Importer(
-py_suffix_importer(
-
---- import zipimport ---
-zipimport.ZipImportError(
-zipimport.__doc__
-zipimport.__name__
-zipimport.__package__
-zipimport.zipimporter(
-
---- from zipimport import * ---
-ZipImportError(
-
 --- import modulefinder ---
 modulefinder.AddPackagePath(
 modulefinder.HAVE_ARGUMENT
@@ -103546,3 +103408,146 @@ uuid1(
 uuid3(
 uuid4(
 uuid5(
+
+--- import abc (py2.7.3/linux2/root module) ---
+abc.ABCMeta(
+abc.WeakSet(
+abc.__builtins__
+abc.__doc__
+abc.__file__
+abc.__name__
+abc.__package__
+abc.abstractmethod(
+abc.abstractproperty(
+abc.types
+
+--- from abc import * ---
+
+--- import contextlib (py2.7.3/linux2/root module) ---
+contextlib.GeneratorContextManager(
+contextlib.__all__
+contextlib.__builtins__
+contextlib.__doc__
+contextlib.__file__
+contextlib.__name__
+contextlib.__package__
+contextlib.closing(
+contextlib.contextmanager(
+contextlib.nested(
+contextlib.sys
+contextlib.warn(
+contextlib.wraps(
+
+--- from contextlib import * ---
+GeneratorContextManager(
+closing(
+contextmanager(
+nested(
+
+--- import fpectl (py2.7.3/linux2/root module) ---
+fpectl.__doc__
+fpectl.__file__
+fpectl.__name__
+fpectl.__package__
+fpectl.error(
+fpectl.turnoff_sigfpe(
+fpectl.turnon_sigfpe(
+
+--- from fpectl import * ---
+turnoff_sigfpe(
+turnon_sigfpe(
+
+--- import future_builtins (py2.7.3/linux2/root module) ---
+future_builtins.__doc__
+future_builtins.__file__
+future_builtins.__name__
+future_builtins.__package__
+future_builtins.ascii(
+future_builtins.filter(
+future_builtins.hex(
+future_builtins.map(
+future_builtins.oct(
+future_builtins.zip(
+
+--- from future_builtins import * ---
+
+--- import gc (py2.7.3/linux2/root module) ---
+gc.DEBUG_COLLECTABLE
+gc.DEBUG_INSTANCES
+gc.DEBUG_LEAK
+gc.DEBUG_OBJECTS
+gc.DEBUG_SAVEALL
+gc.DEBUG_STATS
+gc.DEBUG_UNCOLLECTABLE
+gc.__doc__
+gc.__name__
+gc.__package__
+gc.collect(
+gc.disable(
+gc.enable(
+gc.garbage
+gc.get_count(
+gc.get_debug(
+gc.get_objects(
+gc.get_referents(
+gc.get_referrers(
+gc.get_threshold(
+gc.is_tracked(
+gc.isenabled(
+gc.set_debug(
+gc.set_threshold(
+
+--- from gc import * ---
+DEBUG_COLLECTABLE
+DEBUG_INSTANCES
+DEBUG_LEAK
+DEBUG_OBJECTS
+DEBUG_SAVEALL
+DEBUG_STATS
+DEBUG_UNCOLLECTABLE
+collect(
+garbage
+get_debug(
+get_objects(
+get_referents(
+get_referrers(
+get_threshold(
+is_tracked(
+isenabled(
+set_debug(
+set_threshold(
+
+--- import imputil (py2.7.3/linux2/root module) ---
+imputil.BuiltinImporter(
+imputil.DynLoadSuffixImporter(
+imputil.ImportManager(
+imputil.Importer(
+imputil.__all__
+imputil.__builtin__
+imputil.__builtins__
+imputil.__doc__
+imputil.__file__
+imputil.__name__
+imputil.__package__
+imputil.imp
+imputil.marshal
+imputil.py_suffix_importer(
+imputil.struct
+imputil.sys
+
+--- from imputil import * ---
+BuiltinImporter(
+DynLoadSuffixImporter(
+ImportManager(
+Importer(
+py_suffix_importer(
+
+--- import zipimport (py2.7.3/linux2/root module) ---
+zipimport.ZipImportError(
+zipimport.__doc__
+zipimport.__name__
+zipimport.__package__
+zipimport.zipimporter(
+
+--- from zipimport import * ---
+ZipImportError(
