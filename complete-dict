@@ -175,85 +175,6 @@ str.translate(
 str.upper(
 str.zfill(
 
---- import copy_reg ---
-copy_reg.__all__
-copy_reg.__builtins__
-copy_reg.__doc__
-copy_reg.__file__
-copy_reg.__name__
-copy_reg.__newobj__(
-copy_reg.__package__
-copy_reg.add_extension(
-copy_reg.clear_extension_cache(
-copy_reg.constructor(
-copy_reg.dispatch_table
-copy_reg.pickle(
-copy_reg.pickle_complex(
-copy_reg.remove_extension(
-
---- from copy_reg import * ---
-__newobj__(
-add_extension(
-clear_extension_cache(
-constructor(
-pickle(
-pickle_complex(
-remove_extension(
-
---- import shelve ---
-shelve.BsdDbShelf(
-shelve.DbfilenameShelf(
-shelve.Pickler(
-shelve.Shelf(
-shelve.StringIO(
-shelve.Unpickler(
-shelve.UserDict
-shelve.__all__
-shelve.__builtins__
-shelve.__doc__
-shelve.__file__
-shelve.__name__
-shelve.__package__
-shelve.open(
-
---- from shelve import * ---
-BsdDbShelf(
-DbfilenameShelf(
-Shelf(
-
---- import copy ---
-copy.Error(
-copy.PyStringMap
-copy.__all__
-copy.__builtins__
-copy.__doc__
-copy.__file__
-copy.__name__
-copy.__package__
-copy.copy(
-copy.deepcopy(
-copy.dispatch_table
-copy.error(
-copy.name
-copy.t(
-
---- from copy import * ---
-copy(
-deepcopy(
-t(
-
---- import marshal ---
-marshal.__doc__
-marshal.__name__
-marshal.__package__
-marshal.dump(
-marshal.dumps(
-marshal.load(
-marshal.loads(
-marshal.version
-
---- from marshal import * ---
-
 --- import warnings ---
 warnings.WarningMessage(
 warnings.__all__
@@ -91901,7 +91822,6 @@ CO_FUTURE_UNICODE_LITERALS
 CO_FUTURE_WITH_STATEMENT
 CO_GENERATOR_ALLOWED
 CO_NESTED
-_Feature(
 __all__
 __builtins__
 __file__
@@ -91985,23 +91905,12 @@ os.WTERMSIG(
 os.WUNTRACED
 os.W_OK
 os.X_OK
-os._Environ(
 os.__all__
 os.__builtins__
 os.__doc__
 os.__file__
 os.__name__
 os.__package__
-os._copy_reg
-os._execvpe(
-os._exists(
-os._exit(
-os._get_exports_list(
-os._make_stat_result(
-os._make_statvfs_result(
-os._pickle_stat_result(
-os._pickle_statvfs_result(
-os._spawnvef(
 os.abort(
 os.access(
 os.altsep
@@ -92222,17 +92131,6 @@ WTERMSIG(
 WUNTRACED
 W_OK
 X_OK
-_Environ(
-_copy_reg
-_execvpe(
-_exists(
-_exit(
-_get_exports_list(
-_make_stat_result(
-_make_statvfs_result(
-_pickle_stat_result(
-_pickle_statvfs_result(
-_spawnvef(
 abort(
 access(
 altsep
@@ -92387,9 +92285,6 @@ os.path.__doc__
 os.path.__file__
 os.path.__name__
 os.path.__package__
-os.path._resolve_link(
-os.path._unicode(
-os.path._varprog
 os.path.abspath(
 os.path.altsep
 os.path.basename(
@@ -92441,9 +92336,6 @@ path.__doc__
 path.__file__
 path.__name__
 path.__package__
-path._resolve_link(
-path._unicode(
-path._varprog
 path.abspath(
 path.altsep
 path.basename(
@@ -92489,9 +92381,6 @@ path.walk(
 path.warnings
 
 --- from os.path import * ---
-_resolve_link(
-_unicode(
-_varprog
 abspath(
 basename(
 commonprefix(
@@ -92535,10 +92424,6 @@ sys.__package__
 sys.__stderr__
 sys.__stdin__
 sys.__stdout__
-sys._clear_type_cache(
-sys._current_frames(
-sys._getframe(
-sys._mercurial
 sys.api_version
 sys.argv
 sys.builtin_module_names
@@ -92600,10 +92485,6 @@ __excepthook__(
 __stderr__
 __stdin__
 __stdout__
-_clear_type_cache(
-_current_frames(
-_getframe(
-_mercurial
 api_version
 argv
 builtin_module_names
@@ -92792,20 +92673,6 @@ locale.__doc__
 locale.__file__
 locale.__name__
 locale.__package__
-locale._ascii_lower_map
-locale._build_localename(
-locale._format(
-locale._group(
-locale._grouping_intervals(
-locale._localeconv(
-locale._override_localeconv
-locale._parse_localename(
-locale._percent_re
-locale._print_locale(
-locale._setlocale(
-locale._strip_padding(
-locale._test(
-locale._unicode(
 locale.atof(
 locale.atoi(
 locale.bind_textdomain_codeset(
@@ -92902,19 +92769,6 @@ THOUSEP
 T_FMT
 T_FMT_AMPM
 YESEXPR
-_ascii_lower_map
-_build_localename(
-_format(
-_group(
-_grouping_intervals(
-_localeconv(
-_override_localeconv
-_parse_localename(
-_percent_re
-_print_locale(
-_setlocale(
-_strip_padding(
-_test(
 atof(
 atoi(
 bind_textdomain_codeset(
@@ -92950,14 +92804,10 @@ atexit.__doc__
 atexit.__file__
 atexit.__name__
 atexit.__package__
-atexit._exithandlers
-atexit._run_exitfuncs(
 atexit.register(
 atexit.sys
 
 --- from atexit import * ---
-_exithandlers
-_run_exitfuncs(
 register(
 
 --- import readline (py2.7.3/linux2/root module) ---
@@ -93130,13 +92980,11 @@ UserDict.__doc__
 UserDict.__file__
 UserDict.__name__
 UserDict.__package__
-UserDict._abcoll
 
 --- from UserDict import * ---
 DictMixin(
 IterableUserDict(
 UserDict(
-_abcoll
 
 --- import UserList (py2.7.3/linux2/root module) ---
 UserList.UserList(
@@ -93422,8 +93270,6 @@ inspect.__doc__
 inspect.__file__
 inspect.__name__
 inspect.__package__
-inspect._filesbymodname
-inspect._searchbases(
 inspect.attrgetter(
 inspect.classify_class_attrs(
 inspect.cleandoc(
@@ -93505,8 +93351,6 @@ TPFLAGS_IS_ABSTRACT
 Traceback(
 __author__
 __date__
-_filesbymodname
-_searchbases(
 classify_class_attrs(
 cleandoc(
 currentframe(
@@ -93573,9 +93417,6 @@ traceback.__doc__
 traceback.__file__
 traceback.__name__
 traceback.__package__
-traceback._format_final_exc_line(
-traceback._print(
-traceback._some_str(
 traceback.extract_stack(
 traceback.extract_tb(
 traceback.format_exc(
@@ -93596,9 +93437,6 @@ traceback.tb_lineno(
 traceback.types
 
 --- from traceback import * ---
-_format_final_exc_line(
-_print(
-_some_str(
 extract_stack(
 extract_tb(
 format_exc(
@@ -93740,8 +93578,6 @@ pickle.UnicodeType(
 pickle.Unpickler(
 pickle.UnpicklingError(
 pickle.XRangeType(
-pickle._EmptyClass(
-pickle._Stop(
 pickle.__all__
 pickle.__builtins__
 pickle.__doc__
@@ -93749,13 +93585,6 @@ pickle.__file__
 pickle.__name__
 pickle.__package__
 pickle.__version__
-pickle._binascii
-pickle._extension_cache
-pickle._extension_registry
-pickle._inverted_registry
-pickle._keep_alive(
-pickle._test(
-pickle._tuplesize2code
 pickle.classmap
 pickle.compatible_formats
 pickle.decode_long(
@@ -93837,15 +93666,7 @@ TUPLE3
 UNICODE
 Unpickler(
 UnpicklingError(
-_EmptyClass(
-_Stop(
 __version__
-_binascii
-_extension_cache
-_extension_registry
-_inverted_registry
-_keep_alive(
-_tuplesize2code
 classmap
 compatible_formats
 decode_long(
@@ -93885,3 +93706,83 @@ cPickle.loads(
 --- from cPickle import * ---
 BadPickleGet(
 UnpickleableError(
+
+--- import copy (py2.7.3/linux2/root module) ---
+copy.Error(
+copy.PyStringMap
+copy.__all__
+copy.__builtins__
+copy.__doc__
+copy.__file__
+copy.__name__
+copy.__package__
+copy.copy(
+copy.deepcopy(
+copy.dispatch_table
+copy.error(
+copy.name
+copy.t(
+copy.weakref
+
+--- from copy import * ---
+copy(
+deepcopy(
+t(
+
+--- import copy_reg (py2.7.3/linux2/root module) ---
+copy_reg.__all__
+copy_reg.__builtins__
+copy_reg.__doc__
+copy_reg.__file__
+copy_reg.__name__
+copy_reg.__newobj__(
+copy_reg.__package__
+copy_reg.add_extension(
+copy_reg.clear_extension_cache(
+copy_reg.constructor(
+copy_reg.dispatch_table
+copy_reg.pickle(
+copy_reg.pickle_complex(
+copy_reg.remove_extension(
+
+--- from copy_reg import * ---
+__newobj__(
+add_extension(
+clear_extension_cache(
+constructor(
+pickle(
+pickle_complex(
+remove_extension(
+
+--- import marshal (py2.7.3/linux2/root module) ---
+marshal.__doc__
+marshal.__name__
+marshal.__package__
+marshal.dump(
+marshal.dumps(
+marshal.load(
+marshal.loads(
+marshal.version
+
+--- from marshal import * ---
+
+--- import shelve (py2.7.3/linux2/root module) ---
+shelve.BsdDbShelf(
+shelve.DbfilenameShelf(
+shelve.Pickler(
+shelve.Shelf(
+shelve.StringIO(
+shelve.Unpickler(
+shelve.UserDict
+shelve.__all__
+shelve.__builtins__
+shelve.__doc__
+shelve.__file__
+shelve.__name__
+shelve.__package__
+shelve.open(
+
+--- from shelve import * ---
+BsdDbShelf(
+DbfilenameShelf(
+Shelf(
