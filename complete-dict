@@ -175,28 +175,6 @@ str.translate(
 str.upper(
 str.zfill(
 
---- import textwrap ---
-textwrap.TextWrapper(
-textwrap.__all__
-textwrap.__builtins__
-textwrap.__doc__
-textwrap.__file__
-textwrap.__name__
-textwrap.__package__
-textwrap.__revision__
-textwrap.dedent(
-textwrap.fill(
-textwrap.re
-textwrap.string
-textwrap.wrap(
-
---- from textwrap import * ---
-TextWrapper(
-__revision__
-dedent(
-fill(
-wrap(
-
 --- import codecs ---
 codecs.BOM
 codecs.BOM32_BE
@@ -93830,7 +93808,6 @@ StringIO.__doc__
 StringIO.__file__
 StringIO.__name__
 StringIO.__package__
-StringIO._complain_ifclosed(
 StringIO.test(
 
 --- from StringIO import * ---
@@ -93850,3 +93827,29 @@ cStringIO.cStringIO_CAPI
 InputType(
 OutputType(
 cStringIO_CAPI
+
+--- import textwrap (py2.7.3/linux2/root module) ---
+textwrap.TextWrapper(
+textwrap.__all__
+textwrap.__builtins__
+textwrap.__doc__
+textwrap.__file__
+textwrap.__name__
+textwrap.__package__
+textwrap.__revision__
+textwrap.dedent(
+textwrap.fill(
+textwrap.re
+textwrap.string
+textwrap.wrap(
+
+--- from textwrap import * ---
+TextWrapper(
+__revision__
+_leading_whitespace_re
+_unicode(
+_whitespace
+_whitespace_only_re
+dedent(
+fill(
+wrap(
