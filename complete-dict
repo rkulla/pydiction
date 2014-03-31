@@ -175,60 +175,6 @@ str.translate(
 str.upper(
 str.zfill(
 
---- import md5 ---
-md5.__builtins__
-md5.__doc__
-md5.__file__
-md5.__name__
-md5.__package__
-md5.blocksize
-md5.digest_size
-md5.md5(
-md5.new(
-md5.warnings
-
---- from md5 import * ---
-blocksize
-md5(
-
---- import sha ---
-sha.__builtins__
-sha.__doc__
-sha.__file__
-sha.__name__
-sha.__package__
-sha.blocksize
-sha.digest_size
-sha.digestsize
-sha.new(
-sha.sha(
-sha.warnings
-
---- from sha import * ---
-digestsize
-sha(
-
---- import hashlib ---
-hashlib.__builtins__
-hashlib.__doc__
-hashlib.__file__
-hashlib.__name__
-hashlib.__package__
-hashlib.md5(
-hashlib.new(
-hashlib.sha1(
-hashlib.sha224(
-hashlib.sha256(
-hashlib.sha384(
-hashlib.sha512(
-
---- from hashlib import * ---
-sha1(
-sha224(
-sha256(
-sha384(
-sha512(
-
 --- import Tkinter ---
 Tkinter.ACTIVE
 Tkinter.ALL
@@ -94193,7 +94139,6 @@ colorsys.__doc__
 colorsys.__file__
 colorsys.__name__
 colorsys.__package__
-colorsys._v(
 colorsys.hls_to_rgb(
 colorsys.hsv_to_rgb(
 colorsys.rgb_to_hls(
@@ -94220,8 +94165,6 @@ hmac.__doc__
 hmac.__file__
 hmac.__name__
 hmac.__package__
-hmac._secret_backdoor_key
-hmac._warnings
 hmac.digest_size
 hmac.new(
 hmac.trans_36
@@ -94318,3 +94261,61 @@ test_sndt(
 test_voc(
 test_wav(
 whathdr(
+
+--- import hashlib (py2.7.3/linux2/root module) ---
+hashlib.__all__
+hashlib.__builtins__
+hashlib.__doc__
+hashlib.__file__
+hashlib.__get_builtin_constructor(
+hashlib.__name__
+hashlib.__package__
+hashlib.algorithms
+hashlib.md5(
+hashlib.new(
+hashlib.sha1(
+hashlib.sha224(
+hashlib.sha256(
+hashlib.sha384(
+hashlib.sha512(
+
+--- from hashlib import * ---
+__get_builtin_constructor(
+md5(
+sha1(
+sha224(
+sha256(
+sha384(
+sha512(
+
+--- import md5 (py2.7.3/linux2/root module) ---
+md5.__builtins__
+md5.__doc__
+md5.__file__
+md5.__name__
+md5.__package__
+md5.blocksize
+md5.digest_size
+md5.md5(
+md5.new(
+md5.warnings
+
+--- from md5 import * ---
+blocksize
+
+--- import sha (py2.7.3/linux2/root module) ---
+sha.__builtins__
+sha.__doc__
+sha.__file__
+sha.__name__
+sha.__package__
+sha.blocksize
+sha.digest_size
+sha.digestsize
+sha.new(
+sha.sha(
+sha.warnings
+
+--- from sha import * ---
+digestsize
+sha(
