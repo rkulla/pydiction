@@ -175,101 +175,6 @@ str.translate(
 str.upper(
 str.zfill(
 
---- import bisect ---
-bisect.__builtins__
-bisect.__doc__
-bisect.__file__
-bisect.__name__
-bisect.__package__
-bisect.bisect(
-bisect.bisect_left(
-bisect.bisect_right(
-bisect.insort(
-bisect.insort_left(
-bisect.insort_right(
-
---- from bisect import * ---
-bisect(
-bisect_left(
-bisect_right(
-insort(
-insort_left(
-insort_right(
-
---- import heapq ---
-heapq.__about__
-heapq.__all__
-heapq.__builtins__
-heapq.__doc__
-heapq.__file__
-heapq.__name__
-heapq.__package__
-heapq.bisect
-heapq.count(
-heapq.heapify(
-heapq.heappop(
-heapq.heappush(
-heapq.heappushpop(
-heapq.heapreplace(
-heapq.imap(
-heapq.islice(
-heapq.itemgetter(
-heapq.izip(
-heapq.merge(
-heapq.neg(
-heapq.nlargest(
-heapq.nsmallest(
-heapq.repeat(
-heapq.tee(
-
---- from heapq import * ---
-__about__
-bisect
-heapify(
-heappop(
-heappush(
-heappushpop(
-heapreplace(
-imap(
-izip(
-merge(
-nlargest(
-nsmallest(
-tee(
-
---- import array ---
-array.ArrayType(
-array.__doc__
-array.__name__
-array.__package__
-array.array(
-
---- from array import * ---
-ArrayType(
-array(
-
---- import sets ---
-sets.BaseSet(
-sets.ImmutableSet(
-sets.Set(
-sets.__all__
-sets.__builtins__
-sets.__doc__
-sets.__file__
-sets.__name__
-sets.__package__
-sets.generators
-sets.ifilter(
-sets.ifilterfalse(
-sets.warnings
-
---- from sets import * ---
-BaseSet(
-ImmutableSet(
-Set(
-ifilter(
-ifilterfalse(
-
 --- import itertools ---
 itertools.__doc__
 itertools.__name__
@@ -94208,3 +94113,104 @@ triangular(
 uniform(
 vonmisesvariate(
 weibullvariate(
+
+--- import array (py2.7.3/linux2/root module) ---
+array.ArrayType(
+array.__doc__
+array.__name__
+array.__package__
+array.array(
+
+--- from array import * ---
+ArrayType(
+array(
+
+--- import bisect (py2.7.3/linux2/root module) ---
+bisect.__builtins__
+bisect.__doc__
+bisect.__file__
+bisect.__name__
+bisect.__package__
+bisect.bisect(
+bisect.bisect_left(
+bisect.bisect_right(
+bisect.insort(
+bisect.insort_left(
+bisect.insort_right(
+
+--- from bisect import * ---
+bisect(
+bisect_left(
+bisect_right(
+insort(
+insort_left(
+insort_right(
+
+--- import heapq (py2.7.3/linux2/root module) ---
+heapq.__about__
+heapq.__all__
+heapq.__builtins__
+heapq.__doc__
+heapq.__file__
+heapq.__name__
+heapq.__package__
+heapq.bisect
+heapq.chain(
+heapq.cmp_lt(
+heapq.count(
+heapq.heapify(
+heapq.heappop(
+heapq.heappush(
+heapq.heappushpop(
+heapq.heapreplace(
+heapq.imap(
+heapq.islice(
+heapq.itemgetter(
+heapq.izip(
+heapq.merge(
+heapq.nlargest(
+heapq.nsmallest(
+heapq.repeat(
+heapq.tee(
+
+--- from heapq import * ---
+__about__
+_nlargest(
+_nsmallest(
+_siftdown(
+_siftup(
+bisect
+cmp_lt(
+heapify(
+heappop(
+heappush(
+heappushpop(
+heapreplace(
+imap(
+izip(
+merge(
+nlargest(
+nsmallest(
+tee(
+
+--- import sets (py2.7.3/linux2/root module) ---
+sets.BaseSet(
+sets.ImmutableSet(
+sets.Set(
+sets.__all__
+sets.__builtins__
+sets.__doc__
+sets.__file__
+sets.__name__
+sets.__package__
+sets.ifilter(
+sets.ifilterfalse(
+sets.warnings
+
+--- from sets import * ---
+BaseSet(
+ImmutableSet(
+Set(
+_TemporarilyImmutableSet(
+ifilter(
+ifilterfalse(
