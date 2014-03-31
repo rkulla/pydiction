@@ -175,46 +175,6 @@ str.translate(
 str.upper(
 str.zfill(
 
---- import pprint ---
-pprint.PrettyPrinter(
-pprint.__all__
-pprint.__builtins__
-pprint.__doc__
-pprint.__file__
-pprint.__name__
-pprint.__package__
-pprint.isreadable(
-pprint.isrecursive(
-pprint.pformat(
-pprint.pprint(
-pprint.saferepr(
-
---- from pprint import * ---
-PrettyPrinter(
-isreadable(
-isrecursive(
-pformat(
-pprint(
-saferepr(
-
---- import repr ---
-repr.Repr(
-repr.__all__
-repr.__builtin__
-repr.__builtins__
-repr.__doc__
-repr.__file__
-repr.__name__
-repr.__package__
-repr.aRepr
-repr.islice(
-repr.repr(
-
---- from repr import * ---
-Repr(
-aRepr
-islice(
-
 --- import new ---
 new.__builtins__
 new.__doc__
@@ -93784,9 +93744,6 @@ codeop.__file__
 codeop.__future__
 codeop.__name__
 codeop.__package__
-codeop._compile(
-codeop._features
-codeop._maybe_compile(
 codeop.compile_command(
 codeop.fname
 
@@ -93798,3 +93755,55 @@ _compile(
 _features
 _maybe_compile(
 fname
+
+--- import pprint (py2.7.3/linux2/root module) ---
+pprint.PrettyPrinter(
+pprint.__all__
+pprint.__builtins__
+pprint.__doc__
+pprint.__file__
+pprint.__name__
+pprint.__package__
+pprint.isreadable(
+pprint.isrecursive(
+pprint.pformat(
+pprint.pprint(
+pprint.saferepr(
+pprint.warnings
+
+--- from pprint import * ---
+PrettyPrinter(
+_StringIO(
+_commajoin(
+_id(
+_len(
+_perfcheck(
+_recursion(
+_safe_repr(
+_sorted(
+_sys
+_type(
+isreadable(
+isrecursive(
+pformat(
+pprint(
+saferepr(
+
+--- import repr (py2.7.3/linux2/root module) ---
+repr.Repr(
+repr.__all__
+repr.__builtin__
+repr.__builtins__
+repr.__doc__
+repr.__file__
+repr.__name__
+repr.__package__
+repr.aRepr
+repr.islice(
+repr.repr(
+
+--- from repr import * ---
+Repr(
+_possibly_sorted(
+aRepr
+islice(
