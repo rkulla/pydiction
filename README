@@ -14,7 +14,7 @@ If you have Pathogen installed:
     cd ~/.vim/bundle
     git clone https://github.com/rkulla/pydiction.git
 
-or use my [Vimogen](https://github.com/rkulla/vimogen "Vimogen") script to make install and manage pydiction and all of your vim plugins.
+or use a plugin manager like [Vimogen](https://github.com/rkulla/vimogen "Vimogen") to install and manage Pydiction and all of your vim plugins.
 
 Otherwise:
 
