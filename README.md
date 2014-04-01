@@ -96,6 +96,8 @@ Python's newer "import module as X" syntax isn't supported by default, since it 
     i = 3
     i.b<Ctrl-x><Ctrl-o>   # expands to: i.bit_length(
 
+See my Tips section below for more.
+
 You can also now use Shift-Tab to Tab backwards through the popup menu.
 
 If you feel you're getting different results in your completion menu, it's probably because you don't have Vim set to ignore case. You can remedy this with ":set noic"
@@ -338,9 +340,11 @@ Tips
 
         S.s<Ctrl-x><Ctrl-o>
 
- You must import the module for this to work. (e.g. `import socket`). You may get unexpected results if you use rope.vim, python-mode.vim, autocomplpop.vim, supertab.vim or other completion or python plugins. Try disabling them individually to find out the culprit. 
+ You must import the module for this to work. (e.g. `import socket`). You may get unexpected results if you use rope.vim, python-mode.vim, autocomplpop.vim, supertab.vim or other completion or python plugins. Try disabling them individually to find out the culprit. I personally think that different types of completion need different commands, and have had a lot of bad luck trying to use SuperTab or similar plugins to try to force everything to use a Tab. If you don't like typing <C-X><C-O> you can remap them to something other than Tab, such as <Leader>o:
 
- I was able to get it to work with python-mode by deleting the line:
+        imap <Leader>o <C-X><C-O>         
+
+ If you use the `python-mode` plugin, I was able to get omnicomplete to work with it by deleting the line:
 
         setlocal omnifunc=pymode#rope#completion 
         
