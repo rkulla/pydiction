@@ -374,6 +374,14 @@ Tips
 - Because pydiction.py will complain if you try to add a module that already exists, this can make updating an existing module a little harder.
 The workaround is to edit complete-dict and manually delete the related module sections. For example to update `__future__`, delete the sections `-- import __future__ ---` and `--- from __future__ import * ---`.
 
+- You can change the colors of the popup menu by editing your vim color scheme's source file and changing the values of `Pmenu` `PmenuSel` `PmenuSBar` and `PmenuThumb`. If you're using Vim in a terminal, change the values of ctermfg and ctermbg, otherwise change guifg and guibg. I use the molokai colorscheme and a terminal and use:
+
+        " complete menu
+        hi Pmenu           ctermbg=red                  guifg=#66D9EF  guibg=#000000
+        hi PmenuSel        ctermfg=black  ctermbg=gray                 guibg=#808080
+        hi PmenuSbar                                                   guibg=#080808
+        hi PmenuThumb                                                  guifg=#66D9EF
+
 Further reading
 ===============
 `:help ftplugin`
