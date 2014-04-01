@@ -372,7 +372,9 @@ Tips
         ...
 
 - Because pydiction.py will complain if you try to add a module that already exists, this can make updating an existing module a little harder.
-The workaround is to edit complete-dict and manually delete the related module sections. For example to update `__future__`, delete the sections `-- import __future__ ---` and `--- from __future__ import * ---`. Pydiction v1.2.2 and greater adds special markers in each module section of complete-dict that tell you if a module is a "root module" (meaning it's the top-level module/package that was specified as an argument to pydiction.py originally. This is helpful because pydiction.py will automatically dig into as many submodules it can find, but it doesn't know about separate packages. For example `curses.textpad`, `curses.ascii`, `curses.panel` and `curses.wrapper` are not submodules of 'curses', so they have to be added separately, like:
+The workaround is to edit complete-dict and manually delete the related module sections. For example to update `__future__`, delete the sections `-- import __future__ ---` and `--- from __future__ import * ---`.
+
+Pydiction v1.2.2 and greater adds special markers in each module section of complete-dict that tell you if a module is a "root module" (meaning it's the top-level module/package that was specified as an argument to pydiction.py originally. This is helpful because pydiction.py will automatically dig into as many submodules it can find, but it doesn't know about separate packages. For example `curses.textpad`, `curses.ascii`, `curses.panel` and `curses.wrapper` are not submodules of 'curses', so they have to be added separately, like:
 
         $ ./pydiction curses curses.textpad curses.ascii curses.panel
 
