@@ -103102,7 +103102,6 @@ ttk.Style(
 ttk.Tkinter
 ttk.Treeview(
 ttk.Widget(
-ttk._REQUIRE_TILE
 ttk.__all__
 ttk.__author__
 ttk.__builtins__
@@ -103111,18 +103110,6 @@ ttk.__file__
 ttk.__name__
 ttk.__package__
 ttk.__version__
-ttk._convert_stringval(
-ttk._dict_from_tcltuple(
-ttk._flatten(
-ttk._format_elemcreate(
-ttk._format_layoutlist(
-ttk._format_mapdict(
-ttk._format_optdict(
-ttk._list_from_layouttuple(
-ttk._list_from_statespec(
-ttk._load_tile(
-ttk._script_from_settings(
-ttk._val_or_dict(
 ttk.setup_master(
 ttk.tclobjs_to_py(
 
@@ -103134,18 +103121,5 @@ Panedwindow(
 Progressbar(
 Sizegrip(
 Treeview(
-_REQUIRE_TILE
-_convert_stringval(
-_dict_from_tcltuple(
-_flatten(
-_format_elemcreate(
-_format_layoutlist(
-_format_mapdict(
-_format_optdict(
-_list_from_layouttuple(
-_list_from_statespec(
-_load_tile(
-_script_from_settings(
-_val_or_dict(
 setup_master(
 tclobjs_to_py(
