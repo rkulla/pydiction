@@ -24,7 +24,8 @@ Otherwise:
     - WINDOWS: Put python_pydiction.vim in C:\vim\vimfiles\ftplugin\
     (Assuming you installed Vim to C:\vim\)
 
-    You may install complete-dict and pydiction.py anywhere you want (see the Configuration section below), but do not put any file but python_pydiction.vim in the ftplugin directory because only .vim files may go there.
+    You may install complete-dict and pydiction.py anywhere (see the Configuration section),
+    but only python_pydiction.vim in the ftplugin directory because for .vim files only.
 
 Configuration
 =============
