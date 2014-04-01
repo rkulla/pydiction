@@ -91,7 +91,7 @@ which expands to:
 
     expat.ParserCreate(
 
-Python's newer "import module as X" syntax isn't supported by default, since it would be impossible for Pydiction to know what you'll alias a module to. However, you can either add the alias to complete-dict or just use pythoncomplete.vim's Omnicompletition by typing <C-X><C-O>.
+Python's newer "import module as X" syntax isn't supported by default, since it would be impossible for Pydiction to know what you'll alias a module to. However, you can either add the alias to complete-dict or just use pythoncomplete.vim's Omnicompletition by typing `<C-X><C-O>`.
 
 You can also now use Shift-Tab to Tab backwards through the popup menu.
 
@@ -220,9 +220,9 @@ See the `Usage (vim)` section if you just want to know how to use Pydiction insi
 
 Pydiction version 1.0 and greater uses a file called python_pydiction.vim, which is an ftplugin that only activates when you're editing a python file (e.g., you're editing a file with a .py extension or you've manually typed `:set filetype=python`). 
 
-Past versions of pydiction didn't use a plugin but only required you to change the value of "isk" in your vimrc, which was not desirable. Version 1.0 and greater do not require you to manually change the value of isk. It now safely changes isk for you temporarily by only setting it while you're doing Tab-completion of Python code. It automatically changes isk back to its original value whenever Tab-completion isn't being activated. Again, only Tab-completion causes Pydiction to activate; not even other forms of ins-completion, such as <Ctrl-x> or <Ctrl-n> completion will activate Pydiction. So you're still free to use those other types of completion whenever you want to.
+Past versions of pydiction didn't use a plugin but only required you to change the value of "isk" in your vimrc, which was not desirable. Version 1.0 and greater do not require you to manually change the value of isk. It now safely changes isk for you temporarily by only setting it while you're doing Tab-completion of Python code. It automatically changes isk back to its original value whenever Tab-completion isn't being activated. Again, only Tab-completion causes Pydiction to activate; not even other forms of ins-completion, such as `<Ctrl-x>` or `<Ctrl-n>` completion will activate Pydiction. So you're still free to use those other types of completion whenever you want to.
 
-Pydiction works by using Vim's ins-completion functionality by temporarily remapping the Tab key to do the same thing as I_CTRL-X_CTRL_K (dictionary only completion). So when you are editing a Python file and you start typing the name of a Python keyword or module, you can press the Tab key to complete it. For example, if you type os.pa then press Tab, a pop up completion menu opens with:
+Pydiction works by using Vim's ins-completion functionality by temporarily remapping the Tab key to do the same thing as `I_CTRL-X_CTRL_K` (dictionary only completion). So when you are editing a Python file and you start typing the name of a Python keyword or module, you can press the Tab key to complete it. For example, if you type os.pa then press Tab, a pop up completion menu opens with:
 
     os.pardir
     os.path
