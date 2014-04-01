@@ -1,6 +1,6 @@
 Description
 ===========
-Pydiction allows you to Tab-complete Python code in Vim, such as keywords, the standard library, and third-party modules. 
+Pydiction allows you to Tab-complete Python code in Vim such as keywords, the standard library, and third-party modules. 
 
 It consists of three main files:
     
@@ -9,8 +9,8 @@ It consists of three main files:
     pydiction.py          -- Python script to optionally add more modules to complete-dict.
 
 
-Installing
-==========
+Installation
+============
 If you have Pathogen installed:
 
     cd ~/.vim/bundle
@@ -52,8 +52,8 @@ Note: If you were using a version of Pydiction less than 1.0, make sure you dele
         endif " has("autocmd") 
 
 
-Usage (Vim)
-===========
+Usage (Plugin)
+==============
 In Vim's INSERT mode, type part of a Python keyword, module name, attribute or method, then hit TAB:
 
     raw<Tab>
@@ -109,8 +109,8 @@ You can also now use Shift-Tab to Tab backwards through the popup menu.
 
 If you feel you're getting different results in your completion menu, it's probably because you don't have Vim set to ignore case. You can remedy this with ":set noic"
         
-Usage (pydiction.py)
-====================
+Usage (Dictionary generator)
+============================
 You can skip this section if you don't plan to add more modules to complete-dict yourself. Consult complete-dict to see if it already has the modules you intend to use.
 
 This is the Python script used to create the "complete-dict" Vim dictionary file. I have created and bundled a default complete-dict for your use. I created it using a Linux system, so there won't be many real win32 specific modules in it. You're free to run pydiction.py to add or upgrade as many modules as you need. The dictionary file will still work if you're using windows, but it won't complete win32 related modules unless you tell it to. 
@@ -226,8 +226,8 @@ now you can complete myFoo.myBar() by doing:
 Note: You don't have to restart Vim after you update complete-dict.
 
 
-python_pydiction.vim
-====================
+About python_pydiction.vim
+==========================
 See the `Usage (vim)` section if you just want to know how to use Pydiction inside of Vim. This section will go into detail what this plugin does behind the scenes.
 
 Pydiction version 1.0 and greater uses a file called python_pydiction.vim, which is an ftplugin that only activates when you're editing a python file (e.g., you're editing a file with a .py extension or you've manually typed `:set filetype=python`). 
@@ -262,8 +262,8 @@ Pydiction temporarily sets completeopt to "menu,menuone", so that you can comple
 By default, Pydiction ignores case while doing Tab-completion. If you want it to do case-sensitive searches, then `set noignorecase` (:set noic).
 
 
-complete-dict
-=============
+About complete-dict
+===================
 This is the dictionary file that python_pydiction.vim reads from and pydiction.py writes to. Without this file, Pydiction wouldn't know which Python keywords and modules it can Tab-complete.
 
 You can create your own complete-dict if you don't want to use the default one. The default complete-dict gives you a major head start as far as what you will be able to Tab-complete.
