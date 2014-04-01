@@ -91,7 +91,10 @@ which expands to:
 
     expat.ParserCreate(
 
-Python's newer "import module as X" syntax isn't supported by default, since it would be impossible for Pydiction to know what you'll alias a module to. However, you can either add the alias to complete-dict or just use pythoncomplete.vim's Omnicompletition by typing `<C-X><C-O>`.
+Python's newer "import module as X" syntax isn't supported by default, since it would be impossible for Pydiction to know what you'll alias a module to. However, you can either add the alias to complete-dict or just use pythoncomplete.vim's Omnicompletition by typing `<C-X><C-O>`. You can also use the omni-completion to complete other things that aren't in the complete-dict dictionary, such as variables:
+
+    i = 3
+    i.b<Ctrl-x><Ctrl-o>   # expands to: i.bit_length(
 
 You can also now use Shift-Tab to Tab backwards through the popup menu.
 
