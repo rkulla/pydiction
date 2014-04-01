@@ -318,9 +318,9 @@ Pydiction vs other forms of completion
 
 - Because Pydiction uses a dictionary file of possible completion items, it can complete 3rd party modules more accurately than other methods. You have full control over what it can and cannot complete. If it's unable to complete anything you can use pydiction.py to add a new module's contents to the dictionary, or you can manually add them using a text editor. In other words, you can teach Pydiction to learn what new things it can complete, just like you can with any snippet-based system!
 
-The dictionary is just a plain text file, which also makes it portable across all platforms.  For example, if you're a PyQT user you can add all the PyQT related modules to the dictionary file (complete-dict) by using pydiction.py. The latest default complete-dict already contains most of the standard library, all Python keywords, Twisted, Numpy, Pygame, wxPython, PyQT4, PyGTK, ZSI, LDAP, MySQLdb, PyGreSQL, OpenId, OpenSSL, Pygments and much more.
+- The dictionary is just a text file, which makes it portable across all platforms. For example, if you're a Pyramid user you can add all the Pyramid related modules to the dictionary file.py. The latest default complete-dict already contains all of the standard library, Python keywords, and many 3rd party modules like Twisted, Numpy, Pygame, wxPython, PyQT4, PyGTK, ZSI, LDAP, MySQLdb, PyGreSQL, OpenId, OpenSSL, Pygments and much more. To see the full-list of python modules Pydiction knows about, open complete-dict in Vim and run `:g/root modules`.
 
-Because Pydiction uses a dictionary file, you don't have to import a module before you can complete it, nor do you even have to have the module installed on your machine. This makes completion very fast since it doesn't need to do any type deducing.
+- Because Pydiction uses a dictionary file, you don't have to import a module before you can complete it, nor do you even have to have the module installed on your machine. This makes completion very fast since it doesn't need to do any type deducing.
 
 - If you want to you can use use Pydiction in tandem with Vim 7's builtin omni-completion for Python (pythoncomplete.vim) as well as other forms of ins-completion. In fact, they can all make a great team.
 
