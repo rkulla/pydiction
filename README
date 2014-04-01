@@ -14,6 +14,8 @@ If you have Pathogen installed:
     cd ~/.vim/bundle
     git clone https://github.com/rkulla/pydiction.git
 
+or use my [Vimogen](https://github.com/rkulla/vimogen "Vimogen") script to make install and manage pydiction and all of your vim plugins.
+
 Otherwise:
 
 UNIX/LINUX/OSX: Put python_pydiction.vim in ~/.vim/after/ftplugin/   (If this directory doesn't already exist, create it. Vim will know to look there automatically.)
