@@ -260,7 +260,7 @@ The default complete-dict currently contains python keywords: `and` `as` `assert
 
 It also contains most of the standard library and built-ins:  `__builtin__` `__future__` `os` `sys` `time` `re` `string` `str` `Tkinter` `urllib` etc.
 
-And complete-dict even comes with many third-party libraries such as: `Twisted` `ZSI` `LDAP` `OpenGL` `wxPython` `PyGTK` `PyQT4` `SQLite3` `MySQLdb` `PyGreSQL` `pyPgSQL` `Pygame` `Numpy` `pyvorbis` `Bcrypt` `OpenID` `GnuPGInterface` `OpenSSL` `Pygments` and more.
+And complete-dict even comes with many third-party libraries such as: `Twisted` `ZSI` `LDAP` `OpenGL` `wxPython` `PyGTK` `PyQT4` `SQLite3` `MySQLdb` `PyGreSQL` `Pygame` `Numpy` `pyvorbis` `Bcrypt` `OpenID` `GnuPGInterface` `OpenSSL` `Pygments` and more.
 
 Make sure you download the latest version of Pydiction to get the most up-to-date version of complete-dict. New modules are usually added to it every release.
 
