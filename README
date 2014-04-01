@@ -384,7 +384,7 @@ Fortunately, you can `grep 'root module' complete-dict` to see a list of all the
         --- import curses.textpad (py2.7.3/linux2/root module) ---
         --- import curses.wrapper (py2.7.3/linux2/root module) ---
 
-As you can see, pydiction.py also adds other information such as which version of Python and which operating system was used to add the module to the dictionary file. It will also put the version of the module if its .__version__ attribute is set.
+As you can see, pydiction.py also adds other information such as which version of Python and which operating system was used to add the module to the dictionary file. It will also put the version of the module if its `.__version__` attribute was set.
 
 - You can change the colors of the popup menu by editing your vim color scheme's source file and changing the values of `Pmenu` `PmenuSel` `PmenuSBar` and `PmenuThumb`. If you're using Vim in a terminal, change the values of ctermfg and ctermbg, otherwise change guifg and guibg. I use the molokai colorscheme and a terminal and use:
 
