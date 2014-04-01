@@ -14,18 +14,18 @@ If you have Pathogen installed:
     cd ~/.vim/bundle
     git clone https://github.com/rkulla/pydiction.git
 
-or use a plugin manager like [Vimogen](https://github.com/rkulla/vimogen "Vimogen") to install and manage Pydiction and all of your vim plugins.
+or use a plugin manager like Vimogen (https://github.com/rkulla/vimogen) to install and manage Pydiction and all of your vim plugins.
 
 Otherwise:
 
-UNIX/LINUX/OSX: Put python_pydiction.vim in ~/.vim/after/ftplugin/   (If this directory doesn't already exist, create it. Vim will know to look there automatically.)
+    - UNIX/LINUX/OSX: Put python_pydiction.vim in `~/.vim/after/ftplugin/` (Create this directory if doesn't yet exist. Vim looks there automatically).
 
-WINDOWS: Put python_pydiction.vim in C:\vim\vimfiles\ftplugin  (Assuming you installed Vim to C:\vim\).
+    - WINDOWS: Put python_pydiction.vim in `C:\vim\vimfiles\ftplugin`  (Assuming you installed Vim to C:\vim\).
 
-You may install complete-dict and pydiction.py anywhere you want, but do not put any file but python_pydiction.vim in the ftplugin\ directory. Only .vim files should go there.
+You may install complete-dict and pydiction.py anywhere you want (see the Configuration section below), but do not put any file but python_pydiction.vim in the ftplugin\ directory. Only .vim files should go there.
 
-Configuring
-===========
+Configuration
+=============
 In your vimrc file, first add the following line to enable filetype plugins:
   
     filetype plugin on
