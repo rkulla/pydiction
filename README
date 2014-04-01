@@ -3,8 +3,8 @@ Description
 Pydiction allows you to Tab-complete Python code (keywords, standard library, and third-party modules) in Vim. It consists of three main files:
     
     python_pydiction.vim  -- A Vim plugin that autocompletes Python code.
-    complete-dict         -- A dictionary file that consists of Python keywords & modules.
-    pydiction.py          -- Python script you can optionally run to add more modules to complete-dict.
+    complete-dict         -- A dictionary file that consists of Python keyword & module snippets.
+    pydiction.py          -- Python script to optionally add more modules to complete-dict.
 
 
 Installing
@@ -111,7 +111,7 @@ Usage (pydiction.py)
 ====================
 You can skip this section if you don't plan to add more modules to complete-dict yourself. Consult complete-dict to see if it already has the modules you intend to use.
 
-This is the Python script used to create the "complete-dict" Vim dictionary file. I have created and bundled a default complete-dict for your use. I created it using a Linux system, so there won't be any real win32 specific modules in it. You're free to run pydiction.py to add or upgrade as many modules as you need. The dictionary file will still work if you're using windows, but it won't complete win32 related modules unless you tell it to.      
+This is the Python script used to create the "complete-dict" Vim dictionary file. I have created and bundled a default complete-dict for your use. I created it using a Linux system, so there won't be many real win32 specific modules in it. You're free to run pydiction.py to add or upgrade as many modules as you need. The dictionary file will still work if you're using windows, but it won't complete win32 related modules unless you tell it to. 
 
 USAGE: At a command prompt, run:
 
@@ -262,7 +262,7 @@ By default, Pydiction ignores case while doing Tab-completion. If you want it to
 
 complete-dict
 =============
-This is the Vim dictionary file that python_pydiction.vim reads from and pydiction.py writes to. Without this file, Pydiction wouldn't know which Python keywords and modules it can Tab-complete.
+This is the dictionary file that python_pydiction.vim reads from and pydiction.py writes to. Without this file, Pydiction wouldn't know which Python keywords and modules it can Tab-complete.
 
 You can create your own complete-dict if you don't want to use the default one. The default complete-dict gives you a major head start as far as what you will be able to Tab-complete.
 
@@ -298,7 +298,7 @@ under:
 
 it's probably because a previous module, such as "os", already has it.
     
-If you try to recreate complete-dict from scratch, you'll need to manually add the Python keywords back to it, as those aren't generated with pydiction.py.
+If you try to recreate complete-dict from scratch, you'll need to manually add the Python keywords and non-module stuff back into it. See the top few sections of the bundled complete-dict file for what I mean. Instead of deleting the file, I would use those manually added sections as a starting point, and then just append your own stuff from there.
 
 If you don't want certain things to Tab-complete, such as Python keywords or certain modules, delete them by hand from complete-dict.
 
@@ -318,7 +318,7 @@ and non-fully qualified names. For example: `string.upper(`, `upper(`,
 
 Pydiction only uses the "Tab" key to complete, uses a special dictionary file to complete from, and only attempts to complete while editing Python files. This has the advantage of only requiring one keystroke to do completion and of not polluting all of the completion menus that you might be using for other types of completion, such as Vim's regular omni-completion or other completion scripts that you may be running.
 
-Since pydiction uses a dictionary file of possible completion items, it can complete 3rd party modules more accurately than other methods. You have full control over what it can and cannot complete. If it's unable to complete anything you can use pydiction.py to add a new module's contents to the dictionary, or you can manually add them using a text editor.
+Since pydiction uses a dictionary file of possible completion items, it can complete 3rd party modules more accurately than other methods. You have full control over what it can and cannot complete. If it's unable to complete anything you can use pydiction.py to add a new module's contents to the dictionary, or you can manually add them using a text editor. In other words, you can teach Pydiction to learn what new things it can complete, just like you can with any snippet-based system!
 
 The dictionary is just a plain text file, which also makes it portable across all platforms.  For example, if you're a PyQT user you can add all the PyQT related modules to the dictionary file (complete-dict) by using pydiction.py. The latest default complete-dict already contains most of the standard library, all Python keywords, Pygame, OpenGL, wxPython, Twisted, PyQT4, ZSI, LDAP, numarray, PyGTK, MySQLdb, PyGreSQL, pyPgSQL, PythonCard, pyvorbis, bcrypt, openid, GnuPGInterface, OpenSSl, pygments and more. However, they may be a little out of date by the time you read this.
 
