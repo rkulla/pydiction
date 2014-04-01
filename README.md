@@ -311,26 +311,24 @@ Pydiction doesn't ignore "private" attributes or methods. I.e., those starting (
 
 Pydiction vs other forms of completion
 ======================================
-Pydiction can complete Python Keywords, as well as Python module names and
-their attributes and methods. It can also complete both the fully-qualified
-and non-fully qualified names. For example: `string.upper(`, `upper(`,
+- Pydiction can complete Python Keywords, as well as Python module names and their attributes and methods. It can also complete both the fully-qualified and non-fully qualified names. For example: `string.upper(`, `upper(`,
 `''.upper(`, and so forth.
 
-Pydiction only uses the "Tab" key to complete, uses a special dictionary file to complete from, and only attempts to complete while editing Python files. This has the advantage of only requiring one keystroke to do completion and of not polluting all of the completion menus that you might be using for other types of completion, such as Vim's regular omni-completion or other completion scripts that you may be running.
+- Pydiction only uses the "Tab" key to complete, uses a special dictionary file to complete from, and only attempts to complete while editing Python files. This has the advantage of only requiring one keystroke to do completion and of not polluting all of the completion menus that you might be using for other types of completion, such as Vim's regular omni-completion or other completion scripts that you may be running.
 
-Since pydiction uses a dictionary file of possible completion items, it can complete 3rd party modules more accurately than other methods. You have full control over what it can and cannot complete. If it's unable to complete anything you can use pydiction.py to add a new module's contents to the dictionary, or you can manually add them using a text editor. In other words, you can teach Pydiction to learn what new things it can complete, just like you can with any snippet-based system!
+- Because Pydiction uses a dictionary file of possible completion items, it can complete 3rd party modules more accurately than other methods. You have full control over what it can and cannot complete. If it's unable to complete anything you can use pydiction.py to add a new module's contents to the dictionary, or you can manually add them using a text editor. In other words, you can teach Pydiction to learn what new things it can complete, just like you can with any snippet-based system!
 
-The dictionary is just a plain text file, which also makes it portable across all platforms.  For example, if you're a PyQT user you can add all the PyQT related modules to the dictionary file (complete-dict) by using pydiction.py. The latest default complete-dict already contains most of the standard library, all Python keywords, Pygame, OpenGL, wxPython, Twisted, PyQT4, ZSI, LDAP, numarray, PyGTK, MySQLdb, PyGreSQL, pyPgSQL, PythonCard, pyvorbis, bcrypt, openid, GnuPGInterface, OpenSSl, pygments and more. However, they may be a little out of date by the time you read this.
+The dictionary is just a plain text file, which also makes it portable across all platforms.  For example, if you're a PyQT user you can add all the PyQT related modules to the dictionary file (complete-dict) by using pydiction.py. The latest default complete-dict already contains most of the standard library, all Python keywords, Twisted, Numpy, Pygame, wxPython, PyQT4, PyGTK, ZSI, LDAP, MySQLdb, PyGreSQL, OpenId, OpenSSL, Pygments and much more.
 
 Because Pydiction uses a dictionary file, you don't have to import a module before you can complete it, nor do you even have to have the module installed on your machine. This makes completion very fast since it doesn't need to do any type deducing.
 
-If you like, you can still use Vim 7's built-in omni-completion for Python (pythoncomplete.vim), and other forms of ins-completion, with Pydiction. In fact, they can all make a great team.
+- If you want to you can use use Pydiction in tandem with Vim 7's builtin omni-completion for Python (pythoncomplete.vim) as well as other forms of ins-completion. In fact, they can all make a great team.
 
-Pydiction knows when you're completing a callable method, and if you are, it will automatically insert an opening parentheses.
+- Pydiction knows when you're completing an attribute vs a callable method. If it's a callable then it will automatically insert an opening parentheses.
 
-The Tab key will work as normal for everything else. Pydiction will only try to use the Tab key to complete Python code if you're editing a Python file and you first type part of some Python module or keyword.
+- The Tab key will work as normal for everything else. Pydiction will only try to use the Tab key to complete Python code if you're editing a Python file and you first type part of some Python module or keyword.
 
-Pydiction doesn't even require Python support to be compiled into your version of Vim.
+- Pydiction doesn't even require Python support to be compiled into your version of Vim.
 
 
 Tips
