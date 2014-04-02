@@ -1,5 +1,5 @@
 
---- Python Keywords (These were manually entered) ---
+--- Python Keywords (manually entered) ---
 and
 as
 assert
@@ -493,6 +493,31 @@ nested_scopes
 print_function
 unicode_literals
 with_statement
+
+--- Misc. privates, properties, classes, etc. we may want to keep (manually entered) ---
+kwargs
+self
+object
+__add__
+__copy__(
+__del__(
+__doc__
+__file__
+__get(__
+__getitem(__
+__name__
+__main__
+__import__(
+__init__(
+).__init__(
+__iter__(
+__set__(
+__setitem__(
+__str__(
+__unicode__(
+__version__
+
+*************************** End Manually Generated Section ***************************
 
 --- import os (py2.7.3/linux2/root module) ---
 os.EX_CANTCREAT
