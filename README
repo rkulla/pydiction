@@ -12,6 +12,11 @@ The bundled dictionary comes with most snippets you will likely need in your day
 Python script allows you to easily append new modules to the dictionary. So you don't have to wait around for me to add them.
 And you can teach Pydiction to complete your project's own API very quickly.
 
+Since Pydiction just uses a flat dictionary file, it's extremely flexible because you can do things like re-order how you want
+things to appear in your popup completion menus. By default it will be in alphabetical order, but if you want `else` to come 
+before `elif`, there's nothing stopping you. In fact, the bundled dictionary comes with some keywords and stuff re-arranged
+by likely usage as best as I could manage.
+
 Installation
 ============
 If you have Pathogen installed:
@@ -288,6 +293,9 @@ It even contains complete-dict even comes with many third-party libraries such a
 
 And it contains useful dunder methods, conventions, etc such as: `self` `object` `__init__(` `__name__` `__main__` etc.
 
+Because it's just a text file, it's very flexible since you can do things like re-order how you want things to appear in your popup completion menus. By default 
+things will appear in alphabetical order, but if you want `else` to come before `elif`, there's nothing stopping you.
+
 Make sure you download the latest version of Pydiction to get the most up-to-date version of complete-dict. New modules are usually added to it every release.
 
 If you open complete-dict in your text editor you'll see sections in it for each module, such as:
@@ -337,6 +345,8 @@ Pydiction vs other forms of completion
 - The dictionary is just a text file, which makes it portable across all platforms. For example, if you're a Pyramid user you can add all the Pyramid related modules to the dictionary file.py. The latest default complete-dict already contains all of the standard library, Python keywords, and many 3rd party modules like Twisted, Numpy, Pygame, wxPython, PyQT4, PyGTK, ZSI, LDAP, MySQLdb, Psycopg2, PyGreSQL, OpenId, OpenSSL, Pygments and much more. To see the full-list of python modules Pydiction knows about, open complete-dict in Vim and run `:g/root modules`.
 
 - Because Pydiction uses a dictionary file, you don't have to import a module before you can complete it, nor do you even have to have the module installed on your machine. This makes completion very fast since it doesn't need to do any type deducing.
+
+- And because the dictionary file is just a static text file, you re-arrange how you want things to appear in the popup menus. By default things are sorted alphabetically, but if ou want `else` to come before `elif`, you can customize.
 
 - If you want to you can use use Pydiction in tandem with Vim 7's builtin omni-completion for Python (pythoncomplete.vim) as well as other forms of ins-completion. In fact, they can all make a great team.
 
