@@ -94,12 +94,12 @@ pops up:
 
 Typing:
 
-    __i<Tab>
+    def __i<Tab>
 
 pops up:
 
-    __init__(
-    __iter__(
+    def __init__(
+    def __iter__(
 
 As of Pydiction 1.2, there's support for completing modules that were imported via "from module import submodule". For example, you could do:
 
