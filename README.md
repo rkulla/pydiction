@@ -92,6 +92,15 @@ pops up:
     compile(
     ...
 
+Typing:
+
+    __i<Tab>
+
+pops up:
+
+    __init__(
+    __iter__(
+
 As of Pydiction 1.2, there's support for completing modules that were imported via "from module import submodule". For example, you could do:
 
     from xml.parsers import expat
@@ -275,7 +284,9 @@ The default complete-dict currently contains python keywords: `and` `as` `assert
 
 It also contains most of the standard library and built-ins:  `__builtin__` `__future__` `os` `sys` `time` `re` `string` `str` `Tkinter` `urllib` etc.
 
-And complete-dict even comes with many third-party libraries such as: `Twisted` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `ZSI` `LDAP` `OpenGL` `Pygame` `wxPython` `PyGTK` `PyQT4` `PyOgg` `Bcrypt` `OpenID` `GnuPGInterface` `OpenSSL` `Pygments` and more.
+It even contains complete-dict even comes with many third-party libraries such as: `Twisted` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `ZSI` `LDAP` `OpenGL` `Pygame` `wxPython` `PyGTK` `PyQT4` `PyOgg` `Bcrypt` `OpenID` `GnuPGInterface` `OpenSSL` `Pygments` and more.
+
+And it contains useful dunder methods, conventions, etc such as: `self` `object` `__init__(` `__name__` `__main__` etc.
 
 Make sure you download the latest version of Pydiction to get the most up-to-date version of complete-dict. New modules are usually added to it every release.
 
