@@ -374,8 +374,6 @@ UserWarning(
 ValueError(
 Warning(
 ZeroDivisionError(
-__debug__
-__import__(
 abs(
 all(
 any(
@@ -470,7 +468,6 @@ __future__.CO_FUTURE_UNICODE_LITERALS
 __future__.CO_FUTURE_WITH_STATEMENT
 __future__.CO_GENERATOR_ALLOWED
 __future__.CO_NESTED
-__future__.__all__
 __future__.absolute_import
 __future__.all_feature_names
 __future__.division
@@ -488,7 +485,6 @@ CO_FUTURE_UNICODE_LITERALS
 CO_FUTURE_WITH_STATEMENT
 CO_GENERATOR_ALLOWED
 CO_NESTED
-__all__
 absolute_import
 all_feature_names
 division
@@ -569,7 +565,6 @@ os.WTERMSIG(
 os.WUNTRACED
 os.W_OK
 os.X_OK
-os.__all__
 os.abort(
 os.access(
 os.altsep
@@ -938,7 +933,6 @@ walk(
 write(
 
 --- import os.path ---
-os.path.__all__
 os.path.abspath(
 os.path.altsep
 os.path.basename(
@@ -984,7 +978,6 @@ os.path.walk(
 os.path.warnings
 
 --- from os import path ---
-path.__all__
 path.abspath(
 path.altsep
 path.basename(
@@ -1065,11 +1058,6 @@ supports_unicode_filenames
 warnings
 
 --- import sys (py2.7.3/linux2/root module) ---
-sys.__displayhook__(
-sys.__excepthook__(
-sys.__stderr__
-sys.__stdin__
-sys.__stdout__
 sys.api_version
 sys.argv
 sys.builtin_module_names
@@ -1126,11 +1114,6 @@ sys.version_info
 sys.warnoptions
 
 --- from sys import * ---
-__displayhook__(
-__excepthook__(
-__stderr__
-__stdin__
-__stdout__
 api_version
 argv
 builtin_module_names
@@ -1306,7 +1289,6 @@ locale.THOUSEP
 locale.T_FMT
 locale.T_FMT_AMPM
 locale.YESEXPR
-locale.__all__
 locale.atof(
 locale.atoi(
 locale.bind_textdomain_codeset(
@@ -1432,7 +1414,6 @@ textdomain(
 windows_locale
 
 --- import atexit (py2.7.3/linux2/root module) ---
-atexit.__all__
 atexit.register(
 atexit.sys
 
@@ -1495,16 +1476,11 @@ write_history_file(
 
 --- import rlcompleter (py2.7.3/linux2/root module) ---
 rlcompleter.Completer(
-rlcompleter.__all__
-rlcompleter.__builtin__
-rlcompleter.__main__
 rlcompleter.get_class_members(
 rlcompleter.readline
 
 --- from rlcompleter import * ---
 Completer(
-__builtin__
-__main__
 get_class_members(
 readline
 
@@ -1607,7 +1583,6 @@ collections
 --- import UserString (py2.7.3/linux2/root module) ---
 UserString.MutableString(
 UserString.UserString(
-UserString.__all__
 UserString.collections
 UserString.sys
 
@@ -1616,56 +1591,6 @@ MutableString(
 UserString(
 
 --- import operator (py2.7.3/linux2/root module) ---
-operator.__abs__(
-operator.__add__(
-operator.__and__(
-operator.__concat__(
-operator.__contains__(
-operator.__delitem__(
-operator.__delslice__(
-operator.__div__(
-operator.__eq__(
-operator.__floordiv__(
-operator.__ge__(
-operator.__getitem__(
-operator.__getslice__(
-operator.__gt__(
-operator.__iadd__(
-operator.__iand__(
-operator.__iconcat__(
-operator.__idiv__(
-operator.__ifloordiv__(
-operator.__ilshift__(
-operator.__imod__(
-operator.__imul__(
-operator.__index__(
-operator.__inv__(
-operator.__invert__(
-operator.__ior__(
-operator.__ipow__(
-operator.__irepeat__(
-operator.__irshift__(
-operator.__isub__(
-operator.__itruediv__(
-operator.__ixor__(
-operator.__le__(
-operator.__lshift__(
-operator.__lt__(
-operator.__mod__(
-operator.__mul__(
-operator.__ne__(
-operator.__neg__(
-operator.__not__(
-operator.__or__(
-operator.__pos__(
-operator.__pow__(
-operator.__repeat__(
-operator.__rshift__(
-operator.__setitem__(
-operator.__setslice__(
-operator.__sub__(
-operator.__truediv__(
-operator.__xor__(
 operator.abs(
 operator.add(
 operator.and_(
@@ -1731,56 +1656,6 @@ operator.truth(
 operator.xor(
 
 --- from operator import * ---
-__abs__(
-__add__(
-__and__(
-__concat__(
-__contains__(
-__delitem__(
-__delslice__(
-__div__(
-__eq__(
-__floordiv__(
-__ge__(
-__getitem__(
-__getslice__(
-__gt__(
-__iadd__(
-__iand__(
-__iconcat__(
-__idiv__(
-__ifloordiv__(
-__ilshift__(
-__imod__(
-__imul__(
-__index__(
-__inv__(
-__invert__(
-__ior__(
-__ipow__(
-__irepeat__(
-__irshift__(
-__isub__(
-__itruediv__(
-__ixor__(
-__le__(
-__lshift__(
-__lt__(
-__mod__(
-__mul__(
-__ne__(
-__neg__(
-__not__(
-__or__(
-__pos__(
-__pow__(
-__repeat__(
-__rshift__(
-__setitem__(
-__setslice__(
-__sub__(
-__truediv__(
-__xor__(
 add(
 and_(
 attrgetter(
@@ -1860,8 +1735,6 @@ inspect.EndOfBlock(
 inspect.ModuleInfo(
 inspect.TPFLAGS_IS_ABSTRACT
 inspect.Traceback(
-inspect.__author__
-inspect.__date__
 inspect.attrgetter(
 inspect.classify_class_attrs(
 inspect.cleandoc(
@@ -1941,8 +1814,6 @@ EndOfBlock(
 ModuleInfo(
 TPFLAGS_IS_ABSTRACT
 Traceback(
-__author__
-__date__
 classify_class_attrs(
 cleandoc(
 currentframe(
@@ -2003,7 +1874,6 @@ types
 walktree(
 
 --- import traceback (py2.7.3/linux2/root module) ---
-traceback.__all__
 traceback.extract_stack(
 traceback.extract_tb(
 traceback.format_exc(
@@ -2041,7 +1911,6 @@ print_tb(
 tb_lineno(
 
 --- import linecache (py2.7.3/linux2/root module) ---
-linecache.__all__
 linecache.cache
 linecache.checkcache(
 linecache.clearcache(
@@ -2160,7 +2029,6 @@ pickle.UnicodeType(
 pickle.Unpickler(
 pickle.UnpicklingError(
 pickle.XRangeType(
-pickle.__all__
 pickle.classmap
 pickle.compatible_formats
 pickle.decode_long(
@@ -2280,7 +2148,6 @@ UnpickleableError(
 --- import copy (py2.7.3/linux2/root module) ---
 copy.Error(
 copy.PyStringMap
-copy.__all__
 copy.copy(
 copy.deepcopy(
 copy.dispatch_table
@@ -2295,8 +2162,6 @@ deepcopy(
 t(
 
 --- import copy_reg (py2.7.3/linux2/root module) ---
-copy_reg.__all__
-copy_reg.__newobj__(
 copy_reg.add_extension(
 copy_reg.clear_extension_cache(
 copy_reg.constructor(
@@ -2306,7 +2171,6 @@ copy_reg.pickle_complex(
 copy_reg.remove_extension(
 
 --- from copy_reg import * ---
-__newobj__(
 add_extension(
 clear_extension_cache(
 constructor(
@@ -2331,7 +2195,6 @@ shelve.Shelf(
 shelve.StringIO(
 shelve.Unpickler(
 shelve.UserDict
-shelve.__all__
 shelve.open(
 
 --- from shelve import * ---
@@ -2341,7 +2204,6 @@ Shelf(
 
 --- import warnings (py2.7.3/linux2/root module) ---
 warnings.WarningMessage(
-warnings.__all__
 warnings.catch_warnings(
 warnings.default_action
 warnings.defaultaction
@@ -2442,7 +2304,6 @@ release_lock(
 pkgutil.ImpImporter(
 pkgutil.ImpLoader(
 pkgutil.ModuleType(
-pkgutil.__all__
 pkgutil.extend_path(
 pkgutil.find_loader(
 pkgutil.get_data(
@@ -2483,7 +2344,6 @@ zipimporter(
 code.CommandCompiler(
 code.InteractiveConsole(
 code.InteractiveInterpreter(
-code.__all__
 code.compile_command(
 code.interact(
 code.softspace(
@@ -2503,20 +2363,16 @@ traceback
 codeop.CommandCompiler(
 codeop.Compile(
 codeop.PyCF_DONT_IMPLY_DEDENT
-codeop.__all__
-codeop.__future__
 codeop.compile_command(
 codeop.fname
 
 --- from codeop import * ---
 Compile(
 PyCF_DONT_IMPLY_DEDENT
-__future__
 fname
 
 --- import pprint (py2.7.3/linux2/root module) ---
 pprint.PrettyPrinter(
-pprint.__all__
 pprint.isreadable(
 pprint.isrecursive(
 pprint.pformat(
@@ -2534,8 +2390,6 @@ saferepr(
 
 --- import repr (py2.7.3/linux2/root module) ---
 repr.Repr(
-repr.__all__
-repr.__builtin__
 repr.aRepr
 repr.islice(
 repr.repr(
@@ -2566,7 +2420,6 @@ site.ENABLE_USER_SITE
 site.PREFIXES
 site.USER_BASE
 site.USER_SITE
-site.__builtin__
 site.addpackage(
 site.addsitedir(
 site.addsitepackages(
@@ -2724,7 +2577,6 @@ difflib.IS_CHARACTER_JUNK(
 difflib.IS_LINE_JUNK(
 difflib.Match(
 difflib.SequenceMatcher(
-difflib.__all__
 difflib.context_diff(
 difflib.get_close_matches(
 difflib.heapq
@@ -2749,7 +2601,6 @@ unified_diff(
 
 --- import fpformat (py2.7.3/linux2/root module) ---
 fpformat.NotANumber(
-fpformat.__all__
 fpformat.decoder
 fpformat.extract(
 fpformat.fix(
@@ -2786,7 +2637,6 @@ re.U
 re.UNICODE
 re.VERBOSE
 re.X
-re.__all__
 re.compile(
 re.copy_reg
 re.error(
@@ -2852,7 +2702,6 @@ unpack_from(
 --- import StringIO (py2.7.3/linux2/root module) ---
 StringIO.EINVAL
 StringIO.StringIO(
-StringIO.__all__
 StringIO.test(
 
 --- from StringIO import * ---
@@ -2871,8 +2720,6 @@ cStringIO_CAPI
 
 --- import textwrap (py2.7.3/linux2/root module) ---
 textwrap.TextWrapper(
-textwrap.__all__
-textwrap.__revision__
 textwrap.dedent(
 textwrap.fill(
 textwrap.re
@@ -2881,7 +2728,6 @@ textwrap.wrap(
 
 --- from textwrap import * ---
 TextWrapper(
-__revision__
 dedent(
 fill(
 wrap(
@@ -2912,8 +2758,6 @@ codecs.StreamReader(
 codecs.StreamReaderWriter(
 codecs.StreamRecoder(
 codecs.StreamWriter(
-codecs.__all__
-codecs.__builtin__
 codecs.ascii_decode(
 codecs.ascii_encode(
 codecs.backslashreplace_errors(
@@ -3057,7 +2901,6 @@ xmlcharrefreplace_errors(
 
 --- import encodings (py2.7.3/linux2/root module) ---
 encodings.CodecRegistryError(
-encodings.__builtin__
 encodings.aliases
 encodings.codecs
 encodings.normalize_encoding(
@@ -3229,10 +3072,6 @@ doctest.StringIO(
 doctest.TestResults(
 doctest.Tester(
 doctest.UnexpectedException(
-doctest.__all__
-doctest.__docformat__
-doctest.__future__
-doctest.__test__
 doctest.debug(
 doctest.debug_script(
 doctest.debug_src(
@@ -3290,8 +3129,6 @@ SkipDocTestCase(
 TestResults(
 Tester(
 UnexpectedException(
-__docformat__
-__test__
 debug(
 debug_script(
 debug_src(
@@ -3320,10 +3157,6 @@ pydoc.Repr(
 pydoc.Scanner(
 pydoc.TextDoc(
 pydoc.TextRepr(
-pydoc.__author__
-pydoc.__builtin__
-pydoc.__credits__
-pydoc.__date__
 pydoc.allmethods(
 pydoc.apropos(
 pydoc.classify_class_attrs(
@@ -3390,7 +3223,6 @@ Helper(
 ModuleScanner(
 TextDoc(
 TextRepr(
-__credits__
 allmethods(
 apropos(
 classname(
@@ -3442,7 +3274,6 @@ unittest.TestResult(
 unittest.TestSuite(
 unittest.TextTestResult(
 unittest.TextTestRunner(
-unittest.__all__
 unittest.case
 unittest.defaultTestLoader
 unittest.expectedFailure(
@@ -3801,7 +3632,6 @@ random.SG_MAGICCONST
 random.SystemRandom(
 random.TWOPI
 random.WichmannHill(
-random.__all__
 random.betavariate(
 random.choice(
 random.division
@@ -3884,8 +3714,6 @@ insort_left(
 insort_right(
 
 --- import heapq (py2.7.3/linux2/root module) ---
-heapq.__about__
-heapq.__all__
 heapq.bisect
 heapq.chain(
 heapq.cmp_lt(
@@ -3906,7 +3734,6 @@ heapq.repeat(
 heapq.tee(
 
 --- from heapq import * ---
-__about__
 bisect
 cmp_lt(
 heapify(
@@ -3925,7 +3752,6 @@ tee(
 sets.BaseSet(
 sets.ImmutableSet(
 sets.Set(
-sets.__all__
 sets.ifilter(
 sets.ifilterfalse(
 sets.warnings
@@ -3953,7 +3779,6 @@ ConfigParser.NoSectionError(
 ConfigParser.ParsingError(
 ConfigParser.RawConfigParser(
 ConfigParser.SafeConfigParser(
-ConfigParser.__all__
 ConfigParser.re
 
 --- from ConfigParser import * ---
@@ -4011,7 +3836,6 @@ takewhile(
 cmd.Cmd(
 cmd.IDENTCHARS
 cmd.PROMPT
-cmd.__all__
 cmd.string
 
 --- from cmd import * ---
@@ -4020,7 +3844,6 @@ IDENTCHARS
 PROMPT
 
 --- import dircache (py2.7.3/linux2/root module) ---
-dircache.__all__
 dircache.annotate(
 dircache.cache
 dircache.listdir(
@@ -4036,7 +3859,6 @@ reset(
 --- import fileinput (py2.7.3/linux2/root module) ---
 fileinput.DEFAULT_BUFSIZE
 fileinput.FileInput(
-fileinput.__all__
 fileinput.close(
 fileinput.filelineno(
 fileinput.filename(
@@ -4066,7 +3888,6 @@ nextfile(
 
 --- import shlex (py2.7.3/linux2/root module) ---
 shlex.StringIO(
-shlex.__all__
 shlex.deque(
 shlex.os
 shlex.shlex(
@@ -4220,7 +4041,6 @@ F_NAMEMAX
 
 --- import filecmp (py2.7.3/linux2/root module) ---
 filecmp.BUFSIZE
-filecmp.__all__
 filecmp.cmp(
 filecmp.cmpfiles(
 filecmp.demo(
@@ -4249,7 +4069,6 @@ mutex(
 popen2.MAXFD
 popen2.Popen3(
 popen2.Popen4(
-popen2.__all__
 popen2.os
 popen2.popen2(
 popen2.popen3(
@@ -4264,7 +4083,6 @@ Popen4(
 
 --- import sched (py2.7.3/linux2/root module) ---
 sched.Event(
-sched.__all__
 sched.heapq
 sched.namedtuple(
 sched.scheduler(
@@ -4279,7 +4097,6 @@ subprocess.MAXFD
 subprocess.PIPE
 subprocess.Popen(
 subprocess.STDOUT
-subprocess.__all__
 subprocess.call(
 subprocess.check_call(
 subprocess.check_output(
@@ -4523,7 +4340,6 @@ curses.KEY_UNDO
 curses.KEY_UP
 curses.OK
 curses.REPORT_MOUSE_POSITION
-curses.__revision__
 curses.baudrate(
 curses.beep(
 curses.can_change_color(
@@ -4886,7 +4702,6 @@ wrapper(
 
 --- import getpass (py2.7.3/linux2/root module) ---
 getpass.GetPassWarning(
-getpass.__all__
 getpass.fallback_getpass(
 getpass.getpass(
 getpass.getuser(
@@ -5158,7 +4973,6 @@ EXFULL
 errorcode
 
 --- import fnmatch (py2.7.3/linux2/root module) ---
-fnmatch.__all__
 fnmatch.filter(
 fnmatch.fnmatch(
 fnmatch.fnmatchcase(
@@ -5171,7 +4985,6 @@ fnmatchcase(
 
 --- import getopt (py2.7.3/linux2/root module) ---
 getopt.GetoptError(
-getopt.__all__
 getopt.do_longs(
 getopt.do_shorts(
 getopt.error(
@@ -5191,7 +5004,6 @@ long_has_args(
 short_has_arg(
 
 --- import glob (py2.7.3/linux2/root module) ---
-glob.__all__
 glob.fnmatch
 glob.glob(
 glob.glob0(
@@ -5231,8 +5043,6 @@ optparse.SUPPRESS_USAGE
 optparse.TitledHelpFormatter(
 optparse.Values(
 optparse._(
-optparse.__all__
-optparse.__copyright__
 optparse.check_builtin(
 optparse.check_choice(
 optparse.gettext(
@@ -5262,7 +5072,6 @@ SUPPRESS_USAGE
 TitledHelpFormatter(
 Values(
 _(
-__copyright__
 check_builtin(
 check_choice(
 isbasestring(
@@ -5274,7 +5083,6 @@ tempfile.NamedTemporaryFile(
 tempfile.SpooledTemporaryFile(
 tempfile.TMP_MAX
 tempfile.TemporaryFile(
-tempfile.__all__
 tempfile.gettempdir(
 tempfile.gettempprefix(
 tempfile.mkdtemp(
@@ -5301,7 +5109,6 @@ Queue.Full(
 Queue.LifoQueue(
 Queue.PriorityQueue(
 Queue.Queue(
-Queue.__all__
 Queue.deque(
 Queue.heapq
 
@@ -5321,7 +5128,6 @@ dummy_threading.RLock(
 dummy_threading.Semaphore(
 dummy_threading.Thread(
 dummy_threading.Timer(
-dummy_threading.__all__
 dummy_threading.activeCount(
 dummy_threading.active_count(
 dummy_threading.currentThread(
@@ -6403,7 +6209,6 @@ dbutils.sys
 DeadlockWrap(
 
 --- import dbhash (py2.7.3/linux2/root module) ---
-dbhash.__all__
 dbhash.bsddb
 dbhash.error(
 dbhash.open(
@@ -6426,7 +6231,6 @@ whichdb(
 
 --- import dumbdbm (py2.7.3/linux2/root module) ---
 dumbdbm.UserDict
-dumbdbm.__builtin__
 dumbdbm.error(
 dumbdbm.open(
 
@@ -6436,7 +6240,6 @@ dumbdbm.open(
 bz2.BZ2Compressor(
 bz2.BZ2Decompressor(
 bz2.BZ2File(
-bz2.__author__
 bz2.compress(
 bz2.decompress(
 
@@ -6456,8 +6259,6 @@ gzip.FTEXT
 gzip.GzipFile(
 gzip.READ
 gzip.WRITE
-gzip.__all__
-gzip.__builtin__
 gzip.io
 gzip.open(
 gzip.os
@@ -6552,11 +6353,6 @@ tarfile.TruncatedHeaderError(
 tarfile.USTAR_FORMAT
 tarfile.XGLTYPE
 tarfile.XHDTYPE
-tarfile.__all__
-tarfile.__author__
-tarfile.__credits__
-tarfile.__cvsid__
-tarfile.__date__
 tarfile.bltn_open(
 tarfile.calc_chksums(
 tarfile.copy
@@ -6647,7 +6443,6 @@ TruncatedHeaderError(
 USTAR_FORMAT
 XGLTYPE
 XHDTYPE
-__cvsid__
 bltn_open(
 calc_chksums(
 copy
@@ -6676,7 +6471,6 @@ zipfile.ZIP_STORED
 zipfile.ZipExtFile(
 zipfile.ZipFile(
 zipfile.ZipInfo(
-zipfile.__all__
 zipfile.binascii
 zipfile.cStringIO
 zipfile.crc32(
@@ -6985,7 +6779,6 @@ pty.CHILD
 pty.STDERR_FILENO
 pty.STDIN_FILENO
 pty.STDOUT_FILENO
-pty.__all__
 pty.fork(
 pty.master_open(
 pty.openpty(
@@ -7705,7 +7498,6 @@ tty.VTIME
 tty.VWERASE
 tty.XCASE
 tty.XTABS
-tty.__all__
 tty.error(
 tty.setcbreak(
 tty.setraw(
@@ -7736,7 +7528,6 @@ gdbm.open_flags
 open_flags
 
 --- import commands (py2.7.3/linux2/root module) ---
-commands.__all__
 commands.getoutput(
 commands.getstatus(
 commands.getstatusoutput(
@@ -7755,7 +7546,6 @@ pdb.Pdb(
 pdb.Repr(
 pdb.Restart(
 pdb.TESTCMD
-pdb.__all__
 pdb.bdb
 pdb.cmd
 pdb.find_function(
@@ -7802,7 +7592,6 @@ pipes.SOURCE
 pipes.STDIN_FILEOUT
 pipes.STDIN_STDOUT
 pipes.Template(
-pipes.__all__
 pipes.makepipeline(
 pipes.os
 pipes.quote(
@@ -8103,7 +7892,6 @@ ProfilerError(
 
 --- import timeit (py2.7.3/linux2/root module) ---
 timeit.Timer(
-timeit.__all__
 timeit.default_number
 timeit.default_repeat
 timeit.default_timer(
@@ -8136,7 +7924,6 @@ cgi.MiniFieldStorage(
 cgi.StringIO(
 cgi.SvFormContentDict(
 cgi.UserDict
-cgi.__all__
 cgi.attrgetter(
 cgi.catch_warnings(
 cgi.dolog(
@@ -8211,7 +7998,6 @@ webbrowser.Mozilla(
 webbrowser.Netscape(
 webbrowser.Opera(
 webbrowser.UnixBrowser(
-webbrowser.__all__
 webbrowser.get(
 webbrowser.main(
 webbrowser.open(
@@ -8247,7 +8033,6 @@ subprocess
 
 --- import cgitb (py2.7.3/linux2/root module) ---
 cgitb.Hook(
-cgitb.__UNDEF__
 cgitb.enable(
 cgitb.grey(
 cgitb.handler(
@@ -8272,7 +8057,6 @@ cgitb.types
 
 --- from cgitb import * ---
 Hook(
-__UNDEF__
 enable(
 grey(
 handler(
@@ -8292,7 +8076,6 @@ ftplib.MSG_OOB
 ftplib.Netrc(
 ftplib._150_re
 ftplib._227_re
-ftplib.__all__
 ftplib.all_errors
 ftplib.error_perm(
 ftplib.error_proto(
@@ -8408,7 +8191,6 @@ httplib.USE_PROXY
 httplib.UnimplementedFileMode(
 httplib.UnknownProtocol(
 httplib.UnknownTransferEncoding(
-httplib.__all__
 httplib.array(
 httplib.error(
 httplib.mimetools
@@ -8518,7 +8300,6 @@ imaplib.Response_code
 imaplib.Time2Internaldate(
 imaplib.Untagged_response
 imaplib.Untagged_status
-imaplib.__all__
 imaplib.binascii
 imaplib.errno
 imaplib.random
@@ -8564,7 +8345,6 @@ nntplib.NNTPProtocolError(
 nntplib.NNTPReplyError(
 nntplib.NNTPTemporaryError(
 nntplib.NNTP_PORT
-nntplib.__all__
 nntplib.error_data(
 nntplib.error_perm(
 nntplib.error_proto(
@@ -8593,7 +8373,6 @@ poplib.POP3(
 poplib.POP3_PORT
 poplib.POP3_SSL(
 poplib.POP3_SSL_PORT
-poplib.__all__
 poplib.error_proto(
 poplib.re
 poplib.socket
@@ -8626,7 +8405,6 @@ smtplib.SMTP_PORT
 smtplib.SMTP_SSL(
 smtplib.SMTP_SSL_PORT
 smtplib.SSLFakeFile(
-smtplib.__all__
 smtplib.base64
 smtplib.email
 smtplib.encode_base64(
@@ -8738,7 +8516,6 @@ telnetlib.X3PAD
 telnetlib.XASCII
 telnetlib.XAUTH
 telnetlib.XDISPLOC
-telnetlib.__all__
 telnetlib.errno
 telnetlib.select
 telnetlib.socket
@@ -8827,7 +8604,6 @@ urllib.ContentTooShortError(
 urllib.FancyURLopener(
 urllib.MAXFTPCACHE
 urllib.URLopener(
-urllib.__all__
 urllib.addbase(
 urllib.addclosehook(
 urllib.addinfo(
@@ -9032,7 +8808,6 @@ BaseHTTPServer.DEFAULT_ERROR_CONTENT_TYPE
 BaseHTTPServer.DEFAULT_ERROR_MESSAGE
 BaseHTTPServer.HTTPServer(
 BaseHTTPServer.SocketServer
-BaseHTTPServer.__all__
 BaseHTTPServer.catch_warnings(
 BaseHTTPServer.filterwarnings(
 BaseHTTPServer.mimetools
@@ -9052,7 +8827,6 @@ SocketServer
 CGIHTTPServer.BaseHTTPServer
 CGIHTTPServer.CGIHTTPRequestHandler(
 CGIHTTPServer.SimpleHTTPServer
-CGIHTTPServer.__all__
 CGIHTTPServer.copy
 CGIHTTPServer.executable(
 CGIHTTPServer.nobody
@@ -9079,7 +8853,6 @@ Cookie.Morsel(
 Cookie.SerialCookie(
 Cookie.SimpleCookie(
 Cookie.SmartCookie(
-Cookie.__all__
 Cookie.dumps(
 Cookie.loads(
 Cookie.re
@@ -9099,7 +8872,6 @@ SmartCookie(
 SimpleHTTPServer.BaseHTTPServer
 SimpleHTTPServer.SimpleHTTPRequestHandler(
 SimpleHTTPServer.StringIO(
-SimpleHTTPServer.__all__
 SimpleHTTPServer.cgi
 SimpleHTTPServer.mimetypes
 SimpleHTTPServer.os
@@ -9131,7 +8903,6 @@ SocketServer.ThreadingUnixStreamServer(
 SocketServer.UDPServer(
 SocketServer.UnixDatagramServer(
 SocketServer.UnixStreamServer(
-SocketServer.__all__
 SocketServer.errno
 SocketServer.os
 SocketServer.select
@@ -9162,7 +8933,6 @@ urlparse.MAX_CACHE_SIZE
 urlparse.ParseResult(
 urlparse.ResultMixin(
 urlparse.SplitResult(
-urlparse.__all__
 urlparse.clear_cache(
 urlparse.namedtuple(
 urlparse.non_hierarchical
@@ -9256,7 +9026,6 @@ remove_duplicates(
 xmlrpclib
 
 --- import xml (py2.7.3/linux2/root module) ---
-xml.__all__
 xml.parsers
 
 --- from xml import * ---
@@ -9501,7 +9270,6 @@ email.MIMEText
 email.Message
 email.Parser
 email.Utils
-email.__all__
 email.base64MIME
 email.email
 email.importer
@@ -9583,7 +9351,6 @@ NullWriter(
 
 --- import MimeWriter (py2.7.3/linux2/root module) ---
 MimeWriter.MimeWriter(
-MimeWriter.__all__
 MimeWriter.mimetools
 MimeWriter.warnings
 
@@ -9612,7 +9379,6 @@ mailbox.NotEmptyError(
 mailbox.PortableUnixMailbox(
 mailbox.StringIO
 mailbox.UnixMailbox(
-mailbox.__all__
 mailbox.calendar
 mailbox.copy
 mailbox.email
@@ -9652,7 +9418,6 @@ mbox(
 mboxMessage(
 
 --- import mailcap (py2.7.3/linux2/root module) ---
-mailcap.__all__
 mailcap.findmatch(
 mailcap.findparam(
 mailcap.getcaps(
@@ -9688,8 +9453,6 @@ mhlib.MH_SEQUENCES
 mhlib.Message(
 mhlib.PATH
 mhlib.SubMessage(
-mhlib.__all__
-mhlib.__warningregistry__
 mhlib.bisect(
 mhlib.isnumeric(
 mhlib.mimetools
@@ -9711,7 +9474,6 @@ MH_PROFILE
 MH_SEQUENCES
 PATH
 SubMessage(
-__warningregistry__
 isnumeric(
 multifile
 numericprog
@@ -9720,7 +9482,6 @@ updateline(
 
 --- import mimetools (py2.7.3/linux2/root module) ---
 mimetools.Message(
-mimetools.__all__
 mimetools.catch_warnings(
 mimetools.choose_boundary(
 mimetools.copybinary(
@@ -9751,7 +9512,6 @@ uudecode_pipe
 
 --- import mimetypes (py2.7.3/linux2/root module) ---
 mimetypes.MimeTypes(
-mimetypes.__all__
 mimetypes.add_type(
 mimetypes.common_types
 mimetypes.encodings_map
@@ -9790,7 +9550,6 @@ mimify.File(
 mimify.HeaderFile(
 mimify.MAXLEN
 mimify.QUOTE
-mimify.__all__
 mimify.base64_re
 mimify.chrset
 mimify.cte
@@ -9848,7 +9607,6 @@ unmimify_part(
 --- import multifile (py2.7.3/linux2/root module) ---
 multifile.Error(
 multifile.MultiFile(
-multifile.__all__
 
 --- from multifile import * ---
 MultiFile(
@@ -9857,7 +9615,6 @@ MultiFile(
 rfc822.AddressList(
 rfc822.AddrlistClass(
 rfc822.Message(
-rfc822.__all__
 rfc822.dump_address_pair(
 rfc822.formatdate(
 rfc822.mktime_tz(
@@ -9883,7 +9640,6 @@ parsedate_tz(
 base64.EMPTYSTRING
 base64.MAXBINSIZE
 base64.MAXLINESIZE
-base64.__all__
 base64.b16decode(
 base64.b16encode(
 base64.b32decode(
@@ -9971,7 +9727,6 @@ binhex.HexBin(
 binhex.LINELEN
 binhex.REASONABLY_LARGE
 binhex.RUNCHAR
-binhex.__all__
 binhex.binascii
 binhex.binhex(
 binhex.getfileinfo(
@@ -9998,7 +9753,6 @@ quopri.EMPTYSTRING
 quopri.ESCAPE
 quopri.HEX
 quopri.MAXLINESIZE
-quopri.__all__
 quopri.a2b_qp(
 quopri.b2a_qp(
 quopri.decode(
@@ -10020,7 +9774,6 @@ unhex(
 
 --- import uu (py2.7.3/linux2/root module) ---
 uu.Error(
-uu.__all__
 uu.binascii
 uu.decode(
 uu.encode(
@@ -10035,7 +9788,6 @@ xdrlib.ConversionError(
 xdrlib.Error(
 xdrlib.Packer(
 xdrlib.Unpacker(
-xdrlib.__all__
 xdrlib.struct
 
 --- from xdrlib import * ---
@@ -10091,7 +9843,6 @@ csv.QUOTE_NONE
 csv.QUOTE_NONNUMERIC
 csv.Sniffer(
 csv.StringIO(
-csv.__all__
 csv.excel(
 csv.excel_tab(
 csv.field_size_limit(
@@ -10137,7 +9888,6 @@ name2codepoint
 htmllib.AS_IS
 htmllib.HTMLParseError(
 htmllib.HTMLParser(
-htmllib.__all__
 htmllib.sgmllib
 htmllib.test(
 
@@ -10146,7 +9896,6 @@ sgmllib
 
 --- import netrc (py2.7.3/linux2/root module) ---
 netrc.NetrcParseError(
-netrc.__all__
 netrc.netrc(
 netrc.os
 netrc.shlex
@@ -10160,7 +9909,6 @@ robotparser.Entry(
 robotparser.RobotFileParser(
 robotparser.RuleLine(
 robotparser.URLopener(
-robotparser.__all__
 robotparser.urllib
 robotparser.urlparse
 
@@ -10173,7 +9921,6 @@ RuleLine(
 sgmllib.SGMLParseError(
 sgmllib.SGMLParser(
 sgmllib.TestSGMLParser(
-sgmllib.__all__
 sgmllib.attrfind
 sgmllib.charref
 sgmllib.endbracket
@@ -10416,7 +10163,6 @@ well_known_implementations
 xml.dom.minicompat.EmptyNodeList(
 xml.dom.minicompat.NodeList(
 xml.dom.minicompat.StringTypes
-xml.dom.minicompat.__all__
 xml.dom.minicompat.defproperty(
 xml.dom.minicompat.xml
 
@@ -10424,7 +10170,6 @@ xml.dom.minicompat.xml
 minicompat.EmptyNodeList(
 minicompat.NodeList(
 minicompat.StringTypes
-minicompat.__all__
 minicompat.defproperty(
 minicompat.xml
 
@@ -10724,8 +10469,6 @@ aifc.Aifc_read(
 aifc.Aifc_write(
 aifc.Chunk(
 aifc.Error(
-aifc.__all__
-aifc.__builtin__
 aifc.open(
 aifc.openfp(
 aifc.struct
@@ -10833,8 +10576,6 @@ wave.Error(
 wave.WAVE_FORMAT_PCM
 wave.Wave_read(
 wave.Wave_write(
-wave.__all__
-wave.__builtin__
 wave.big_endian
 wave.open(
 wave.openfp(
@@ -10855,7 +10596,6 @@ chunk.Chunk(
 colorsys.ONE_SIXTH
 colorsys.ONE_THIRD
 colorsys.TWO_THIRD
-colorsys.__all__
 colorsys.hls_to_rgb(
 colorsys.hsv_to_rgb(
 colorsys.rgb_to_hls(
@@ -10891,7 +10631,6 @@ trans_5C
 x
 
 --- import imghdr (py2.7.3/linux2/root module) ---
-imghdr.__all__
 imghdr.test(
 imghdr.test_bmp(
 imghdr.test_exif(
@@ -10927,7 +10666,6 @@ tests
 what(
 
 --- import sndhdr (py2.7.3/linux2/root module) ---
-sndhdr.__all__
 sndhdr.get_long_be(
 sndhdr.get_long_le(
 sndhdr.get_short_be(
@@ -10962,7 +10700,6 @@ test_wav(
 whathdr(
 
 --- import hashlib (py2.7.3/linux2/root module) ---
-hashlib.__all__
 hashlib.algorithms
 hashlib.md5(
 hashlib.new(
@@ -11324,7 +11061,6 @@ ScrolledText.Scrollbar(
 ScrolledText.ScrolledText(
 ScrolledText.Text(
 ScrolledText.Y
-ScrolledText.__all__
 ScrolledText.example(
 
 --- from ScrolledText import * ---
@@ -11790,7 +11526,6 @@ turtle.TurtleGraphicsError(
 turtle.TurtleScreen(
 turtle.TurtleScreenBase(
 turtle.Vec2D(
-turtle.__all__
 turtle.acos(
 turtle.acosh(
 turtle.addshape(
@@ -12257,14 +11992,12 @@ tkCommonDialog.wantobjects
 Bastion.Bastion(
 Bastion.BastionClass(
 Bastion.MethodType(
-Bastion.__all__
 
 --- from Bastion import * ---
 Bastion(
 BastionClass(
 
 --- import keyword (py2.7.3/linux2/root module) ---
-keyword.__all__
 keyword.iskeyword(
 keyword.kwlist
 keyword.main(
@@ -12277,7 +12010,6 @@ kwlist
 parser.ASTType(
 parser.ParserError(
 parser.STType(
-parser.__copyright__
 parser.ast2list(
 parser.ast2tuple(
 parser.compileast(
@@ -12318,7 +12050,6 @@ pyclbr.DEDENT
 pyclbr.Function(
 pyclbr.NAME
 pyclbr.OP
-pyclbr.__all__
 pyclbr.imp
 pyclbr.itemgetter(
 pyclbr.readmodule(
@@ -12344,8 +12075,6 @@ rexec.RHooks(
 rexec.RModuleImporter(
 rexec.RModuleLoader(
 rexec.TEMPLATE
-rexec.__all__
-rexec.__builtin__
 rexec.ihooks
 rexec.imp
 rexec.os
@@ -12542,7 +12271,6 @@ yield_stmt
 --- import tabnanny (6/py2.7.3/linux2/root module) ---
 tabnanny.NannyNag(
 tabnanny.Whitespace(
-tabnanny.__all__
 tabnanny.check(
 tabnanny.errprint(
 tabnanny.filename_only
@@ -12779,9 +12507,6 @@ tokenize.Untokenizer(
 tokenize.VBAR
 tokenize.VBAREQUAL
 tokenize.Whitespace
-tokenize.__all__
-tokenize.__author__
-tokenize.__credits__
 tokenize.any(
 tokenize.double3prog
 tokenize.endprogs
@@ -12857,7 +12582,6 @@ triple_quoted
 untokenize(
 
 --- import compileall (py2.7.3/linux2/root module) ---
-compileall.__all__
 compileall.compile_dir(
 compileall.compile_file(
 compileall.compile_path(
@@ -13793,7 +13517,6 @@ dumpNode(
 --- import dis (py2.7.3/linux2/root module) ---
 dis.EXTENDED_ARG
 dis.HAVE_ARGUMENT
-dis.__all__
 dis.cmp_op
 dis.dis(
 dis.disassemble(
@@ -13836,15 +13559,12 @@ opmap
 opname
 
 --- import distutils (2.7.3/py2.7.3/linux2/root module) ---
-distutils.__revision__
 
 --- from distutils import * ---
 
 --- import py_compile (py2.7.3/linux2/root module) ---
 py_compile.MAGIC
 py_compile.PyCompileError(
-py_compile.__all__
-py_compile.__builtin__
 py_compile.compile(
 py_compile.imp
 py_compile.main(
@@ -14533,7 +14253,6 @@ BufferProxy(
 --- import pygame.cdrom ---
 pygame.cdrom.CD(
 pygame.cdrom.CDType(
-pygame.cdrom.__PYGAMEinit__(
 pygame.cdrom.get_count(
 pygame.cdrom.get_init(
 pygame.cdrom.init(
@@ -14542,7 +14261,6 @@ pygame.cdrom.quit(
 --- from pygame import cdrom ---
 cdrom.CD(
 cdrom.CDType(
-cdrom.__PYGAMEinit__(
 cdrom.get_count(
 cdrom.get_init(
 cdrom.init(
@@ -14551,7 +14269,6 @@ cdrom.quit(
 --- from pygame.cdrom import * ---
 CD(
 CDType(
-__PYGAMEinit__(
 get_count(
 get_init(
 
@@ -14575,7 +14292,6 @@ colordict.THECOLORS
 --- from pygame.colordict import * ---
 
 --- import pygame.compat ---
-pygame.compat.__all__
 pygame.compat.get_BytesIO(
 pygame.compat.geterror(
 pygame.compat.long_(
@@ -15166,7 +14882,6 @@ tri_right
 
 --- import pygame.display ---
 pygame.display.Info(
-pygame.display.__PYGAMEinit__(
 pygame.display.flip(
 pygame.display.get_active(
 pygame.display.get_caption(
@@ -15192,7 +14907,6 @@ pygame.display.update(
 
 --- from pygame import display ---
 display.Info(
-display.__PYGAMEinit__(
 display.flip(
 display.get_active(
 display.get_caption(
@@ -15340,7 +15054,6 @@ fastevent.wait(
 pygame.font.Font(
 pygame.font.FontType(
 pygame.font.SysFont(
-pygame.font.__PYGAMEinit__(
 pygame.font.get_default_font(
 pygame.font.get_fonts(
 pygame.font.get_init(
@@ -15352,7 +15065,6 @@ pygame.font.quit(
 font.Font(
 font.FontType(
 font.SysFont(
-font.__PYGAMEinit__(
 font.get_default_font(
 font.get_fonts(
 font.get_init(
@@ -15402,7 +15114,6 @@ tostring(
 --- import pygame.joystick ---
 pygame.joystick.Joystick(
 pygame.joystick.JoystickType(
-pygame.joystick.__PYGAMEinit__(
 pygame.joystick.get_count(
 pygame.joystick.get_init(
 pygame.joystick.init(
@@ -15411,7 +15122,6 @@ pygame.joystick.quit(
 --- from pygame import joystick ---
 joystick.Joystick(
 joystick.JoystickType(
-joystick.__PYGAMEinit__(
 joystick.get_count(
 joystick.get_init(
 joystick.init(
@@ -15469,7 +15179,6 @@ pygame.mixer.Channel(
 pygame.mixer.ChannelType(
 pygame.mixer.Sound(
 pygame.mixer.SoundType(
-pygame.mixer.__PYGAMEinit__(
 pygame.mixer.fadeout(
 pygame.mixer.find_channel(
 pygame.mixer.get_busy(
@@ -15490,7 +15199,6 @@ mixer.Channel(
 mixer.ChannelType(
 mixer.Sound(
 mixer.SoundType(
-mixer.__PYGAMEinit__(
 mixer.fadeout(
 mixer.find_channel(
 mixer.get_busy(
@@ -15848,8 +15556,6 @@ pygame.threads.Queue(
 pygame.threads.STOP
 pygame.threads.Thread(
 pygame.threads.WorkerQueue(
-pygame.threads.__author__
-pygame.threads.__license__
 pygame.threads.benchmark_workers(
 pygame.threads.geterror(
 pygame.threads.init(
@@ -15868,8 +15574,6 @@ threads.Queue(
 threads.STOP
 threads.Thread(
 threads.WorkerQueue(
-threads.__author__
-threads.__license__
 threads.benchmark_workers(
 threads.geterror(
 threads.init(
@@ -15884,7 +15588,6 @@ FINISH
 FuncResult(
 MAX_WORKERS_TO_TEST
 WorkerQueue(
-__license__
 benchmark_workers(
 tmap(
 
@@ -19168,8 +18871,6 @@ wx.YES_NO
 wx.Yield(
 wx.YieldIfNeeded(
 wx.ZipFSHandler(
-wx.__all__
-wx.__docfilter__(
 wx.cvar
 wx.name
 wx.new
@@ -22559,7 +22260,6 @@ YES_DEFAULT
 YES_NO
 YieldIfNeeded(
 ZipFSHandler(
-__docfilter__(
 cvar
 new_instancemethod(
 wx
@@ -23728,8 +23428,6 @@ TreeItemData_SetId(
 TreeItemData_swiginit(
 TreeItemData_swigregister(
 TreeItemId_IsOk(
-TreeItemId___eq__(
-TreeItemId___ne__(
 TreeItemId_m_pItem_get(
 TreeItemId_m_pItem_set(
 TreeItemId_swiginit(
@@ -23870,7 +23568,6 @@ new_TreebookEvent(
 
 --- from wx import _core ---
 
-__WXDEBUG__
 
 --- from wx import _core_ ---
 
@@ -24039,14 +23736,8 @@ GBPosition_GetRow(
 GBPosition_Set(
 GBPosition_SetCol(
 GBPosition_SetRow(
-GBPosition___eq__(
-GBPosition___ne__(
 GBPosition_swiginit(
 GBPosition_swigregister(
-GBSizerItemList___contains__(
-GBSizerItemList___getitem__(
-GBSizerItemList___iter__(
-GBSizerItemList___len__(
 GBSizerItemList_index(
 GBSizerItemList_iterator_next(
 GBSizerItemList_iterator_swigregister(
@@ -24068,8 +23759,6 @@ GBSpan_GetRowspan(
 GBSpan_Set(
 GBSpan_SetColspan(
 GBSpan_SetRowspan(
-GBSpan___eq__(
-GBSpan___ne__(
 GBSpan_swiginit(
 GBSpan_swigregister(
 GIFHandler_swiginit(
@@ -24384,10 +24073,6 @@ MenuEvent_GetMenuId(
 MenuEvent_IsPopup(
 MenuEvent_swiginit(
 MenuEvent_swigregister(
-MenuItemList___contains__(
-MenuItemList___getitem__(
-MenuItemList___iter__(
-MenuItemList___len__(
 MenuItemList_index(
 MenuItemList_iterator_next(
 MenuItemList_iterator_swigregister(
@@ -24630,17 +24315,6 @@ Point2D_GetVectorLength(
 Point2D_Set(
 Point2D_SetVectorAngle(
 Point2D_SetVectorLength(
-Point2D___add__(
-Point2D___div__(
-Point2D___eq__(
-Point2D___iadd__(
-Point2D___idiv__(
-Point2D___imul__(
-Point2D___isub__(
-Point2D___mul__(
-Point2D___ne__(
-Point2D___neg__(
-Point2D___sub__(
 Point2D_swiginit(
 Point2D_swigregister(
 Point2D_x_get(
@@ -24649,12 +24323,6 @@ Point2D_y_get(
 Point2D_y_set(
 Point_Get(
 Point_Set(
-Point___add__(
-Point___eq__(
-Point___iadd__(
-Point___isub__(
-Point___ne__(
-Point___sub__(
 Point_swiginit(
 Point_swigregister(
 Point_x_get(
@@ -24721,10 +24389,6 @@ QueryNewPaletteEvent_swiginit(
 QueryNewPaletteEvent_swigregister(
 RealPoint_Get(
 RealPoint_Set(
-RealPoint___add__(
-RealPoint___eq__(
-RealPoint___ne__(
-RealPoint___sub__(
 RealPoint_swiginit(
 RealPoint_swigregister(
 RealPoint_x_get(
@@ -24777,8 +24441,6 @@ Rect2D_SetRightBottom(
 Rect2D_SetRightTop(
 Rect2D_SetTop(
 Rect2D_Union(
-Rect2D___eq__(
-Rect2D___ne__(
 Rect2D_height_get(
 Rect2D_height_set(
 Rect2D_swiginit(
@@ -24831,10 +24493,6 @@ Rect_SetWidth(
 Rect_SetX(
 Rect_SetY(
 Rect_Union(
-Rect___add__(
-Rect___eq__(
-Rect___iadd__(
-Rect___ne__(
 Rect_height_get(
 Rect_height_set(
 Rect_swiginit(
@@ -24892,10 +24550,6 @@ Size_Set(
 Size_SetDefaults(
 Size_SetHeight(
 Size_SetWidth(
-Size___add__(
-Size___eq__(
-Size___ne__(
-Size___sub__(
 Size_height_get(
 Size_height_set(
 Size_swiginit(
@@ -24924,10 +24578,6 @@ SizerFlags_Top(
 SizerFlags_TripleBorder(
 SizerFlags_swiginit(
 SizerFlags_swigregister(
-SizerItemList___contains__(
-SizerItemList___getitem__(
-SizerItemList___iter__(
-SizerItemList___len__(
 SizerItemList_index(
 SizerItemList_iterator_next(
 SizerItemList_iterator_swigregister(
@@ -25054,10 +24704,6 @@ WindowCreateEvent_swigregister(
 WindowDestroyEvent_GetWindow(
 WindowDestroyEvent_swiginit(
 WindowDestroyEvent_swigregister(
-WindowList___contains__(
-WindowList___getitem__(
-WindowList___iter__(
-WindowList___len__(
 WindowList_index(
 WindowList_iterator_next(
 WindowList_iterator_swigregister(
@@ -25470,7 +25116,6 @@ AlphaPixelData_Accessor_swiginit(
 AlphaPixelData_Accessor_swigregister(
 AlphaPixelData_GetPixels(
 AlphaPixelData_UseAlpha(
-AlphaPixelData___nonzero__(
 AlphaPixelData_swiginit(
 AlphaPixelData_swigregister(
 AutoBufferedPaintDC_swiginit(
@@ -25497,8 +25142,6 @@ Bitmap_SetMaskColour(
 Bitmap_SetSize(
 Bitmap_SetWidth(
 Bitmap_UseAlpha(
-Bitmap___eq__(
-Bitmap___ne__(
 Bitmap_swiginit(
 Bitmap_swigregister(
 BrushList_AddBrush(
@@ -25541,8 +25184,6 @@ Colour_IsOk(
 Colour_Red(
 Colour_Set(
 Colour_SetRGB(
-Colour___eq__(
-Colour___ne__(
 Colour_swiginit(
 Colour_swigregister(
 Cursor_IsOk(
@@ -25751,8 +25392,6 @@ Font_SetPointSize(
 Font_SetStyle(
 Font_SetUnderlined(
 Font_SetWeight(
-Font___eq__(
-Font___ne__(
 Font_swiginit(
 Font_swigregister(
 GCDC_Flush(
@@ -25981,7 +25620,6 @@ NativeFontInfo_SetUnderlined(
 NativeFontInfo_SetWeight(
 NativeFontInfo_ToString(
 NativeFontInfo_ToUserString(
-NativeFontInfo___str__(
 NativeFontInfo_swiginit(
 NativeFontInfo_swigregister(
 NativePixelData_Accessor_Get(
@@ -25997,7 +25635,6 @@ NativePixelData_Accessor_swiginit(
 NativePixelData_Accessor_swigregister(
 NativePixelData_GetPixels(
 NativePixelData_UseAlpha(
-NativePixelData___nonzero__(
 NativePixelData_swiginit(
 NativePixelData_swigregister(
 Overlay_Reset(
@@ -26029,8 +25666,6 @@ Pen_SetDashes(
 Pen_SetJoin(
 Pen_SetStyle(
 Pen_SetWidth(
-Pen___eq__(
-Pen___ne__(
 Pen_swiginit(
 Pen_swigregister(
 PixelDataBase_GetHeight(
@@ -26127,7 +25762,6 @@ RegionIterator_GetY(
 RegionIterator_HaveRects(
 RegionIterator_Next(
 RegionIterator_Reset(
-RegionIterator___nonzero__(
 RegionIterator_swiginit(
 RegionIterator_swigregister(
 Region_Clear(
@@ -26438,7 +26072,6 @@ Caret_SetSizeWH(
 Caret_Show(
 Caret_swiginit(
 Caret_swigregister(
-ClipboardLocker___nonzero__(
 ClipboardLocker_swiginit(
 ClipboardLocker_swigregister(
 Clipboard_AddData(
@@ -26509,8 +26142,6 @@ CustomDataObject_swigregister(
 DataFormat_GetType(
 DataFormat_SetId(
 DataFormat_SetType(
-DataFormat___eq__(
-DataFormat___ne__(
 DataFormat_swiginit(
 DataFormat_swigregister(
 DataObjectComposite_Add(
@@ -26548,16 +26179,6 @@ DateSpan_SetMonths(
 DateSpan_SetWeeks(
 DateSpan_SetYears(
 DateSpan_Subtract(
-DateSpan___add__(
-DateSpan___eq__(
-DateSpan___iadd__(
-DateSpan___imul__(
-DateSpan___isub__(
-DateSpan___mul__(
-DateSpan___ne__(
-DateSpan___neg__(
-DateSpan___rmul__(
-DateSpan___sub__(
 DateSpan_swiginit(
 DateSpan_swigregister(
 DateTime_ADT
@@ -26800,16 +26421,6 @@ DateTime_UTC
 DateTime_WEST
 DateTime_WET
 DateTime_Wed
-DateTime___add__(
-DateTime___eq__(
-DateTime___ge__(
-DateTime___gt__(
-DateTime___iadd__(
-DateTime___isub__(
-DateTime___le__(
-DateTime___lt__(
-DateTime___ne__(
-DateTime___sub__(
 DateTime_swiginit(
 DateTime_swigregister(
 Display_ChangeMode(
@@ -27048,8 +26659,6 @@ PlatformInformation_SetOSVersion(
 PlatformInformation_SetOperatingSystemId(
 PlatformInformation_SetPortId(
 PlatformInformation_SetToolkitVersion(
-PlatformInformation___eq__(
-PlatformInformation___ne__(
 PlatformInformation_swiginit(
 PlatformInformation_swigregister(
 PowerEvent_IsVetoed(
@@ -27156,20 +26765,6 @@ TimeSpan_IsShorterThan(
 TimeSpan_Multiply(
 TimeSpan_Neg(
 TimeSpan_Subtract(
-TimeSpan___add__(
-TimeSpan___eq__(
-TimeSpan___ge__(
-TimeSpan___gt__(
-TimeSpan___iadd__(
-TimeSpan___imul__(
-TimeSpan___isub__(
-TimeSpan___le__(
-TimeSpan___lt__(
-TimeSpan___mul__(
-TimeSpan___ne__(
-TimeSpan___neg__(
-TimeSpan___rmul__(
-TimeSpan___sub__(
 TimeSpan_swiginit(
 TimeSpan_swigregister(
 TimerEvent_GetInterval(
@@ -27207,8 +26802,6 @@ VideoMode_GetHeight(
 VideoMode_GetWidth(
 VideoMode_IsOk(
 VideoMode_Matches(
-VideoMode___eq__(
-VideoMode___ne__(
 VideoMode_bpp_get(
 VideoMode_bpp_set(
 VideoMode_h_get(
@@ -28106,7 +27699,6 @@ wx.animate.AnimationCtrlNameStr
 wx.animate.GIFAnimationCtrl(
 wx.animate.NullAnimation
 wx.animate.PreAnimationCtrl(
-wx.animate.__docfilter__(
 wx.animate.cvar
 wx.animate.new
 wx.animate.new_instancemethod(
@@ -28132,7 +27724,6 @@ animate.AnimationCtrlNameStr
 animate.GIFAnimationCtrl(
 animate.NullAnimation
 animate.PreAnimationCtrl(
-animate.__docfilter__(
 animate.cvar
 animate.new
 animate.new_instancemethod(
@@ -28309,7 +27900,6 @@ wx.aui.PreAuiMDIParentFrame(
 wx.aui.PreAuiNotebook(
 wx.aui.PyAuiDockArt(
 wx.aui.PyAuiTabArt(
-wx.aui.__docfilter__(
 wx.aui.cvar
 wx.aui.new
 wx.aui.new_instancemethod(
@@ -28491,7 +28081,6 @@ aui.PreAuiMDIParentFrame(
 aui.PreAuiNotebook(
 aui.PyAuiDockArt(
 aui.PyAuiTabArt(
-aui.__docfilter__(
 aui.cvar
 aui.new
 aui.new_instancemethod(
@@ -28701,10 +28290,8 @@ wxEVT_COMMAND_AUITOOLBAR_RIGHT_CLICK
 wxEVT_COMMAND_AUITOOLBAR_TOOL_DROPDOWN
 
 --- import wx.build (py2.7.3/linux2/root module) ---
-wx.build.__all__
 
 --- from wx import build ---
-build.__all__
 
 --- from wx.build import * ---
 
@@ -28737,7 +28324,6 @@ wx.calendar.EVT_CALENDAR_SEL_CHANGED(
 wx.calendar.EVT_CALENDAR_WEEKDAY_CLICKED(
 wx.calendar.EVT_CALENDAR_YEAR(
 wx.calendar.PreCalendarCtrl(
-wx.calendar.__docfilter__(
 wx.calendar.cvar
 wx.calendar.new
 wx.calendar.new_instancemethod(
@@ -28778,7 +28364,6 @@ calendar.EVT_CALENDAR_SEL_CHANGED(
 calendar.EVT_CALENDAR_WEEKDAY_CLICKED(
 calendar.EVT_CALENDAR_YEAR(
 calendar.PreCalendarCtrl(
-calendar.__docfilter__(
 calendar.cvar
 calendar.new
 calendar.new_instancemethod(
@@ -28846,7 +28431,6 @@ wx.combo.OwnerDrawnComboBox(
 wx.combo.PreBitmapComboBox(
 wx.combo.PreComboCtrl(
 wx.combo.PreOwnerDrawnComboBox(
-wx.combo.__docfilter__(
 wx.combo.new
 wx.combo.new_instancemethod(
 wx.combo.wx
@@ -28871,7 +28455,6 @@ combo.OwnerDrawnComboBox(
 combo.PreBitmapComboBox(
 combo.PreComboCtrl(
 combo.PreOwnerDrawnComboBox(
-combo.__docfilter__(
 combo.new
 combo.new_instancemethod(
 combo.wx
@@ -28954,7 +28537,6 @@ wx.gizmos.TreeCompanionWindow(
 wx.gizmos.TreeListColumnInfo(
 wx.gizmos.TreeListCtrl(
 wx.gizmos.TreeListCtrlNameStr
-wx.gizmos.__docfilter__(
 wx.gizmos.cvar
 wx.gizmos.new
 wx.gizmos.new_instancemethod(
@@ -29019,7 +28601,6 @@ gizmos.TreeCompanionWindow(
 gizmos.TreeListColumnInfo(
 gizmos.TreeListCtrl(
 gizmos.TreeListCtrlNameStr
-gizmos.__docfilter__(
 gizmos.cvar
 gizmos.new
 gizmos.new_instancemethod(
@@ -29108,7 +28689,6 @@ wx.glcanvas.WX_GL_MIN_RED
 wx.glcanvas.WX_GL_RGBA
 wx.glcanvas.WX_GL_STENCIL_SIZE
 wx.glcanvas.WX_GL_STEREO
-wx.glcanvas.__docfilter__(
 wx.glcanvas.cvar
 wx.glcanvas.new
 wx.glcanvas.new_instancemethod(
@@ -29135,7 +28715,6 @@ glcanvas.WX_GL_MIN_RED
 glcanvas.WX_GL_RGBA
 glcanvas.WX_GL_STENCIL_SIZE
 glcanvas.WX_GL_STEREO
-glcanvas.__docfilter__(
 glcanvas.cvar
 glcanvas.new
 glcanvas.new_instancemethod(
@@ -29267,7 +28846,6 @@ wx.grid.PyGridCellAttrProvider(
 wx.grid.PyGridCellEditor(
 wx.grid.PyGridCellRenderer(
 wx.grid.PyGridTableBase(
-wx.grid.__docfilter__(
 wx.grid.cvar
 wx.grid.new
 wx.grid.new_instancemethod(
@@ -29395,7 +28973,6 @@ grid.PyGridCellAttrProvider(
 grid.PyGridCellEditor(
 grid.PyGridCellRenderer(
 grid.PyGridTableBase(
-grid.__docfilter__(
 grid.cvar
 grid.new
 grid.new_instancemethod(
@@ -29672,7 +29249,6 @@ wx.html.PreHtmlHelpDialog(
 wx.html.PreHtmlHelpFrame(
 wx.html.PreHtmlHelpWindow(
 wx.html.PreHtmlWindow(
-wx.html.__docfilter__(
 wx.html.cvar
 wx.html.new
 wx.html.new_instancemethod(
@@ -29812,7 +29388,6 @@ html.PreHtmlHelpDialog(
 html.PreHtmlHelpFrame(
 html.PreHtmlHelpWindow(
 html.PreHtmlWindow(
-html.__docfilter__(
 html.cvar
 html.new
 html.new_instancemethod(
@@ -29986,7 +29561,6 @@ wx.media.MediaCtrl(
 wx.media.MediaCtrlNameStr
 wx.media.MediaEvent(
 wx.media.PreMediaCtrl(
-wx.media.__docfilter__(
 wx.media.cvar
 wx.media.new
 wx.media.new_instancemethod(
@@ -30022,7 +29596,6 @@ media.MediaCtrl(
 media.MediaCtrlNameStr
 media.MediaEvent(
 media.PreMediaCtrl(
-media.__docfilter__(
 media.cvar
 media.new
 media.new_instancemethod(
@@ -30066,9 +29639,6 @@ wxEVT_MEDIA_STATECHANGED
 wxEVT_MEDIA_STOP
 
 --- import wx.py (py2.7.3/linux2/root module) ---
-wx.py.__author__
-wx.py.__cvsid__
-wx.py.__revision__
 wx.py.buffer
 wx.py.crust
 wx.py.crustslices
@@ -30090,9 +29660,6 @@ wx.py.sliceshell
 wx.py.version
 
 --- from wx import py ---
-py.__author__
-py.__cvsid__
-py.__revision__
 py.buffer
 py.crust
 py.crustslices
@@ -30134,9 +29701,6 @@ sliceshell
 --- import wx.py.buffer (py2.7.3/linux2/root module) ---
 wx.py.buffer.Buffer(
 wx.py.buffer.Interpreter(
-wx.py.buffer.__author__
-wx.py.buffer.__cvsid__
-wx.py.buffer.__revision__
 wx.py.buffer.document
 wx.py.buffer.imp
 wx.py.buffer.os
@@ -30145,9 +29709,6 @@ wx.py.buffer.sys
 --- from wx.py import buffer ---
 buffer.Buffer(
 buffer.Interpreter(
-buffer.__author__
-buffer.__cvsid__
-buffer.__revision__
 buffer.document
 buffer.imp
 buffer.os
@@ -30167,9 +29728,6 @@ wx.py.crust.Filling(
 wx.py.crust.SessionListing(
 wx.py.crust.Shell(
 wx.py.crust.VERSION
-wx.py.crust.__author__
-wx.py.crust.__cvsid__
-wx.py.crust.__revision__
 wx.py.crust.dispatcher
 wx.py.crust.editwindow
 wx.py.crust.frame
@@ -30189,9 +29747,6 @@ crust.Filling(
 crust.SessionListing(
 crust.Shell(
 crust.VERSION
-crust.__author__
-crust.__cvsid__
-crust.__revision__
 crust.dispatcher
 crust.editwindow
 crust.frame
@@ -30215,9 +29770,6 @@ wx.py.crustslices.CrustSlicesFrame(
 wx.py.crustslices.Filling(
 wx.py.crustslices.SlicesShell(
 wx.py.crustslices.VERSION
-wx.py.crustslices.__author__
-wx.py.crustslices.__cvsid__
-wx.py.crustslices.__revision__
 wx.py.crustslices.crust
 wx.py.crustslices.dispatcher
 wx.py.crustslices.document
@@ -30236,9 +29788,6 @@ crustslices.CrustSlicesFrame(
 crustslices.Filling(
 crustslices.SlicesShell(
 crustslices.VERSION
-crustslices.__author__
-crustslices.__cvsid__
-crustslices.__revision__
 crustslices.crust
 crustslices.dispatcher
 crustslices.document
@@ -30262,9 +29811,6 @@ wx.py.dispatcher.Any
 wx.py.dispatcher.BoundMethodWeakref(
 wx.py.dispatcher.DispatcherError(
 wx.py.dispatcher.Parameter(
-wx.py.dispatcher.__author__
-wx.py.dispatcher.__cvsid__
-wx.py.dispatcher.__revision__
 wx.py.dispatcher.connect(
 wx.py.dispatcher.connections
 wx.py.dispatcher.disconnect(
@@ -30281,9 +29827,6 @@ dispatcher.Any
 dispatcher.BoundMethodWeakref(
 dispatcher.DispatcherError(
 dispatcher.Parameter(
-dispatcher.__author__
-dispatcher.__cvsid__
-dispatcher.__revision__
 dispatcher.connect(
 dispatcher.connections
 dispatcher.disconnect(
@@ -30311,16 +29854,10 @@ weakref
 
 --- import wx.py.document (py2.7.3/linux2/root module) ---
 wx.py.document.Document(
-wx.py.document.__author__
-wx.py.document.__cvsid__
-wx.py.document.__revision__
 wx.py.document.os
 
 --- from wx.py import document ---
 document.Document(
-document.__author__
-document.__cvsid__
-document.__revision__
 document.os
 
 --- from wx.py.document import * ---
@@ -30336,9 +29873,6 @@ wx.py.editor.EditorNotebookFrame(
 wx.py.editor.EditorShellNotebook(
 wx.py.editor.EditorShellNotebookFrame(
 wx.py.editor.Shell(
-wx.py.editor.__author__
-wx.py.editor.__cvsid__
-wx.py.editor.__revision__
 wx.py.editor.crust
 wx.py.editor.directory(
 wx.py.editor.dispatcher
@@ -30363,9 +29897,6 @@ editor.EditorNotebookFrame(
 editor.EditorShellNotebook(
 editor.EditorShellNotebookFrame(
 editor.Shell(
-editor.__author__
-editor.__cvsid__
-editor.__revision__
 editor.crust
 editor.directory(
 editor.dispatcher
@@ -30399,9 +29930,6 @@ saveSingle(
 wx.py.editwindow.EditWindow(
 wx.py.editwindow.FACES
 wx.py.editwindow.VERSION
-wx.py.editwindow.__author__
-wx.py.editwindow.__cvsid__
-wx.py.editwindow.__revision__
 wx.py.editwindow.dispatcher
 wx.py.editwindow.keyword
 wx.py.editwindow.os
@@ -30414,9 +29942,6 @@ wx.py.editwindow.wx
 editwindow.EditWindow(
 editwindow.FACES
 editwindow.VERSION
-editwindow.__author__
-editwindow.__cvsid__
-editwindow.__revision__
 editwindow.dispatcher
 editwindow.keyword
 editwindow.os
@@ -30440,9 +29965,6 @@ wx.py.filling.FillingText(
 wx.py.filling.FillingTree(
 wx.py.filling.SIMPLETYPES
 wx.py.filling.VERSION
-wx.py.filling.__author__
-wx.py.filling.__cvsid__
-wx.py.filling.__revision__
 wx.py.filling.dispatcher
 wx.py.filling.editwindow
 wx.py.filling.inspect
@@ -30462,9 +29984,6 @@ filling.FillingText(
 filling.FillingTree(
 filling.SIMPLETYPES
 filling.VERSION
-filling.__author__
-filling.__cvsid__
-filling.__revision__
 filling.dispatcher
 filling.editwindow
 filling.inspect
@@ -30539,9 +30058,6 @@ wx.py.frame.ID_USEAA
 wx.py.frame.ID_WRAP
 wx.py.frame.ShellFrameMixin(
 wx.py.frame.VERSION
-wx.py.frame.__author__
-wx.py.frame.__cvsid__
-wx.py.frame.__revision__
 wx.py.frame.dispatcher
 wx.py.frame.editwindow
 wx.py.frame.os
@@ -30604,9 +30120,6 @@ frame.ID_USEAA
 frame.ID_WRAP
 frame.ShellFrameMixin(
 frame.VERSION
-frame.__author__
-frame.__cvsid__
-frame.__revision__
 frame.dispatcher
 frame.editwindow
 frame.os
@@ -30651,9 +30164,6 @@ ID_WRAP
 ShellFrameMixin(
 
 --- import wx.py.images (py2.7.3/linux2/root module) ---
-wx.py.images.__author__
-wx.py.images.__cvsid__
-wx.py.images.__revision__
 wx.py.images.cStringIO
 wx.py.images.getPyBitmap(
 wx.py.images.getPyData(
@@ -30662,9 +30172,6 @@ wx.py.images.getPyImage(
 wx.py.images.wx
 
 --- from wx.py import images ---
-images.__author__
-images.__cvsid__
-images.__revision__
 images.cStringIO
 images.getPyBitmap(
 images.getPyData(
@@ -30682,9 +30189,6 @@ getPyImage(
 wx.py.interpreter.InteractiveInterpreter(
 wx.py.interpreter.Interpreter(
 wx.py.interpreter.InterpreterAlaCarte(
-wx.py.interpreter.__author__
-wx.py.interpreter.__cvsid__
-wx.py.interpreter.__revision__
 wx.py.interpreter.compile_command(
 wx.py.interpreter.dispatcher
 wx.py.interpreter.introspect
@@ -30696,9 +30200,6 @@ wx.py.interpreter.wx
 interpreter.InteractiveInterpreter(
 interpreter.Interpreter(
 interpreter.InterpreterAlaCarte(
-interpreter.__author__
-interpreter.__cvsid__
-interpreter.__revision__
 interpreter.compile_command(
 interpreter.dispatcher
 interpreter.introspect
@@ -30710,9 +30211,6 @@ interpreter.wx
 InterpreterAlaCarte(
 
 --- import wx.py.introspect (py2.7.3/linux2/root module) ---
-wx.py.introspect.__author__
-wx.py.introspect.__cvsid__
-wx.py.introspect.__revision__
 wx.py.introspect.cStringIO
 wx.py.introspect.getAllAttributeNames(
 wx.py.introspect.getAttributeNames(
@@ -30731,9 +30229,6 @@ wx.py.introspect.types
 wx.py.introspect.wx
 
 --- from wx.py import introspect ---
-introspect.__author__
-introspect.__cvsid__
-introspect.__revision__
 introspect.cStringIO
 introspect.getAllAttributeNames(
 introspect.getAttributeNames(
@@ -30764,7 +30259,6 @@ hasattrAlwaysReturnsTrue(
 rtrimTerminus(
 
 --- import wx.py.magic ---
-wx.py.magic.__author__
 wx.py.magic.aliasDict
 wx.py.magic.keyword
 wx.py.magic.magic(
@@ -30772,7 +30266,6 @@ wx.py.magic.magicSingle(
 wx.py.magic.testForContinuations(
 
 --- from wx.py import magic ---
-magic.__author__
 magic.aliasDict
 magic.keyword
 magic.magic(
@@ -30786,19 +30279,16 @@ magicSingle(
 testForContinuations(
 
 --- import wx.py.parse ---
-wx.py.parse.__author__
 wx.py.parse.re
 wx.py.parse.testForContinuations(
 
 --- from wx.py import parse ---
-parse.__author__
 parse.re
 parse.testForContinuations(
 
 --- from wx.py.parse import * ---
 
 --- import wx.py.path ---
-wx.py.path.__author__
 wx.py.path.cd(
 wx.py.path.commands
 wx.py.path.glob
@@ -30808,7 +30298,6 @@ wx.py.path.pwd(
 wx.py.path.sx(
 
 --- from wx.py import path ---
-path.__author__
 path.cd(
 path.commands
 path.glob
@@ -30828,9 +30317,6 @@ wx.py.pseudo.PseudoFileErr(
 wx.py.pseudo.PseudoFileIn(
 wx.py.pseudo.PseudoFileOut(
 wx.py.pseudo.PseudoKeyword(
-wx.py.pseudo.__author__
-wx.py.pseudo.__cvsid__
-wx.py.pseudo.__revision__
 
 --- from wx.py import pseudo ---
 pseudo.PseudoFile(
@@ -30838,9 +30324,6 @@ pseudo.PseudoFileErr(
 pseudo.PseudoFileIn(
 pseudo.PseudoFileOut(
 pseudo.PseudoKeyword(
-pseudo.__author__
-pseudo.__cvsid__
-pseudo.__revision__
 
 --- from wx.py.pseudo import * ---
 PseudoFile(
@@ -30863,9 +30346,6 @@ wx.py.shell.ShellFacade(
 wx.py.shell.ShellFrame(
 wx.py.shell.USE_MAGIC
 wx.py.shell.VERSION
-wx.py.shell.__author__
-wx.py.shell.__cvsid__
-wx.py.shell.__revision__
 wx.py.shell.cd(
 wx.py.shell.dispatcher
 wx.py.shell.editwindow
@@ -30895,9 +30375,6 @@ shell.ShellFacade(
 shell.ShellFrame(
 shell.USE_MAGIC
 shell.VERSION
-shell.__author__
-shell.__cvsid__
-shell.__revision__
 shell.cd(
 shell.dispatcher
 shell.editwindow
@@ -30962,9 +30439,6 @@ wx.py.sliceshell.SlicesShellFacade(
 wx.py.sliceshell.SlicesShellFrame(
 wx.py.sliceshell.USE_MAGIC
 wx.py.sliceshell.VERSION
-wx.py.sliceshell.__author__
-wx.py.sliceshell.__cvsid__
-wx.py.sliceshell.__revision__
 wx.py.sliceshell.cd(
 wx.py.sliceshell.dispatcher
 wx.py.sliceshell.document
@@ -31029,9 +30503,6 @@ sliceshell.SlicesShellFacade(
 sliceshell.SlicesShellFrame(
 sliceshell.USE_MAGIC
 sliceshell.VERSION
-sliceshell.__author__
-sliceshell.__cvsid__
-sliceshell.__revision__
 sliceshell.cd(
 sliceshell.dispatcher
 sliceshell.document
@@ -31094,15 +30565,9 @@ usrBinEnvPythonText
 
 --- import wx.py.version (py2.7.3/linux2/root module) ---
 wx.py.version.VERSION
-wx.py.version.__author__
-wx.py.version.__cvsid__
-wx.py.version.__revision__
 
 --- from wx.py import version ---
 version.VERSION
-version.__author__
-version.__cvsid__
-version.__revision__
 
 --- from wx.py.version import * ---
 
@@ -31304,7 +30769,6 @@ wx.richtext.TextName
 wx.richtext.USE_TEXTATTREX
 wx.richtext.XmlExt
 wx.richtext.XmlName
-wx.richtext.__docfilter__(
 wx.richtext.cvar
 wx.richtext.new
 wx.richtext.new_instancemethod(
@@ -31523,7 +30987,6 @@ richtext.TextName
 richtext.USE_TEXTATTREX
 richtext.XmlExt
 richtext.XmlName
-richtext.__docfilter__(
 richtext.cvar
 richtext.new
 richtext.new_instancemethod(
@@ -33107,7 +32570,6 @@ wx.stc.STC_YAML_REFERENCE
 wx.stc.STC_YAML_TEXT
 wx.stc.StyledTextCtrl(
 wx.stc.StyledTextEvent(
-wx.stc.__docfilter__(
 wx.stc.cvar
 wx.stc.new
 wx.stc.new_instancemethod(
@@ -34506,7 +33968,6 @@ stc.STC_YAML_REFERENCE
 stc.STC_YAML_TEXT
 stc.StyledTextCtrl(
 stc.StyledTextEvent(
-stc.__docfilter__(
 stc.cvar
 stc.new
 stc.new_instancemethod(
@@ -35933,10 +35394,8 @@ wxEVT_STC_USERLISTSELECTION
 wxEVT_STC_ZOOM
 
 --- import wx.tools (py2.7.3/linux2/root module) ---
-wx.tools.__all__
 
 --- from wx import tools ---
-tools.__all__
 
 --- from wx.tools import * ---
 
@@ -35962,7 +35421,6 @@ wx.webkit.WebKitCtrl(
 wx.webkit.WebKitNameStr
 wx.webkit.WebKitNewWindowEvent(
 wx.webkit.WebKitStateChangedEvent(
-wx.webkit.__docfilter__(
 wx.webkit.cvar
 wx.webkit.new
 wx.webkit.new_instancemethod(
@@ -35993,7 +35451,6 @@ webkit.WebKitCtrl(
 webkit.WebKitNameStr
 webkit.WebKitNewWindowEvent(
 webkit.WebKitStateChangedEvent(
-webkit.__docfilter__(
 webkit.cvar
 webkit.new
 webkit.new_instancemethod(
@@ -36044,7 +35501,6 @@ wx.wizard.WizardEvent(
 wx.wizard.WizardPage(
 wx.wizard.WizardPageSimple(
 wx.wizard.WizardPageSimple_Chain(
-wx.wizard.__docfilter__(
 wx.wizard.new
 wx.wizard.new_instancemethod(
 wx.wizard.wx
@@ -36070,7 +35526,6 @@ wizard.WizardEvent(
 wizard.WizardPage(
 wizard.WizardPageSimple(
 wizard.WizardPageSimple_Chain(
-wizard.__docfilter__(
 wizard.new
 wizard.new_instancemethod(
 wizard.wx
@@ -36152,7 +35607,6 @@ wx.xrc.XmlResource_GetXRCID(
 wx.xrc.XmlResource_Set(
 wx.xrc.XmlSubclassFactory(
 wx.xrc.XmlSubclassFactory_Python(
-wx.xrc.__docfilter__(
 wx.xrc.cvar
 wx.xrc.new
 wx.xrc.new_instancemethod(
@@ -36208,7 +35662,6 @@ xrc.XmlResource_GetXRCID(
 xrc.XmlResource_Set(
 xrc.XmlSubclassFactory(
 xrc.XmlSubclassFactory_Python(
-xrc.__docfilter__(
 xrc.cvar
 xrc.new
 xrc.new_instancemethod(
@@ -36270,7 +35723,6 @@ gettext.Catalog(
 gettext.ENOENT
 gettext.GNUTranslations(
 gettext.NullTranslations(
-gettext.__all__
 gettext.bind_textdomain_codeset(
 gettext.bindtextdomain(
 gettext.c2py(
@@ -36333,10 +35785,6 @@ logging.RootLogger(
 logging.StreamHandler(
 logging.WARN
 logging.WARNING
-logging.__all__
-logging.__author__
-logging.__date__
-logging.__status__
 logging.addLevelName(
 logging.atexit
 logging.basicConfig(
@@ -36392,7 +35840,6 @@ PlaceHolder(
 RootLogger(
 StreamHandler(
 WARN
-__status__
 addLevelName(
 atexit
 basicConfig(
@@ -36478,7 +35925,6 @@ shutil.Error(
 shutil.ExecError(
 shutil.SpecialFileError(
 shutil.WindowsError
-shutil.__all__
 shutil.abspath(
 shutil.collections
 shutil.copy(
@@ -36852,7 +36298,6 @@ socket.TIPC_TOP_SRV
 socket.TIPC_WAIT_FOREVER
 socket.TIPC_WITHDRAWN
 socket.TIPC_ZONE_SCOPE
-socket.__all__
 socket.create_connection(
 socket.errno
 socket.error(
@@ -37705,7 +37150,6 @@ twisted.application.internet.UNIXClient(
 twisted.application.internet.UNIXDatagramClient(
 twisted.application.internet.UNIXDatagramServer(
 twisted.application.internet.UNIXServer(
-twisted.application.internet.__all__
 twisted.application.internet.base(
 twisted.application.internet.doc
 twisted.application.internet.klass(
@@ -37736,7 +37180,6 @@ internet.UNIXClient(
 internet.UNIXDatagramClient(
 internet.UNIXDatagramServer(
 internet.UNIXServer(
-internet.__all__
 internet.base(
 internet.doc
 internet.klass(
@@ -37820,7 +37263,6 @@ twisted.application.service.MultiService(
 twisted.application.service.Process(
 twisted.application.service.Service(
 twisted.application.service.ServiceMaker(
-twisted.application.service.__all__
 twisted.application.service.components
 twisted.application.service.defer
 twisted.application.service.implements(
@@ -37841,7 +37283,6 @@ service.MultiService(
 service.Process(
 service.Service(
 service.ServiceMaker(
-service.__all__
 service.components
 service.defer
 service.implements(
@@ -37864,22 +37305,6 @@ loadApplication(
 --- import twisted.application.strports (py2.7.3/linux2/root module) ---
 twisted.application.strports.StreamServerEndpointService(
 twisted.application.strports.Version(
-twisted.application.strports.__all__
-twisted.application.strports.__class__(
-twisted.application.strports.__delattr__(
-twisted.application.strports.__dict__
-twisted.application.strports.__format__(
-twisted.application.strports.__getattribute__(
-twisted.application.strports.__hash__(
-twisted.application.strports.__init__(
-twisted.application.strports.__new__(
-twisted.application.strports.__reduce__(
-twisted.application.strports.__reduce_ex__(
-twisted.application.strports.__repr__(
-twisted.application.strports.__setattr__(
-twisted.application.strports.__sizeof__(
-twisted.application.strports.__str__(
-twisted.application.strports.__subclasshook__(
 twisted.application.strports.deprecatedModuleAttribute(
 twisted.application.strports.endpoints
 twisted.application.strports.listen(
@@ -37890,22 +37315,6 @@ twisted.application.strports.warnings
 --- from twisted.application import strports ---
 strports.StreamServerEndpointService(
 strports.Version(
-strports.__all__
-strports.__class__(
-strports.__delattr__(
-strports.__dict__
-strports.__format__(
-strports.__getattribute__(
-strports.__hash__(
-strports.__init__(
-strports.__new__(
-strports.__reduce__(
-strports.__reduce_ex__(
-strports.__repr__(
-strports.__setattr__(
-strports.__sizeof__(
-strports.__str__(
-strports.__subclasshook__(
 strports.deprecatedModuleAttribute(
 strports.endpoints
 strports.listen(
@@ -37914,21 +37323,6 @@ strports.service(
 strports.warnings
 
 --- from twisted.application.strports import * ---
-__class__(
-__delattr__(
-__dict__
-__format__(
-__getattribute__(
-__hash__(
-__init__(
-__new__(
-__reduce__(
-__reduce_ex__(
-__repr__(
-__setattr__(
-__sizeof__(
-__str__(
-__subclasshook__(
 deprecatedModuleAttribute(
 endpoints
 service(
@@ -37962,40 +37356,10 @@ NotEnoughAuthentication(
 ValidPublicKey(
 
 --- import twisted.conch.insults (py2.7.3/linux2/root module) ---
-twisted.conch.insults.__class__(
-twisted.conch.insults.__delattr__(
-twisted.conch.insults.__dict__
-twisted.conch.insults.__format__(
-twisted.conch.insults.__getattribute__(
-twisted.conch.insults.__hash__(
-twisted.conch.insults.__init__(
-twisted.conch.insults.__new__(
-twisted.conch.insults.__reduce__(
-twisted.conch.insults.__reduce_ex__(
-twisted.conch.insults.__repr__(
-twisted.conch.insults.__setattr__(
-twisted.conch.insults.__sizeof__(
-twisted.conch.insults.__str__(
-twisted.conch.insults.__subclasshook__(
 twisted.conch.insults.deprecate
 twisted.conch.insults.versions
 
 --- from twisted.conch import insults ---
-insults.__class__(
-insults.__delattr__(
-insults.__dict__
-insults.__format__(
-insults.__getattribute__(
-insults.__hash__(
-insults.__init__(
-insults.__new__(
-insults.__reduce__(
-insults.__reduce_ex__(
-insults.__repr__(
-insults.__setattr__(
-insults.__sizeof__(
-insults.__str__(
-insults.__subclasshook__(
 insults.deprecate
 insults.versions
 
@@ -38107,7 +37471,6 @@ twisted.conch.insults.helper.RED
 twisted.conch.insults.helper.TerminalBuffer(
 twisted.conch.insults.helper.WHITE
 twisted.conch.insults.helper.YELLOW
-twisted.conch.insults.helper.__all__
 twisted.conch.insults.helper.defer
 twisted.conch.insults.helper.implements(
 twisted.conch.insults.helper.insults
@@ -38133,7 +37496,6 @@ helper.RED
 helper.TerminalBuffer(
 helper.WHITE
 helper.YELLOW
-helper.__all__
 helper.defer
 helper.implements(
 helper.insults
@@ -38180,7 +37542,6 @@ twisted.conch.insults.insults.ServerProtocol(
 twisted.conch.insults.insults.TerminalProtocol(
 twisted.conch.insults.insults.UNDERLINE
 twisted.conch.insults.insults.Vector(
-twisted.conch.insults.insults.__all__
 twisted.conch.insults.insults.const
 twisted.conch.insults.insults.defer
 twisted.conch.insults.insults.iinternet
@@ -38216,7 +37577,6 @@ insults.ServerProtocol(
 insults.TerminalProtocol(
 insults.UNDERLINE
 insults.Vector(
-insults.__all__
 insults.const
 insults.defer
 insults.iinternet
@@ -38255,7 +37615,6 @@ privateModes(
 
 --- import twisted.conch.insults.text (py2.7.3/linux2/root module) ---
 twisted.conch.insults.text.CharacterAttributes(
-twisted.conch.insults.text.__all__
 twisted.conch.insults.text.attributes
 twisted.conch.insults.text.flatten(
 twisted.conch.insults.text.helper
@@ -38263,7 +37622,6 @@ twisted.conch.insults.text.insults
 
 --- from twisted.conch.insults import text ---
 text.CharacterAttributes(
-text.__all__
 text.attributes
 text.flatten(
 text.helper
@@ -38385,7 +37743,6 @@ ISFTPServer(
 ISession(
 
 --- import twisted.conch.ls (py2.7.3/linux2/root module) ---
-twisted.conch.ls.__all__
 twisted.conch.ls.array
 twisted.conch.ls.localtime(
 twisted.conch.ls.lsLine(
@@ -38394,7 +37751,6 @@ twisted.conch.ls.strftime(
 twisted.conch.ls.time(
 
 --- from twisted.conch import ls ---
-ls.__all__
 ls.array
 ls.localtime(
 ls.lsLine(
@@ -39095,7 +38451,6 @@ twisted.conch.ssh.common.MP(
 twisted.conch.ssh.common.MP_py(
 twisted.conch.ssh.common.NS(
 twisted.conch.ssh.common.Util
-twisted.conch.ssh.common.__builtin__
 twisted.conch.ssh.common.ffs(
 twisted.conch.ssh.common.getMP(
 twisted.conch.ssh.common.getMP_py(
@@ -39111,7 +38466,6 @@ common.MP(
 common.MP_py(
 common.NS(
 common.Util
-common.__builtin__
 common.ffs(
 common.getMP(
 common.getMP_py(
@@ -40067,7 +39421,6 @@ twisted.conch.telnet.TelnetTransport(
 twisted.conch.telnet.VT
 twisted.conch.telnet.WILL
 twisted.conch.telnet.WONT
-twisted.conch.telnet.__all__
 twisted.conch.telnet.basic
 twisted.conch.telnet.credentials
 twisted.conch.telnet.defer
@@ -40176,7 +39529,6 @@ telnet.TelnetTransport(
 telnet.VT
 telnet.WILL
 telnet.WONT
-telnet.__all__
 telnet.basic
 telnet.credentials
 telnet.defer
@@ -40793,10 +40145,8 @@ makeChecker(
 notSupportedWarning
 
 --- import twisted.enterprise (py2.7.3/linux2/root module) ---
-twisted.enterprise.__all__
 
 --- from twisted import enterprise ---
-enterprise.__all__
 
 --- from twisted.enterprise import * ---
 
@@ -40806,7 +40156,6 @@ twisted.enterprise.adbapi.ConnectionLost(
 twisted.enterprise.adbapi.ConnectionPool(
 twisted.enterprise.adbapi.Transaction(
 twisted.enterprise.adbapi.Version(
-twisted.enterprise.adbapi.__all__
 twisted.enterprise.adbapi.deprecated(
 twisted.enterprise.adbapi.log
 twisted.enterprise.adbapi.reflect
@@ -40819,7 +40168,6 @@ adbapi.ConnectionLost(
 adbapi.ConnectionPool(
 adbapi.Transaction(
 adbapi.Version(
-adbapi.__all__
 adbapi.deprecated(
 adbapi.log
 adbapi.reflect
@@ -41003,7 +40351,6 @@ threadable
 --- import twisted.internet.abstract (py2.7.3/linux2/root module) ---
 twisted.internet.abstract.AF_INET6
 twisted.internet.abstract.FileDescriptor(
-twisted.internet.abstract.__all__
 twisted.internet.abstract.error(
 twisted.internet.abstract.failure
 twisted.internet.abstract.implements(
@@ -41017,7 +40364,6 @@ twisted.internet.abstract.reflect
 --- from twisted.internet import abstract ---
 abstract.AF_INET6
 abstract.FileDescriptor(
-abstract.__all__
 abstract.error(
 abstract.failure
 abstract.implements(
@@ -41070,7 +40416,6 @@ twisted.internet.base.IReactorTime(
 twisted.internet.base.IResolverSimple(
 twisted.internet.base.ReactorBase(
 twisted.internet.base.ThreadedResolver(
-twisted.internet.base.__all__
 twisted.internet.base.abstract
 twisted.internet.base.classImplements(
 twisted.internet.base.defer
@@ -41112,7 +40457,6 @@ base.IReactorTime(
 base.IResolverSimple(
 base.ReactorBase(
 base.ThreadedResolver(
-base.__all__
 base.abstract
 base.classImplements(
 base.defer
@@ -41158,12 +40502,10 @@ runtimeSeconds(
 unsignedID(
 
 --- import twisted.internet.default (py2.7.3/linux2/root module) ---
-twisted.internet.default.__all__
 twisted.internet.default.install(
 twisted.internet.default.platform
 
 --- from twisted.internet import default ---
-default.__all__
 default.install(
 default.platform
 
@@ -41186,7 +40528,6 @@ twisted.internet.defer.QueueOverflow(
 twisted.internet.defer.QueueUnderflow(
 twisted.internet.defer.SUCCESS
 twisted.internet.defer.TimeoutError(
-twisted.internet.defer.__all__
 twisted.internet.defer.deferredGenerator(
 twisted.internet.defer.exc_info(
 twisted.internet.defer.execute(
@@ -41228,7 +40569,6 @@ defer.QueueOverflow(
 defer.QueueUnderflow(
 defer.SUCCESS
 defer.TimeoutError(
-defer.__all__
 defer.deferredGenerator(
 defer.exc_info(
 defer.execute(
@@ -41301,7 +40641,6 @@ twisted.internet.endpoints.TCP6ClientEndpoint(
 twisted.internet.endpoints.TCP6ServerEndpoint(
 twisted.internet.endpoints.UNIXClientEndpoint(
 twisted.internet.endpoints.UNIXServerEndpoint(
-twisted.internet.endpoints.__all__
 twisted.internet.endpoints.clientFromString(
 twisted.internet.endpoints.defer
 twisted.internet.endpoints.directlyProvides(
@@ -41338,7 +40677,6 @@ endpoints.TCP6ClientEndpoint(
 endpoints.TCP6ServerEndpoint(
 endpoints.UNIXClientEndpoint(
 endpoints.UNIXServerEndpoint(
-endpoints.__all__
 endpoints.clientFromString(
 endpoints.defer
 endpoints.directlyProvides(
@@ -41379,7 +40717,6 @@ serverFromString(
 --- import twisted.internet.epollreactor (py2.7.3/linux2/root module) ---
 twisted.internet.epollreactor.EPollReactor(
 twisted.internet.epollreactor.IReactorFDSet(
-twisted.internet.epollreactor.__all__
 twisted.internet.epollreactor.errno
 twisted.internet.epollreactor.implements(
 twisted.internet.epollreactor.install(
@@ -41389,7 +40726,6 @@ twisted.internet.epollreactor.posixbase
 --- from twisted.internet import epollreactor ---
 epollreactor.EPollReactor(
 epollreactor.IReactorFDSet(
-epollreactor.__all__
 epollreactor.errno
 epollreactor.implements(
 epollreactor.install(
@@ -41443,22 +40779,6 @@ twisted.internet.error.UnsupportedSocketType(
 twisted.internet.error.UserError(
 twisted.internet.error.VerifyError(
 twisted.internet.error.Version(
-twisted.internet.error.__all__
-twisted.internet.error.__class__(
-twisted.internet.error.__delattr__(
-twisted.internet.error.__dict__
-twisted.internet.error.__format__(
-twisted.internet.error.__getattribute__(
-twisted.internet.error.__hash__(
-twisted.internet.error.__init__(
-twisted.internet.error.__new__(
-twisted.internet.error.__reduce__(
-twisted.internet.error.__reduce_ex__(
-twisted.internet.error.__repr__(
-twisted.internet.error.__setattr__(
-twisted.internet.error.__sizeof__(
-twisted.internet.error.__str__(
-twisted.internet.error.__subclasshook__(
 twisted.internet.error.deprecate
 twisted.internet.error.errno
 twisted.internet.error.errnoMapping
@@ -41509,22 +40829,6 @@ error.UnsupportedSocketType(
 error.UserError(
 error.VerifyError(
 error.Version(
-error.__all__
-error.__class__(
-error.__delattr__(
-error.__dict__
-error.__format__(
-error.__getattribute__(
-error.__hash__(
-error.__init__(
-error.__new__(
-error.__reduce__(
-error.__reduce_ex__(
-error.__repr__(
-error.__setattr__(
-error.__sizeof__(
-error.__str__(
-error.__subclasshook__(
 error.deprecate
 error.errno
 error.errnoMapping
@@ -41575,7 +40879,6 @@ getConnectError(
 --- import twisted.internet.fdesc (py2.7.3/linux2/root module) ---
 twisted.internet.fdesc.CONNECTION_DONE
 twisted.internet.fdesc.CONNECTION_LOST
-twisted.internet.fdesc.__all__
 twisted.internet.fdesc.errno
 twisted.internet.fdesc.fcntl
 twisted.internet.fdesc.os
@@ -41588,7 +40891,6 @@ twisted.internet.fdesc.writeToFD(
 --- from twisted.internet import fdesc ---
 fdesc.CONNECTION_DONE
 fdesc.CONNECTION_LOST
-fdesc.__all__
 fdesc.errno
 fdesc.fcntl
 fdesc.os
@@ -41632,7 +40934,6 @@ twisted.internet.inotify.IN_UNMOUNT
 twisted.internet.inotify.IN_WATCH_MASK
 twisted.internet.inotify.INotify(
 twisted.internet.inotify.INotifyError(
-twisted.internet.inotify.__all__
 twisted.internet.inotify.fdesc
 twisted.internet.inotify.humanReadableMask(
 twisted.internet.inotify.log
@@ -41667,7 +40968,6 @@ inotify.IN_UNMOUNT
 inotify.IN_WATCH_MASK
 inotify.INotify(
 inotify.INotifyError(
-inotify.__all__
 inotify.fdesc
 inotify.humanReadableMask(
 inotify.log
@@ -41761,21 +41061,6 @@ twisted.internet.interfaces.IUNIXTransport(
 twisted.internet.interfaces.IWriteDescriptor(
 twisted.internet.interfaces.Interface(
 twisted.internet.interfaces.Version(
-twisted.internet.interfaces.__class__(
-twisted.internet.interfaces.__delattr__(
-twisted.internet.interfaces.__dict__
-twisted.internet.interfaces.__format__(
-twisted.internet.interfaces.__getattribute__(
-twisted.internet.interfaces.__hash__(
-twisted.internet.interfaces.__init__(
-twisted.internet.interfaces.__new__(
-twisted.internet.interfaces.__reduce__(
-twisted.internet.interfaces.__reduce_ex__(
-twisted.internet.interfaces.__repr__(
-twisted.internet.interfaces.__setattr__(
-twisted.internet.interfaces.__sizeof__(
-twisted.internet.interfaces.__str__(
-twisted.internet.interfaces.__subclasshook__(
 twisted.internet.interfaces.deprecatedModuleAttribute(
 
 --- from twisted.internet import interfaces ---
@@ -41834,21 +41119,6 @@ interfaces.IUNIXDatagramTransport(
 interfaces.IUNIXTransport(
 interfaces.IWriteDescriptor(
 interfaces.Version(
-interfaces.__class__(
-interfaces.__delattr__(
-interfaces.__dict__
-interfaces.__format__(
-interfaces.__getattribute__(
-interfaces.__hash__(
-interfaces.__init__(
-interfaces.__new__(
-interfaces.__reduce__(
-interfaces.__reduce_ex__(
-interfaces.__repr__(
-interfaces.__setattr__(
-interfaces.__sizeof__(
-interfaces.__str__(
-interfaces.__subclasshook__(
 interfaces.deprecatedModuleAttribute(
 
 --- from twisted.internet.interfaces import * ---
@@ -41896,14 +41166,12 @@ IWriteDescriptor(
 --- import twisted.internet.main (py2.7.3/linux2/root module) ---
 twisted.internet.main.CONNECTION_DONE
 twisted.internet.main.CONNECTION_LOST
-twisted.internet.main.__all__
 twisted.internet.main.error
 twisted.internet.main.installReactor(
 
 --- from twisted.internet import main ---
 main.CONNECTION_DONE
 main.CONNECTION_LOST
-main.__all__
 main.error
 main.installReactor(
 
@@ -41918,7 +41186,6 @@ twisted.internet.pollreactor.POLLNVAL
 twisted.internet.pollreactor.POLLOUT
 twisted.internet.pollreactor.PollReactor(
 twisted.internet.pollreactor.SelectError(
-twisted.internet.pollreactor.__all__
 twisted.internet.pollreactor.errno
 twisted.internet.pollreactor.implements(
 twisted.internet.pollreactor.install(
@@ -41935,7 +41202,6 @@ pollreactor.POLLNVAL
 pollreactor.POLLOUT
 pollreactor.PollReactor(
 pollreactor.SelectError(
-pollreactor.__all__
 pollreactor.errno
 pollreactor.implements(
 pollreactor.install(
@@ -41961,7 +41227,6 @@ twisted.internet.posixbase.IReactorUNIX(
 twisted.internet.posixbase.IReactorUNIXDatagram(
 twisted.internet.posixbase.PosixReactorBase(
 twisted.internet.posixbase.ReactorBase(
-twisted.internet.posixbase.__all__
 twisted.internet.posixbase.classImplements(
 twisted.internet.posixbase.errno
 twisted.internet.posixbase.error
@@ -42000,7 +41265,6 @@ posixbase.IReactorUNIX(
 posixbase.IReactorUNIXDatagram(
 posixbase.PosixReactorBase(
 posixbase.ReactorBase(
-posixbase.__all__
 posixbase.classImplements(
 posixbase.errno
 posixbase.error
@@ -42131,7 +41395,6 @@ twisted.internet.protocol.Protocol(
 twisted.internet.protocol.ProtocolToConsumerAdapter(
 twisted.internet.protocol.ReconnectingClientFactory(
 twisted.internet.protocol.ServerFactory(
-twisted.internet.protocol.__all__
 twisted.internet.protocol.components
 twisted.internet.protocol.connectionDone
 twisted.internet.protocol.defer
@@ -42157,7 +41420,6 @@ protocol.Protocol(
 protocol.ProtocolToConsumerAdapter(
 protocol.ReconnectingClientFactory(
 protocol.ServerFactory(
-protocol.__all__
 protocol.components
 protocol.connectionDone
 protocol.defer
@@ -42183,26 +41445,6 @@ ServerFactory(
 connectionDone
 
 --- import twisted.internet.reactor (py2.7.3/linux2/root module) ---
-twisted.internet.reactor.__class__(
-twisted.internet.reactor.__delattr__(
-twisted.internet.reactor.__dict__
-twisted.internet.reactor.__format__(
-twisted.internet.reactor.__getattribute__(
-twisted.internet.reactor.__hash__(
-twisted.internet.reactor.__implemented__(
-twisted.internet.reactor.__init__(
-twisted.internet.reactor.__module__
-twisted.internet.reactor.__new__(
-twisted.internet.reactor.__providedBy__(
-twisted.internet.reactor.__provides__(
-twisted.internet.reactor.__reduce__(
-twisted.internet.reactor.__reduce_ex__(
-twisted.internet.reactor.__repr__(
-twisted.internet.reactor.__setattr__(
-twisted.internet.reactor.__sizeof__(
-twisted.internet.reactor.__str__(
-twisted.internet.reactor.__subclasshook__(
-twisted.internet.reactor.__weakref__
 twisted.internet.reactor.addReader(
 twisted.internet.reactor.addSystemEventTrigger(
 twisted.internet.reactor.addWriter(
@@ -42264,26 +41506,6 @@ twisted.internet.reactor.wakeUp(
 twisted.internet.reactor.waker
 
 --- from twisted.internet import reactor ---
-reactor.__class__(
-reactor.__delattr__(
-reactor.__dict__
-reactor.__format__(
-reactor.__getattribute__(
-reactor.__hash__(
-reactor.__implemented__(
-reactor.__init__(
-reactor.__module__
-reactor.__new__(
-reactor.__providedBy__(
-reactor.__provides__(
-reactor.__reduce__(
-reactor.__reduce_ex__(
-reactor.__repr__(
-reactor.__setattr__(
-reactor.__sizeof__(
-reactor.__str__(
-reactor.__subclasshook__(
-reactor.__weakref__
 reactor.addReader(
 reactor.addSystemEventTrigger(
 reactor.addWriter(
@@ -42345,11 +41567,6 @@ reactor.wakeUp(
 reactor.waker
 
 --- from twisted.internet.reactor import * ---
-__implemented__(
-__module__
-__providedBy__(
-__provides__(
-__weakref__
 addReader(
 addSystemEventTrigger(
 addWriter(
@@ -42411,7 +41628,6 @@ twisted.internet.selectreactor.EBADF
 twisted.internet.selectreactor.EINTR
 twisted.internet.selectreactor.IReactorFDSet(
 twisted.internet.selectreactor.SelectReactor(
-twisted.internet.selectreactor.__all__
 twisted.internet.selectreactor.implements(
 twisted.internet.selectreactor.install(
 twisted.internet.selectreactor.log
@@ -42428,7 +41644,6 @@ selectreactor.EBADF
 selectreactor.EINTR
 selectreactor.IReactorFDSet(
 selectreactor.SelectReactor(
-selectreactor.__all__
 selectreactor.implements(
 selectreactor.install(
 selectreactor.log
@@ -42456,7 +41671,6 @@ twisted.internet.serialport.SIXBITS
 twisted.internet.serialport.STOPBITS_ONE
 twisted.internet.serialport.STOPBITS_TWO
 twisted.internet.serialport.SerialPort(
-twisted.internet.serialport.__all__
 twisted.internet.serialport.os
 twisted.internet.serialport.serial
 twisted.internet.serialport.sys
@@ -42473,7 +41687,6 @@ serialport.SIXBITS
 serialport.STOPBITS_ONE
 serialport.STOPBITS_TWO
 serialport.SerialPort(
-serialport.__all__
 serialport.os
 serialport.serial
 serialport.sys
@@ -42496,7 +41709,6 @@ twisted.internet.ssl.Port(
 twisted.internet.ssl.PrivateCertificate(
 twisted.internet.ssl.SSL
 twisted.internet.ssl.Server(
-twisted.internet.ssl.__all__
 twisted.internet.ssl.implementedBy(
 twisted.internet.ssl.implements(
 twisted.internet.ssl.implementsOnly(
@@ -42520,7 +41732,6 @@ ssl.Port(
 ssl.PrivateCertificate(
 ssl.SSL
 ssl.Server(
-ssl.__all__
 ssl.implementedBy(
 ssl.implements(
 ssl.implementsOnly(
@@ -42543,13 +41754,11 @@ supported
 --- import twisted.internet.stdio (py2.7.3/linux2/root module) ---
 twisted.internet.stdio.PipeAddress(
 twisted.internet.stdio.StandardIO(
-twisted.internet.stdio.__all__
 twisted.internet.stdio.platform
 
 --- from twisted.internet import stdio ---
 stdio.PipeAddress(
 stdio.StandardIO(
-stdio.__all__
 stdio.platform
 
 --- from twisted.internet.stdio import * ---
@@ -42568,8 +41777,6 @@ twisted.internet.task.TaskDone(
 twisted.internet.task.TaskFailed(
 twisted.internet.task.TaskFinished(
 twisted.internet.task.TaskStopped(
-twisted.internet.task.__all__
-twisted.internet.task.__metaclass__(
 twisted.internet.task.base
 twisted.internet.task.coiterate(
 twisted.internet.task.cooperate(
@@ -42593,8 +41800,6 @@ task.TaskDone(
 task.TaskFailed(
 task.TaskFinished(
 task.TaskStopped(
-task.__all__
-task.__metaclass__(
 task.base
 task.coiterate(
 task.cooperate(
@@ -42615,7 +41820,6 @@ TaskDone(
 TaskFailed(
 TaskFinished(
 TaskStopped(
-__metaclass__(
 coiterate(
 cooperate(
 deferLater(
@@ -42722,7 +41926,6 @@ untilConcludes(
 
 --- import twisted.internet.threads (py2.7.3/linux2/root module) ---
 twisted.internet.threads.Queue
-twisted.internet.threads.__all__
 twisted.internet.threads.blockingCallFromThread(
 twisted.internet.threads.callMultipleInThread(
 twisted.internet.threads.defer
@@ -42732,7 +41935,6 @@ twisted.internet.threads.failure
 
 --- from twisted.internet import threads ---
 threads.Queue
-threads.__all__
 threads.blockingCallFromThread(
 threads.callMultipleInThread(
 threads.defer
@@ -42749,7 +41951,6 @@ deferToThreadPool(
 
 --- import twisted.internet.tksupport (py2.7.3/linux2/root module) ---
 twisted.internet.tksupport.Tkinter
-twisted.internet.tksupport.__all__
 twisted.internet.tksupport.getPassword(
 twisted.internet.tksupport.install(
 twisted.internet.tksupport.installTkFunctions(
@@ -42761,7 +41962,6 @@ twisted.internet.tksupport.uninstall(
 
 --- from twisted.internet import tksupport ---
 tksupport.Tkinter
-tksupport.__all__
 tksupport.getPassword(
 tksupport.install(
 tksupport.installTkFunctions(
@@ -42906,7 +42106,6 @@ sendmsg
 
 --- import twisted.internet.utils (py2.7.3/linux2/root module) ---
 twisted.internet.utils.StringIO
-twisted.internet.utils.__all__
 twisted.internet.utils.defer
 twisted.internet.utils.failure
 twisted.internet.utils.getProcessOutput(
@@ -42921,7 +42120,6 @@ twisted.internet.utils.warnings
 
 --- from twisted.internet import utils ---
 utils.StringIO
-utils.__all__
 utils.defer
 utils.failure
 utils.getProcessOutput(
@@ -42946,7 +42144,6 @@ tputil
 twisted.internet.wxreactor.ProcessEventsTimer(
 twisted.internet.wxreactor.Queue
 twisted.internet.wxreactor.WxReactor(
-twisted.internet.wxreactor.__all__
 twisted.internet.wxreactor.install(
 twisted.internet.wxreactor.log
 twisted.internet.wxreactor.runtime
@@ -42958,7 +42155,6 @@ twisted.internet.wxreactor.wxTimer(
 wxreactor.ProcessEventsTimer(
 wxreactor.Queue
 wxreactor.WxReactor(
-wxreactor.__all__
 wxreactor.install(
 wxreactor.log
 wxreactor.runtime
@@ -42974,8 +42170,6 @@ wxPySimpleApp(
 wxTimer(
 
 --- import twisted.internet.wxsupport (py2.7.3/linux2/root module) ---
-twisted.internet.wxsupport.__all__
-twisted.internet.wxsupport.__warningregistry__
 twisted.internet.wxsupport.install(
 twisted.internet.wxsupport.platformType
 twisted.internet.wxsupport.reactor
@@ -42984,8 +42178,6 @@ twisted.internet.wxsupport.wxApp(
 twisted.internet.wxsupport.wxRunner(
 
 --- from twisted.internet import wxsupport ---
-wxsupport.__all__
-wxsupport.__warningregistry__
 wxsupport.install(
 wxsupport.platformType
 wxsupport.reactor
@@ -43862,7 +43054,6 @@ twisted.mail.imap4.StringIO
 twisted.mail.imap4.TIMEOUT_ERROR
 twisted.mail.imap4.UnhandledResponse(
 twisted.mail.imap4.WriteBuffer(
-twisted.mail.imap4.__all__
 twisted.mail.imap4.base64
 twisted.mail.imap4.basic
 twisted.mail.imap4.binascii
@@ -43962,7 +43153,6 @@ imap4.StringIO
 imap4.TIMEOUT_ERROR
 imap4.UnhandledResponse(
 imap4.WriteBuffer(
-imap4.__all__
 imap4.base64
 imap4.basic
 imap4.binascii
@@ -44220,7 +43410,6 @@ twisted.mail.pop3.POP3ClientError(
 twisted.mail.pop3.POP3Error(
 twisted.mail.pop3.SHORT
 twisted.mail.pop3.ServerErrorResponse(
-twisted.mail.pop3.__all__
 twisted.mail.pop3.base64
 twisted.mail.pop3.basic
 twisted.mail.pop3.binascii
@@ -44262,7 +43451,6 @@ pop3.POP3ClientError(
 pop3.POP3Error(
 pop3.SHORT
 pop3.ServerErrorResponse(
-pop3.__all__
 pop3.base64
 pop3.basic
 pop3.binascii
@@ -44316,7 +43504,6 @@ twisted.mail.pop3client.POP3ClientError(
 twisted.mail.pop3client.ServerErrorResponse(
 twisted.mail.pop3client.TLSError(
 twisted.mail.pop3client.TLSNotSupportedError(
-twisted.mail.pop3client.__all__
 twisted.mail.pop3client.basic
 twisted.mail.pop3client.defer
 twisted.mail.pop3client.error
@@ -44336,7 +43523,6 @@ pop3client.POP3ClientError(
 pop3client.ServerErrorResponse(
 pop3client.TLSError(
 pop3client.TLSNotSupportedError(
-pop3client.__all__
 pop3client.basic
 pop3client.defer
 pop3client.error
@@ -44362,21 +43548,6 @@ twisted.mail.protocols.SMTPFactory(
 twisted.mail.protocols.SSLContextFactory(
 twisted.mail.protocols.Version(
 twisted.mail.protocols.VirtualPOP3(
-twisted.mail.protocols.__class__(
-twisted.mail.protocols.__delattr__(
-twisted.mail.protocols.__dict__
-twisted.mail.protocols.__format__(
-twisted.mail.protocols.__getattribute__(
-twisted.mail.protocols.__hash__(
-twisted.mail.protocols.__init__(
-twisted.mail.protocols.__new__(
-twisted.mail.protocols.__reduce__(
-twisted.mail.protocols.__reduce_ex__(
-twisted.mail.protocols.__repr__(
-twisted.mail.protocols.__setattr__(
-twisted.mail.protocols.__sizeof__(
-twisted.mail.protocols.__str__(
-twisted.mail.protocols.__subclasshook__(
 twisted.mail.protocols.cred
 twisted.mail.protocols.defer
 twisted.mail.protocols.deprecatedModuleAttribute(
@@ -44401,21 +43572,6 @@ protocols.SMTPFactory(
 protocols.SSLContextFactory(
 protocols.Version(
 protocols.VirtualPOP3(
-protocols.__class__(
-protocols.__delattr__(
-protocols.__dict__
-protocols.__format__(
-protocols.__getattribute__(
-protocols.__hash__(
-protocols.__init__(
-protocols.__new__(
-protocols.__reduce__(
-protocols.__reduce_ex__(
-protocols.__repr__(
-protocols.__setattr__(
-protocols.__sizeof__(
-protocols.__str__(
-protocols.__subclasshook__(
 protocols.cred
 protocols.defer
 protocols.deprecatedModuleAttribute(
@@ -44997,7 +44153,6 @@ runInConsole(
 twisted.manhole.telnet.Shell(
 twisted.manhole.telnet.ShellFactory(
 twisted.manhole.telnet.StringIO(
-twisted.manhole.telnet.__warningregistry__
 twisted.manhole.telnet.copy
 twisted.manhole.telnet.failure
 twisted.manhole.telnet.log
@@ -45010,7 +44165,6 @@ twisted.manhole.telnet.telnet
 telnet.Shell(
 telnet.ShellFactory(
 telnet.StringIO(
-telnet.__warningregistry__
 telnet.copy
 telnet.failure
 telnet.string
@@ -45392,7 +44546,6 @@ twisted.names.dns.StringIO
 twisted.names.dns.TXT
 twisted.names.dns.UnknownRecord(
 twisted.names.dns.WKS
-twisted.names.dns.__all__
 twisted.names.dns.defer
 twisted.names.dns.failure
 twisted.names.dns.implements(
@@ -45507,7 +44660,6 @@ dns.StringIO
 dns.TXT
 dns.UnknownRecord(
 dns.WKS
-dns.__all__
 dns.defer
 dns.failure
 dns.implements(
@@ -45627,7 +44779,6 @@ twisted.names.error.DNSUnknownError(
 twisted.names.error.DomainError(
 twisted.names.error.ResolverError(
 twisted.names.error.TimeoutError(
-twisted.names.error.__all__
 
 --- from twisted.names import error ---
 error.AuthoritativeDomainError(
@@ -45740,7 +44891,6 @@ retry(
 twisted.names.secondary.FileAuthority(
 twisted.names.secondary.SecondaryAuthority(
 twisted.names.secondary.SecondaryAuthorityService(
-twisted.names.secondary.__all__
 twisted.names.secondary.client
 twisted.names.secondary.common
 twisted.names.secondary.defer
@@ -45755,7 +44905,6 @@ twisted.names.secondary.task
 secondary.FileAuthority(
 secondary.SecondaryAuthority(
 secondary.SecondaryAuthorityService(
-secondary.__all__
 secondary.client
 secondary.common
 secondary.defer
@@ -46110,7 +45259,6 @@ NotKnown(
 --- import twisted.persisted.dirdbm (py2.7.3/linux2/root module) ---
 twisted.persisted.dirdbm.DirDBM(
 twisted.persisted.dirdbm.Shelf(
-twisted.persisted.dirdbm.__all__
 twisted.persisted.dirdbm.base64
 twisted.persisted.dirdbm.glob
 twisted.persisted.dirdbm.open(
@@ -46121,7 +45269,6 @@ twisted.persisted.dirdbm.types
 --- from twisted.persisted import dirdbm ---
 dirdbm.DirDBM(
 dirdbm.Shelf(
-dirdbm.__all__
 dirdbm.base64
 dirdbm.glob
 dirdbm.open(
@@ -46138,7 +45285,6 @@ twisted.persisted.sob.Interface(
 twisted.persisted.sob.Persistant(
 twisted.persisted.sob.Persistent(
 twisted.persisted.sob.StringIO
-twisted.persisted.sob.__all__
 twisted.persisted.sob.guessType(
 twisted.persisted.sob.implements(
 twisted.persisted.sob.load(
@@ -46157,7 +45303,6 @@ sob.Interface(
 sob.Persistant(
 sob.Persistent(
 sob.StringIO
-sob.__all__
 sob.guessType(
 sob.implements(
 sob.load(
@@ -46248,7 +45393,6 @@ twisted.plugin.CachedDropin(
 twisted.plugin.CachedPlugin(
 twisted.plugin.IPlugin(
 twisted.plugin.Interface(
-twisted.plugin.__all__
 twisted.plugin.fromkeys(
 twisted.plugin.getAdapterFactory(
 twisted.plugin.getCache(
@@ -46268,7 +45412,6 @@ plugin.CachedDropin(
 plugin.CachedPlugin(
 plugin.IPlugin(
 plugin.Interface(
-plugin.__all__
 plugin.fromkeys(
 plugin.getAdapterFactory(
 plugin.getCache(
@@ -46294,7 +45437,6 @@ getPlugIns(
 pluginPackagePaths(
 
 --- import twisted.plugins (py2.7.3/linux2/root module) ---
-twisted.plugins.__all__
 twisted.plugins.cred_anonymous
 twisted.plugins.cred_file
 twisted.plugins.cred_memory
@@ -46304,7 +45446,6 @@ twisted.plugins.pluginPackagePaths(
 twisted.plugins.twisted_qtstub
 
 --- from twisted import plugins ---
-plugins.__all__
 plugins.cred_anonymous
 plugins.cred_file
 plugins.cred_memory
@@ -46622,7 +45763,6 @@ twisted.protocols.amp.UNKNOWN_ERROR_CODE
 twisted.protocols.amp.UnhandledCommand(
 twisted.protocols.amp.Unicode(
 twisted.protocols.amp.UnknownRemoteError(
-twisted.protocols.amp.__metaclass__(
 twisted.protocols.amp.accumulateClassDict(
 twisted.protocols.amp.count(
 twisted.protocols.amp.datetime
@@ -46709,7 +45849,6 @@ amp.UNKNOWN_ERROR_CODE
 amp.UnhandledCommand(
 amp.Unicode(
 amp.UnknownRemoteError(
-amp.__metaclass__(
 amp.accumulateClassDict(
 amp.count(
 amp.datetime
@@ -46799,21 +45938,6 @@ twisted.protocols.basic.NetstringParseError(
 twisted.protocols.basic.NetstringReceiver(
 twisted.protocols.basic.StatefulStringProtocol(
 twisted.protocols.basic.StringTooLongError(
-twisted.protocols.basic.__class__(
-twisted.protocols.basic.__delattr__(
-twisted.protocols.basic.__dict__
-twisted.protocols.basic.__format__(
-twisted.protocols.basic.__getattribute__(
-twisted.protocols.basic.__hash__(
-twisted.protocols.basic.__init__(
-twisted.protocols.basic.__new__(
-twisted.protocols.basic.__reduce__(
-twisted.protocols.basic.__reduce_ex__(
-twisted.protocols.basic.__repr__(
-twisted.protocols.basic.__setattr__(
-twisted.protocols.basic.__sizeof__(
-twisted.protocols.basic.__str__(
-twisted.protocols.basic.__subclasshook__(
 twisted.protocols.basic.cStringIO
 twisted.protocols.basic.calcsize(
 twisted.protocols.basic.defer
@@ -46848,21 +45972,6 @@ basic.NetstringParseError(
 basic.NetstringReceiver(
 basic.StatefulStringProtocol(
 basic.StringTooLongError(
-basic.__class__(
-basic.__delattr__(
-basic.__dict__
-basic.__format__(
-basic.__getattribute__(
-basic.__hash__(
-basic.__init__(
-basic.__new__(
-basic.__reduce__(
-basic.__reduce_ex__(
-basic.__repr__(
-basic.__setattr__(
-basic.__sizeof__(
-basic.__str__(
-basic.__subclasshook__(
 basic.cStringIO
 basic.calcsize(
 basic.defer
@@ -47461,7 +46570,6 @@ twisted.protocols.ident.IdentServer(
 twisted.protocols.ident.InvalidPort(
 twisted.protocols.ident.NoUser(
 twisted.protocols.ident.ProcServerMixin(
-twisted.protocols.ident.__all__
 twisted.protocols.ident.basic
 twisted.protocols.ident.defer
 twisted.protocols.ident.failure
@@ -47476,7 +46584,6 @@ ident.IdentServer(
 ident.InvalidPort(
 ident.NoUser(
 ident.ProcServerMixin(
-ident.__all__
 ident.basic
 ident.defer
 ident.failure
@@ -47550,7 +46657,6 @@ twisted.protocols.memcache.NoSuchCommand(
 twisted.protocols.memcache.ServerError(
 twisted.protocols.memcache.TimeoutError(
 twisted.protocols.memcache.TimeoutMixin(
-twisted.protocols.memcache.__all__
 twisted.protocols.memcache.deque(
 twisted.protocols.memcache.fail(
 twisted.protocols.memcache.log
@@ -47566,7 +46672,6 @@ memcache.NoSuchCommand(
 memcache.ServerError(
 memcache.TimeoutError(
 memcache.TimeoutMixin(
-memcache.__all__
 memcache.deque(
 memcache.fail(
 memcache.log
@@ -48510,7 +47615,6 @@ twisted.python.components.AdapterRegistry(
 twisted.python.components.CannotAdapt(
 twisted.python.components.Componentized(
 twisted.python.components.ReprableComponentized(
-twisted.python.components.__all__
 twisted.python.components.declarations
 twisted.python.components.getAdapterFactory(
 twisted.python.components.getRegistry(
@@ -48528,7 +47632,6 @@ components.AdapterRegistry(
 components.CannotAdapt(
 components.Componentized(
 components.ReprableComponentized(
-components.__all__
 components.declarations
 components.getAdapterFactory(
 components.getRegistry(
@@ -48559,7 +47662,6 @@ twisted.python.constants.NamedConstant(
 twisted.python.constants.Names(
 twisted.python.constants.ValueConstant(
 twisted.python.constants.Values(
-twisted.python.constants.__all__
 twisted.python.constants.and_(
 twisted.python.constants.count(
 twisted.python.constants.or_(
@@ -48616,7 +47718,6 @@ theContextTracker
 
 --- import twisted.python.deprecate (py2.7.3/linux2/root module) ---
 twisted.python.deprecate.DEPRECATION_WARNING_FORMAT
-twisted.python.deprecate.__all__
 twisted.python.deprecate.deprecated(
 twisted.python.deprecate.deprecatedModuleAttribute(
 twisted.python.deprecate.findlinestarts(
@@ -48633,7 +47734,6 @@ twisted.python.deprecate.warn_explicit(
 
 --- from twisted.python import deprecate ---
 deprecate.DEPRECATION_WARNING_FORMAT
-deprecate.__all__
 deprecate.deprecated(
 deprecate.deprecatedModuleAttribute(
 deprecate.findlinestarts(
@@ -48783,12 +47883,10 @@ traceupLength
 --- import twisted.python.fakepwd (py2.7.3/linux2/root module) ---
 twisted.python.fakepwd.ShadowDatabase(
 twisted.python.fakepwd.UserDatabase(
-twisted.python.fakepwd.__all__
 
 --- from twisted.python import fakepwd ---
 fakepwd.ShadowDatabase(
 fakepwd.UserDatabase(
-fakepwd.__all__
 
 --- from twisted.python.fakepwd import * ---
 ShadowDatabase(
@@ -49012,7 +48110,6 @@ VerifiedPassword(
 positiveInt(
 
 --- import twisted.python.hashlib (py2.7.3/linux2/root module) ---
-twisted.python.hashlib.__all__
 twisted.python.hashlib.md5(
 twisted.python.hashlib.sha1(
 
@@ -49081,8 +48178,6 @@ SmallerHTMLWriter(
 
 --- import twisted.python.lockfile (py2.7.3/linux2/root module) ---
 twisted.python.lockfile.FilesystemLock(
-twisted.python.lockfile.__all__
-twisted.python.lockfile.__metaclass__(
 twisted.python.lockfile.errno
 twisted.python.lockfile.isLocked(
 twisted.python.lockfile.kill(
@@ -49096,8 +48191,6 @@ twisted.python.lockfile.unique(
 
 --- from twisted.python import lockfile ---
 lockfile.FilesystemLock(
-lockfile.__all__
-lockfile.__metaclass__(
 lockfile.errno
 lockfile.isLocked(
 lockfile.kill(
@@ -49256,7 +48349,6 @@ twisted.python.modules.PythonModule(
 twisted.python.modules.PythonPath(
 twisted.python.modules.UnlistableError(
 twisted.python.modules.ZipArchive(
-twisted.python.modules.__metaclass__(
 twisted.python.modules.dirname(
 twisted.python.modules.getModule(
 twisted.python.modules.implements(
@@ -49283,7 +48375,6 @@ modules.PythonModule(
 modules.PythonPath(
 modules.UnlistableError(
 modules.ZipArchive(
-modules.__metaclass__(
 modules.dirname(
 modules.getModule(
 modules.implements(
@@ -49336,7 +48427,6 @@ which(
 twisted.python.randbytes.RandomFactory(
 twisted.python.randbytes.SecureRandomNotAvailable(
 twisted.python.randbytes.SourceNotAvailable(
-twisted.python.randbytes.__all__
 twisted.python.randbytes.getrandbits(
 twisted.python.randbytes.insecureRandom(
 twisted.python.randbytes.os
@@ -49348,7 +48438,6 @@ twisted.python.randbytes.warnings
 randbytes.RandomFactory(
 randbytes.SecureRandomNotAvailable(
 randbytes.SourceNotAvailable(
-randbytes.__all__
 randbytes.getrandbits(
 randbytes.insecureRandom(
 randbytes.os
@@ -49365,7 +48454,6 @@ insecureRandom(
 --- import twisted.python.rebuild (py2.7.3/linux2/root module) ---
 twisted.python.rebuild.RebuildError(
 twisted.python.rebuild.Sensitive(
-twisted.python.rebuild.__getattr__(
 twisted.python.rebuild.lastRebuild
 twisted.python.rebuild.latestClass(
 twisted.python.rebuild.latestFunction(
@@ -49381,7 +48469,6 @@ twisted.python.rebuild.updateInstance(
 --- from twisted.python import rebuild ---
 rebuild.RebuildError(
 rebuild.Sensitive(
-rebuild.__getattr__(
 rebuild.lastRebuild
 rebuild.latestClass(
 rebuild.latestFunction(
@@ -49397,7 +48484,6 @@ rebuild.updateInstance(
 --- from twisted.python.rebuild import * ---
 RebuildError(
 Sensitive(
-__getattr__(
 lastRebuild
 latestClass(
 latestFunction(
@@ -49421,22 +48507,6 @@ twisted.python.reflect.StringIO(
 twisted.python.reflect.Summer(
 twisted.python.reflect.Version(
 twisted.python.reflect.WAS
-twisted.python.reflect.__all__
-twisted.python.reflect.__class__(
-twisted.python.reflect.__delattr__(
-twisted.python.reflect.__dict__
-twisted.python.reflect.__format__(
-twisted.python.reflect.__getattribute__(
-twisted.python.reflect.__hash__(
-twisted.python.reflect.__init__(
-twisted.python.reflect.__new__(
-twisted.python.reflect.__reduce__(
-twisted.python.reflect.__reduce_ex__(
-twisted.python.reflect.__repr__(
-twisted.python.reflect.__setattr__(
-twisted.python.reflect.__sizeof__(
-twisted.python.reflect.__str__(
-twisted.python.reflect.__subclasshook__(
 twisted.python.reflect.accumulateBases(
 twisted.python.reflect.accumulateClassDict(
 twisted.python.reflect.accumulateClassList(
@@ -49495,22 +48565,6 @@ reflect.StringIO(
 reflect.Summer(
 reflect.Version(
 reflect.WAS
-reflect.__all__
-reflect.__class__(
-reflect.__delattr__(
-reflect.__dict__
-reflect.__format__(
-reflect.__getattribute__(
-reflect.__hash__(
-reflect.__init__(
-reflect.__new__(
-reflect.__reduce__(
-reflect.__reduce_ex__(
-reflect.__repr__(
-reflect.__setattr__(
-reflect.__sizeof__(
-reflect.__str__(
-reflect.__subclasshook__(
 reflect.accumulateBases(
 reflect.accumulateClassDict(
 reflect.accumulateClassList(
@@ -49699,12 +48753,10 @@ syslog
 
 --- import twisted.python.systemd (py2.7.3/linux2/root module) ---
 twisted.python.systemd.ListenFDs(
-twisted.python.systemd.__all__
 twisted.python.systemd.getpid(
 
 --- from twisted.python import systemd ---
 systemd.ListenFDs(
-systemd.__all__
 systemd.getpid(
 
 --- from twisted.python.systemd import * ---
@@ -49744,7 +48796,6 @@ wordWrap(
 --- import twisted.python.threadable (py2.7.3/linux2/root module) ---
 twisted.python.threadable.DummyLock(
 twisted.python.threadable.XLock(
-twisted.python.threadable.__all__
 twisted.python.threadable.getThreadID(
 twisted.python.threadable.hook
 twisted.python.threadable.init(
@@ -49760,7 +48811,6 @@ twisted.python.threadable.unpickle_lock(
 --- from twisted.python import threadable ---
 threadable.DummyLock(
 threadable.XLock(
-threadable.__all__
 threadable.getThreadID(
 threadable.hook
 threadable.init(
@@ -49904,7 +48954,6 @@ twisted.python.util.LineLog(
 twisted.python.util.OrderedDict(
 twisted.python.util.SubclassableCStringIO(
 twisted.python.util.UserDict(
-twisted.python.util.__all__
 twisted.python.util.addPluginDir(
 twisted.python.util.errno
 twisted.python.util.getPassword(
@@ -49947,7 +48996,6 @@ util.LineLog(
 util.OrderedDict(
 util.SubclassableCStringIO(
 util.UserDict(
-util.__all__
 util.addPluginDir(
 util.errno
 util.getPassword(
@@ -50055,8 +49103,6 @@ twisted.python.zippath.ZIP_PATH_SEP
 twisted.python.zippath.ZipArchive(
 twisted.python.zippath.ZipFile(
 twisted.python.zippath.ZipPath(
-twisted.python.zippath.__all__
-twisted.python.zippath.__metaclass__(
 twisted.python.zippath.errno
 twisted.python.zippath.implements(
 twisted.python.zippath.os
@@ -50071,8 +49117,6 @@ zippath.ZIP_PATH_SEP
 zippath.ZipArchive(
 zippath.ZipFile(
 zippath.ZipPath(
-zippath.__all__
-zippath.__metaclass__(
 zippath.errno
 zippath.implements(
 zippath.os
@@ -50314,21 +49358,6 @@ procmontap.usage
 --- from twisted.runner.procmontap import * ---
 
 --- import twisted.scripts (py2.7.3/linux2/root module) ---
-twisted.scripts.__class__(
-twisted.scripts.__delattr__(
-twisted.scripts.__dict__
-twisted.scripts.__format__(
-twisted.scripts.__getattribute__(
-twisted.scripts.__hash__(
-twisted.scripts.__init__(
-twisted.scripts.__new__(
-twisted.scripts.__reduce__(
-twisted.scripts.__reduce_ex__(
-twisted.scripts.__repr__(
-twisted.scripts.__setattr__(
-twisted.scripts.__sizeof__(
-twisted.scripts.__str__(
-twisted.scripts.__subclasshook__(
 twisted.scripts.htmlizer
 twisted.scripts.manhole
 twisted.scripts.tap2deb
@@ -50339,21 +49368,6 @@ twisted.scripts.trial
 twisted.scripts.twistd
 
 --- from twisted import scripts ---
-scripts.__class__(
-scripts.__delattr__(
-scripts.__dict__
-scripts.__format__(
-scripts.__getattribute__(
-scripts.__hash__(
-scripts.__init__(
-scripts.__new__(
-scripts.__reduce__(
-scripts.__reduce_ex__(
-scripts.__repr__(
-scripts.__setattr__(
-scripts.__sizeof__(
-scripts.__str__(
-scripts.__subclasshook__(
 scripts.htmlizer
 scripts.manhole
 scripts.tap2deb
@@ -50658,7 +49672,6 @@ runner
 
 --- import twisted.scripts.twistd (py2.7.3/linux2/root module) ---
 twisted.scripts.twistd.ServerOptions(
-twisted.scripts.twistd.__all__
 twisted.scripts.twistd.app
 twisted.scripts.twistd.platformType
 twisted.scripts.twistd.run(
@@ -50666,7 +49679,6 @@ twisted.scripts.twistd.runApp(
 
 --- from twisted.scripts import twistd ---
 twistd.ServerOptions(
-twistd.__all__
 twistd.app
 twistd.platformType
 twistd.run(
@@ -50915,7 +49927,6 @@ twisted.spread.jelly.TupleType(
 twisted.spread.jelly.UnicodeType(
 twisted.spread.jelly.Unjellyable(
 twisted.spread.jelly.Unpersistable(
-twisted.spread.jelly.__warningregistry__
 twisted.spread.jelly.class_atom
 twisted.spread.jelly.copy
 twisted.spread.jelly.datetime
@@ -50977,7 +49988,6 @@ jelly.TupleType(
 jelly.UnicodeType(
 jelly.Unjellyable(
 jelly.Unpersistable(
-jelly.__warningregistry__
 jelly.class_atom
 jelly.copy
 jelly.datetime
@@ -51077,7 +50087,6 @@ twisted.spread.pb.Root(
 twisted.spread.pb.Serializable(
 twisted.spread.pb.ViewPoint(
 twisted.spread.pb.Viewable(
-twisted.spread.pb.__all__
 twisted.spread.pb.banana
 twisted.spread.pb.challenge(
 twisted.spread.pb.copyTags
@@ -51145,7 +50154,6 @@ pb.Root(
 pb.Serializable(
 pb.ViewPoint(
 pb.Viewable(
-pb.__all__
 pb.challenge(
 pb.copyTags
 pb.defer
@@ -52271,7 +51279,6 @@ twisted.trial.runner.TestSuite(
 twisted.trial.runner.TrialRunner(
 twisted.trial.runner.TrialSuite(
 twisted.trial.runner.UncleanWarningsReporterWrapper(
-twisted.trial.runner.__all__
 twisted.trial.runner.defer
 twisted.trial.runner.doctest
 twisted.trial.runner.failure
@@ -52314,7 +51321,6 @@ runner.TestSuite(
 runner.TrialRunner(
 runner.TrialSuite(
 runner.UncleanWarningsReporterWrapper(
-runner.__all__
 runner.defer
 runner.doctest
 runner.failure
@@ -52370,7 +51376,6 @@ twisted.trial.unittest.TestDecorator(
 twisted.trial.unittest.TestSuite(
 twisted.trial.unittest.Todo(
 twisted.trial.unittest.UnsupportedTrialFeature(
-twisted.trial.unittest.__all__
 twisted.trial.unittest.assertAlmostEqual(
 twisted.trial.unittest.assertAlmostEquals(
 twisted.trial.unittest.assertApproximates(
@@ -52551,22 +51556,6 @@ twisted.trial.util.DirtyReactorAggregateError(
 twisted.trial.util.Failure(
 twisted.trial.util.FilePath(
 twisted.trial.util.FilesystemLock(
-twisted.trial.util.__all__
-twisted.trial.util.__class__(
-twisted.trial.util.__delattr__(
-twisted.trial.util.__dict__
-twisted.trial.util.__format__(
-twisted.trial.util.__getattribute__(
-twisted.trial.util.__hash__(
-twisted.trial.util.__init__(
-twisted.trial.util.__new__(
-twisted.trial.util.__reduce__(
-twisted.trial.util.__reduce_ex__(
-twisted.trial.util.__repr__(
-twisted.trial.util.__setattr__(
-twisted.trial.util.__sizeof__(
-twisted.trial.util.__str__(
-twisted.trial.util.__subclasshook__(
 twisted.trial.util.acquireAttribute(
 twisted.trial.util.defer
 twisted.trial.util.deprecate
@@ -52588,21 +51577,6 @@ util.DEFAULT_TIMEOUT_DURATION
 util.DirtyReactorAggregateError(
 util.FilePath(
 util.FilesystemLock(
-util.__class__(
-util.__delattr__(
-util.__dict__
-util.__format__(
-util.__getattribute__(
-util.__hash__(
-util.__init__(
-util.__new__(
-util.__reduce__(
-util.__reduce_ex__(
-util.__repr__(
-util.__setattr__(
-util.__sizeof__(
-util.__str__(
-util.__subclasshook__(
 util.acquireAttribute(
 util.deprecate
 util.excInfoOrFailureToExcInfo(
@@ -52822,7 +51796,6 @@ twisted.web.client.SchemeNotSupported(
 twisted.web.client.TCP4ClientEndpoint(
 twisted.web.client.UNKNOWN_LENGTH
 twisted.web.client.WebClientContextFactory(
-twisted.web.client.__all__
 twisted.web.client.defer
 twisted.web.client.downloadPage(
 twisted.web.client.error
@@ -52877,7 +51850,6 @@ client.SchemeNotSupported(
 client.TCP4ClientEndpoint(
 client.UNKNOWN_LENGTH
 client.WebClientContextFactory(
-client.__all__
 client.downloadPage(
 client.getPage(
 client.http
@@ -53080,7 +52052,6 @@ twisted.web.error.UnexposedMethodError(
 twisted.web.error.UnfilledSlot(
 twisted.web.error.UnsupportedMethod(
 twisted.web.error.UnsupportedType(
-twisted.web.error.__all__
 twisted.web.error.http
 twisted.web.error.operator
 
@@ -53112,13 +52083,11 @@ UnsupportedMethod(
 twisted.web.guard.BasicCredentialFactory(
 twisted.web.guard.DigestCredentialFactory(
 twisted.web.guard.HTTPAuthSessionWrapper(
-twisted.web.guard.__all__
 
 --- from twisted.web import guard ---
 guard.BasicCredentialFactory(
 guard.DigestCredentialFactory(
 guard.HTTPAuthSessionWrapper(
-guard.__all__
 
 --- from twisted.web.guard import * ---
 
@@ -53362,12 +52331,10 @@ weekdayname_lower
 --- import twisted.web.http_headers (py2.7.3/linux2/root module) ---
 twisted.web.http_headers.DictMixin(
 twisted.web.http_headers.Headers(
-twisted.web.http_headers.__all__
 
 --- from twisted.web import http_headers ---
 http_headers.DictMixin(
 http_headers.Headers(
-http_headers.__all__
 
 --- from twisted.web.http_headers import * ---
 
@@ -53383,7 +52350,6 @@ twisted.web.iweb.ITemplateLoader(
 twisted.web.iweb.IUsernameDigestHash(
 twisted.web.iweb.Interface(
 twisted.web.iweb.UNKNOWN_LENGTH
-twisted.web.iweb.__all__
 
 --- from twisted.web import iweb ---
 iweb.Attribute(
@@ -53397,7 +52363,6 @@ iweb.ITemplateLoader(
 iweb.IUsernameDigestHash(
 iweb.Interface(
 iweb.UNKNOWN_LENGTH
-iweb.__all__
 
 --- from twisted.web.iweb import * ---
 IRequest(
@@ -53539,7 +52504,6 @@ twisted.web.resource.IResource(
 twisted.web.resource.Interface(
 twisted.web.resource.NoResource(
 twisted.web.resource.Resource(
-twisted.web.resource.__all__
 twisted.web.resource.getChildForRequest(
 twisted.web.resource.http
 twisted.web.resource.implements(
@@ -53554,7 +52518,6 @@ resource.IResource(
 resource.Interface(
 resource.NoResource(
 resource.Resource(
-resource.__all__
 resource.getChildForRequest(
 resource.http
 resource.implements(
@@ -53643,22 +52606,6 @@ twisted.web.server.Session(
 twisted.web.server.Site(
 twisted.web.server.UnsupportedMethod(
 twisted.web.server.Version(
-twisted.web.server.__all__
-twisted.web.server.__class__(
-twisted.web.server.__delattr__(
-twisted.web.server.__dict__
-twisted.web.server.__format__(
-twisted.web.server.__getattribute__(
-twisted.web.server.__hash__(
-twisted.web.server.__init__(
-twisted.web.server.__new__(
-twisted.web.server.__reduce__(
-twisted.web.server.__reduce_ex__(
-twisted.web.server.__repr__(
-twisted.web.server.__setattr__(
-twisted.web.server.__sizeof__(
-twisted.web.server.__str__(
-twisted.web.server.__subclasshook__(
 twisted.web.server.address
 twisted.web.server.components
 twisted.web.server.copy
@@ -53694,22 +52641,6 @@ server.Session(
 server.Site(
 server.UnsupportedMethod(
 server.Version(
-server.__all__
-server.__class__(
-server.__delattr__(
-server.__dict__
-server.__format__(
-server.__getattribute__(
-server.__hash__(
-server.__init__(
-server.__new__(
-server.__reduce__(
-server.__reduce_ex__(
-server.__repr__(
-server.__setattr__(
-server.__sizeof__(
-server.__str__(
-server.__subclasshook__(
 server.address
 server.components
 server.copy
@@ -53937,7 +52868,6 @@ twisted.web.template.TagLoader(
 twisted.web.template.VALID_HTML_TAG_NAMES
 twisted.web.template.XMLFile(
 twisted.web.template.XMLString(
-twisted.web.template.__all__
 twisted.web.template.flatten(
 twisted.web.template.flattenString(
 twisted.web.template.handler
@@ -53966,7 +52896,6 @@ template.TagLoader(
 template.VALID_HTML_TAG_NAMES
 template.XMLFile(
 template.XMLString(
-template.__all__
 template.flatten(
 template.flattenString(
 template.handler
@@ -54041,22 +52970,6 @@ twisted.web.util.StringIO(
 twisted.web.util.TagLoader(
 twisted.web.util.Version(
 twisted.web.util.XMLFile(
-twisted.web.util.__all__
-twisted.web.util.__class__(
-twisted.web.util.__delattr__(
-twisted.web.util.__dict__
-twisted.web.util.__format__(
-twisted.web.util.__getattribute__(
-twisted.web.util.__hash__(
-twisted.web.util.__init__(
-twisted.web.util.__new__(
-twisted.web.util.__reduce__(
-twisted.web.util.__reduce_ex__(
-twisted.web.util.__repr__(
-twisted.web.util.__setattr__(
-twisted.web.util.__sizeof__(
-twisted.web.util.__str__(
-twisted.web.util.__subclasshook__(
 twisted.web.util.deprecatedModuleAttribute(
 twisted.web.util.flattenString(
 twisted.web.util.formatFailure(
@@ -54160,8 +53073,6 @@ twisted.web.wsgi.INTERNAL_SERVER_ERROR
 twisted.web.wsgi.IResource(
 twisted.web.wsgi.NOT_DONE_YET
 twisted.web.wsgi.WSGIResource(
-twisted.web.wsgi.__all__
-twisted.web.wsgi.__metaclass__(
 twisted.web.wsgi.err(
 twisted.web.wsgi.exc_info(
 twisted.web.wsgi.implements(
@@ -54173,8 +53084,6 @@ wsgi.INTERNAL_SERVER_ERROR
 wsgi.IResource(
 wsgi.NOT_DONE_YET
 wsgi.WSGIResource(
-wsgi.__all__
-wsgi.__metaclass__(
 wsgi.err(
 wsgi.exc_info(
 wsgi.implements(
@@ -54196,7 +53105,6 @@ twisted.web.xmlrpc.Proxy(
 twisted.web.xmlrpc.QueryProtocol(
 twisted.web.xmlrpc.XMLRPC(
 twisted.web.xmlrpc.XMLRPCIntrospection(
-twisted.web.xmlrpc.__all__
 twisted.web.xmlrpc.addIntrospection(
 twisted.web.xmlrpc.defer
 twisted.web.xmlrpc.failure
@@ -54226,7 +53134,6 @@ xmlrpc.Proxy(
 xmlrpc.QueryProtocol(
 xmlrpc.XMLRPC(
 xmlrpc.XMLRPCIntrospection(
-xmlrpc.__all__
 xmlrpc.addIntrospection(
 xmlrpc.defer
 xmlrpc.failure
@@ -54289,7 +53196,6 @@ twisted.words.ewords.DuplicateUser(
 twisted.words.ewords.NoSuchGroup(
 twisted.words.ewords.NoSuchUser(
 twisted.words.ewords.WordsError(
-twisted.words.ewords.__all__
 
 --- from twisted.words import ewords ---
 ewords.AlreadyLoggedIn(
@@ -54298,7 +53204,6 @@ ewords.DuplicateUser(
 ewords.NoSuchGroup(
 ewords.NoSuchUser(
 ewords.WordsError(
-ewords.__all__
 
 --- from twisted.words.ewords import * ---
 AlreadyLoggedIn(
@@ -54546,7 +53451,6 @@ twisted.words.iwords.IGroup(
 twisted.words.iwords.IProtocolPlugin(
 twisted.words.iwords.IUser(
 twisted.words.iwords.Interface(
-twisted.words.iwords.__all__
 twisted.words.iwords.implements(
 
 --- from twisted.words import iwords ---
@@ -54557,7 +53461,6 @@ iwords.IGroup(
 iwords.IProtocolPlugin(
 iwords.IUser(
 iwords.Interface(
-iwords.__all__
 iwords.implements(
 
 --- from twisted.words.iwords import * ---
@@ -55547,7 +54450,6 @@ twisted.words.protocols.jabber.xmlstream.XMPPHandlerCollection(
 twisted.words.protocols.jabber.xmlstream.XmlStream(
 twisted.words.protocols.jabber.xmlstream.XmlStreamFactory(
 twisted.words.protocols.jabber.xmlstream.XmlStreamServerFactory(
-twisted.words.protocols.jabber.xmlstream.__all__
 twisted.words.protocols.jabber.xmlstream.defer
 twisted.words.protocols.jabber.xmlstream.directlyProvides(
 twisted.words.protocols.jabber.xmlstream.domish
@@ -55595,7 +54497,6 @@ xmlstream.XMPPHandlerCollection(
 xmlstream.XmlStream(
 xmlstream.XmlStreamFactory(
 xmlstream.XmlStreamServerFactory(
-xmlstream.__all__
 xmlstream.defer
 xmlstream.directlyProvides(
 xmlstream.domish
@@ -56093,7 +54994,6 @@ twisted.words.service.PBMindReference(
 twisted.words.service.PBUser(
 twisted.words.service.User(
 twisted.words.service.WordsRealm(
-twisted.words.service.__all__
 twisted.words.service.copyright
 twisted.words.service.credentials
 twisted.words.service.ctime(
@@ -56450,10 +55350,6 @@ numpy.True_
 numpy.UFUNC_BUFSIZE_DEFAULT
 numpy.UFUNC_PYVALS_NAME
 numpy.WRAP
-numpy.__NUMPY_SETUP__
-numpy.__all__
-numpy.__config__
-numpy.__git_revision__
 numpy.abs(
 numpy.absolute(
 numpy.add(
@@ -57004,9 +55900,6 @@ True_
 UFUNC_BUFSIZE_DEFAULT
 UFUNC_PYVALS_NAME
 WRAP
-__NUMPY_SETUP__
-__config__
-__git_revision__
 absolute(
 add_docstring(
 add_newdoc(
@@ -57440,39 +56333,8 @@ who(
 zeros(
 zeros_like(
 
---- import numpy.__config__ ---
-numpy.__config__.__all__
-numpy.__config__.atlas_blas_info
-numpy.__config__.atlas_blas_threads_info
-numpy.__config__.atlas_info
-numpy.__config__.atlas_threads_info
-numpy.__config__.blas_info
-numpy.__config__.blas_mkl_info
-numpy.__config__.blas_opt_info
-numpy.__config__.get_info(
-numpy.__config__.lapack_info
-numpy.__config__.lapack_mkl_info
-numpy.__config__.lapack_opt_info
-numpy.__config__.mkl_info
-numpy.__config__.show(
 
---- from numpy import __config__ ---
-__config__.__all__
-__config__.atlas_blas_info
-__config__.atlas_blas_threads_info
-__config__.atlas_info
-__config__.atlas_threads_info
-__config__.blas_info
-__config__.blas_mkl_info
-__config__.blas_opt_info
-__config__.get_info(
-__config__.lapack_info
-__config__.lapack_mkl_info
-__config__.lapack_opt_info
-__config__.mkl_info
-__config__.show(
 
---- from numpy.__config__ import * ---
 atlas_blas_info
 atlas_blas_threads_info
 atlas_info
@@ -57499,7 +56361,6 @@ add_newdocs.add_newdoc(
 --- from numpy.add_newdocs import * ---
 
 --- import numpy.compat ---
-numpy.compat.__all__
 numpy.compat.asbytes(
 numpy.compat.asbytes_nested(
 numpy.compat.asstr(
@@ -57546,7 +56407,6 @@ strchar
 --- from numpy.compat import _inspect ---
 
 --- import numpy.compat.py3k ---
-numpy.compat.py3k.__all__
 numpy.compat.py3k.asbytes(
 numpy.compat.py3k.asbytes_nested(
 numpy.compat.py3k.asstr(
@@ -57561,7 +56421,6 @@ numpy.compat.py3k.sys
 numpy.compat.py3k.unicode(
 
 --- from numpy.compat import py3k ---
-py3k.__all__
 py3k.asbytes(
 py3k.asbytes_nested(
 py3k.asstr(
@@ -57617,7 +56476,6 @@ numpy.core.True_
 numpy.core.UFUNC_BUFSIZE_DEFAULT
 numpy.core.UFUNC_PYVALS_NAME
 numpy.core.WRAP
-numpy.core.__all__
 numpy.core.abs(
 numpy.core.absolute(
 numpy.core.add(
@@ -57992,7 +56850,6 @@ core.True_
 core.UFUNC_BUFSIZE_DEFAULT
 core.UFUNC_PYVALS_NAME
 core.WRAP
-core.__all__
 core.abs(
 core.absolute(
 core.add(
@@ -58357,8 +57214,6 @@ numpy.core.arrayprint.ComplexFormat(
 numpy.core.arrayprint.FloatFormat(
 numpy.core.arrayprint.LongComplexFormat(
 numpy.core.arrayprint.LongFloatFormat(
-numpy.core.arrayprint.__all__
-numpy.core.arrayprint.__docformat__
 numpy.core.arrayprint.absolute(
 numpy.core.arrayprint.array2string(
 numpy.core.arrayprint.format_longfloat(
@@ -58378,8 +57233,6 @@ arrayprint.ComplexFormat(
 arrayprint.FloatFormat(
 arrayprint.LongComplexFormat(
 arrayprint.LongFloatFormat(
-arrayprint.__all__
-arrayprint.__docformat__
 arrayprint.absolute(
 arrayprint.array2string(
 arrayprint.format_longfloat(
@@ -58402,7 +57255,6 @@ LongFloatFormat(
 format_longfloat(
 
 --- import numpy.core.defchararray ---
-numpy.core.defchararray.__all__
 numpy.core.defchararray.add(
 numpy.core.defchararray.array(
 numpy.core.defchararray.asarray(
@@ -58469,7 +57321,6 @@ numpy.core.defchararray.upper(
 numpy.core.defchararray.zfill(
 
 --- from numpy.core import defchararray ---
-defchararray.__all__
 defchararray.add(
 defchararray.array(
 defchararray.asarray(
@@ -58547,8 +57398,6 @@ startswith(
 str_len(
 
 --- import numpy.core.fromnumeric ---
-numpy.core.fromnumeric.__all__
-numpy.core.fromnumeric.__docformat__
 numpy.core.fromnumeric.alen(
 numpy.core.fromnumeric.all(
 numpy.core.fromnumeric.alltrue(
@@ -58602,8 +57451,6 @@ numpy.core.fromnumeric.um
 numpy.core.fromnumeric.var(
 
 --- from numpy.core import fromnumeric ---
-fromnumeric.__all__
-fromnumeric.__docformat__
 fromnumeric.alen(
 fromnumeric.all(
 fromnumeric.alltrue(
@@ -58662,13 +57509,11 @@ nt
 um
 
 --- import numpy.core.function_base ---
-numpy.core.function_base.__all__
 numpy.core.function_base.array(
 numpy.core.function_base.linspace(
 numpy.core.function_base.logspace(
 
 --- from numpy.core import function_base ---
-function_base.__all__
 function_base.array(
 function_base.linspace(
 function_base.logspace(
@@ -58677,7 +57522,6 @@ function_base.logspace(
 
 --- import numpy.core.getlimits ---
 numpy.core.getlimits.MachAr(
-numpy.core.getlimits.__all__
 numpy.core.getlimits.array(
 numpy.core.getlimits.finfo(
 numpy.core.getlimits.iinfo(
@@ -58686,7 +57530,6 @@ numpy.core.getlimits.numeric
 
 --- from numpy.core import getlimits ---
 getlimits.MachAr(
-getlimits.__all__
 getlimits.array(
 getlimits.finfo(
 getlimits.iinfo(
@@ -58710,13 +57553,11 @@ global_symbols
 
 --- import numpy.core.machar ---
 numpy.core.machar.MachAr(
-numpy.core.machar.__all__
 numpy.core.machar.any(
 numpy.core.machar.seterr(
 
 --- from numpy.core import machar ---
 machar.MachAr(
-machar.__all__
 machar.any(
 machar.seterr(
 
@@ -58898,7 +57739,6 @@ numpy.core.numeric.True_
 numpy.core.numeric.UFUNC_BUFSIZE_DEFAULT
 numpy.core.numeric.UFUNC_PYVALS_NAME
 numpy.core.numeric.WRAP
-numpy.core.numeric.__all__
 numpy.core.numeric.absolute(
 numpy.core.numeric.add(
 numpy.core.numeric.alen(
@@ -59242,7 +58082,6 @@ numeric.True_
 numeric.UFUNC_BUFSIZE_DEFAULT
 numeric.UFUNC_PYVALS_NAME
 numeric.WRAP
-numeric.__all__
 numeric.absolute(
 numeric.add(
 numeric.alen(
@@ -59555,7 +58394,6 @@ extend_all(
 numpy.core.numerictypes.LOWER_TABLE
 numpy.core.numerictypes.ScalarType
 numpy.core.numerictypes.UPPER_TABLE
-numpy.core.numerictypes.__all__
 numpy.core.numerictypes.allTypes
 numpy.core.numerictypes.array(
 numpy.core.numerictypes.bitname(
@@ -59670,7 +58508,6 @@ numpy.core.numerictypes.void0(
 numerictypes.LOWER_TABLE
 numerictypes.ScalarType
 numerictypes.UPPER_TABLE
-numerictypes.__all__
 numerictypes.allTypes
 numerictypes.array(
 numerictypes.bitname(
@@ -59794,7 +58631,6 @@ genericTypeRank
 val
 
 --- import numpy.core.records ---
-numpy.core.records.__all__
 numpy.core.records.array(
 numpy.core.records.bytes(
 numpy.core.records.chararray(
@@ -59817,7 +58653,6 @@ numpy.core.records.sys
 numpy.core.records.types
 
 --- from numpy.core import records ---
-records.__all__
 records.array(
 records.bytes(
 records.chararray(
@@ -59866,7 +58701,6 @@ use_pythonmath(
 use_scalarmath(
 
 --- import numpy.core.shape_base ---
-numpy.core.shape_base.__all__
 numpy.core.shape_base.array(
 numpy.core.shape_base.asanyarray(
 numpy.core.shape_base.atleast_1d(
@@ -59877,7 +58711,6 @@ numpy.core.shape_base.newaxis
 numpy.core.shape_base.vstack(
 
 --- from numpy.core import shape_base ---
-shape_base.__all__
 shape_base.array(
 shape_base.asanyarray(
 shape_base.atleast_1d(
@@ -60116,7 +58949,6 @@ umath.trunc(
 --- from numpy.core.umath import * ---
 
 --- import numpy.ctypeslib ---
-numpy.ctypeslib.__all__
 numpy.ctypeslib.array(
 numpy.ctypeslib.as_array(
 numpy.ctypeslib.as_ctypes(
@@ -60141,7 +58973,6 @@ numpy.ctypeslib.tp(
 numpy.ctypeslib.types
 
 --- from numpy import ctypeslib ---
-ctypeslib.__all__
 ctypeslib.array(
 ctypeslib.as_array(
 ctypeslib.as_ctypes(
@@ -60253,7 +59084,6 @@ rfft2(
 rfftn(
 
 --- import numpy.fft.fftpack ---
-numpy.fft.fftpack.__all__
 numpy.fft.fftpack.asarray(
 numpy.fft.fftpack.conjugate(
 numpy.fft.fftpack.fft(
@@ -60277,7 +59107,6 @@ numpy.fft.fftpack.take(
 numpy.fft.fftpack.zeros(
 
 --- from numpy.fft import fftpack ---
-fftpack.__all__
 fftpack.asarray(
 fftpack.conjugate(
 fftpack.fft(
@@ -60329,7 +59158,6 @@ rfftf(
 rffti(
 
 --- import numpy.fft.helper ---
-numpy.fft.helper.__all__
 numpy.fft.helper.arange(
 numpy.fft.helper.asarray(
 numpy.fft.helper.concatenate(
@@ -60369,7 +59197,6 @@ numpy.lib.Arrayterator(
 numpy.lib.DataSource(
 numpy.lib.RankWarning(
 numpy.lib.Tester(
-numpy.lib.__all__
 numpy.lib.add_docstring(
 numpy.lib.add_newdoc(
 numpy.lib.angle(
@@ -60559,7 +59386,6 @@ lib.Arrayterator(
 lib.DataSource(
 lib.RankWarning(
 lib.Tester(
-lib.__all__
 lib.add_docstring(
 lib.add_newdoc(
 lib.angle(
@@ -60780,7 +59606,6 @@ nx
 str2bool(
 
 --- import numpy.lib.arraysetops ---
-numpy.lib.arraysetops.__all__
 numpy.lib.arraysetops.deprecate(
 numpy.lib.arraysetops.ediff1d(
 numpy.lib.arraysetops.in1d(
@@ -60792,7 +59617,6 @@ numpy.lib.arraysetops.union1d(
 numpy.lib.arraysetops.unique(
 
 --- from numpy.lib import arraysetops ---
-arraysetops.__all__
 arraysetops.deprecate(
 arraysetops.ediff1d(
 arraysetops.in1d(
@@ -60807,14 +59631,12 @@ arraysetops.unique(
 
 --- import numpy.lib.arrayterator ---
 numpy.lib.arrayterator.Arrayterator(
-numpy.lib.arrayterator.__all__
 numpy.lib.arrayterator.division
 numpy.lib.arrayterator.mul(
 numpy.lib.arrayterator.sys
 
 --- from numpy.lib import arrayterator ---
 arrayterator.Arrayterator(
-arrayterator.__all__
 arrayterator.division
 arrayterator.mul(
 arrayterator.sys
@@ -60822,7 +59644,6 @@ arrayterator.sys
 --- from numpy.lib.arrayterator import * ---
 
 --- import numpy.lib.financial ---
-numpy.lib.financial.__all__
 numpy.lib.financial.fv(
 numpy.lib.financial.ipmt(
 numpy.lib.financial.irr(
@@ -60836,7 +59657,6 @@ numpy.lib.financial.pv(
 numpy.lib.financial.rate(
 
 --- from numpy.lib import financial ---
-financial.__all__
 financial.fv(
 financial.ipmt(
 financial.irr(
@@ -60903,8 +59723,6 @@ write_array_header_1_0(
 
 --- import numpy.lib.function_base ---
 numpy.lib.function_base.ScalarType
-numpy.lib.function_base.__all__
-numpy.lib.function_base.__docformat__
 numpy.lib.function_base.add(
 numpy.lib.function_base.add_docstring(
 numpy.lib.function_base.add_newdoc(
@@ -61002,7 +59820,6 @@ numpy.lib.function_base.zeros(
 
 --- from numpy.lib import function_base ---
 function_base.ScalarType
-function_base.__docformat__
 function_base.add(
 function_base.add_docstring(
 function_base.add_newdoc(
@@ -61105,7 +59922,6 @@ numpy.lib.index_tricks.CClass(
 numpy.lib.index_tricks.IndexExpression(
 numpy.lib.index_tricks.RClass(
 numpy.lib.index_tricks.ScalarType
-numpy.lib.index_tricks.__all__
 numpy.lib.index_tricks.alltrue(
 numpy.lib.index_tricks.arange(
 numpy.lib.index_tricks.array(
@@ -61140,7 +59956,6 @@ index_tricks.CClass(
 index_tricks.IndexExpression(
 index_tricks.RClass(
 index_tricks.ScalarType
-index_tricks.__all__
 index_tricks.alltrue(
 index_tricks.arange(
 index_tricks.array(
@@ -61189,7 +60004,6 @@ numpy.lib.npyio.LineSplitter(
 numpy.lib.npyio.NameValidator(
 numpy.lib.npyio.NpzFile(
 numpy.lib.npyio.StringConverter(
-numpy.lib.npyio.__all__
 numpy.lib.npyio.asbytes(
 numpy.lib.npyio.asbytes_nested(
 numpy.lib.npyio.asstr(
@@ -61235,7 +60049,6 @@ npyio.LineSplitter(
 npyio.NameValidator(
 npyio.NpzFile(
 npyio.StringConverter(
-npyio.__all__
 npyio.asbytes(
 npyio.asbytes_nested(
 npyio.asstr(
@@ -61279,7 +60092,6 @@ zipfile_factory(
 --- import numpy.lib.polynomial ---
 numpy.lib.polynomial.NX
 numpy.lib.polynomial.RankWarning(
-numpy.lib.polynomial.__all__
 numpy.lib.polynomial.abs(
 numpy.lib.polynomial.atleast_1d(
 numpy.lib.polynomial.diag(
@@ -61311,7 +60123,6 @@ numpy.lib.polynomial.warnings
 --- from numpy.lib import polynomial ---
 polynomial.NX
 polynomial.RankWarning(
-polynomial.__all__
 polynomial.abs(
 polynomial.atleast_1d(
 polynomial.diag(
@@ -61346,7 +60157,6 @@ eigvals(
 lstsq(
 
 --- import numpy.lib.scimath ---
-numpy.lib.scimath.__all__
 numpy.lib.scimath.any(
 numpy.lib.scimath.arccos(
 numpy.lib.scimath.arcsin(
@@ -61363,7 +60173,6 @@ numpy.lib.scimath.power(
 numpy.lib.scimath.sqrt(
 
 --- from numpy.lib import scimath ---
-scimath.__all__
 scimath.any(
 scimath.arccos(
 scimath.arcsin(
@@ -61383,7 +60192,6 @@ scimath.sqrt(
 logn(
 
 --- import numpy.lib.shape_base ---
-numpy.lib.shape_base.__all__
 numpy.lib.shape_base.apply_along_axis(
 numpy.lib.shape_base.apply_over_axes(
 numpy.lib.shape_base.array(
@@ -61442,14 +60250,12 @@ get_array_prepare(
 
 --- import numpy.lib.stride_tricks ---
 numpy.lib.stride_tricks.DummyArray(
-numpy.lib.stride_tricks.__all__
 numpy.lib.stride_tricks.as_strided(
 numpy.lib.stride_tricks.broadcast_arrays(
 numpy.lib.stride_tricks.np
 
 --- from numpy.lib import stride_tricks ---
 stride_tricks.DummyArray(
-stride_tricks.__all__
 stride_tricks.as_strided(
 stride_tricks.broadcast_arrays(
 stride_tricks.np
@@ -61459,7 +60265,6 @@ DummyArray(
 as_strided(
 
 --- import numpy.lib.twodim_base ---
-numpy.lib.twodim_base.__all__
 numpy.lib.twodim_base.alltrue(
 numpy.lib.twodim_base.arange(
 numpy.lib.twodim_base.asanyarray(
@@ -61490,7 +60295,6 @@ numpy.lib.twodim_base.where(
 numpy.lib.twodim_base.zeros(
 
 --- from numpy.lib import twodim_base ---
-twodim_base.__all__
 twodim_base.alltrue(
 twodim_base.arange(
 twodim_base.asanyarray(
@@ -61524,7 +60328,6 @@ twodim_base.zeros(
 
 --- import numpy.lib.type_check ---
 numpy.lib.type_check.METADATA_DTSTR
-numpy.lib.type_check.__all__
 numpy.lib.type_check.array(
 numpy.lib.type_check.array_precision
 numpy.lib.type_check.array_type
@@ -61552,7 +60355,6 @@ numpy.lib.type_check.zeros(
 
 --- from numpy.lib import type_check ---
 type_check.METADATA_DTSTR
-type_check.__all__
 type_check.array(
 type_check.array_precision
 type_check.array_type
@@ -61583,14 +60385,12 @@ array_precision
 array_type
 
 --- import numpy.lib.ufunclike ---
-numpy.lib.ufunclike.__all__
 numpy.lib.ufunclike.fix(
 numpy.lib.ufunclike.isneginf(
 numpy.lib.ufunclike.isposinf(
 numpy.lib.ufunclike.nx
 
 --- from numpy.lib import ufunclike ---
-ufunclike.__all__
 ufunclike.fix(
 ufunclike.isneginf(
 ufunclike.isposinf(
@@ -61600,7 +60400,6 @@ ufunclike.nx
 
 --- import numpy.lib.utils ---
 numpy.lib.utils.SafeEval(
-numpy.lib.utils.__all__
 numpy.lib.utils.byte_bounds(
 numpy.lib.utils.deprecate(
 numpy.lib.utils.deprecate_with_doc(
@@ -61798,7 +60597,6 @@ zungqr(
 --- import numpy.linalg.linalg ---
 numpy.linalg.linalg.Inf
 numpy.linalg.linalg.LinAlgError(
-numpy.linalg.linalg.__all__
 numpy.linalg.linalg.absolute(
 numpy.linalg.linalg.add(
 numpy.linalg.linalg.all(
@@ -61858,7 +60656,6 @@ numpy.linalg.linalg.zeros(
 
 --- from numpy.linalg import linalg ---
 linalg.Inf
-linalg.__all__
 linalg.absolute(
 linalg.add(
 linalg.all(
@@ -61906,10 +60703,6 @@ numpy.ma.MaskError(
 numpy.ma.MaskType(
 numpy.ma.MaskedArray(
 numpy.ma.Tester(
-numpy.ma.__all__
-numpy.ma.__author__
-numpy.ma.__date__
-numpy.ma.__revision__
 numpy.ma.abs(
 numpy.ma.absolute(
 numpy.ma.add(
@@ -62135,10 +60928,6 @@ ma.MaskError(
 ma.MaskType(
 ma.MaskedArray(
 ma.Tester(
-ma.__all__
-ma.__author__
-ma.__date__
-ma.__revision__
 ma.abs(
 ma.absolute(
 ma.add(
@@ -62436,9 +61225,6 @@ numpy.ma.core.MaskType(
 numpy.ma.core.MaskedArray(
 numpy.ma.core.MaskedConstant(
 numpy.ma.core.MaskedIterator(
-numpy.ma.core.__all__
-numpy.ma.core.__author__
-numpy.ma.core.__docformat__
 numpy.ma.core.abs(
 numpy.ma.core.absolute(
 numpy.ma.core.add(
@@ -62647,8 +61433,6 @@ core.MaskType(
 core.MaskedArray(
 core.MaskedConstant(
 core.MaskedIterator(
-core.__author__
-core.__docformat__
 core.allequal(
 core.anom(
 core.anomalies(
@@ -62751,10 +61535,6 @@ numpy.ma.extras.AxisConcatenator(
 numpy.ma.extras.MAError(
 numpy.ma.extras.MAxisConcatenator(
 numpy.ma.extras.MaskedArray(
-numpy.ma.extras.__all__
-numpy.ma.extras.__author__
-numpy.ma.extras.__date__
-numpy.ma.extras.__revision__
 numpy.ma.extras.add(
 numpy.ma.extras.apply_along_axis(
 numpy.ma.extras.apply_over_axes(
@@ -62830,10 +61610,6 @@ extras.AxisConcatenator(
 extras.MAError(
 extras.MAxisConcatenator(
 extras.MaskedArray(
-extras.__all__
-extras.__author__
-extras.__date__
-extras.__revision__
 extras.add(
 extras.apply_along_axis(
 extras.apply_over_axes(
@@ -62913,7 +61689,6 @@ nxarray(
 
 --- import numpy.matrixlib ---
 numpy.matrixlib.Tester(
-numpy.matrixlib.__all__
 numpy.matrixlib.asmatrix(
 numpy.matrixlib.bench(
 numpy.matrixlib.bmat(
@@ -62924,7 +61699,6 @@ numpy.matrixlib.test(
 
 --- from numpy import matrixlib ---
 matrixlib.Tester(
-matrixlib.__all__
 matrixlib.asmatrix(
 matrixlib.bench(
 matrixlib.bmat(
@@ -62938,7 +61712,6 @@ defmatrix
 
 --- import numpy.matrixlib.defmatrix ---
 numpy.matrixlib.defmatrix.N
-numpy.matrixlib.defmatrix.__all__
 numpy.matrixlib.defmatrix.asanyarray(
 numpy.matrixlib.defmatrix.asmatrix(
 numpy.matrixlib.defmatrix.binary_repr(
@@ -62954,7 +61727,6 @@ numpy.matrixlib.defmatrix.sys
 
 --- from numpy.matrixlib import defmatrix ---
 defmatrix.N
-defmatrix.__all__
 defmatrix.asanyarray(
 defmatrix.asmatrix(
 defmatrix.binary_repr(
@@ -63171,7 +61943,6 @@ trimseq(
 
 --- import numpy.polynomial.chebyshev ---
 numpy.polynomial.chebyshev.Chebyshev(
-numpy.polynomial.chebyshev.__all__
 numpy.polynomial.chebyshev.cheb2poly(
 numpy.polynomial.chebyshev.chebadd(
 numpy.polynomial.chebyshev.chebcompanion(
@@ -63205,7 +61976,6 @@ numpy.polynomial.chebyshev.warnings
 
 --- from numpy.polynomial import chebyshev ---
 chebyshev.Chebyshev(
-chebyshev.__all__
 chebyshev.cheb2poly(
 chebyshev.chebadd(
 chebyshev.chebcompanion(
@@ -63249,7 +62019,6 @@ pu
 
 --- import numpy.polynomial.hermite ---
 numpy.polynomial.hermite.Hermite(
-numpy.polynomial.hermite.__all__
 numpy.polynomial.hermite.division
 numpy.polynomial.hermite.herm2poly(
 numpy.polynomial.hermite.hermadd(
@@ -63281,7 +62050,6 @@ numpy.polynomial.hermite.warnings
 
 --- from numpy.polynomial import hermite ---
 hermite.Hermite(
-hermite.__all__
 hermite.division
 hermite.herm2poly(
 hermite.hermadd(
@@ -63337,7 +62105,6 @@ poly2herm(
 
 --- import numpy.polynomial.hermite_e ---
 numpy.polynomial.hermite_e.HermiteE(
-numpy.polynomial.hermite_e.__all__
 numpy.polynomial.hermite_e.division
 numpy.polynomial.hermite_e.herme2poly(
 numpy.polynomial.hermite_e.hermeadd(
@@ -63369,7 +62136,6 @@ numpy.polynomial.hermite_e.warnings
 
 --- from numpy.polynomial import hermite_e ---
 hermite_e.HermiteE(
-hermite_e.__all__
 hermite_e.division
 hermite_e.herme2poly(
 hermite_e.hermeadd(
@@ -63425,7 +62191,6 @@ poly2herme(
 
 --- import numpy.polynomial.laguerre ---
 numpy.polynomial.laguerre.Laguerre(
-numpy.polynomial.laguerre.__all__
 numpy.polynomial.laguerre.division
 numpy.polynomial.laguerre.la
 numpy.polynomial.laguerre.lag2poly(
@@ -63457,7 +62222,6 @@ numpy.polynomial.laguerre.warnings
 
 --- from numpy.polynomial import laguerre ---
 laguerre.Laguerre(
-laguerre.__all__
 laguerre.division
 laguerre.la
 laguerre.lag2poly(
@@ -63513,7 +62277,6 @@ poly2lag(
 
 --- import numpy.polynomial.legendre ---
 numpy.polynomial.legendre.Legendre(
-numpy.polynomial.legendre.__all__
 numpy.polynomial.legendre.division
 numpy.polynomial.legendre.la
 numpy.polynomial.legendre.leg2poly(
@@ -63545,7 +62308,6 @@ numpy.polynomial.legendre.warnings
 
 --- from numpy.polynomial import legendre ---
 legendre.Legendre(
-legendre.__all__
 legendre.division
 legendre.la
 legendre.leg2poly(
@@ -63585,7 +62347,6 @@ legzero
 
 --- import numpy.polynomial.polynomial ---
 numpy.polynomial.polynomial.Polynomial(
-numpy.polynomial.polynomial.__all__
 numpy.polynomial.polynomial.division
 numpy.polynomial.polynomial.la
 numpy.polynomial.polynomial.np
@@ -63653,7 +62414,6 @@ numpy.polynomial.polyutils.PolyBase(
 numpy.polynomial.polyutils.PolyDomainError(
 numpy.polynomial.polyutils.PolyError(
 numpy.polynomial.polyutils.RankWarning(
-numpy.polynomial.polyutils.__all__
 numpy.polynomial.polyutils.as_series(
 numpy.polynomial.polyutils.division
 numpy.polynomial.polyutils.getdomain(
@@ -63670,7 +62430,6 @@ polyutils.PolyBase(
 polyutils.PolyDomainError(
 polyutils.PolyError(
 polyutils.RankWarning(
-polyutils.__all__
 polyutils.as_series(
 polyutils.division
 polyutils.getdomain(
@@ -63691,7 +62450,6 @@ mapparms(
 --- import numpy.random ---
 numpy.random.RandomState(
 numpy.random.Tester(
-numpy.random.__all__
 numpy.random.bench(
 numpy.random.beta(
 numpy.random.binomial(
@@ -63841,17 +62599,14 @@ weibull(
 zipf(
 
 --- import numpy.random.info ---
-numpy.random.info.__all__
 numpy.random.info.depends
 
 --- from numpy.random import info ---
-info.__all__
 
 --- from numpy.random.info import * ---
 
 --- import numpy.random.mtrand ---
 numpy.random.mtrand.RandomState(
-numpy.random.mtrand.__test__
 numpy.random.mtrand.beta(
 numpy.random.mtrand.binomial(
 numpy.random.mtrand.bytes(
@@ -63902,7 +62657,6 @@ numpy.random.mtrand.zipf(
 
 --- from numpy.random import mtrand ---
 mtrand.RandomState(
-mtrand.__test__
 mtrand.beta(
 mtrand.binomial(
 mtrand.bytes(
@@ -64117,7 +62871,6 @@ import_nose(
 --- import numpy.testing.numpytest ---
 numpy.testing.numpytest.DEBUG
 numpy.testing.numpytest.IgnoreException(
-numpy.testing.numpytest.__all__
 numpy.testing.numpytest.get_frame(
 numpy.testing.numpytest.importall(
 numpy.testing.numpytest.os
@@ -64128,7 +62881,6 @@ numpy.testing.numpytest.traceback
 --- from numpy.testing import numpytest ---
 numpytest.DEBUG
 numpytest.IgnoreException(
-numpytest.__all__
 numpytest.get_frame(
 numpytest.importall(
 numpytest.os
@@ -64143,7 +62895,6 @@ output_exception(
 --- import numpy.testing.utils ---
 numpy.testing.utils.WarningManager(
 numpy.testing.utils.WarningMessage(
-numpy.testing.utils.__all__
 numpy.testing.utils.assert_(
 numpy.testing.utils.assert_allclose(
 numpy.testing.utils.assert_almost_equal(
@@ -64840,7 +63591,6 @@ ldap.controls.RequestControlTuples(
 ldap.controls.ResponseControl(
 ldap.controls.SimplePagedResultsControl(
 ldap.controls.ValueLessRequestControl(
-ldap.controls.__all__
 ldap.controls.ldap
 ldap.controls.libldap
 ldap.controls.simple
@@ -64865,7 +63615,6 @@ controls.RequestControlTuples(
 controls.ResponseControl(
 controls.SimplePagedResultsControl(
 controls.ValueLessRequestControl(
-controls.__all__
 controls.ldap
 controls.libldap
 controls.simple
@@ -64988,7 +63737,6 @@ pyasn1
 --- import ldap.functions ---
 ldap.functions.LDAPError(
 ldap.functions.LDAPObject(
-ldap.functions.__all__
 ldap.functions.explode_dn(
 ldap.functions.explode_rdn(
 ldap.functions.get_option(
@@ -65004,7 +63752,6 @@ ldap.functions.traceback
 --- from ldap import functions ---
 functions.LDAPError(
 functions.LDAPObject(
-functions.__all__
 functions.explode_dn(
 functions.explode_rdn(
 functions.get_option(
@@ -65032,7 +63779,6 @@ ldap.ldapobject.ReconnectLDAPObject(
 ldap.ldapobject.RequestControlTuples(
 ldap.ldapobject.SCHEMA_ATTRS
 ldap.ldapobject.SimpleLDAPObject(
-ldap.ldapobject.__all__
 ldap.ldapobject.ldap
 ldap.ldapobject.pprint
 ldap.ldapobject.sys
@@ -65051,7 +63797,6 @@ ldapobject.ReconnectLDAPObject(
 ldapobject.RequestControlTuples(
 ldapobject.SCHEMA_ATTRS
 ldapobject.SimpleLDAPObject(
-ldapobject.__all__
 ldapobject.ldap
 ldapobject.pprint
 ldapobject.sys
@@ -78834,7 +77579,6 @@ OpenGL.GL.exceptional.GLU
 OpenGL.GL.exceptional.GLdoubleArray(
 OpenGL.GL.exceptional.GLfloatArray(
 OpenGL.GL.exceptional.OpenGL
-OpenGL.GL.exceptional.__all__
 OpenGL.GL.exceptional.annotations
 OpenGL.GL.exceptional.arrays
 OpenGL.GL.exceptional.constants
@@ -78879,7 +77623,6 @@ exceptional.GLU
 exceptional.GLdoubleArray(
 exceptional.GLfloatArray(
 exceptional.OpenGL
-exceptional.__all__
 exceptional.annotations
 exceptional.arrays
 exceptional.constants
@@ -78943,7 +77686,6 @@ OpenGL.GL.glget.GLsizei(
 OpenGL.GL.glget.PIXEL_MAP_SIZE_CONSTANT_MAP
 OpenGL.GL.glget.POLYGON_STIPPLE_SIZE
 OpenGL.GL.glget.TEX_PARAMETER_SIZES
-OpenGL.GL.glget.__all__
 OpenGL.GL.glget.addGLGetConstant(
 OpenGL.GL.glget.arrays
 OpenGL.GL.glget.converters
@@ -78993,7 +77735,6 @@ glget.GLsizei(
 glget.PIXEL_MAP_SIZE_CONSTANT_MAP
 glget.POLYGON_STIPPLE_SIZE
 glget.TEX_PARAMETER_SIZES
-glget.__all__
 glget.addGLGetConstant(
 glget.arrays
 glget.converters
@@ -79051,7 +77792,6 @@ OpenGL.GL.images.INT_DIMENSION_NAMES
 OpenGL.GL.images.ImageInputConverter(
 OpenGL.GL.images.PIXEL_NAMES
 OpenGL.GL.images.TypedImageInputConverter(
-OpenGL.GL.images.__all__
 OpenGL.GL.images.arrays
 OpenGL.GL.images.asInt(
 OpenGL.GL.images.asIntConverter(
@@ -79132,7 +77872,6 @@ images.INT_DIMENSION_NAMES
 images.ImageInputConverter(
 images.PIXEL_NAMES
 images.TypedImageInputConverter(
-images.__all__
 images.arrays
 images.asInt(
 images.asIntConverter(
@@ -79228,7 +77967,6 @@ OpenGL.GL.pointers.GLenum(
 OpenGL.GL.pointers.GLint(
 OpenGL.GL.pointers.GLsizei(
 OpenGL.GL.pointers.POINTER_FUNCTION_DATA
-OpenGL.GL.pointers.__all__
 OpenGL.GL.pointers.annotations
 OpenGL.GL.pointers.args
 OpenGL.GL.pointers.arrays
@@ -79295,7 +78033,6 @@ pointers.GLenum(
 pointers.GLint(
 pointers.GLsizei(
 pointers.POINTER_FUNCTION_DATA
-pointers.__all__
 pointers.annotations
 pointers.args
 pointers.arrays
@@ -80082,7 +78819,6 @@ OpenGL.GLU.glunurbs.GLUnurbs(
 OpenGL.GLU.glunurbs.MAX_ORDER
 OpenGL.GLU.glunurbs.OpenGL
 OpenGL.GLU.glunurbs.PLATFORM
-OpenGL.GLU.glunurbs.__all__
 OpenGL.GLU.glunurbs.arrays
 OpenGL.GLU.glunurbs.checkKnots(
 OpenGL.GLU.glunurbs.checkOrder(
@@ -80108,7 +78844,6 @@ glunurbs.GLUnurbs(
 glunurbs.MAX_ORDER
 glunurbs.OpenGL
 glunurbs.PLATFORM
-glunurbs.__all__
 glunurbs.arrays
 glunurbs.checkKnots(
 glunurbs.checkOrder(
@@ -80151,7 +78886,6 @@ GLUStruct(
 --- import OpenGL.GLU.projection ---
 OpenGL.GLU.projection.GL
 OpenGL.GLU.projection.POINTER(
-OpenGL.GLU.projection.__all__
 OpenGL.GLU.projection.arrays
 OpenGL.GLU.projection.ctypes
 OpenGL.GLU.projection.gluProject(
@@ -80163,7 +78897,6 @@ OpenGL.GLU.projection.simple
 --- from OpenGL.GLU import projection ---
 projection.GL
 projection.POINTER(
-projection.__all__
 projection.arrays
 projection.ctypes
 projection.gluProject(
@@ -80180,7 +78913,6 @@ OpenGL.GLU.quadrics.GLU
 OpenGL.GLU.quadrics.GLUQuadric(
 OpenGL.GLU.quadrics.GLUquadric(
 OpenGL.GLU.quadrics.PLATFORM
-OpenGL.GLU.quadrics.__all__
 OpenGL.GLU.quadrics.createBaseFunction(
 OpenGL.GLU.quadrics.ctypes
 OpenGL.GLU.quadrics.gluNewQuadric(
@@ -80192,7 +78924,6 @@ quadrics.GLU
 quadrics.GLUQuadric(
 quadrics.GLUquadric(
 quadrics.PLATFORM
-quadrics.__all__
 quadrics.createBaseFunction(
 quadrics.ctypes
 quadrics.gluNewQuadric(
@@ -80205,7 +78936,6 @@ quadrics.simple
 OpenGL.GLU.tess.GLU
 OpenGL.GLU.tess.GLUtesselator(
 OpenGL.GLU.tess.PLATFORM
-OpenGL.GLU.tess.__all__
 OpenGL.GLU.tess.arrays
 OpenGL.GLU.tess.constants
 OpenGL.GLU.tess.createBaseFunction(
@@ -80224,7 +78954,6 @@ OpenGL.GLU.tess.simple
 tess.GLU
 tess.GLUtesselator(
 tess.PLATFORM
-tess.__all__
 tess.arrays
 tess.constants
 tess.createBaseFunction(
@@ -82692,7 +81421,6 @@ calendar.TUESDAY
 calendar.TextCalendar(
 calendar.TimeEncoding(
 calendar.WEDNESDAY
-calendar.__all__
 calendar.c
 calendar.calendar(
 calendar.datetime
@@ -82781,7 +81509,6 @@ collections.Sequence(
 collections.Set(
 collections.Sized(
 collections.ValuesView(
-collections.__all__
 collections.defaultdict(
 collections.deque(
 collections.namedtuple(
@@ -82831,7 +81558,6 @@ decimal.ROUND_UP
 decimal.Rounded(
 decimal.Subnormal(
 decimal.Underflow(
-decimal.__all__
 decimal.getcontext(
 decimal.localcontext(
 decimal.setcontext(
@@ -82871,7 +81597,6 @@ setcontext(
 fractions.Decimal(
 fractions.Fraction(
 fractions.Rational(
-fractions.__all__
 fractions.division
 fractions.gcd(
 fractions.math
@@ -82962,7 +81687,6 @@ macpath.UF_IMMUTABLE
 macpath.UF_NODUMP
 macpath.UF_NOUNLINK
 macpath.UF_OPAQUE
-macpath.__all__
 macpath.abspath(
 macpath.altsep
 macpath.basename(
@@ -83012,7 +81736,6 @@ numbers.Integral(
 numbers.Number(
 numbers.Rational(
 numbers.Real(
-numbers.__all__
 numbers.abstractmethod(
 numbers.abstractproperty(
 numbers.division
@@ -83037,7 +81760,6 @@ weakref.UserDict
 weakref.WeakKeyDictionary(
 weakref.WeakSet(
 weakref.WeakValueDictionary(
-weakref.__all__
 weakref.getweakrefcount(
 weakref.getweakrefs(
 weakref.proxy(
@@ -83077,8 +81799,6 @@ io.StringIO(
 io.TextIOBase(
 io.TextIOWrapper(
 io.UnsupportedOperation(
-io.__all__
-io.__author__
 io.abc
 io.open(
 
@@ -83110,7 +81830,6 @@ plistlib.Plist(
 plistlib.PlistParser(
 plistlib.PlistWriter(
 plistlib.StringIO(
-plistlib.__all__
 plistlib.binascii
 plistlib.datetime
 plistlib.re
@@ -83614,28 +82333,6 @@ Textbox(
 curses
 
 --- import curses.wrapper (py2.7.3/linux2/root module) ---
-curses.wrapper.__call__(
-curses.wrapper.__class__(
-curses.wrapper.__closure__
-curses.wrapper.__code__
-curses.wrapper.__defaults__
-curses.wrapper.__delattr__(
-curses.wrapper.__dict__
-curses.wrapper.__format__(
-curses.wrapper.__get__(
-curses.wrapper.__getattribute__(
-curses.wrapper.__globals__
-curses.wrapper.__hash__(
-curses.wrapper.__init__(
-curses.wrapper.__module__
-curses.wrapper.__new__(
-curses.wrapper.__reduce__(
-curses.wrapper.__reduce_ex__(
-curses.wrapper.__repr__(
-curses.wrapper.__setattr__(
-curses.wrapper.__sizeof__(
-curses.wrapper.__str__(
-curses.wrapper.__subclasshook__(
 curses.wrapper.func_closure
 curses.wrapper.func_code
 curses.wrapper.func_defaults
@@ -83645,28 +82342,6 @@ curses.wrapper.func_globals
 curses.wrapper.func_name
 
 --- from curses import wrapper ---
-wrapper.__call__(
-wrapper.__class__(
-wrapper.__closure__
-wrapper.__code__
-wrapper.__defaults__
-wrapper.__delattr__(
-wrapper.__dict__
-wrapper.__format__(
-wrapper.__get__(
-wrapper.__getattribute__(
-wrapper.__globals__
-wrapper.__hash__(
-wrapper.__init__(
-wrapper.__module__
-wrapper.__new__(
-wrapper.__reduce__(
-wrapper.__reduce_ex__(
-wrapper.__repr__(
-wrapper.__setattr__(
-wrapper.__sizeof__(
-wrapper.__str__(
-wrapper.__subclasshook__(
 wrapper.func_closure
 wrapper.func_code
 wrapper.func_defaults
@@ -83676,12 +82351,6 @@ wrapper.func_globals
 wrapper.func_name
 
 --- from curses.wrapper import * ---
-__call__(
-__closure__
-__code__
-__defaults__
-__get__(
-__globals__
 func_closure
 func_code
 func_defaults
@@ -83868,8 +82537,6 @@ multiprocessing.SUBWARNING
 multiprocessing.Semaphore(
 multiprocessing.TimeoutError(
 multiprocessing.Value(
-multiprocessing.__all__
-multiprocessing.__author__
 multiprocessing.active_children(
 multiprocessing.allow_connection_pickling(
 multiprocessing.cpu_count(
@@ -83904,7 +82571,6 @@ log_to_stderr(
 multiprocessing.process.AuthenticationString(
 multiprocessing.process.ORIGINAL_DIR
 multiprocessing.process.Process(
-multiprocessing.process.__all__
 multiprocessing.process.active_children(
 multiprocessing.process.current_process(
 multiprocessing.process.itertools
@@ -83917,7 +82583,6 @@ multiprocessing.process.sys
 --- from multiprocessing import process ---
 process.AuthenticationString(
 process.ORIGINAL_DIR
-process.__all__
 process.active_children(
 process.current_process(
 process.itertools
@@ -83940,7 +82605,6 @@ multiprocessing.util.LOGGER_NAME
 multiprocessing.util.NOTSET
 multiprocessing.util.SUBDEBUG
 multiprocessing.util.SUBWARNING
-multiprocessing.util.__all__
 multiprocessing.util.active_children(
 multiprocessing.util.atexit
 multiprocessing.util.current_process(
@@ -83998,7 +82662,6 @@ sub_warning(
 
 --- import platform (1.0.7/py2.7.3/linux2/root module) ---
 platform.DEV_NULL
-platform.__copyright__
 platform.architecture(
 platform.dist(
 platform.java_ver(
@@ -84054,8 +82717,6 @@ win32_ver(
 --- import json (2.0.9/py2.7.3/linux2/root module) ---
 json.JSONDecoder(
 json.JSONEncoder(
-json.__all__
-json.__author__
 json.decoder
 json.dump(
 json.dumps(
@@ -84083,7 +82744,6 @@ json.decoder.PosInf
 json.decoder.STRINGCHUNK
 json.decoder.WHITESPACE
 json.decoder.WHITESPACE_STR
-json.decoder.__all__
 json.decoder.c_scanstring(
 json.decoder.errmsg(
 json.decoder.linecol(
@@ -84107,7 +82767,6 @@ decoder.PosInf
 decoder.STRINGCHUNK
 decoder.WHITESPACE
 decoder.WHITESPACE_STR
-decoder.__all__
 decoder.c_scanstring(
 decoder.errmsg(
 decoder.linecol(
@@ -84182,7 +82841,6 @@ py_encode_basestring_ascii(
 
 --- import json.scanner ---
 json.scanner.NUMBER_RE
-json.scanner.__all__
 json.scanner.c_make_scanner(
 json.scanner.make_scanner(
 json.scanner.py_make_scanner(
@@ -84190,7 +82848,6 @@ json.scanner.re
 
 --- from json import scanner ---
 scanner.NUMBER_RE
-scanner.__all__
 scanner.c_make_scanner(
 scanner.make_scanner(
 scanner.py_make_scanner(
@@ -84338,7 +82995,6 @@ xml.etree.ElementTree.XML(
 xml.etree.ElementTree.XMLID(
 xml.etree.ElementTree.XMLParser(
 xml.etree.ElementTree.XMLTreeBuilder(
-xml.etree.ElementTree.__all__
 xml.etree.ElementTree.dump(
 xml.etree.ElementTree.fromstring(
 xml.etree.ElementTree.fromstringlist(
@@ -84369,7 +83025,6 @@ ElementTree.XML(
 ElementTree.XMLID(
 ElementTree.XMLParser(
 ElementTree.XMLTreeBuilder(
-ElementTree.__all__
 ElementTree.dump(
 ElementTree.fromstring(
 ElementTree.fromstringlist(
@@ -84420,7 +83075,6 @@ wsgiref.handlers.FileWrapper(
 wsgiref.handlers.Headers(
 wsgiref.handlers.SimpleHandler(
 wsgiref.handlers.StringType(
-wsgiref.handlers.__all__
 wsgiref.handlers.format_date_time(
 wsgiref.handlers.guess_scheme(
 wsgiref.handlers.is_hop_by_hop(
@@ -84436,7 +83090,6 @@ handlers.FileWrapper(
 handlers.Headers(
 handlers.SimpleHandler(
 handlers.StringType(
-handlers.__all__
 handlers.format_date_time(
 handlers.guess_scheme(
 handlers.is_hop_by_hop(
@@ -84476,7 +83129,6 @@ wsgiref.simple_server.ServerHandler(
 wsgiref.simple_server.SimpleHandler(
 wsgiref.simple_server.WSGIRequestHandler(
 wsgiref.simple_server.WSGIServer(
-wsgiref.simple_server.__all__
 wsgiref.simple_server.demo_app(
 wsgiref.simple_server.make_server(
 wsgiref.simple_server.server_version
@@ -84492,7 +83144,6 @@ simple_server.ServerHandler(
 simple_server.SimpleHandler(
 simple_server.WSGIRequestHandler(
 simple_server.WSGIServer(
-simple_server.__all__
 simple_server.demo_app(
 simple_server.make_server(
 simple_server.server_version
@@ -84513,7 +83164,6 @@ sys_version
 
 --- import wsgiref.util (py2.7.3/linux2/root module) ---
 wsgiref.util.FileWrapper(
-wsgiref.util.__all__
 wsgiref.util.application_uri(
 wsgiref.util.guess_scheme(
 wsgiref.util.is_hop_by_hop(
@@ -84549,7 +83199,6 @@ wsgiref.validate.StringType(
 wsgiref.validate.TupleType(
 wsgiref.validate.WSGIWarning(
 wsgiref.validate.WriteWrapper(
-wsgiref.validate.__all__
 wsgiref.validate.assert_(
 wsgiref.validate.bad_header_value_re
 wsgiref.validate.check_content_type(
@@ -84577,7 +83226,6 @@ validate.StringType(
 validate.TupleType(
 validate.WSGIWarning(
 validate.WriteWrapper(
-validate.__all__
 validate.assert_(
 validate.bad_header_value_re
 validate.check_content_type(
@@ -84618,7 +83266,6 @@ bdb.Bdb(
 bdb.BdbQuit(
 bdb.Breakpoint(
 bdb.Tdb(
-bdb.__all__
 bdb.bar(
 bdb.checkfuncname(
 bdb.effective(
@@ -84670,7 +83317,6 @@ cookielib.STRICT_DATE_RE
 cookielib.TIMEZONE_RE
 cookielib.UTC_ZONES
 cookielib.WEEKDAY_RE
-cookielib.__all__
 cookielib.copy
 cookielib.cut_port_re
 cookielib.debug
@@ -85014,7 +83660,6 @@ smtpd.Options(
 smtpd.PureProxy(
 smtpd.SMTPChannel(
 smtpd.SMTPServer(
-smtpd.__all__
 smtpd.asynchat
 smtpd.asyncore
 smtpd.errno
@@ -85064,7 +83709,6 @@ test.test_support._1G
 test.test_support._1M
 test.test_support._2G
 test.test_support._4G
-test.test_support.__all__
 test.test_support.args_from_interpreter_flags(
 test.test_support.bigaddrspacetest(
 test.test_support.bigmemtest(
@@ -85161,7 +83805,6 @@ test_support._1G
 test_support._1M
 test_support._2G
 test_support._4G
-test_support.__all__
 test_support.args_from_interpreter_flags(
 test_support.bigaddrspacetest(
 test_support.bigmemtest(
@@ -85363,7 +84006,6 @@ uuid.RESERVED_MICROSOFT
 uuid.RESERVED_NCS
 uuid.RFC_4122
 uuid.UUID(
-uuid.__author__
 uuid.ctypes
 uuid.getnode(
 uuid.lib
@@ -85403,7 +84045,6 @@ abc.types
 
 --- import contextlib (py2.7.3/linux2/root module) ---
 contextlib.GeneratorContextManager(
-contextlib.__all__
 contextlib.closing(
 contextlib.contextmanager(
 contextlib.nested(
@@ -85484,8 +84125,6 @@ imputil.BuiltinImporter(
 imputil.DynLoadSuffixImporter(
 imputil.ImportManager(
 imputil.Importer(
-imputil.__all__
-imputil.__builtin__
 imputil.imp
 imputil.marshal
 imputil.py_suffix_importer(
@@ -85562,8 +84201,6 @@ pickletools.StackObject(
 pickletools.TAKEN_FROM_ARGUMENT1
 pickletools.TAKEN_FROM_ARGUMENT4
 pickletools.UP_TO_NEWLINE
-pickletools.__all__
-pickletools.__test__
 pickletools.anyobject
 pickletools.code2op
 pickletools.decimalnl_long
@@ -85687,7 +84324,6 @@ posixfile.warnings
 fileopen(
 
 --- import runpy (py2.7.3/linux2/root module) ---
-runpy.__all__
 runpy.get_loader(
 runpy.imp
 runpy.read_code(
@@ -85731,7 +84367,6 @@ symtable.Symbol(
 symtable.SymbolTable(
 symtable.SymbolTableFactory(
 symtable.USE
-symtable.__all__
 symtable.symtable(
 symtable.weakref
 
@@ -88146,7 +86781,6 @@ gtk.WindowGroup(
 gtk.WindowPosition(
 gtk.WindowType(
 gtk.WrapMode(
-gtk.__warningregistry__
 gtk.about_dialog_set_email_hook(
 gtk.about_dialog_set_url_hook(
 gtk.accel_group_from_accel_closure(
@@ -91454,7 +90088,6 @@ x11_register_standard_event_type(
 x11_ungrab_server(
 
 --- import pygtk (py2.7.3/linux2/root module) ---
-pygtk.__all__
 pygtk.fnmatch
 pygtk.glob
 pygtk.os
@@ -91498,9 +90131,6 @@ MySQLdb.TimeFromTicks(
 MySQLdb.Timestamp(
 MySQLdb.TimestampFromTicks(
 MySQLdb.Warning(
-MySQLdb.__all__
-MySQLdb.__author__
-MySQLdb.__revision__
 MySQLdb.apilevel
 MySQLdb.connect(
 MySQLdb.connection(
@@ -91555,11 +90185,9 @@ times
 
 --- import MySQLdb.constants ---
 MySQLdb.constants.FIELD_TYPE
-MySQLdb.constants.__all__
 
 --- from MySQLdb import constants ---
 constants.FIELD_TYPE
-constants.__all__
 
 --- from MySQLdb.constants import * ---
 
@@ -91646,11 +90274,9 @@ VAR_STRING
 YEAR
 
 --- import MySQLdb.release ---
-MySQLdb.release.__author__
 MySQLdb.release.version_info
 
 --- from MySQLdb import release ---
-release.__author__
 release.version_info
 
 --- from MySQLdb.release import * ---
@@ -91734,7 +90360,6 @@ ogg.OggError(
 ogg.OggPackBuff(
 ogg.OggStreamState(
 ogg.OggSyncState(
-ogg.__all__
 
 --- from ogg import * ---
 OggError(
@@ -91925,7 +90550,6 @@ hashpw(
 --- from bcrypt import _bcrypt ---
 
 --- import openid (2.2.1/py2.7.3/linux2/root module) ---
-openid.__all__
 openid.association
 openid.consumer
 openid.cryptutil
@@ -91962,7 +90586,6 @@ yadis
 openid.association.Association(
 openid.association.OPENID_NS
 openid.association.SessionNegotiator(
-openid.association.__all__
 openid.association.all_association_types
 openid.association.checkSessionType(
 openid.association.cryptutil
@@ -91981,7 +90604,6 @@ openid.association.time
 association.Association(
 association.OPENID_NS
 association.SessionNegotiator(
-association.__all__
 association.all_association_types
 association.checkSessionType(
 association.cryptutil
@@ -92011,17 +90633,14 @@ only_encrypted_association_order
 supported_association_types
 
 --- import openid.consumer (py2.7.3/linux2/root module) ---
-openid.consumer.__all__
 
 --- from openid import consumer ---
-consumer.__all__
 
 --- from openid.consumer import * ---
 
 --- import openid.cryptutil (py2.7.3/linux2/root module) ---
 openid.cryptutil.HashContainer(
 openid.cryptutil.SHA256_AVAILABLE
-openid.cryptutil.__all__
 openid.cryptutil.base64ToLong(
 openid.cryptutil.binaryToLong(
 openid.cryptutil.bytes_to_long(
@@ -92047,7 +90666,6 @@ openid.cryptutil.toBase64(
 --- from openid import cryptutil ---
 cryptutil.HashContainer(
 cryptutil.SHA256_AVAILABLE
-cryptutil.__all__
 cryptutil.base64ToLong(
 cryptutil.binaryToLong(
 cryptutil.bytes_to_long(
@@ -92115,13 +90733,11 @@ extension.message_module
 message_module
 
 --- import openid.extensions (py2.7.3/linux2/root module) ---
-openid.extensions.__all__
 openid.extensions.draft
 openid.extensions.pape
 openid.extensions.sreg
 
 --- from openid import extensions ---
-extensions.__all__
 extensions.draft
 extensions.pape
 extensions.sreg
@@ -92151,7 +90767,6 @@ openid.extensions.draft.pape5.PAPEExtension(
 openid.extensions.draft.pape5.Request(
 openid.extensions.draft.pape5.Response(
 openid.extensions.draft.pape5.TIME_VALIDATOR
-openid.extensions.draft.pape5.__all__
 openid.extensions.draft.pape5.ns_uri
 openid.extensions.draft.pape5.re
 openid.extensions.draft.pape5.warnings
@@ -92168,7 +90783,6 @@ pape5.PAPEExtension(
 pape5.Request(
 pape5.Response(
 pape5.TIME_VALIDATOR
-pape5.__all__
 pape5.ns_uri
 pape5.re
 pape5.warnings
@@ -92189,7 +90803,6 @@ openid.extensions.sreg.NamespaceAliasRegistrationError(
 openid.extensions.sreg.SRegNamespaceError(
 openid.extensions.sreg.SRegRequest(
 openid.extensions.sreg.SRegResponse(
-openid.extensions.sreg.__all__
 openid.extensions.sreg.checkFieldName(
 openid.extensions.sreg.data_fields
 openid.extensions.sreg.getSRegNS(
@@ -92206,7 +90819,6 @@ sreg.NamespaceAliasRegistrationError(
 sreg.SRegNamespaceError(
 sreg.SRegRequest(
 sreg.SRegResponse(
-sreg.__all__
 sreg.checkFieldName(
 sreg.data_fields
 sreg.getSRegNS(
@@ -92241,7 +90853,6 @@ openid.fetchers.HTTPResponse(
 openid.fetchers.MAX_RESPONSE_KB
 openid.fetchers.USER_AGENT
 openid.fetchers.Urllib2Fetcher(
-openid.fetchers.__all__
 openid.fetchers.cStringIO
 openid.fetchers.createHTTPFetcher(
 openid.fetchers.fetch(
@@ -92266,7 +90877,6 @@ fetchers.HTTPResponse(
 fetchers.MAX_RESPONSE_KB
 fetchers.USER_AGENT
 fetchers.Urllib2Fetcher(
-fetchers.__all__
 fetchers.cStringIO
 fetchers.createHTTPFetcher(
 fetchers.fetch(
@@ -92301,7 +90911,6 @@ usingCurl(
 
 --- import openid.kvform (py2.7.3/linux2/root module) ---
 openid.kvform.KVFormError(
-openid.kvform.__all__
 openid.kvform.dictToKV(
 openid.kvform.kvToDict(
 openid.kvform.kvToSeq(
@@ -92311,7 +90920,6 @@ openid.kvform.types
 
 --- from openid import kvform ---
 kvform.KVFormError(
-kvform.__all__
 kvform.dictToKV(
 kvform.kvToDict(
 kvform.kvToSeq(
@@ -92344,7 +90952,6 @@ openid.message.OPENID_PROTOCOL_FIELDS
 openid.message.SREG_URI
 openid.message.THE_OTHER_OPENID1_NS
 openid.message.UndefinedOpenIDNamespace(
-openid.message.__all__
 openid.message.copy
 openid.message.kvform
 openid.message.no_default
@@ -92372,7 +90979,6 @@ message.OPENID_PROTOCOL_FIELDS
 message.SREG_URI
 message.THE_OTHER_OPENID1_NS
 message.UndefinedOpenIDNamespace(
-message.__all__
 message.copy
 message.kvform
 message.no_default
@@ -92402,7 +91008,6 @@ registered_aliases
 
 --- import openid.oidutil (py2.7.3/linux2/root module) ---
 openid.oidutil.Symbol(
-openid.oidutil.__all__
 openid.oidutil.appendArgs(
 openid.oidutil.autoSubmitHTML(
 openid.oidutil.binascii
@@ -92417,7 +91022,6 @@ openid.oidutil.urlparse
 
 --- from openid import oidutil ---
 oidutil.Symbol(
-oidutil.__all__
 oidutil.appendArgs(
 oidutil.autoSubmitHTML(
 oidutil.binascii
@@ -92437,7 +91041,6 @@ elementtree_modules
 importElementTree(
 
 --- import openid.server (py2.7.3/linux2/root module) ---
-openid.server.__all__
 
 --- from openid import server ---
 
@@ -92446,7 +91049,6 @@ openid.server.__all__
 --- import openid.sreg (py2.7.3/linux2/root module) ---
 openid.sreg.SRegRequest(
 openid.sreg.SRegResponse(
-openid.sreg.__warningregistry__
 openid.sreg.data_fields
 openid.sreg.ns_uri
 openid.sreg.ns_uri_1_0
@@ -92455,16 +91057,13 @@ openid.sreg.supportsSReg(
 openid.sreg.warnings
 
 --- from openid import sreg ---
-sreg.__warningregistry__
 sreg.warnings
 
 --- from openid.sreg import * ---
 
 --- import openid.store (py2.7.3/linux2/root module) ---
-openid.store.__all__
 
 --- from openid import store ---
-store.__all__
 
 --- from openid.store import * ---
 
@@ -92513,11 +91112,9 @@ uri_re
 urinorm(
 
 --- import openid.yadis (1.1.0-rc1/py2.7.3/linux2/root module) ---
-openid.yadis.__all__
 openid.yadis.version_info
 
 --- from openid import yadis ---
-yadis.__all__
 yadis.version_info
 
 --- from openid.yadis import * ---
@@ -92674,7 +91271,6 @@ PyQt4.QtCore.QtSystemMsg
 PyQt4.QtCore.QtWarningMsg
 PyQt4.QtCore.SIGNAL(
 PyQt4.QtCore.SLOT(
-PyQt4.QtCore.__license__
 PyQt4.QtCore.bin(
 PyQt4.QtCore.bom(
 PyQt4.QtCore.center(
@@ -92884,7 +91480,6 @@ QtCore.QtSystemMsg
 QtCore.QtWarningMsg
 QtCore.SIGNAL(
 QtCore.SLOT(
-QtCore.__license__
 QtCore.bin(
 QtCore.bom(
 QtCore.center(
@@ -94269,7 +92864,6 @@ qt_x11_wait_for_window_manager(
 
 --- import OpenSSL (0.13/py2.7.3/linux2/root module) ---
 OpenSSL.SSL
-OpenSSL.__all__
 OpenSSL.crypto
 OpenSSL.rand
 OpenSSL.version
@@ -94650,8 +93244,6 @@ write_file(
 --- import pygments (1.5/py2.7.3/linux2/root module) ---
 pygments.BytesIO(
 pygments.StringIO(
-pygments.__all__
-pygments.__docformat__
 pygments.console
 pygments.filter
 pygments.filters
@@ -94807,14 +93399,12 @@ string_to_tokentype(
 
 --- import pygments.formatter (py2.7.3/linux2/root module) ---
 pygments.formatter.Formatter(
-pygments.formatter.__all__
 pygments.formatter.codecs
 pygments.formatter.get_bool_opt(
 pygments.formatter.get_style_by_name(
 
 --- from pygments import formatter ---
 formatter.Formatter(
-formatter.__all__
 formatter.codecs
 formatter.get_bool_opt(
 formatter.get_style_by_name(
@@ -94838,7 +93428,6 @@ pygments.formatters.RtfFormatter(
 pygments.formatters.SvgFormatter(
 pygments.formatters.Terminal256Formatter(
 pygments.formatters.TerminalFormatter(
-pygments.formatters.__all__
 pygments.formatters.bbcode
 pygments.formatters.cls(
 pygments.formatters.find_formatter_class(
@@ -94874,7 +93463,6 @@ formatters.RtfFormatter(
 formatters.SvgFormatter(
 formatters.Terminal256Formatter(
 formatters.TerminalFormatter(
-formatters.__all__
 formatters.bbcode
 formatters.cls(
 formatters.find_formatter_class(
@@ -94930,13 +93518,11 @@ docstring_headline(
 --- import pygments.formatters.bbcode (py2.7.3/linux2/root module) ---
 pygments.formatters.bbcode.BBCodeFormatter(
 pygments.formatters.bbcode.Formatter(
-pygments.formatters.bbcode.__all__
 pygments.formatters.bbcode.get_bool_opt(
 
 --- from pygments.formatters import bbcode ---
 bbcode.BBCodeFormatter(
 bbcode.Formatter(
-bbcode.__all__
 bbcode.get_bool_opt(
 
 --- from pygments.formatters.bbcode import * ---
@@ -94952,7 +93538,6 @@ pygments.formatters.html.STANDARD_TYPES
 pygments.formatters.html.StringIO
 pygments.formatters.html.Text
 pygments.formatters.html.Token
-pygments.formatters.html.__all__
 pygments.formatters.html.bytes(
 pygments.formatters.html.escape_html(
 pygments.formatters.html.get_bool_opt(
@@ -94973,7 +93558,6 @@ html.STANDARD_TYPES
 html.StringIO
 html.Text
 html.Token
-html.__all__
 html.bytes(
 html.escape_html(
 html.get_bool_opt(
@@ -95007,7 +93591,6 @@ pygments.formatters.img.ImageFormatter(
 pygments.formatters.img.JpgImageFormatter(
 pygments.formatters.img.PilNotAvailable(
 pygments.formatters.img.STYLES
-pygments.formatters.img.__all__
 pygments.formatters.img.get_bool_opt(
 pygments.formatters.img.get_choice_opt(
 pygments.formatters.img.get_int_opt(
@@ -95031,7 +93614,6 @@ img.ImageFormatter(
 img.JpgImageFormatter(
 img.PilNotAvailable(
 img.STYLES
-img.__all__
 img.get_bool_opt(
 img.get_choice_opt(
 img.get_int_opt(
@@ -95059,7 +93641,6 @@ pygments.formatters.latex.STANDARD_TYPES
 pygments.formatters.latex.STYLE_TEMPLATE
 pygments.formatters.latex.StringIO(
 pygments.formatters.latex.Token
-pygments.formatters.latex.__all__
 pygments.formatters.latex.escape_tex(
 pygments.formatters.latex.get_bool_opt(
 pygments.formatters.latex.get_int_opt(
@@ -95071,7 +93652,6 @@ latex.LatexFormatter(
 latex.STANDARD_TYPES
 latex.STYLE_TEMPLATE
 latex.Token
-latex.__all__
 latex.escape_tex(
 latex.get_bool_opt(
 latex.get_int_opt(
@@ -95087,7 +93667,6 @@ pygments.formatters.other.NullFormatter(
 pygments.formatters.other.OptionError(
 pygments.formatters.other.RawTokenFormatter(
 pygments.formatters.other.Token
-pygments.formatters.other.__all__
 pygments.formatters.other.b(
 pygments.formatters.other.colorize(
 pygments.formatters.other.get_choice_opt(
@@ -95098,7 +93677,6 @@ other.NullFormatter(
 other.OptionError(
 other.RawTokenFormatter(
 other.Token
-other.__all__
 other.b(
 other.colorize(
 other.get_choice_opt(
@@ -95109,19 +93687,16 @@ b(
 --- import pygments.formatters.rtf (py2.7.3/linux2/root module) ---
 pygments.formatters.rtf.Formatter(
 pygments.formatters.rtf.RtfFormatter(
-pygments.formatters.rtf.__all__
 
 --- from pygments.formatters import rtf ---
 rtf.Formatter(
 rtf.RtfFormatter(
-rtf.__all__
 
 --- from pygments.formatters.rtf import * ---
 
 --- import pygments.formatters.svg (py2.7.3/linux2/root module) ---
 pygments.formatters.svg.Formatter(
 pygments.formatters.svg.SvgFormatter(
-pygments.formatters.svg.__all__
 pygments.formatters.svg.class2style
 pygments.formatters.svg.escape_html(
 pygments.formatters.svg.get_bool_opt(
@@ -95130,7 +93705,6 @@ pygments.formatters.svg.get_int_opt(
 --- from pygments.formatters import svg ---
 svg.Formatter(
 svg.SvgFormatter(
-svg.__all__
 svg.class2style
 svg.escape_html(
 svg.get_bool_opt(
@@ -95153,7 +93727,6 @@ pygments.formatters.terminal.TERMINAL_COLORS
 pygments.formatters.terminal.TerminalFormatter(
 pygments.formatters.terminal.Token
 pygments.formatters.terminal.Whitespace
-pygments.formatters.terminal.__all__
 pygments.formatters.terminal.ansiformat(
 pygments.formatters.terminal.get_choice_opt(
 pygments.formatters.terminal.sys
@@ -95172,7 +93745,6 @@ terminal.TERMINAL_COLORS
 terminal.TerminalFormatter(
 terminal.Token
 terminal.Whitespace
-terminal.__all__
 terminal.ansiformat(
 terminal.get_choice_opt(
 terminal.sys
@@ -95185,14 +93757,12 @@ TERMINAL_COLORS
 pygments.formatters.terminal256.EscapeSequence(
 pygments.formatters.terminal256.Formatter(
 pygments.formatters.terminal256.Terminal256Formatter(
-pygments.formatters.terminal256.__all__
 pygments.formatters.terminal256.sys
 
 --- from pygments.formatters import terminal256 ---
 terminal256.EscapeSequence(
 terminal256.Formatter(
 terminal256.Terminal256Formatter(
-terminal256.__all__
 terminal256.sys
 
 --- from pygments.formatters.terminal256 import * ---
@@ -95210,7 +93780,6 @@ pygments.lexer.Other
 pygments.lexer.RegexLexer(
 pygments.lexer.RegexLexerMeta(
 pygments.lexer.Text
-pygments.lexer.__all__
 pygments.lexer.apply_filters(
 pygments.lexer.bygroups(
 pygments.lexer.combined(
@@ -95237,7 +93806,6 @@ lexer.Other
 lexer.RegexLexer(
 lexer.RegexLexerMeta(
 lexer.Text
-lexer.__all__
 lexer.apply_filters(
 lexer.bygroups(
 lexer.combined(
@@ -95272,7 +93840,6 @@ using(
 --- import pygments.lexers (py2.7.3/linux2/root module) ---
 pygments.lexers.ClassNotFound(
 pygments.lexers.LEXERS
-pygments.lexers.__all__
 pygments.lexers.basename(
 pygments.lexers.bytes(
 pygments.lexers.find_lexer_class(
@@ -95288,7 +93855,6 @@ pygments.lexers.guess_lexer_for_filename(
 --- from pygments import lexers ---
 lexers.ClassNotFound(
 lexers.LEXERS
-lexers.__all__
 lexers.basename(
 lexers.bytes(
 lexers.find_lexer_class(
@@ -95506,8 +94072,6 @@ ttk.Style(
 ttk.Tkinter
 ttk.Treeview(
 ttk.Widget(
-ttk.__all__
-ttk.__author__
 ttk.setup_master(
 ttk.tclobjs_to_py(
 
