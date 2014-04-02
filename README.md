@@ -14,9 +14,7 @@ And you can teach Pydiction to complete your project's own API very quickly.
 
 Since Pydiction just uses a flat dictionary file, it's extremely flexible because you can do things like re-order how you want
 things to appear in your popup completion menus. By default it will be in alphabetical order, but if you want `else` to come 
-before `elif`, there's nothing stopping you. In fact, the bundled dictionary comes with some keywords and stuff re-arranged
-by likely usage as best as I could manage.
-
+before `elif`, there's nothing stopping you. 
 Installation
 ============
 If you have Pathogen installed:
@@ -294,7 +292,7 @@ It even contains complete-dict even comes with many third-party libraries such a
 And it contains useful dunder methods, conventions, etc such as: `self` `object` `__init__(` `__name__` `__main__` etc.
 
 Because it's just a text file, it's very flexible since you can do things like re-order how you want things to appear in your popup completion menus. By default 
-things will appear in alphabetical order, but if you want `else` to come before `elif`, there's nothing stopping you.
+things will appear in alphabetical order, but if you want `else` to come before `elif`, there's nothing stopping you. In fact, the bundled dictionary comes with some keywords and stuff re-arranged by likely usage as best as I could manage.
 
 Make sure you download the latest version of Pydiction to get the most up-to-date version of complete-dict. New modules are usually added to it every release.
 
