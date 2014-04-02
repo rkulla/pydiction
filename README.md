@@ -8,6 +8,9 @@ It consists of three main files:
     complete-dict         -- A dictionary file that consists of Python keyword & module snippets.
     pydiction.py          -- Python script to optionally add more modules to complete-dict.
 
+The bundled dictionary comes with most snippets you will likely need in your day-to-day Python programming, and the included
+Python script allows you to easily append new modules to the dictionary. So you don't have to wait around for me to add them.
+And you can teach Pydiction to complete your project's own API very quickly.
 
 Installation
 ============
