@@ -376,6 +376,19 @@ Tips
         itr.count(
         ...
 
+ In fact, complete-dict contains some of this already for certain conventions, such as `Psycopg2` conventions of using `conn` and `cur` for connection and cursor objects, respectively. Near the top of the bundled complete-dict I've taken the liberty of adding:
+         
+        --- Psycopg2 / PEP 249 (Entered manually. Assumes conventional variable names: conn and cur) ---
+        conn.close(
+        conn.commit(
+        conn.rollback(
+        conn.cursor(
+        ...
+        cur.execute(
+        cur.executemany(
+        cur.fetchall(
+        ...
+
 - Because pydiction.py will complain if you try to add a module that already exists, this can make updating an existing module a little harder.
 The workaround is to edit complete-dict and manually delete the related module sections. For example to update `__future__`, delete the sections `-- import __future__ ---` and `--- from __future__ import * ---`.
 
