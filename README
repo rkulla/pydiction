@@ -17,6 +17,7 @@ And you can teach Pydiction to complete your project's own API very quickly. Som
 Since Pydiction just uses a flat dictionary file, it's extremely flexible because you can do things like re-order how you want
 things to appear in your popup completion menus. By default it will be in alphabetical order, but if you want `else` to come 
 before `elif`, there's nothing stopping you. 
+
 Installation
 ============
 If you have Pathogen installed:
@@ -360,6 +361,14 @@ Pydiction vs other forms of completion
 Tips
 ====
 - If you want to have case-insensitive menu searches, :set ignorecase. Otherwise :set noic. Or add them to your vimrc.
+
+- SnipMate and Pydiction make a great team, but they both use the Tab key to complete. This is easy to fix, by adding the following to your .vimrc file:
+
+    " Remap snipmate's trigger key from tab to <C-J>
+    imap <C-J> <Plug>snipMateNextOrTrigger
+    smap <C-J> <Plug>snipMateNextOrTrigger
+
+now `cl[Tab]` will use Pydiction to complete "class" and `cl<C-J>` will use the snipmate snippet for class.
 
 - Say you create a custom object, called `S` by doing something like:
     

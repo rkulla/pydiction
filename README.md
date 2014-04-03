@@ -11,11 +11,13 @@ It consists of three main files:
 The bundled dictionary comes with most snippets you will likely need in your day-to-day Python programming, and the included
 Python script allows you to easily append new modules to the dictionary. So you don't have to wait around for me to add them.
 And you can teach Pydiction to complete your project's own API very quickly. Some third-party libraries already supports are:
-`Django` `Twisted` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `OpenGL` `Pygame` `wxPython` `PyGTK` `PyQT4` `OpenID` and more.
+`Django` `Flask` `Requests` `Twisted` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `OpenGL` `Pygame` `wxPython` `PyGTK` 
+`PyQT4` `OpenID` and more.
 
 Since Pydiction just uses a flat dictionary file, it's extremely flexible because you can do things like re-order how you want
 things to appear in your popup completion menus. By default it will be in alphabetical order, but if you want `else` to come 
 before `elif`, there's nothing stopping you. 
+
 Installation
 ============
 If you have Pathogen installed:
@@ -288,7 +290,7 @@ The default complete-dict currently contains python keywords: `and` `as` `assert
 
 It also contains most of the standard library and built-ins:  `__builtin__` `__future__` `os` `sys` `time` `re` `string` `str` `Tkinter` `urllib` etc.
 
-It even contains complete-dict even comes with many third-party libraries such as: `Django` `Twisted` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `ZSI` `LDAP` `OpenGL` `Pygame` `wxPython` `PyGTK` `PyQT4` `PyOgg` `Bcrypt` `OpenID` `GnuPGInterface` `OpenSSL` `Pygments` and more.
+It even contains complete-dict even comes with many third-party libraries such as: `Django` `Twisted` `Flask` `Requests` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `ZSI` `LDAP` `OpenGL` `Pygame` `wxPython` `PyGTK` `PyQT4` `PyOgg` `Bcrypt` `OpenID` `GnuPGInterface` `OpenSSL` `Pygments` and more.
 
 And it contains useful dunder methods, conventions, etc such as: `self` `object` `__init__(` `__name__` `__main__` etc.
 
@@ -341,7 +343,7 @@ Pydiction vs other forms of completion
 
 - Because Pydiction uses a dictionary file of possible completion items, it can complete 3rd party modules more accurately than other methods. You have full control over what it can and cannot complete. If it's unable to complete anything you can use pydiction.py to add a new module's contents to the dictionary, or you can manually add them using a text editor. In other words, you can teach Pydiction to learn what new things it can complete, just like you can with any snippet-based system!
 
-- The dictionary is just a text file, which makes it portable across all platforms. For example, if you're a Pyramid user you can add all the Pyramid related modules to the dictionary file.py. The latest default complete-dict already contains all of the standard library, Python keywords, and many 3rd party modules like Django, Twisted, Numpy, Pygame, wxPython, PyQT4, PyGTK, ZSI, LDAP, MySQLdb, Psycopg2, PyGreSQL, OpenId, OpenSSL, Pygments and much more. To see the full-list of python modules Pydiction knows about, open complete-dict in Vim and run `:g/root modules`.
+- The dictionary is just a text file, which makes it portable across all platforms. For example, if you're a Pyramid user you can add all the Pyramid related modules to the dictionary file.py. The latest default complete-dict already contains all of the standard library, Python keywords, and many 3rd party modules like Django, Twisted, Numpy, Flask, Requests, Pygame, wxPython, PyQT4, PyGTK, ZSI, LDAP, MySQLdb, Psycopg2, PyGreSQL, OpenId, OpenSSL, Pygments and much more. To see the full-list of python modules Pydiction knows about, open complete-dict in Vim and run `:g/root modules`.
 
 - Because Pydiction uses a dictionary file, you don't have to import a module before you can complete it, nor do you even have to have the module installed on your machine. This makes completion very fast since it doesn't need to do any type deducing.
 
@@ -359,6 +361,14 @@ Pydiction vs other forms of completion
 Tips
 ====
 - If you want to have case-insensitive menu searches, :set ignorecase. Otherwise :set noic. Or add them to your vimrc.
+
+- SnipMate and Pydiction make a great team, but they both use the Tab key to complete. This is easy to fix, by adding the following to your .vimrc file:
+
+    " Remap snipmate's trigger key from tab to <C-J>
+    imap <C-J> <Plug>snipMateNextOrTrigger
+    smap <C-J> <Plug>snipMateNextOrTrigger
+
+now `cl[Tab]` will use Pydiction to complete "class" and `cl<C-J>` will use the snipmate snippet for class.
 
 - Say you create a custom object, called `S` by doing something like:
     
