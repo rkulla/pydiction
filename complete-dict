@@ -33,6 +33,36 @@ while
 with
 yield
 
+--- Misc. privates, classes, and stuff we want to appear at top of popup menu (manually entered) ---
+CharField
+HttpResponse
+kwargs
+models
+patterns
+render
+self
+object
+views
+__add__
+__copy__(
+__del__(
+__doc__
+__file__
+__future__
+__get__(
+__getitem__(
+__name__
+__main__
+__init__(
+).__init__(
+__iter__(
+__import__(
+__set__(
+__setitem__(
+__str__(
+__unicode__(
+__version__
+
 --- String type attributes and methods. (manually entered). Only works with quotes, not objects. e.g. 'foo'.startswith(  ---
 .capitalize(
 .center(
@@ -334,30 +364,6 @@ nested_scopes
 print_function
 unicode_literals
 with_statement
-
---- Misc. privates, properties, classes, etc. we may want to keep (manually entered) ---
-kwargs
-self
-object
-__add__
-__copy__(
-__del__(
-__doc__
-__file__
-__future__
-__get__(
-__getitem__(
-__name__
-__main__
-__init__(
-).__init__(
-__iter__(
-__import__(
-__set__(
-__setitem__(
-__str__(
-__unicode__(
-__version__
 
 *************************** End Manually Generated Section ***************************
 
