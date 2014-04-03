@@ -38,10 +38,13 @@ CharField
 HttpResponse
 kwargs
 models
+numpy
 patterns
+pygame
 render
 self
 object
+twisted
 views
 __add__
 __copy__(
