@@ -13453,6 +13453,55 @@ PyCompileError(
 wr_long(
 
 --- import pygame (1.9.1release/py2.7.3/linux2/root module) ---
+pygame.init(
+pygame.draw
+pygame.rect
+pygame.display
+pygame.event
+pygame.surface
+pygame.mouse
+pygame.font
+pygame.locals
+pygame.image
+pygame.sprite
+pygame.transform
+pygame.time
+pygame.base
+pygame.bufferproxy
+pygame.cdrom
+pygame.color
+pygame.colordict
+pygame.compat
+pygame.constants
+pygame.cursors
+pygame.error(
+pygame.fastevent
+pygame.get_error(
+pygame.get_sdl_byteorder(
+pygame.get_sdl_version(
+pygame.joystick
+pygame.key
+pygame.mask
+pygame.mixer
+pygame.mixer_music
+pygame.movie
+pygame.overlay
+pygame.packager_imports(
+pygame.pixelarray
+pygame.quit(
+pygame.register_quit(
+pygame.scrap
+pygame.segfault(
+pygame.set_error(
+pygame.sndarray
+pygame.string
+pygame.surfarray
+pygame.sysfont
+pygame.threads
+pygame.ver
+pygame.vernum
+pygame.version
+pygame.warn_unwanted_files(
 pygame.ACTIVEEVENT
 pygame.ANYFORMAT
 pygame.ASYNCBLIT
@@ -13714,54 +13763,6 @@ pygame.VIDEORESIZE
 pygame.YUY2_OVERLAY
 pygame.YV12_OVERLAY
 pygame.YVYU_OVERLAY
-pygame.base
-pygame.bufferproxy
-pygame.cdrom
-pygame.color
-pygame.colordict
-pygame.compat
-pygame.constants
-pygame.cursors
-pygame.display
-pygame.draw
-pygame.error(
-pygame.event
-pygame.fastevent
-pygame.font
-pygame.get_error(
-pygame.get_sdl_byteorder(
-pygame.get_sdl_version(
-pygame.image
-pygame.init(
-pygame.joystick
-pygame.key
-pygame.mask
-pygame.mixer
-pygame.mixer_music
-pygame.mouse
-pygame.movie
-pygame.overlay
-pygame.packager_imports(
-pygame.pixelarray
-pygame.quit(
-pygame.rect
-pygame.register_quit(
-pygame.scrap
-pygame.segfault(
-pygame.set_error(
-pygame.sndarray
-pygame.sprite
-pygame.string
-pygame.surface
-pygame.surfarray
-pygame.sysfont
-pygame.threads
-pygame.time
-pygame.transform
-pygame.ver
-pygame.vernum
-pygame.version
-pygame.warn_unwanted_files(
 
 --- from pygame import * ---
 ACTIVEEVENT
@@ -15537,6 +15538,20 @@ version.vernum
 --- from pygame.version import * ---
 
 --- import wx (2.8.12.1/py2.7.3/linux2/root module) ---
+wx.App(
+wx.Frame(
+wx.Menu(
+wx.MenuBar(
+wx.MenuBar_GetAutoWindowMenu(
+wx.MenuBar_MacSetCommonMenuBar(
+wx.MenuBar_SetAutoWindowMenu(
+wx.MenuEvent(
+wx.MenuItem(
+wx.MenuItemList(
+wx.MenuItemList_iterator(
+wx.MenuItem_GetDefaultMarginWidth(
+wx.MenuItem_GetLabelFromText(
+wx.MenuItem_GetLabelText(
 wx.ACCEL_ALT
 wx.ACCEL_CMD
 wx.ACCEL_CTRL
@@ -15633,7 +15648,6 @@ wx.AcceleratorTable(
 wx.ActivateEvent(
 wx.AlphaPixelData(
 wx.AlphaPixelData_Accessor(
-wx.App(
 wx.App_CleanUp(
 wx.App_GetComCtl32Version(
 wx.App_GetMacAboutMenuItemId(
@@ -16602,7 +16616,6 @@ wx.FontPickerEvent(
 wx.Font_GetDefaultEncoding(
 wx.Font_SetDefaultEncoding(
 wx.FormatInvalid
-wx.Frame(
 wx.FrameNameStr
 wx.Frame_GetClassDefaultAttributes(
 wx.FromCurrent
@@ -17473,18 +17486,6 @@ wx.MemoryFSHandler(
 wx.MemoryFSHandler_AddFile(
 wx.MemoryFSHandler_AddFileWithMimeType(
 wx.MemoryFSHandler_RemoveFile(
-wx.Menu(
-wx.MenuBar(
-wx.MenuBar_GetAutoWindowMenu(
-wx.MenuBar_MacSetCommonMenuBar(
-wx.MenuBar_SetAutoWindowMenu(
-wx.MenuEvent(
-wx.MenuItem(
-wx.MenuItemList(
-wx.MenuItemList_iterator(
-wx.MenuItem_GetDefaultMarginWidth(
-wx.MenuItem_GetLabelFromText(
-wx.MenuItem_GetLabelText(
 wx.MessageBox(
 wx.MessageBoxCaptionStr
 wx.MessageDialog(
@@ -36483,6 +36484,12 @@ timeout(
 
 --- import twisted (12.2.0/py2.7.3/linux2/root module) ---
 twisted.python
+twisted.internet
+twisted.protocols
+twisted.conch
+twisted.application
+twisted.plugins
+twisted.names
 twisted.version
 
 --- from twisted import * ---
@@ -55180,48 +55187,6 @@ xmpproutertap.usage
 --- from twisted.words.xmpproutertap import * ---
 
 --- import numpy (1.6.2/py2.7.3/linux2/root module) ---
-numpy.ALLOW_THREADS
-numpy.BUFSIZE
-numpy.CLIP
-numpy.ComplexWarning(
-numpy.DataSource(
-numpy.ERR_CALL
-numpy.ERR_DEFAULT
-numpy.ERR_DEFAULT2
-numpy.ERR_IGNORE
-numpy.ERR_LOG
-numpy.ERR_PRINT
-numpy.ERR_RAISE
-numpy.ERR_WARN
-numpy.FLOATING_POINT_SUPPORT
-numpy.FPE_DIVIDEBYZERO
-numpy.FPE_INVALID
-numpy.FPE_OVERFLOW
-numpy.FPE_UNDERFLOW
-numpy.False_
-numpy.Inf
-numpy.Infinity
-numpy.MAXDIMS
-numpy.MachAr(
-numpy.NAN
-numpy.NINF
-numpy.NZERO
-numpy.NaN
-numpy.PINF
-numpy.PZERO
-numpy.PackageLoader(
-numpy.RAISE
-numpy.RankWarning(
-numpy.SHIFT_DIVIDEBYZERO
-numpy.SHIFT_INVALID
-numpy.SHIFT_OVERFLOW
-numpy.SHIFT_UNDERFLOW
-numpy.ScalarType
-numpy.Tester(
-numpy.True_
-numpy.UFUNC_BUFSIZE_DEFAULT
-numpy.UFUNC_PYVALS_NAME
-numpy.WRAP
 numpy.abs(
 numpy.absolute(
 numpy.add(
@@ -55731,6 +55696,48 @@ numpy.where(
 numpy.who(
 numpy.zeros(
 numpy.zeros_like(
+numpy.ALLOW_THREADS
+numpy.BUFSIZE
+numpy.CLIP
+numpy.ComplexWarning(
+numpy.DataSource(
+numpy.ERR_CALL
+numpy.ERR_DEFAULT
+numpy.ERR_DEFAULT2
+numpy.ERR_IGNORE
+numpy.ERR_LOG
+numpy.ERR_PRINT
+numpy.ERR_RAISE
+numpy.ERR_WARN
+numpy.FLOATING_POINT_SUPPORT
+numpy.FPE_DIVIDEBYZERO
+numpy.FPE_INVALID
+numpy.FPE_OVERFLOW
+numpy.FPE_UNDERFLOW
+numpy.False_
+numpy.Inf
+numpy.Infinity
+numpy.MAXDIMS
+numpy.MachAr(
+numpy.NAN
+numpy.NINF
+numpy.NZERO
+numpy.NaN
+numpy.PINF
+numpy.PZERO
+numpy.PackageLoader(
+numpy.RAISE
+numpy.RankWarning(
+numpy.SHIFT_DIVIDEBYZERO
+numpy.SHIFT_INVALID
+numpy.SHIFT_OVERFLOW
+numpy.SHIFT_UNDERFLOW
+numpy.ScalarType
+numpy.Tester(
+numpy.True_
+numpy.UFUNC_BUFSIZE_DEFAULT
+numpy.UFUNC_PYVALS_NAME
+numpy.WRAP
 
 --- from numpy import * ---
 ALLOW_THREADS
@@ -63886,6 +63893,8 @@ tokenizer.split_tokens(
 --- from ldap.schema.tokenizer import * ---
 
 --- import OpenGL (3.0.1/py2.7.3/linux2/root module) ---
+OpenGL.plugins
+OpenGL.version
 OpenGL.ALLOW_NUMPY_SCALARS
 OpenGL.ARRAY_SIZE_CHECKING
 OpenGL.CONTEXT_CHECKING
@@ -63901,8 +63910,6 @@ OpenGL.STORE_POINTERS
 OpenGL.UNSIGNED_BYTE_IMAGES_AS_STRING
 OpenGL.USE_ACCELERATE
 OpenGL.WARN_ON_FORMAT_UNAVAILABLE
-OpenGL.plugins
-OpenGL.version
 
 --- from OpenGL import * ---
 ALLOW_NUMPY_SCALARS
@@ -81725,6 +81732,26 @@ writePlistToResource(
 writePlistToString(
 
 --- import sqlite3 (py2.7.3/linux2/root module) ---
+sqlite3.connect(
+sqlite3.adapt(
+sqlite3.adapters
+sqlite3.apilevel
+sqlite3.complete_statement(
+sqlite3.converters
+sqlite3.datetime
+sqlite3.dbapi2
+sqlite3.enable_callback_tracebacks(
+sqlite3.enable_shared_cache(
+sqlite3.paramstyle
+sqlite3.register_adapter(
+sqlite3.register_converter(
+sqlite3.sqlite_version
+sqlite3.sqlite_version_info
+sqlite3.threadsafety
+sqlite3.time
+sqlite3.version
+sqlite3.version_info
+sqlite3.x
 sqlite3.Binary(
 sqlite3.Cache(
 sqlite3.Connection(
@@ -81782,26 +81809,6 @@ sqlite3.TimeFromTicks(
 sqlite3.Timestamp(
 sqlite3.TimestampFromTicks(
 sqlite3.Warning(
-sqlite3.adapt(
-sqlite3.adapters
-sqlite3.apilevel
-sqlite3.complete_statement(
-sqlite3.connect(
-sqlite3.converters
-sqlite3.datetime
-sqlite3.dbapi2
-sqlite3.enable_callback_tracebacks(
-sqlite3.enable_shared_cache(
-sqlite3.paramstyle
-sqlite3.register_adapter(
-sqlite3.register_converter(
-sqlite3.sqlite_version
-sqlite3.sqlite_version_info
-sqlite3.threadsafety
-sqlite3.time
-sqlite3.version
-sqlite3.version_info
-sqlite3.x
 
 --- from sqlite3 import * ---
 Cache(
@@ -85629,6 +85636,15 @@ setLevel(
 writeToFile(
 
 --- import gtk (py2.7.3/linux2/root module) ---
+gtk.main(
+gtk.main_do_event(
+gtk.main_iteration(
+gtk.main_iteration_do(
+gtk.main_level(
+gtk.main_quit(
+gtk.mainiteration(
+gtk.mainloop(
+gtk.mainquit(
 gtk.ACCEL_LOCKED
 gtk.ACCEL_MASK
 gtk.ACCEL_VISIBLE
@@ -86751,15 +86767,6 @@ gtk.link_button_new(
 gtk.link_button_set_uri_hook(
 gtk.load_font(
 gtk.load_fontset(
-gtk.main(
-gtk.main_do_event(
-gtk.main_iteration(
-gtk.main_iteration_do(
-gtk.main_level(
-gtk.main_quit(
-gtk.mainiteration(
-gtk.mainloop(
-gtk.mainquit(
 gtk.new_with_buffer(
 gtk.notebook_set_window_creation_hook(
 gtk.page_setup_new_from_file(
@@ -89958,6 +89965,30 @@ require(
 require20(
 
 --- import MySQLdb (1.2.3/py2.7.3/linux2/root module) ---
+MySQLdb.connect(
+MySQLdb.connection(
+MySQLdb.apilevel
+MySQLdb.constants
+MySQLdb.debug(
+MySQLdb.escape(
+MySQLdb.escape_dict(
+MySQLdb.escape_sequence(
+MySQLdb.escape_string(
+MySQLdb.get_client_info(
+MySQLdb.paramstyle
+MySQLdb.release
+MySQLdb.result(
+MySQLdb.server_end(
+MySQLdb.server_init(
+MySQLdb.string_literal(
+MySQLdb.test_DBAPISet_set_equality(
+MySQLdb.test_DBAPISet_set_equality_membership(
+MySQLdb.test_DBAPISet_set_inequality(
+MySQLdb.test_DBAPISet_set_inequality_membership(
+MySQLdb.thread_safe(
+MySQLdb.threadsafety
+MySQLdb.times
+MySQLdb.version_info
 MySQLdb.BINARY
 MySQLdb.Binary(
 MySQLdb.Connect(
@@ -89989,30 +90020,6 @@ MySQLdb.TimeFromTicks(
 MySQLdb.Timestamp(
 MySQLdb.TimestampFromTicks(
 MySQLdb.Warning(
-MySQLdb.apilevel
-MySQLdb.connect(
-MySQLdb.connection(
-MySQLdb.constants
-MySQLdb.debug(
-MySQLdb.escape(
-MySQLdb.escape_dict(
-MySQLdb.escape_sequence(
-MySQLdb.escape_string(
-MySQLdb.get_client_info(
-MySQLdb.paramstyle
-MySQLdb.release
-MySQLdb.result(
-MySQLdb.server_end(
-MySQLdb.server_init(
-MySQLdb.string_literal(
-MySQLdb.test_DBAPISet_set_equality(
-MySQLdb.test_DBAPISet_set_equality_membership(
-MySQLdb.test_DBAPISet_set_inequality(
-MySQLdb.test_DBAPISet_set_inequality_membership(
-MySQLdb.thread_safe(
-MySQLdb.threadsafety
-MySQLdb.times
-MySQLdb.version_info
 
 --- from MySQLdb import * ---
 Connect(
@@ -90228,6 +90235,25 @@ OggSyncState(
 --- from ogg import _ogg ---
 
 --- import pg (py2.7.3/linux2/root module) ---
+pg.connect(
+pg.escape_bytea(
+pg.escape_string(
+pg.get_defbase(
+pg.get_defhost(
+pg.get_defopt(
+pg.get_defport(
+pg.get_deftty(
+pg.get_defuser(
+pg.set_decimal(
+pg.set_defbase(
+pg.set_defhost(
+pg.set_defopt(
+pg.set_defpasswd(
+pg.set_defport(
+pg.set_deftty(
+pg.set_defuser(
+pg.unescape_bytea(
+pg.version
 pg.DB(
 pg.DataError(
 pg.DatabaseError(
@@ -90254,25 +90280,6 @@ pg.TRANS_INERROR
 pg.TRANS_INTRANS
 pg.TRANS_UNKNOWN
 pg.Warning(
-pg.connect(
-pg.escape_bytea(
-pg.escape_string(
-pg.get_defbase(
-pg.get_defhost(
-pg.get_defopt(
-pg.get_defport(
-pg.get_deftty(
-pg.get_defuser(
-pg.set_decimal(
-pg.set_defbase(
-pg.set_defhost(
-pg.set_defopt(
-pg.set_defpasswd(
-pg.set_defport(
-pg.set_deftty(
-pg.set_defuser(
-pg.unescape_bytea(
-pg.version
 
 --- from pg import * ---
 INV_READ
@@ -93943,6 +93950,13 @@ setup_master(
 tclobjs_to_py(
 
 --- import psycopg2 (2.5.2 (dt dec pq3 ext)/py2.7.3/linux2/root module) ---
+psycopg2.connect(
+psycopg2.extensions
+psycopg2.apilevel
+psycopg2.paramstyle
+psycopg2.threadsafety
+psycopg2.tz
+psycopg2.ProgrammingError(
 psycopg2.BINARY(
 psycopg2.Binary(
 psycopg2.DATETIME(
@@ -93957,7 +93971,6 @@ psycopg2.InternalError(
 psycopg2.NUMBER(
 psycopg2.NotSupportedError(
 psycopg2.OperationalError(
-psycopg2.ProgrammingError(
 psycopg2.ROWID(
 psycopg2.STRING(
 psycopg2.Time(
@@ -93965,12 +93978,6 @@ psycopg2.TimeFromTicks(
 psycopg2.Timestamp(
 psycopg2.TimestampFromTicks(
 psycopg2.Warning(
-psycopg2.apilevel
-psycopg2.connect(
-psycopg2.extensions
-psycopg2.paramstyle
-psycopg2.threadsafety
-psycopg2.tz
 
 --- from psycopg2 import * ---
 BINARY(
