@@ -1,5 +1,5 @@
 
---- Python Keywords (manually entered) ---
+--- Manually enter things you want to show up first in completion menu at the top of this file ---
 and
 as
 assert
@@ -33,15 +33,19 @@ while
 with
 yield
 
---- Misc. privates, classes, and stuff we want to appear at top of popup menu (manually entered) ---
 CharField
 HttpResponse
+flask
+Flask
 kwargs
 models
+MySQLdb
 numpy
 patterns
 pygame
 render
+render_template
+request
 self
 object
 twisted
@@ -146,7 +150,7 @@ str.translate(
 str.upper(
 str.zfill(
 
---- Psycopg2 / PEP 249 (Entered manually. Assumes conventional variable names: conn and cur) ---
+--- Psycopg2 / PEP 249 (Assumes conventional variable names: conn and cur) ---
 conn.close(
 conn.commit(
 conn.rollback(
@@ -367,8 +371,6 @@ nested_scopes
 print_function
 unicode_literals
 with_statement
-
-*************************** End Manually Generated Section ***************************
 
 --- import os (py2.7.3/linux2/root module) ---
 os.EX_CANTCREAT
@@ -14075,8 +14077,6 @@ blit_array(
 --- from pygame import _numpysndarray ---
 
 make_sound(
-numpy
-pygame
 samples(
 
 --- from pygame import _numpysurfarray ---
@@ -43146,7 +43146,6 @@ splitOn(
 splitQuoted(
 statusRequestHelper(
 subparts(
-twisted
 wildcardToRegexp(
 
 --- import twisted.mail.mail (py2.7.3/linux2/root module) ---
@@ -63762,7 +63761,6 @@ SCHEMA_CLASS_MAPPING
 SchemaElement(
 SubSchema(
 extract_tokens(
-models
 split_tokens(
 subentry
 tokenizer
@@ -97801,7 +97799,6 @@ django.contrib.messages.get_level(
 django.contrib.messages.get_messages(
 django.contrib.messages.info(
 django.contrib.messages.set_level(
-django.contrib.messages.storage
 django.contrib.messages.success(
 django.contrib.messages.warning(
 
@@ -104305,3 +104302,608 @@ locale.unicode_literals
 
 --- from django.conf.locale import * ---
 LANG_INFO
+
+--- import flask (0.10.1/py2.7.3/linux2/root module) ---
+flask.ext
+flask.sessions
+flask.copy_current_request_context(
+flask.g(
+flask.app
+flask.abort(
+flask.after_this_request(
+flask.appcontext_popped
+flask.appcontext_pushed
+flask.appcontext_tearing_down
+flask.blueprints
+flask.config
+flask.ctx
+flask.current_app(
+flask.debughelpers
+flask.escape(
+flask.flash(
+flask.get_flashed_messages(
+flask.get_template_attribute(
+flask.globals
+flask.got_request_exception
+flask.has_app_context(
+flask.has_request_context(
+flask.helpers
+flask.json
+flask.json_available
+flask.jsonify(
+flask.make_response(
+flask.message_flashed
+flask.module
+flask.redirect(
+flask.render_template(
+flask.render_template_string(
+flask.request(
+flask.request_finished
+flask.request_started
+flask.request_tearing_down
+flask.safe_join(
+flask.send_file(
+flask.send_from_directory(
+flask.session(
+flask.signals
+flask.signals_available
+flask.stream_with_context(
+flask.template_rendered
+flask.templating
+flask.url_for(
+flask.wrappers
+flask.Blueprint(
+flask.Config(
+flask.Flask(
+flask.Markup(
+flask.Module(
+flask.Request(
+flask.Response(
+flask.Session(
+
+--- from flask import * ---
+Blueprint(
+Flask(
+Markup(
+after_this_request(
+appcontext_popped
+appcontext_pushed
+appcontext_tearing_down
+blueprints
+config
+copy_current_request_context(
+ctx
+current_app(
+debughelpers
+g(
+get_flashed_messages(
+get_template_attribute(
+globals
+has_app_context(
+has_request_context(
+json_available
+jsonify(
+make_response(
+message_flashed
+module
+render_template(
+render_template_string(
+request_tearing_down
+send_file(
+send_from_directory(
+session(
+sessions
+signals_available
+stream_with_context(
+templating
+url_for(
+wrappers
+
+
+--- from flask import _compat ---
+
+PY2
+implements_to_string(
+integer_types
+iteritems(
+iterkeys(
+itervalues(
+reraise(
+string_types
+text_type(
+with_metaclass(
+
+--- import flask.app ---
+flask.app.AppContext(
+flask.app.BadRequest(
+flask.app.BuildError(
+flask.app.Config(
+flask.app.ConfigAttribute(
+flask.app.DispatchingJinjaLoader(
+flask.app.Environment(
+flask.app.Flask(
+flask.app.HTTPException(
+flask.app.ImmutableDict(
+flask.app.InternalServerError(
+flask.app.Lock(
+flask.app.Map(
+flask.app.MethodNotAllowed(
+flask.app.Request(
+flask.app.RequestContext(
+flask.app.RequestRedirect(
+flask.app.Response(
+flask.app.Rule(
+flask.app.SecureCookieSessionInterface(
+flask.app.appcontext_tearing_down
+flask.app.blueprint_is_module(
+flask.app.chain(
+flask.app.find_package(
+flask.app.g(
+flask.app.get_flashed_messages(
+flask.app.got_request_exception
+flask.app.integer_types
+flask.app.json
+flask.app.locked_cached_property(
+flask.app.os
+flask.app.request(
+flask.app.request_finished
+flask.app.request_started
+flask.app.request_tearing_down
+flask.app.reraise(
+flask.app.session(
+flask.app.setupmethod(
+flask.app.string_types
+flask.app.sys
+flask.app.text_type(
+flask.app.timedelta(
+flask.app.update_wrapper(
+flask.app.url_for(
+
+--- from flask import app ---
+app.AppContext(
+app.BadRequest(
+app.BuildError(
+app.Config(
+app.ConfigAttribute(
+app.DispatchingJinjaLoader(
+app.Environment(
+app.Flask(
+app.HTTPException(
+app.ImmutableDict(
+app.InternalServerError(
+app.Lock(
+app.Map(
+app.MethodNotAllowed(
+app.Request(
+app.RequestContext(
+app.RequestRedirect(
+app.Response(
+app.Rule(
+app.SecureCookieSessionInterface(
+app.appcontext_tearing_down
+app.blueprint_is_module(
+app.chain(
+app.find_package(
+app.g(
+app.get_flashed_messages(
+app.got_request_exception
+app.integer_types
+app.json
+app.locked_cached_property(
+app.request(
+app.request_finished
+app.request_started
+app.request_tearing_down
+app.reraise(
+app.session(
+app.setupmethod(
+app.string_types
+app.text_type(
+app.timedelta(
+app.update_wrapper(
+app.url_for(
+
+--- from flask.app import * ---
+AppContext(
+BadRequest(
+BuildError(
+ConfigAttribute(
+DispatchingJinjaLoader(
+Environment(
+ImmutableDict(
+InternalServerError(
+Map(
+MethodNotAllowed(
+RequestRedirect(
+Rule(
+SecureCookieSessionInterface(
+blueprint_is_module(
+find_package(
+locked_cached_property(
+setupmethod(
+
+--- import flask.blueprints ---
+flask.blueprints.Blueprint(
+flask.blueprints.BlueprintSetupState(
+flask.blueprints.update_wrapper(
+
+--- from flask import blueprints ---
+blueprints.Blueprint(
+blueprints.BlueprintSetupState(
+blueprints.update_wrapper(
+
+--- from flask.blueprints import * ---
+BlueprintSetupState(
+
+--- import flask.config ---
+flask.config.Config(
+flask.config.ConfigAttribute(
+flask.config.errno
+flask.config.imp
+flask.config.import_string(
+flask.config.os
+flask.config.string_types
+
+--- from flask import config ---
+config.Config(
+config.ConfigAttribute(
+config.errno
+config.imp
+config.import_string(
+config.os
+config.string_types
+
+--- from flask.config import * ---
+import_string(
+
+--- import flask.ctx ---
+flask.ctx.AppContext(
+flask.ctx.HTTPException(
+flask.ctx.RequestContext(
+flask.ctx.after_this_request(
+flask.ctx.appcontext_popped
+flask.ctx.appcontext_pushed
+flask.ctx.blueprint_is_module(
+flask.ctx.copy_current_request_context(
+flask.ctx.has_app_context(
+flask.ctx.has_request_context(
+flask.ctx.sys
+flask.ctx.update_wrapper(
+flask.ctx.with_statement
+
+--- from flask import ctx ---
+ctx.AppContext(
+ctx.HTTPException(
+ctx.RequestContext(
+ctx.after_this_request(
+ctx.appcontext_popped
+ctx.appcontext_pushed
+ctx.blueprint_is_module(
+ctx.copy_current_request_context(
+ctx.has_app_context(
+ctx.has_request_context(
+ctx.sys
+ctx.update_wrapper(
+ctx.with_statement
+
+--- from flask.ctx import * ---
+
+--- import flask.debughelpers ---
+flask.debughelpers.DebugFilesKeyError(
+flask.debughelpers.FormDataRoutingRedirect(
+flask.debughelpers.UnexpectedUnicodeError(
+flask.debughelpers.attach_enctype_error_multidict(
+flask.debughelpers.implements_to_string(
+
+--- from flask import debughelpers ---
+debughelpers.DebugFilesKeyError(
+debughelpers.FormDataRoutingRedirect(
+debughelpers.UnexpectedUnicodeError(
+debughelpers.attach_enctype_error_multidict(
+debughelpers.implements_to_string(
+
+--- from flask.debughelpers import * ---
+DebugFilesKeyError(
+FormDataRoutingRedirect(
+UnexpectedUnicodeError(
+attach_enctype_error_multidict(
+
+--- import flask.globals ---
+flask.globals.LocalProxy(
+flask.globals.LocalStack(
+flask.globals.current_app(
+flask.globals.g(
+flask.globals.partial(
+flask.globals.request(
+flask.globals.session(
+
+--- from flask import globals ---
+globals.LocalProxy(
+globals.LocalStack(
+globals.current_app(
+globals.g(
+globals.partial(
+globals.request(
+globals.session(
+
+--- from flask.globals import * ---
+LocalProxy(
+LocalStack(
+
+--- import flask.helpers ---
+flask.helpers.BuildError(
+flask.helpers.FileSystemLoader(
+flask.helpers.Headers(
+flask.helpers.NotFound(
+flask.helpers.RLock(
+flask.helpers.adler32(
+flask.helpers.current_app(
+flask.helpers.find_package(
+flask.helpers.flash(
+flask.helpers.get_flashed_messages(
+flask.helpers.get_root_path(
+flask.helpers.get_template_attribute(
+flask.helpers.locked_cached_property(
+flask.helpers.make_response(
+flask.helpers.message_flashed
+flask.helpers.mimetypes
+flask.helpers.os
+flask.helpers.pkgutil
+flask.helpers.posixpath
+flask.helpers.request(
+flask.helpers.safe_join(
+flask.helpers.send_file(
+flask.helpers.send_from_directory(
+flask.helpers.session(
+flask.helpers.stream_with_context(
+flask.helpers.string_types
+flask.helpers.sys
+flask.helpers.text_type(
+flask.helpers.time(
+flask.helpers.update_wrapper(
+flask.helpers.url_for(
+flask.helpers.url_quote(
+flask.helpers.wrap_file(
+
+--- from flask import helpers ---
+helpers.BuildError(
+helpers.FileSystemLoader(
+helpers.Headers(
+helpers.NotFound(
+helpers.RLock(
+helpers.adler32(
+helpers.current_app(
+helpers.find_package(
+helpers.flash(
+helpers.get_flashed_messages(
+helpers.get_root_path(
+helpers.get_template_attribute(
+helpers.locked_cached_property(
+helpers.make_response(
+helpers.message_flashed
+helpers.mimetypes
+helpers.os
+helpers.pkgutil
+helpers.posixpath
+helpers.request(
+helpers.safe_join(
+helpers.send_file(
+helpers.send_from_directory(
+helpers.session(
+helpers.stream_with_context(
+helpers.string_types
+helpers.sys
+helpers.text_type(
+helpers.time(
+helpers.update_wrapper(
+helpers.url_for(
+helpers.url_quote(
+helpers.wrap_file(
+
+--- from flask.helpers import * ---
+FileSystemLoader(
+NotFound(
+get_root_path(
+url_quote(
+wrap_file(
+
+--- import flask.json ---
+flask.json.JSONDecoder(
+flask.json.JSONEncoder(
+flask.json.Markup(
+flask.json.PY2
+flask.json.current_app(
+flask.json.datetime(
+flask.json.dump(
+flask.json.dumps(
+flask.json.htmlsafe_dump(
+flask.json.htmlsafe_dumps(
+flask.json.http_date(
+flask.json.io
+flask.json.jsonify(
+flask.json.load(
+flask.json.loads(
+flask.json.request(
+flask.json.text_type(
+flask.json.tojson_filter(
+flask.json.uuid
+
+--- from flask import json ---
+json.Markup(
+json.PY2
+json.current_app(
+json.datetime(
+json.htmlsafe_dump(
+json.htmlsafe_dumps(
+json.http_date(
+json.io
+json.jsonify(
+json.request(
+json.text_type(
+json.tojson_filter(
+json.uuid
+
+--- from flask.json import * ---
+htmlsafe_dump(
+htmlsafe_dumps(
+tojson_filter(
+uuid
+
+--- import flask.module ---
+flask.module.Blueprint(
+flask.module.Module(
+flask.module.blueprint_is_module(
+flask.module.os
+
+--- from flask import module ---
+module.Blueprint(
+module.Module(
+module.blueprint_is_module(
+module.os
+
+--- from flask.module import * ---
+
+--- import flask.sessions ---
+flask.sessions.BadSignature(
+flask.sessions.CallbackDict(
+flask.sessions.Markup(
+flask.sessions.NullSession(
+flask.sessions.SecureCookieSession(
+flask.sessions.SecureCookieSessionInterface(
+flask.sessions.SessionInterface(
+flask.sessions.SessionMixin(
+flask.sessions.TaggedJSONSerializer(
+flask.sessions.URLSafeTimedSerializer(
+flask.sessions.UnexpectedUnicodeError(
+flask.sessions.b64decode(
+flask.sessions.b64encode(
+flask.sessions.datetime(
+flask.sessions.hashlib
+flask.sessions.http_date(
+flask.sessions.iteritems(
+flask.sessions.json
+flask.sessions.parse_date(
+flask.sessions.session_json_serializer
+flask.sessions.text_type(
+flask.sessions.total_seconds(
+flask.sessions.uuid
+
+--- from flask import sessions ---
+sessions.BadSignature(
+sessions.CallbackDict(
+sessions.Markup(
+sessions.NullSession(
+sessions.SecureCookieSession(
+sessions.SecureCookieSessionInterface(
+sessions.SessionInterface(
+sessions.SessionMixin(
+sessions.TaggedJSONSerializer(
+sessions.URLSafeTimedSerializer(
+sessions.UnexpectedUnicodeError(
+sessions.b64decode(
+sessions.b64encode(
+sessions.datetime(
+sessions.hashlib
+sessions.http_date(
+sessions.iteritems(
+sessions.json
+sessions.parse_date(
+sessions.session_json_serializer
+sessions.text_type(
+sessions.total_seconds(
+sessions.uuid
+
+--- from flask.sessions import * ---
+CallbackDict(
+NullSession(
+SecureCookieSession(
+SessionInterface(
+SessionMixin(
+TaggedJSONSerializer(
+URLSafeTimedSerializer(
+session_json_serializer
+total_seconds(
+
+--- import flask.signals ---
+flask.signals.Namespace(
+flask.signals.appcontext_popped
+flask.signals.appcontext_pushed
+flask.signals.appcontext_tearing_down
+flask.signals.got_request_exception
+flask.signals.message_flashed
+flask.signals.request_finished
+flask.signals.request_started
+flask.signals.request_tearing_down
+flask.signals.signals_available
+flask.signals.template_rendered
+
+--- from flask import signals ---
+signals.Namespace(
+signals.appcontext_popped
+signals.appcontext_pushed
+signals.appcontext_tearing_down
+signals.message_flashed
+signals.request_tearing_down
+signals.signals_available
+
+--- from flask.signals import * ---
+
+--- import flask.templating ---
+flask.templating.BaseEnvironment(
+flask.templating.BaseLoader(
+flask.templating.DispatchingJinjaLoader(
+flask.templating.Environment(
+flask.templating.TemplateNotFound(
+flask.templating.blueprint_is_module(
+flask.templating.iteritems(
+flask.templating.itervalues(
+flask.templating.posixpath
+flask.templating.render_template(
+flask.templating.render_template_string(
+flask.templating.template_rendered
+
+--- from flask import templating ---
+templating.BaseEnvironment(
+templating.BaseLoader(
+templating.DispatchingJinjaLoader(
+templating.Environment(
+templating.TemplateNotFound(
+templating.blueprint_is_module(
+templating.iteritems(
+templating.itervalues(
+templating.posixpath
+templating.render_template(
+templating.render_template_string(
+templating.template_rendered
+
+--- from flask.templating import * ---
+BaseEnvironment(
+TemplateNotFound(
+
+--- import flask.wrappers ---
+flask.wrappers.BadRequest(
+flask.wrappers.Request(
+flask.wrappers.RequestBase(
+flask.wrappers.Response(
+flask.wrappers.ResponseBase(
+flask.wrappers.attach_enctype_error_multidict(
+flask.wrappers.json
+
+--- from flask import wrappers ---
+wrappers.BadRequest(
+wrappers.Request(
+wrappers.RequestBase(
+wrappers.Response(
+wrappers.ResponseBase(
+wrappers.attach_enctype_error_multidict(
+wrappers.json
+
+--- from flask.wrappers import * ---
+RequestBase(
+ResponseBase(
+
+--- import flask.ext (py2.7.3/linux2/root module) ---
+
+--- from flask import ext ---
+
+--- from flask.ext import * ---
