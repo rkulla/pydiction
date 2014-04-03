@@ -368,7 +368,7 @@ Tips
     imap <C-J> <Plug>snipMateNextOrTrigger
     smap <C-J> <Plug>snipMateNextOrTrigger
 
-now `cl[Tab]` will use Pydiction to complete "class" and `cl<C-J>` will use the snipmate snippet for class.
+ now `cl[Tab]` will use Pydiction to complete "class" and `cl<C-J>` will use the snipmate snippet for class.
 
 - Say you create a custom object, called `S` by doing something like:
     
