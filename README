@@ -10,7 +10,8 @@ It consists of three main files:
 
 The bundled dictionary comes with most snippets you will likely need in your day-to-day Python programming, and the included
 Python script allows you to easily append new modules to the dictionary. So you don't have to wait around for me to add them.
-And you can teach Pydiction to complete your project's own API very quickly.
+And you can teach Pydiction to complete your project's own API very quickly. Some third-party libraries already supports are:
+`Django` `Twisted` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `OpenGL` `Pygame` `wxPython` `PyGTK` `PyQT4` `OpenID` and more.
 
 Since Pydiction just uses a flat dictionary file, it's extremely flexible because you can do things like re-order how you want
 things to appear in your popup completion menus. By default it will be in alphabetical order, but if you want `else` to come 
