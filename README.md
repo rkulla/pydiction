@@ -432,10 +432,10 @@ As you can see, pydiction.py also adds other information such as which version o
 - You can change the colors of the popup menu by editing your vim color scheme's source file and changing the values of `Pmenu` `PmenuSel` `PmenuSBar` and `PmenuThumb`. If you're using Vim in a terminal, change the values of ctermfg and ctermbg, otherwise change guifg and guibg. I use the molokai colorscheme and a terminal and use:
 
         " complete menu
-        hi Pmenu           ctermbg=red                  guifg=#66D9EF  guibg=#000000
-        hi PmenuSel        ctermfg=black  ctermbg=gray                 guibg=#808080
+        hi Pmenu           ctermfg=green  ctermbg=black guifg=#66D9EF  guibg=#000000
+        hi PmenuSel        ctermfg=green  ctermbg=black                guibg=#808080
         hi PmenuSbar                                                   guibg=#080808
-        hi PmenuThumb                                                  guifg=#66D9EF
+        hi PmenuThumb                                   guifg=#66D9EF
 
 Further reading
 ===============
