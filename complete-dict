@@ -94214,13 +94214,34 @@ STDOFFSET
 ZERO
 
 --- import django (1.6.2/py2.7.3/linux2/root module) ---
-django.VERSION
+django.db
+django.utils
+django.conf
+django.template
+django.contrib
+django.core
+django.forms
+django.shortcuts
 django.get_version(
 
 --- from django import * ---
 get_version(
 
 --- import django.db (py2.7.3/linux2/root module) ---
+django.db.models
+django.db.backends
+django.db.signals
+django.db.utils
+django.db.router
+django.db.warnings
+django.db.connection
+django.db.connections
+django.db.backend
+django.db.cached_property(
+django.db.close_connection(
+django.db.close_old_connections(
+django.db.load_backend(
+django.db.reset_queries(
 django.db.ConnectionHandler(
 django.db.ConnectionRouter(
 django.db.DEFAULT_DB_ALIAS
@@ -94235,18 +94256,6 @@ django.db.InternalError(
 django.db.NotSupportedError(
 django.db.OperationalError(
 django.db.ProgrammingError(
-django.db.backend
-django.db.cached_property(
-django.db.close_connection(
-django.db.close_old_connections(
-django.db.connection
-django.db.connections
-django.db.load_backend(
-django.db.reset_queries(
-django.db.router
-django.db.signals
-django.db.utils
-django.db.warnings
 
 --- from django import db ---
 db.ConnectionHandler(
@@ -94291,6 +94300,13 @@ reset_queries(
 router
 
 --- import django.db.utils ---
+django.db.utils.os
+django.db.utils.pkgutil
+django.db.utils.settings
+django.db.utils.six
+django.db.utils.upath(
+django.db.utils.warnings
+django.db.utils.wraps(
 django.db.utils.ConnectionDoesNotExist(
 django.db.utils.ConnectionHandler(
 django.db.utils.ConnectionRouter(
@@ -94311,13 +94327,6 @@ django.db.utils.import_by_path(
 django.db.utils.import_module(
 django.db.utils.load_backend(
 django.db.utils.local(
-django.db.utils.os
-django.db.utils.pkgutil
-django.db.utils.settings
-django.db.utils.six
-django.db.utils.upath(
-django.db.utils.warnings
-django.db.utils.wraps(
 
 --- from django.db import utils ---
 utils.ConnectionDoesNotExist(
@@ -94356,6 +94365,8 @@ six
 upath(
 
 --- import django.db.models (py2.7.3/linux2/root module) ---
+django.db.models.aggregates
+django.db.models.fields
 django.db.models.Aggregate(
 django.db.models.AutoField(
 django.db.models.Avg(
@@ -94419,7 +94430,6 @@ django.db.models.TimeField(
 django.db.models.URLField(
 django.db.models.UnavailableApp(
 django.db.models.Variance(
-django.db.models.aggregates
 django.db.models.b64decode(
 django.db.models.b64encode(
 django.db.models.base
@@ -94434,7 +94444,6 @@ django.db.models.decimal
 django.db.models.deletion
 django.db.models.exceptions
 django.db.models.expressions
-django.db.models.fields
 django.db.models.force_bytes(
 django.db.models.force_text(
 django.db.models.forms
@@ -96066,11 +96075,11 @@ typecast_time(
 typecast_timestamp(
 
 --- import django.http (py2.7.3/linux2/root module) ---
+django.http.HttpResponse(
+django.http.HttpRequest(
+django.http.Http404(
 django.http.BadHeaderError(
 django.http.CompatibleStreamingHttpResponse(
-django.http.Http404(
-django.http.HttpRequest(
-django.http.HttpResponse(
 django.http.HttpResponseBadRequest(
 django.http.HttpResponseForbidden(
 django.http.HttpResponseGone(
@@ -96442,6 +96451,14 @@ utils.fix_location_header(
 --- from django.http.utils import * ---
 
 --- import django.conf (py2.7.3/linux2/root module) ---
+django.conf.urls
+django.conf.logging
+django.conf.settings
+django.conf.os
+django.conf.six
+django.conf.sys
+django.conf.time
+django.conf.warnings
 django.conf.BaseSettings(
 django.conf.ENVIRONMENT_VARIABLE
 django.conf.ImproperlyConfigured(
@@ -96453,13 +96470,6 @@ django.conf.empty
 django.conf.global_settings
 django.conf.import_by_path(
 django.conf.importlib
-django.conf.logging
-django.conf.os
-django.conf.settings
-django.conf.six
-django.conf.sys
-django.conf.time
-django.conf.warnings
 
 --- from django import conf ---
 conf.BaseSettings(
@@ -96948,6 +96958,13 @@ resolve_url(
 urlresolvers
 
 --- import django.forms (py2.7.3/linux2/root module) ---
+django.forms.widgets
+django.forms.models
+django.forms.fields
+django.forms.ModelChoiceField(
+django.forms.ModelForm(
+django.forms.ModelMultipleChoiceField(
+django.forms.MultiValueField(
 django.forms.ALL_FIELDS
 django.forms.BaseForm(
 django.forms.BaseModelForm(
@@ -96978,10 +96995,6 @@ django.forms.ImageField(
 django.forms.IntegerField(
 django.forms.Media(
 django.forms.MediaDefiningClass(
-django.forms.ModelChoiceField(
-django.forms.ModelForm(
-django.forms.ModelMultipleChoiceField(
-django.forms.MultiValueField(
 django.forms.MultiWidget(
 django.forms.MultipleChoiceField(
 django.forms.MultipleHiddenInput(
@@ -97007,15 +97020,12 @@ django.forms.URLInput(
 django.forms.ValidationError(
 django.forms.Widget(
 django.forms.absolute_import
-django.forms.fields
 django.forms.fields_for_model(
 django.forms.forms
 django.forms.formsets
 django.forms.model_to_dict(
-django.forms.models
 django.forms.save_instance(
 django.forms.util
-django.forms.widgets
 
 --- from django import forms ---
 forms.ALL_FIELDS
@@ -97661,12 +97671,17 @@ datetime_safe
 ugettext_lazy(
 
 --- import django.contrib (py2.7.3/linux2/root module) ---
+django.contrib.admindocs
+django.contrib.comments
+django.contrib.redirects
+django.contrib.gis
 
 --- from django import contrib ---
 
 --- from django.contrib import * ---
 
 --- import django.contrib.auth (py2.7.3/linux2/root module) ---
+django.contrib.auth.views
 django.contrib.auth.BACKEND_SESSION_KEY
 django.contrib.auth.ImproperlyConfigured(
 django.contrib.auth.PermissionDenied(
@@ -97730,10 +97745,10 @@ user_logged_out
 user_login_failed
 
 --- import django.contrib.auth.signals ---
-django.contrib.auth.signals.Signal(
 django.contrib.auth.signals.user_logged_in
 django.contrib.auth.signals.user_logged_out
 django.contrib.auth.signals.user_login_failed
+django.contrib.auth.signals.Signal(
 
 --- from django.contrib.auth import signals ---
 signals.user_logged_in
@@ -97761,6 +97776,8 @@ signals.user_login_failed
 --- from django.contrib.sites import * ---
 
 --- import django.contrib.messages (py2.7.3/linux2/root module) ---
+django.contrib.messages.middleware
+django.contrib.messages.storage
 django.contrib.messages.DEBUG
 django.contrib.messages.DEFAULT_TAGS
 django.contrib.messages.ERROR
@@ -97880,6 +97897,20 @@ get_storage(
 --- from django.contrib.staticfiles import * ---
 
 --- import django.contrib.admin (py2.7.3/linux2/root module) ---
+django.contrib.admin.widgets
+django.contrib.admin.views
+django.contrib.admin.sites
+django.contrib.admin.models
+django.contrib.admin.actions
+django.contrib.admin.autodiscover(
+django.contrib.admin.filters
+django.contrib.admin.forms
+django.contrib.admin.helpers
+django.contrib.admin.options
+django.contrib.admin.site
+django.contrib.admin.templatetags
+django.contrib.admin.util
+django.contrib.admin.validation
 django.contrib.admin.ACTION_CHECKBOX_NAME
 django.contrib.admin.AdminSite(
 django.contrib.admin.AllValuesFieldListFilter(
@@ -97895,18 +97926,6 @@ django.contrib.admin.SimpleListFilter(
 django.contrib.admin.StackedInline(
 django.contrib.admin.TabularInline(
 django.contrib.admin.VERTICAL
-django.contrib.admin.actions
-django.contrib.admin.autodiscover(
-django.contrib.admin.filters
-django.contrib.admin.forms
-django.contrib.admin.helpers
-django.contrib.admin.options
-django.contrib.admin.site
-django.contrib.admin.sites
-django.contrib.admin.templatetags
-django.contrib.admin.util
-django.contrib.admin.validation
-django.contrib.admin.widgets
 
 --- from django.contrib import admin ---
 admin.ACTION_CHECKBOX_NAME
@@ -98650,12 +98669,39 @@ smart_urlquote(
 url_params_from_lookup_dict(
 
 --- import django.utils (py2.7.3/linux2/root module) ---
+django.utils.timezone
+django.utils.hashcompat
+django.utils.simplejson
+django.utils.log
+django.utils.functional
 
 --- from django import utils ---
 
 --- from django.utils import * ---
 
 --- import django.template (py2.7.3/linux2/root module) ---
+django.template.loaders
+django.template.debug
+django.template.defaultfilters
+django.template.add_to_builtins(
+django.template.base
+django.template.builtins
+django.template.compile_string(
+django.template.constant_string
+django.template.context
+django.template.defaulttags
+django.template.filter_raw_string
+django.template.filter_re
+django.template.generic_tag_compiler(
+django.template.get_library(
+django.template.get_templatetags_modules(
+django.template.get_text_list(
+django.template.import_library(
+django.template.libraries
+django.template.resolve_variable(
+django.template.smartif
+django.template.tag_re
+django.template.unescape_string_literal(
 django.template.ALLOWED_VARIABLE_CHARS
 django.template.BLOCK_TAG_END
 django.template.BLOCK_TAG_START
@@ -98696,26 +98742,6 @@ django.template.VARIABLE_TAG_START
 django.template.Variable(
 django.template.VariableDoesNotExist(
 django.template.VariableNode(
-django.template.add_to_builtins(
-django.template.base
-django.template.builtins
-django.template.compile_string(
-django.template.constant_string
-django.template.context
-django.template.defaultfilters
-django.template.defaulttags
-django.template.filter_raw_string
-django.template.filter_re
-django.template.generic_tag_compiler(
-django.template.get_library(
-django.template.get_templatetags_modules(
-django.template.get_text_list(
-django.template.import_library(
-django.template.libraries
-django.template.resolve_variable(
-django.template.smartif
-django.template.tag_re
-django.template.unescape_string_literal(
 
 --- from django import template ---
 template.ALLOWED_VARIABLE_CHARS
@@ -99568,6 +99594,9 @@ op(
 prefix(
 
 --- import django.views (py2.7.3/linux2/root module) ---
+django.views.static
+django.views.decorators
+django.views.generic
 
 --- from django import views ---
 
@@ -100000,6 +100029,10 @@ BaseListView(
 InvalidPage(
 
 --- import django.core (py2.7.3/linux2/root module) ---
+django.core.cache
+django.core.serializers
+django.core.wsgi
+django.core.validators
 
 --- from django import core ---
 
@@ -101206,14 +101239,16 @@ SafeLoader(
 yaml
 
 --- import django.test (py2.7.3/linux2/root module) ---
+django.test.TestCase(
+django.test.client
+django.test.simple
+django.test.runner
 django.test.Approximate(
 django.test.Client(
 django.test.LiveServerTestCase(
 django.test.RequestFactory(
 django.test.SimpleTestCase(
-django.test.TestCase(
 django.test.TransactionTestCase(
-django.test.client
 django.test.html
 django.test.signals
 django.test.skipIfDBFeature(
