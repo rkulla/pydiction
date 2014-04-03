@@ -364,9 +364,9 @@ Tips
 
 - SnipMate and Pydiction make a great team, but they both use the Tab key to complete. This is easy to fix, by adding the following to your .vimrc file:
 
-    " Remap snipmate's trigger key from tab to <C-J>
-    imap <C-J> <Plug>snipMateNextOrTrigger
-    smap <C-J> <Plug>snipMateNextOrTrigger
+        " Remap snipmate's trigger key from tab to <C-J>
+        imap <C-J> <Plug>snipMateNextOrTrigger
+        smap <C-J> <Plug>snipMateNextOrTrigger
 
  now `cl[Tab]` will use Pydiction to complete "class" and `cl<C-J>` will use the snipmate snippet for class.
 
