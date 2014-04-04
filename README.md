@@ -1,11 +1,11 @@
 Description
 ===========
-Pydiction allows you to Tab-complete Python code in Vim such as keywords, the standard library, and third-party modules. 
+Pydiction allows you to Tab-complete Python code in Vim such as keywords, built-ins, standard library, and third-party modules. 
 
 It consists of three main files:
     
-    python_pydiction.vim  -- A Vim plugin that autocompletes Python code.
-    complete-dict         -- A dictionary file that consists of Python keyword & module snippets.
+    python_pydiction.vim  -- Vim plugin that autocompletes Python code.
+    complete-dict         -- Dictionary file of Python keyword & module snippets, etc.
     pydiction.py          -- Python script to optionally add more modules to complete-dict.
 
 The bundled dictionary comes with most snippets you will likely need in your day-to-day Python programming, and the included
@@ -243,7 +243,7 @@ now you can complete myFoo.myBar() by doing:
 
     myFoo.my<Tab>
 
-Note: You don't have to restart Vim after you update complete-dict.
+Note: You don't have to restart Vim after you update complete-dict nor do you have to use the pydiction.py script to add stuff to it; it's just a text file that you can also manually edit.
 
 
 About python_pydiction.vim
@@ -284,7 +284,7 @@ By default, Pydiction ignores case while doing Tab-completion. If you want it to
 
 About complete-dict
 ===================
-This is the dictionary file that python_pydiction.vim reads from and pydiction.py writes to. Without this file, Pydiction wouldn't know which Python keywords and modules it can Tab-complete.
+This is the dictionary file that python_pydiction.vim reads from and pydiction.py writes to. Without this file, Pydiction wouldn't know which Python keywords, built-ins and modules it can Tab-complete.
 
 You can create your own complete-dict if you don't want to use the default one. The default complete-dict gives you a major head start as far as what you will be able to Tab-complete.
 
@@ -294,7 +294,7 @@ It also contains most of the standard library and built-ins:  `__builtin__` `__f
 
 It even contains complete-dict even comes with many third-party libraries such as: `Django` `Twisted` `Flask` `Requests` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `ZSI` `LDAP` `OpenGL` `Pygame` `wxPython` `PyGTK` `PyQT4` `PyOgg` `Bcrypt` `OpenID` `GnuPGInterface` `OpenSSL` `Pygments` and more.
 
-And it contains useful dunder methods, conventions, etc such as: `self` `object` `__init__(` `__name__` `__main__` etc.
+And it contains useful dunder methods, conventions, etc such as: `self` `object` `__init__(` `__name__` `__main__` etc. This type of thing was manually added near the top of the bundled file. Anything you want to always appear first should go near the top of the file since it reads top-down.
 
 Because it's just a text file, it's very flexible since you can do things like re-order how you want things to appear in your popup completion menus. By default 
 things will appear in alphabetical order, but if you want `else` to come before `elif`, there's nothing stopping you. In fact, the bundled dictionary comes with some keywords and stuff re-arranged by likely usage as best as I could manage.
