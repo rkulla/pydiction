@@ -10,7 +10,7 @@ It consists of three main files:
 
 The bundled dictionary comes with most snippets you will likely need in your day-to-day Python programming, and the included
 Python script allows you to easily append new modules to the dictionary. So you don't have to wait around for me to add them.
-And you can teach Pydiction to complete your project's own API very quickly. Some third-party libraries already supports are:
+And you can teach Pydiction to complete your project's own API very quickly. Some third-party libraries already supported are:
 `Django` `Flask` `Requests` `Twisted` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `OpenGL` `Pygame` `wxPython` `PyGTK` 
 `PyQT4` `OpenID` and more.
 
@@ -50,15 +50,17 @@ then make sure you set g:pydiction_location to the full path of where you instal
 
 You can change the height of the completion menu by setting g:pydiction_menu_height in your vimrc:
     
-    let g:pydiction_menu_height = 20
+    let g:pydiction_menu_height = 3
 
-The default menu height is 15.
+The default menu height is 8, meaning 8 items at a time will be shown. Some people prefer more or less and you can make it as large as you want since it will automatically know where to position the menu to be visible.
 
 Note: If you were using a version of Pydiction less than 1.0, make sure you delete the old pydiction way of doing things from your vimrc. You should ***NOT*** have this in your vimrc anymore:
 
         if has("autocmd")
            autocmd FileType python set complete+=k/path/to/pydiction iskeyword+=.,(
         endif " has("autocmd") 
+
+If you want to configure other things, such as how to get Pydiction to work with other plugins like `SnipMate` or the color of the menu, see the `Tips` section of this documentation.
 
 
 Usage (Plugin)
@@ -368,7 +370,7 @@ Tips
         imap <C-J> <Plug>snipMateNextOrTrigger
         smap <C-J> <Plug>snipMateNextOrTrigger
 
- now `cl[Tab]` will use Pydiction to complete "class" and `cl<C-J>` will use the snipmate snippet for class.
+ now `cl[Tab]` will use Pydiction to complete "class" and `cl<C-J>` will use the SnipMate snippet and you can still the tab key to iterate through the snippet placeholders.
 
 - Say you create a custom object, called `S` by doing something like:
     
