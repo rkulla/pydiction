@@ -16,13 +16,13 @@ And you can teach Pydiction to complete your project's own API very quickly. Som
 
 Since Pydiction just uses a flat dictionary file, it's extremely flexible because you can do things like re-order how you want
 things to appear in your popup completion menus. By default it will be in alphabetical order, but if you want `else` to come 
-before `elif`, you can. 
+before `elif`, you can.
 
 Pydiction is often misunderstood when compared to other forms of python code completion. Pydiction doesn't have to do 
-any source code analysis. It only uses the dictionary of terms. This is its strength and weakness when used alone. For 
-example, Pydiction really shines when completing 3rd party libraries and frameworks and basic keywords, but not for 
-things that dictionary completion isn't suited for. For that, you'll want omni-completion too. See the `Tips` section for 
-how to get the best of all worlds. 
+any source code analysis. It only uses the dictionary of terms. This is its strength and weakness when used alone. It's a
+strength because of how stable it allows the plugin to be. And Pydiction really shines when completing 3rd party libraries
+and frameworks and basic keywords, but not for things that dictionary completion isn't suited for. For that, you'll want 
+omni-completion too. See the `Tips` section for how to get the best of all worlds. 
 
 Installation
 ============
@@ -363,19 +363,19 @@ Pydiction doesn't ignore "private" attributes or methods. I.e., those starting (
 
 Pydiction vs other forms of completion
 ======================================
-- Pydiction doesn't require any dependencies to be installs and you don't even need Python support to be compiled into your version of Vim.
+- Pydiction doesn't require any dependencies to be installs and you don't even need Python support to be compiled into your version of Vim. The dictionary based completion is very stable because it's native to Vim and so the Pydiction plugin is very stable and unlikely to give you any weird errors (not counting potential conflicts with other plugins, but those are usually fixable).
 
-- Pydiction can complete Python Keywords, built-ins, and Python module names and their attributes and methods. It can complete both the fully-qualified and non-fully qualified names. For example: `string.upper(`, `upper(`, `''.upper(`, and so forth.
+- Because Pydiction uses a dictionary file, you don't have to import a module before you can complete it, nor do you even have to have the module installed on your machine. This makes completion very fast since it doesn't need to do any type deducing.
+
+- And because the dictionary file is just a static text file, you re-arrange how you want things to appear in the popup menus. By default things are sorted alphabetically, but if ou want `else` to come before `elif`, you can customize.
+
+- It can complete Python Keywords, built-ins, and Python module names and their attributes and methods. It can complete both the fully-qualified and non-fully qualified names. For example: `string.upper(`, `upper(`, `''.upper(`, and so forth.
 
 - Pydiction only uses the "Tab" key to complete, uses a special dictionary file to complete from, and only attempts to complete while editing Python files. This has the advantage of only requiring one keystroke to do completion and of not polluting all of the completion menus that you might be using for other types of completion, such as Vim's regular omni-completion or other completion scripts that you may be running.
 
 - Because Pydiction uses a dictionary file of possible completion items, it can complete 3rd party modules more accurately than other methods. You have full control over what it can and cannot complete. If it's unable to complete anything you can use pydiction.py to add a new module's contents to the dictionary, or you can manually add them using a text editor. In other words, you can teach Pydiction to learn what new things it can complete, just like you can with any snippet-based system -- except the snippets are for autocompleting the rest of a word and not for pasting entire templates like SnipMate does.
 
 - The dictionary is just a text file, which makes it portable across all platforms. For example, if you're a Pyramid user you can add all the Pyramid related modules to the dictionary file.py. The latest default complete-dict already contains all of the standard library, Python keywords, and many 3rd party modules like Django, Twisted, Numpy, Flask, Requests, Pygame, wxPython, PyQT4, PyGTK, ZSI, LDAP, MySQLdb, Psycopg2, PyGreSQL, OpenId, OpenSSL, Pygments and much more. To see the full-list of python modules Pydiction knows about, open complete-dict in Vim and run `:g/root modules`.
-
-- Because Pydiction uses a dictionary file, you don't have to import a module before you can complete it, nor do you even have to have the module installed on your machine. This makes completion very fast since it doesn't need to do any type deducing.
-
-- And because the dictionary file is just a static text file, you re-arrange how you want things to appear in the popup menus. By default things are sorted alphabetically, but if ou want `else` to come before `elif`, you can customize.
 
 - If you want to you can use use Pydiction in tandem with Vim 7's builtin omni-completion for Python (pythoncomplete.vim) as well as other forms of completion like SnipMate or Python-mode (see the Tips section). In fact, they can all make a great team.
 
