@@ -48,6 +48,8 @@ render_template
 requests
 self
 object
+protocol
+reactor
 twisted
 views
 xml
@@ -70,6 +72,8 @@ __setitem__(
 __str__(
 __unicode__(
 __version__
+dataReceived(
+buildProtocol(
 
 --- String type attributes and methods. (manually entered). Only works with quotes, not objects. e.g. 'foo'.startswith(  ---
 .capitalize(
@@ -41325,6 +41329,8 @@ ServerFactory(
 connectionDone
 
 --- import twisted.internet.reactor (py2.7.3/linux2/root module) ---
+twisted.internet.reactor.listenTCP(
+twisted.internet.reactor.listenUDP(
 twisted.internet.reactor.addReader(
 twisted.internet.reactor.addSystemEventTrigger(
 twisted.internet.reactor.addWriter(
@@ -41354,8 +41360,6 @@ twisted.internet.reactor.installed
 twisted.internet.reactor.iterate(
 twisted.internet.reactor.listenMulticast(
 twisted.internet.reactor.listenSSL(
-twisted.internet.reactor.listenTCP(
-twisted.internet.reactor.listenUDP(
 twisted.internet.reactor.listenUNIX(
 twisted.internet.reactor.listenUNIXDatagram(
 twisted.internet.reactor.listenWith(
