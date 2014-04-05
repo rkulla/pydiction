@@ -16,7 +16,13 @@ And you can teach Pydiction to complete your project's own API very quickly. Som
 
 Since Pydiction just uses a flat dictionary file, it's extremely flexible because you can do things like re-order how you want
 things to appear in your popup completion menus. By default it will be in alphabetical order, but if you want `else` to come 
-before `elif`, there's nothing stopping you. 
+before `elif`, you can. 
+
+Pydiction is often misunderstood when compared to other forms of python code completion. The key is to understand that Pydiction 
+doesn't have to do any source code analysis, but can work with things that do. It only uses the dictionary of terms. This is its
+strength and its weakness when used alone. For example, Pydiction really shines when completing 3rd party libraries and 
+frameworks and basic keywords, but isn't good for doing things that dictionary completion isn't suited for. For that, you'll want
+omnicompletion too. See the `Tips` section for how to get the best of all worlds.
 
 Installation
 ============
