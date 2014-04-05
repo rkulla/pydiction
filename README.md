@@ -369,6 +369,8 @@ Pydiction vs other forms of completion
 
 - And because the dictionary file is just a static text file, you re-arrange how you want things to appear in the popup menus. By default things are sorted alphabetically, but if ou want `else` to come before `elif`, you can customize.
 
+- There is only one global instance of the dictionary file, which means pydiction won't try to dynamically create dictionaries in your project's folder. So there's no project folders you have to add to .gitignores or anything. And there's nothing special that you have to do to get Pydiction to work with `virtualenv` or other operating systems.
+
 - It can complete Python Keywords, built-ins, and Python module names and their attributes and methods. It can complete both the fully-qualified and non-fully qualified names. For example: `string.upper(`, `upper(`, `''.upper(`, and so forth.
 
 - Pydiction only uses the "Tab" key to complete, uses a special dictionary file to complete from, and only attempts to complete while editing Python files. This has the advantage of only requiring one keystroke to do completion and of not polluting all of the completion menus that you might be using for other types of completion, such as Vim's regular omni-completion or other completion scripts that you may be running.
