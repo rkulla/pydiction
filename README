@@ -94,6 +94,8 @@ Pressing `Tab` again scrolls down the menu so you can select something else. The
     <Enter>              -- Accept current match and insert a newline.
     <ESC> or CTRL-E      -- Close the menu and do not accept any match.
 
+    You can also now use Shift-Tab to Tab backwards through the popup menu.
+
 Typing:
 
     os.p<Tab>
@@ -121,6 +123,19 @@ pops up:
 
 Typing:
 
+    dj[Tab]
+
+pops up:
+
+    django
+    django.db
+    django.utils
+    django.conf
+    django.template
+    ...
+
+Typing:
+
     def __i<Tab>
 
 pops up:
@@ -144,7 +159,6 @@ Python's newer "import module as X" syntax isn't supported by default, since it 
 
 See my Tips section below for more.
 
-You can also now use Shift-Tab to Tab backwards through the popup menu.
 
 If you feel you're getting different results in your completion menu, it's probably because you don't have Vim set to ignore case. You can remedy this with ":set noic"
         
