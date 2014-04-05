@@ -48,9 +48,7 @@ render_template
 requests
 self
 object
-(object
 protocol
-(protocol
 reactor
 twisted
 views
@@ -10255,8 +10253,6 @@ handler
 make_parser(
 xmlreader
 
---- from xml.sax import _exceptions ---
-
 --- import xml.sax.handler ---
 xml.sax.handler.ContentHandler(
 xml.sax.handler.DTDHandler(
@@ -14077,16 +14073,12 @@ ver
 vernum
 warn_unwanted_files(
 
---- from pygame import _arraysurfarray ---
-
 blit_array(
 
---- from pygame import _numpysndarray ---
 
 make_sound(
 samples(
 
---- from pygame import _numpysurfarray ---
 
 array2d(
 array3d(
@@ -22365,9 +22357,7 @@ wxEVT_UPDATE_UI
 wxEVT_USER_FIRST
 wxTR_AQUA_BUTTONS
 
---- from wx import _controls ---
 
---- from wx import _controls_ ---
 
 BitmapButton_Create(
 BitmapButton_GetBitmapDisabled(
@@ -23447,9 +23437,7 @@ new_TreeItemId(
 new_Treebook(
 new_TreebookEvent(
 
---- from wx import _core ---
 
---- from wx import _core_ ---
 
 ANIHandler_swiginit(
 ANIHandler_swigregister(
@@ -24979,9 +24967,7 @@ new_WindowDestroyEvent(
 new_XPMHandler(
 new_ZipFSHandler(
 
---- from wx import _gdi ---
 
---- from wx import _gdi_ ---
 
 AlphaPixelData_Accessor_Get(
 AlphaPixelData_Accessor_IsOk(
@@ -25882,9 +25868,7 @@ new_StockCursor(
 new_StockGDI(
 new_WindowDC(
 
---- from wx import _misc ---
 
---- from wx import _misc_ ---
 
 AboutDialogInfo_AddArtist(
 AboutDialogInfo_AddDeveloper(
@@ -26805,9 +26789,7 @@ new_URLDataObject(
 new_VideoMode(
 new_WindowDisabler(
 
---- from wx import _windows ---
 
---- from wx import _windows_ ---
 
 CalculateLayoutEvent_GetFlags(
 CalculateLayoutEvent_GetRect(
@@ -36502,7 +36484,6 @@ twisted.version
 --- from twisted import * ---
 python
 
---- from twisted import _version ---
 
 versions
 
@@ -36578,7 +36559,6 @@ conch.version
 
 --- from twisted.conch import * ---
 
---- from twisted.conch import _version ---
 
 --- import twisted.conch.avatar (py2.7.3/linux2/root module) ---
 twisted.conch.avatar.ConchError(
@@ -39793,7 +39773,6 @@ cred.strcred
 
 --- from twisted.cred import * ---
 
---- from twisted.cred import _digest ---
 
 algorithms
 calcHA1(
@@ -40145,7 +40124,6 @@ udp
 wxreactor
 wxsupport
 
---- from twisted.internet import _baseprocess ---
 
 BaseProcess(
 Ephemeral(
@@ -40153,7 +40131,6 @@ Failure(
 err(
 getWarningMethod(
 
---- from twisted.internet import _glibbase ---
 
 GlibReactorBase(
 GlibWaker(
@@ -40161,7 +40138,6 @@ IReactorFDSet(
 PortableGlibReactorBase(
 ensureNotImported(
 
---- from twisted.internet import _newtls ---
 
 ClientMixin(
 ConnectionMixin(
@@ -40174,14 +40150,12 @@ TLSMemoryBIOProtocol(
 directlyProvides(
 startTLS(
 
---- from twisted.internet import _oldtls ---
 
 CONNECTION_DONE
 CONNECTION_LOST
 SSL
 platformType
 
---- from twisted.internet import _posixserialport ---
 
 BaseSerialPort(
 EIGHTBITS
@@ -40196,22 +40170,17 @@ STOPBITS_TWO
 SerialPort(
 serial
 
---- from twisted.internet import _posixstdio ---
 
 PipeAddress(
 StandardIO(
 
---- from twisted.internet import _sigchld ---
 
 isDefaultHandler(
 
---- from twisted.internet import _signals ---
 
 msg(
 
---- from twisted.internet import _ssl ---
 
---- from twisted.internet import _sslverify ---
 
 CertBase(
 Certificate(
@@ -40226,7 +40195,6 @@ PrivateCertificate(
 PublicKey(
 VerifyError(
 
---- from twisted.internet import _threadedselect ---
 
 ThreadedSelectReactor(
 dictRemove(
@@ -41392,6 +41360,7 @@ twisted.internet.reactor.wakeUp(
 twisted.internet.reactor.waker
 
 --- from twisted.internet import reactor ---
+reactor.run(
 reactor.addReader(
 reactor.addSystemEventTrigger(
 reactor.addWriter(
@@ -41433,7 +41402,6 @@ reactor.removeSystemEventTrigger(
 reactor.removeWriter(
 reactor.resolve(
 reactor.resolver
-reactor.run(
 reactor.runUntilCurrent(
 reactor.running
 reactor.seconds(
@@ -42120,7 +42088,6 @@ scripts
 slides
 tree
 
---- from twisted.lore import _version ---
 
 --- import twisted.lore.default (py2.7.3/linux2/root module) ---
 twisted.lore.default.ProcessingFunctionFactory(
@@ -42799,7 +42766,6 @@ relaymanager
 smtp
 tap
 
---- from twisted.mail import _version ---
 
 --- import twisted.mail.alias (py2.7.3/linux2/root module) ---
 twisted.mail.alias.AddressAlias(
@@ -44107,7 +44073,6 @@ secondary
 server
 srvconnect
 
---- from twisted.names import _version ---
 
 --- import twisted.names.authority (py2.7.3/linux2/root module) ---
 twisted.names.authority.BindAuthority(
@@ -44888,7 +44853,6 @@ database
 news
 nntp
 
---- from twisted.news import _version ---
 
 --- import twisted.news.database (py2.7.3/linux2/root module) ---
 twisted.news.database.Article(
@@ -47410,51 +47374,11 @@ Subunit
 Timing
 Tree
 
---- import twisted.plugins.twisted_web (py2.7.3/linux2/root module) ---
-twisted.plugins.twisted_web.ServiceMaker(
-twisted.plugins.twisted_web.TwistedWeb
 
---- from twisted.plugins import twisted_web ---
-twisted_web.ServiceMaker(
-twisted_web.TwistedWeb
-
---- from twisted.plugins.twisted_web import * ---
-TwistedWeb
-
---- import twisted.plugins.twisted_words (py2.7.3/linux2/root module) ---
-twisted.plugins.twisted_words.IPlugin(
-twisted.plugins.twisted_words.NewTwistedWords
-twisted.plugins.twisted_words.PBChatInterface(
-twisted.plugins.twisted_words.RelayChatInterface(
-twisted.plugins.twisted_words.ServiceMaker(
-twisted.plugins.twisted_words.TwistedXMPPRouter
-twisted.plugins.twisted_words.classProvides(
-twisted.plugins.twisted_words.iwords
-
---- from twisted.plugins import twisted_words ---
-twisted_words.IPlugin(
-twisted_words.NewTwistedWords
-twisted_words.PBChatInterface(
-twisted_words.RelayChatInterface(
-twisted_words.ServiceMaker(
-twisted_words.TwistedXMPPRouter
-twisted_words.classProvides(
-twisted_words.iwords
-
---- from twisted.plugins.twisted_words import * ---
-NewTwistedWords
-PBChatInterface(
-RelayChatInterface(
-TwistedXMPPRouter
-classProvides(
-iwords
-
---- from twisted.python import _inotify ---
 
 initializeModule(
 libc
 
---- from twisted.python import _release ---
 
 APIBuilder(
 BookBuilder(
@@ -47484,7 +47408,6 @@ tarfile
 twisted_subprojects
 updateTwistedVersionInformation(
 
---- from twisted.python import _shellcomp ---
 
 SubcommandAction(
 ZshArgumentsGenerator(
@@ -49074,7 +48997,6 @@ portmap
 procmon
 procmontap
 
---- from twisted.runner import _version ---
 
 --- import twisted.runner.inetd (py2.7.3/linux2/root module) ---
 twisted.runner.inetd.InetdFactory(
@@ -49270,7 +49192,6 @@ tkunzip
 trial
 twistd
 
---- from twisted.scripts import _twistd_unix ---
 
 UnixAppLogger(
 UnixApplicationRunner(
@@ -49279,7 +49200,6 @@ checkPID(
 daemonize(
 launchWithName(
 
---- from twisted.scripts import _twistw ---
 
 WindowsApplicationRunner(
 
@@ -51558,10 +51478,44 @@ vhost
 wsgi
 xmlrpc
 
---- from twisted.web import _auth ---
+--- from twisted.plugins import twisted_web ---
+twisted_web.ServiceMaker(
+twisted_web.TwistedWeb
 
-digest
+--- from twisted.plugins.twisted_web import * ---
+TwistedWeb
 
+--- import twisted.plugins.twisted_web (py2.7.3/linux2/root module) ---
+twisted.plugins.twisted_web.ServiceMaker(
+twisted.plugins.twisted_web.TwistedWeb
+
+--- import twisted.plugins.twisted_words (py2.7.3/linux2/root module) ---
+twisted.plugins.twisted_words.IPlugin(
+twisted.plugins.twisted_words.NewTwistedWords
+twisted.plugins.twisted_words.PBChatInterface(
+twisted.plugins.twisted_words.RelayChatInterface(
+twisted.plugins.twisted_words.ServiceMaker(
+twisted.plugins.twisted_words.TwistedXMPPRouter
+twisted.plugins.twisted_words.classProvides(
+twisted.plugins.twisted_words.iwords
+
+--- from twisted.plugins import twisted_words ---
+twisted_words.IPlugin(
+twisted_words.NewTwistedWords
+twisted_words.PBChatInterface(
+twisted_words.RelayChatInterface(
+twisted_words.ServiceMaker(
+twisted_words.TwistedXMPPRouter
+twisted_words.classProvides(
+twisted_words.iwords
+
+--- from twisted.plugins.twisted_words import * ---
+NewTwistedWords
+PBChatInterface(
+RelayChatInterface(
+TwistedXMPPRouter
+classProvides(
+iwords
 basic.BasicCredentialFactory(
 basic.ICredentialFactory(
 basic.binascii
@@ -51590,62 +51544,6 @@ ErrorPage(
 HTTPAuthSessionWrapper(
 IResource(
 UnauthorizedResource(
-
---- from twisted.web import _element ---
-
-Expose(
-IRenderable(
-MissingRenderMethod(
-MissingTemplateLoader(
-UnexposedMethodError(
-exposer(
-renderer(
-
---- from twisted.web import _flatten ---
-
-CDATA(
-CharRef(
-FlattenerError(
-Tag(
-UnfilledSlot(
-UnsupportedType(
-escapedCDATA(
-escapedComment(
-escapedData(
-flattenString(
-slot(
-voidElements
-
---- from twisted.web import _newclient ---
-
-BODY
-BadHeaders(
-BadResponseVersion(
-ChunkedEncoder(
-ExcessWrite(
-HEADER
-HTTP11ClientProtocol(
-HTTPClientParser(
-HTTPParser(
-Headers(
-IResponse(
-LengthEnforcingConsumer(
-ParseError(
-PotentialDataLoss(
-RequestGenerationFailed(
-RequestNotSent(
-RequestTransmissionFailed(
-ResponseDone(
-ResponseFailed(
-ResponseNeverReceived(
-TransportProxyProducer(
-UNKNOWN_LENGTH
-WrongBodyLength(
-makeStatefulDispatcher(
-
---- from twisted.web import _stan ---
-
---- from twisted.web import _version ---
 
 --- import twisted.web.client (py2.7.3/linux2/root module) ---
 twisted.web.client.Agent(
@@ -53071,8 +52969,6 @@ ewords
 im
 xish
 xmpproutertap
-
---- from twisted.words import _version ---
 
 --- import twisted.words.ewords (py2.7.3/linux2/root module) ---
 twisted.words.ewords.AlreadyLoggedIn(
@@ -56231,10 +56127,6 @@ lapack_mkl_info
 lapack_opt_info
 mkl_info
 
---- from numpy import _import_tools ---
-
-PackageLoaderDebug(
-
 --- import numpy.add_newdocs ---
 numpy.add_newdocs.add_newdoc(
 
@@ -56286,8 +56178,6 @@ isfileobj(
 open_latin1(
 py3k
 strchar
-
---- from numpy.compat import _inspect ---
 
 --- import numpy.compat.py3k ---
 numpy.compat.py3k.asbytes(
@@ -57083,14 +56973,8 @@ scalarmath
 shape_base
 umath
 
---- from numpy.core import _dotblas ---
-
---- from numpy.core import _internal ---
-
 format_datetime
 format_re
-
---- from numpy.core import _sort ---
 
 --- import numpy.core.arrayprint ---
 numpy.core.arrayprint.ComplexFormat(
@@ -59467,13 +59351,7 @@ twodim_base
 type_check
 ufunclike
 
---- from numpy.lib import _compiled_base ---
-
---- from numpy.lib import _datasource ---
-
 Repository(
-
---- from numpy.lib import _iotools ---
 
 ConversionWarning(
 ConverterError(
@@ -82376,8 +82254,6 @@ sizeof(
 string_at(
 wstring_at(
 
---- from ctypes import _endian ---
-
 --- import ctypes.util (py2.7.3/linux2/root module) ---
 ctypes.util.errno
 ctypes.util.find_library(
@@ -90237,8 +90113,6 @@ OggPackBuff(
 OggStreamState(
 OggSyncState(
 
---- from ogg import _ogg ---
-
 --- import pg (py2.7.3/linux2/root module) ---
 pg.connect(
 pg.escape_bytea(
@@ -90416,8 +90290,6 @@ bcrypt.os
 encode_salt(
 gensalt(
 hashpw(
-
---- from bcrypt import _bcrypt ---
 
 --- import openid (2.2.1/py2.7.3/linux2/root module) ---
 openid.association
@@ -93379,8 +93251,6 @@ svg
 terminal
 terminal256
 
---- from pygments.formatters import _mapping ---
-
 docstring_headline(
 
 --- import pygments.formatters.bbcode (py2.7.3/linux2/root module) ---
@@ -93745,8 +93615,6 @@ get_lexer_for_filename(
 get_lexer_for_mimetype(
 guess_lexer(
 guess_lexer_for_filename(
-
---- from pygments.lexers import _mapping ---
 
 --- import pygments.plugin (py2.7.3/linux2/root module) ---
 pygments.plugin.FILTER_ENTRY_POINT
@@ -104406,8 +104274,6 @@ templating
 url_for(
 wrappers
 
---- from flask import _compat ---
-
 PY2
 implements_to_string(
 integer_types
@@ -105562,8 +105428,6 @@ get_host(
 make_headers(
 poolmanager
 
---- from requests.packages.urllib3 import _collections ---
-
 RecentlyUsedContainer(
 
 --- import requests.packages.urllib3.connection ---
@@ -105947,8 +105811,6 @@ ssl_match_hostname.CertificateError(
 ssl_match_hostname.match_hostname(
 
 --- from requests.packages.urllib3.packages.ssl_match_hostname import * ---
-
---- from requests.packages.urllib3.packages.ssl_match_hostname import _implementation ---
 
 --- import requests.packages.urllib3.poolmanager ---
 requests.packages.urllib3.poolmanager.HTTPConnectionPool(
