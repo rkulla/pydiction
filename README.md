@@ -363,7 +363,7 @@ Pydiction doesn't ignore "private" attributes or methods. I.e., those starting (
 
 Pydiction vs other forms of completion
 ======================================
-- Pydiction doesn't require any dependencies to be installs and you don't even need Python support to be compiled into your version of Vim. The dictionary based completion is very stable because it's native to Vim and so the Pydiction plugin is very stable and unlikely to give you any weird errors (not counting potential conflicts with other plugins, but those are usually fixable).
+- Pydiction doesn't require any dependencies to be installs and you don't even need Python support to be compiled into your version of Vim. The dictionary based completion is very stable because it's native to Vim and the Pydiction plugin is only about 50 lines of code and unlikely to have errors -- not counting potential conflicts with other plugins, but those are usually easily fixable.
 
 - Because Pydiction uses a dictionary file, you don't have to import a module before you can complete it, nor do you even have to have the module installed on your machine. This makes completion very fast since it doesn't need to do any type deducing.
 
