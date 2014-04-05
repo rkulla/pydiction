@@ -48,7 +48,9 @@ render_template
 requests
 self
 object
+(object
 protocol
+(protocol
 reactor
 twisted
 views
