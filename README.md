@@ -5,10 +5,10 @@ Pydiction allows you to Tab-complete Python code in Vim such as keywords, built-
 It doesn't require installing any dependencies. It simply consists of three main files:
     
     python_pydiction.vim  -- Vim plugin that autocompletes Python code.
-    complete-dict         -- Dictionary file of Python keyword & module snippets, etc.
+    complete-dict         -- Dictionary file of Python keyword & modules, etc.
     pydiction.py          -- Python script to optionally add more modules to complete-dict.
 
-The bundled dictionary comes with most snippets you will likely need in your day-to-day Python programming, and the included
+The bundled dictionary comes with most things you will likely need in your day-to-day Python programming, and the included
 Python script allows you to easily append new modules to the dictionary. So you don't have to wait around for me to add them.
 And you can teach Pydiction to complete your project's own API very quickly. Some third-party libraries already supported are:
 `Django` `Flask` `Requests` `Twisted` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `OpenGL` `Pygame` `wxPython` `PyGTK` 
@@ -349,7 +349,7 @@ Pydiction vs other forms of completion
 
 - Pydiction only uses the "Tab" key to complete, uses a special dictionary file to complete from, and only attempts to complete while editing Python files. This has the advantage of only requiring one keystroke to do completion and of not polluting all of the completion menus that you might be using for other types of completion, such as Vim's regular omni-completion or other completion scripts that you may be running.
 
-- Because Pydiction uses a dictionary file of possible completion items, it can complete 3rd party modules more accurately than other methods. You have full control over what it can and cannot complete. If it's unable to complete anything you can use pydiction.py to add a new module's contents to the dictionary, or you can manually add them using a text editor. In other words, you can teach Pydiction to learn what new things it can complete, just like you can with any snippet-based system!
+- Because Pydiction uses a dictionary file of possible completion items, it can complete 3rd party modules more accurately than other methods. You have full control over what it can and cannot complete. If it's unable to complete anything you can use pydiction.py to add a new module's contents to the dictionary, or you can manually add them using a text editor. In other words, you can teach Pydiction to learn what new things it can complete, just like you can with any snippet-based system -- except the snippets are for autocompleting the rest of a word and not for pasting entire templates like SnipMate does.
 
 - The dictionary is just a text file, which makes it portable across all platforms. For example, if you're a Pyramid user you can add all the Pyramid related modules to the dictionary file.py. The latest default complete-dict already contains all of the standard library, Python keywords, and many 3rd party modules like Django, Twisted, Numpy, Flask, Requests, Pygame, wxPython, PyQT4, PyGTK, ZSI, LDAP, MySQLdb, Psycopg2, PyGreSQL, OpenId, OpenSSL, Pygments and much more. To see the full-list of python modules Pydiction knows about, open complete-dict in Vim and run `:g/root modules`.
 
