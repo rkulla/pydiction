@@ -5,8 +5,8 @@ Pydiction allows you to Tab-complete Python code in Vim such as keywords, built-
 It doesn't require installing any dependencies. It simply consists of three main files:
     
     python_pydiction.vim  -- Vim plugin that autocompletes Python code.
-    complete-dict         -- Dictionary file of Python keyword & modules, etc.
-    pydiction.py          -- Python script to optionally add more modules to complete-dict.
+    complete-dict         -- Dictionary file of Python keywords, modules, etc.
+    pydiction.py          -- Python script to add more words to complete-dict.
 
 The bundled dictionary comes with most things you will likely need in your day-to-day Python programming, and the included
 Python script allows you to easily append new modules to the dictionary. So you don't have to wait around for me to add them.
@@ -28,8 +28,8 @@ Installation
 ============
 If you have Pathogen installed:
 
-    cd ~/.vim/bundle
-    git clone https://github.com/rkulla/pydiction.git
+  cd ~/.vim/bundle
+  git clone https://github.com/rkulla/pydiction.git
 
 or use a plugin manager like Vimogen (https://github.com/rkulla/vimogen) to install and manage Pydiction and all of your plugins.
 
@@ -65,12 +65,6 @@ You can change the height of the completion menu by setting g:pydiction_menu_hei
     let g:pydiction_menu_height = 3
 
 The default menu height is 8, meaning 8 items at a time will be shown. Some people prefer more or less and you can make it as large as you want since it will automatically know where to position the menu to be visible.
-
-Note: If you were using a version of Pydiction less than 1.0, make sure you delete the old pydiction way of doing things from your vimrc. You should ***NOT*** have this in your vimrc anymore:
-
-        if has("autocmd")
-           autocmd FileType python set complete+=k/path/to/pydiction iskeyword+=.,(
-        endif " has("autocmd") 
 
 If you want to configure other things, such as how to get Pydiction to work with other plugins like `SnipMate` or the color of the menu, see the `Tips` section of this documentation.
 
