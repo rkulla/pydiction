@@ -75,6 +75,13 @@ will bring up a menu of possibilities, such as:
     raw_unicode_escape_decode(
     raw_unicode_escape_encode(
 
+Pressing `Tab` again scrolls down the menu so you can select something else. Then type a popup-menu key:
+
+    <Space>              -- Accept current match and insert a space.
+    CTRL-Y               -- Accept current match and and don't insert a space.
+    <Enter>              -- Accept current match and insert a newline.
+    <ESC> or CTRL-E      -- Close the menu and do not accept any match.
+
 Typing:
 
     os.p<Tab>
@@ -266,14 +273,14 @@ Pydiction works by using Vim's ins-completion functionality by temporarily remap
     os.path.__doc__
     ...
 
-Pressing Tab again while the menu is open will scroll down the menu so you can choose whatever item you want to go with, using the popup-menu keys:
+Pressing Tab again while the menu is open will scroll down the menu. Then you should use a popup-menu key:
 
-    CTRL-Y       Accept the currently selected match and stop completion.
-    <Space>      Accept the currently selected match and insert a space.
-    CTRL-E       Close the menu and not accept any match.
-    ....
+    <Space>               Accept current match and insert a space.
+    CTRL-Y                Accept current match and and don't insert a space.
+    <Enter>               Accept current match and insert a newline.
+    <ESC> or CTRL-E       Close the menu and do not accept any match.
 
-Hitting Enter will accept the currently selected match, stop completion, and insert a newline -- which is usually not what you want. Instead, use `CTRL-Y` or `Space`. See `:help popupmenu-keys` for more options.
+    See `:help popupmenu-keys` for more options.
 
 As of Pydiction 1.3 you can press Shift-Tab to complete searches in backwards order.
 
