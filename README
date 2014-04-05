@@ -446,11 +446,11 @@ Tips
 - Because pydiction.py will complain if you try to add a module that already exists, this can make updating an existing module a little harder.
 The workaround is to edit complete-dict and manually delete the related module sections. For example to update `__future__`, delete the sections `-- import __future__ ---` and `--- from __future__ import * ---`.
 
-Pydiction v1.2.2 and greater adds special markers in each module section of complete-dict that tell you if a module is a "root module", meaning it's a top-level module or package that was specified as an argument to pydiction.py. This is helpful because pydiction.py will automatically dig into as many submodules as it can find, but it doesn't know about separate packages. For example `curses.textpad`, `curses.ascii`, `curses.panel` and `curses.wrapper` are not submodules of 'curses', so they have to be added separately, like:
+ Pydiction v1.2.2 and greater adds special markers in each module section of complete-dict that tell you if a module is a "root module", meaning it's a top-level module or package that was specified as an argument to pydiction.py. This is helpful because pydiction.py will automatically dig into as many submodules as it can find, but it doesn't know about separate packages. For example `curses.textpad`, `curses.ascii`, `curses.panel` and `curses.wrapper` are not submodules of 'curses', so they have to be added separately, like:
 
         $ ./pydiction curses curses.textpad curses.ascii curses.panel
 
-Fortunately, you can `grep 'root module' complete-dict` to see a list of all the root modules:
+ Fortunately, you can `grep 'root module' complete-dict` to see a list of all the root modules:
 
         $ grep 'root module' complete-dict | grep curses
         --- import curses (py2.7.3/linux2/root module) ---
@@ -458,7 +458,7 @@ Fortunately, you can `grep 'root module' complete-dict` to see a list of all the
         --- import curses.textpad (py2.7.3/linux2/root module) ---
         --- import curses.wrapper (py2.7.3/linux2/root module) ---
 
-As you can see, pydiction.py also adds other information such as which version of Python and which operating system was used to add the module to the dictionary file. It will also put the version of the module if its `.__version__` attribute was set.
+ As you can see, pydiction.py also adds other information such as which version of Python and which operating system was used to add the module to the dictionary file. It will also put the version of the module if its `.__version__` attribute was set.
 
 - You can change the colors of the popup menu by editing your vim color scheme's source file and changing the values of `Pmenu` `PmenuSel` `PmenuSBar` and `PmenuThumb`. If you're using Vim in a terminal, change the values of ctermfg and ctermbg, otherwise change guifg and guibg. I use the molokai colorscheme and a terminal and use:
 
@@ -467,6 +467,18 @@ As you can see, pydiction.py also adds other information such as which version o
         hi PmenuSel    ctermfg=green  ctermbg=black                guibg=#808080
         hi PmenuSbar                                               guibg=#080808
         hi PmenuThumb                               guifg=#66D9EF
+
+- If you use Vim on Linux, OS X, and Windows you can configure different paths to complete-dict in your vimrc like:
+
+        if has('win32')
+          let g:pydiction_location = 'C:/vim/vimfiles/ftplugin/pydiction/complete-dict'
+        else
+          if system('uname')=~'Darwin'
+            let g:pydiction_location = '/Users/you/.vim/bundle/pydiction/complete-dict'
+          else
+            let g:pydiction_location = '/home/you/.vim/bundle/pydiction/complete-dict'
+          endif
+        endif
 
 Further reading
 ===============
