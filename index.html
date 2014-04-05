@@ -3,34 +3,31 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
     <title>Pydiction by rkulla</title>
   </head>
 
   <body>
-    <div id="container">
+    <header>
       <div class="inner">
+        <h1>Pydiction</h1>
+        <h2>Python Tab-completion for Vim</h2>
+        <a href="https://github.com/rkulla/pydiction" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
 
-        <header>
-          <h1>Pydiction</h1>
-          <h2>Python Tab-completion for Vim</h2>
-        </header>
-
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/rkulla/pydiction/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/rkulla/pydiction/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/rkulla/pydiction" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <hr>
-
-        <section id="main_content">
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
           <h1>
 <a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h1>
 
@@ -39,8 +36,8 @@
 <p>It doesn't require installing any dependencies. It simply consists of three main files:</p>
 
 <pre><code>python_pydiction.vim  -- Vim plugin that autocompletes Python code.
-complete-dict         -- Dictionary file of Python keyword &amp; modules, etc.
-pydiction.py          -- Python script to optionally add more modules to complete-dict.
+complete-dict         -- Dictionary file of Python keywords, modules, etc.
+pydiction.py          -- Python script to add more words to complete-dict.
 </code></pre>
 
 <p>The bundled dictionary comes with most things you will likely need in your day-to-day Python programming, and the included
@@ -73,14 +70,14 @@ git clone https://github.com/rkulla/pydiction.git
 <p>Otherwise:</p>
 
 <pre><code>- UNIX/LINUX/OSX: Put python_pydiction.vim in ~/.vim/after/ftplugin/ 
-(Create this directory if doesn't yet exist. Vim looks there automatically)
+Create this directory if doesn't yet exist. Vim looks there automatically
 
 - WINDOWS: Put python_pydiction.vim in C:\vim\vimfiles\ftplugin\
-(Assuming you installed Vim to C:\vim\)
-
-You may install complete-dict and pydiction.py anywhere (see the Configuration section),
-but only python_pydiction.vim in the ftplugin directory because for .vim files only.
+Assuming you installed Vim to C:\vim\
 </code></pre>
+
+<p>You may install complete-dict and pydiction.py anywhere (see the Configuration section),
+but only python_pydiction.vim in the ftplugin directory because for .vim files only.</p>
 
 <h1>
 <a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration</h1>
@@ -97,7 +94,7 @@ but only python_pydiction.vim in the ftplugin directory because for .vim files o
 
 <p>for example, if you used Pathogen to install Pydiction, you would set this to:</p>
 
-<pre><code>let g:pydiction_location = '/home/user/.vim/bundle/pydiction/complete-dict'
+<pre><code>let g:pydiction_location = '/home/you/.vim/bundle/pydiction/complete-dict'
 </code></pre>
 
 <p>and the dictionary will be available to all of your virtualenv's as well.</p>
@@ -108,13 +105,6 @@ but only python_pydiction.vim in the ftplugin directory because for .vim files o
 </code></pre>
 
 <p>The default menu height is 8, meaning 8 items at a time will be shown. Some people prefer more or less and you can make it as large as you want since it will automatically know where to position the menu to be visible.</p>
-
-<p>Note: If you were using a version of Pydiction less than 1.0, make sure you delete the old pydiction way of doing things from your vimrc. You should <strong><em>NOT</em></strong> have this in your vimrc anymore:</p>
-
-<pre><code>    if has("autocmd")
-       autocmd FileType python set complete+=k/path/to/pydiction iskeyword+=.,(
-    endif " has("autocmd") 
-</code></pre>
 
 <p>If you want to configure other things, such as how to get Pydiction to work with other plugins like <code>SnipMate</code> or the color of the menu, see the <code>Tips</code> section of this documentation.</p>
 
@@ -525,7 +515,7 @@ itr.&lt;C-X&gt;&lt;C-O&gt;
 
 <p>In fact, complete-dict contains some of this already for certain conventions, such as <code>Psycopg2</code> conventions of using <code>conn</code> and <code>cur</code> for connection and cursor objects, respectively. Near the top of the bundled complete-dict I've taken the liberty of adding:</p>
 
-<pre><code>  --- Psycopg2 / PEP 249 (Entered manually. Assumes conventional variable names: conn and cur) ---
+<pre><code>  --- Psycopg2 / PEP 249 (Assumes conventional object names: conn and cur) ---
   conn.close(
   conn.commit(
   conn.rollback(
@@ -537,33 +527,48 @@ itr.&lt;C-X&gt;&lt;C-O&gt;
   ...
 </code></pre>
 </li>
-<li><p>Because pydiction.py will complain if you try to add a module that already exists, this can make updating an existing module a little harder.
-The workaround is to edit complete-dict and manually delete the related module sections. For example to update <code>__future__</code>, delete the sections <code>-- import __future__ ---</code> and <code>--- from __future__ import * ---</code>.</p></li>
-</ul><p>Pydiction v1.2.2 and greater adds special markers in each module section of complete-dict that tell you if a module is a "root module", meaning it's a top-level module or package that was specified as an argument to pydiction.py. This is helpful because pydiction.py will automatically dig into as many submodules as it can find, but it doesn't know about separate packages. For example <code>curses.textpad</code>, <code>curses.ascii</code>, <code>curses.panel</code> and <code>curses.wrapper</code> are not submodules of 'curses', so they have to be added separately, like:</p>
+<li>
+<p>Because pydiction.py will complain if you try to add a module that already exists, this can make updating an existing module a little harder.
+The workaround is to edit complete-dict and manually delete the related module sections. For example to update <code>__future__</code>, delete the sections <code>-- import __future__ ---</code> and <code>--- from __future__ import * ---</code>.</p>
 
-<pre><code>    $ ./pydiction curses curses.textpad curses.ascii curses.panel
+<p>Pydiction v1.2.2 and greater adds special markers in each module section of complete-dict that tell you if a module is a "root module", meaning it's a top-level module or package that was specified as an argument to pydiction.py. This is helpful because pydiction.py will automatically dig into as many submodules as it can find, but it doesn't know about separate packages. For example <code>curses.textpad</code>, <code>curses.ascii</code>, <code>curses.panel</code> and <code>curses.wrapper</code> are not submodules of 'curses', so they have to be added separately, like:</p>
+
+<pre><code>  $ ./pydiction curses curses.textpad curses.ascii curses.panel
 </code></pre>
 
 <p>Fortunately, you can <code>grep 'root module' complete-dict</code> to see a list of all the root modules:</p>
 
-<pre><code>    $ grep 'root module' complete-dict | grep curses
-    --- import curses (py2.7.3/linux2/root module) ---
-    --- import curses.ascii (py2.7.3/linux2/root module) ---
-    --- import curses.textpad (py2.7.3/linux2/root module) ---
-    --- import curses.wrapper (py2.7.3/linux2/root module) ---
+<pre><code>  $ grep 'root module' complete-dict | grep curses
+  --- import curses (py2.7.3/linux2/root module) ---
+  --- import curses.ascii (py2.7.3/linux2/root module) ---
+  --- import curses.textpad (py2.7.3/linux2/root module) ---
+  --- import curses.wrapper (py2.7.3/linux2/root module) ---
 </code></pre>
 
 <p>As you can see, pydiction.py also adds other information such as which version of Python and which operating system was used to add the module to the dictionary file. It will also put the version of the module if its <code>.__version__</code> attribute was set.</p>
-
-<ul>
+</li>
 <li>
 <p>You can change the colors of the popup menu by editing your vim color scheme's source file and changing the values of <code>Pmenu</code> <code>PmenuSel</code> <code>PmenuSBar</code> and <code>PmenuThumb</code>. If you're using Vim in a terminal, change the values of ctermfg and ctermbg, otherwise change guifg and guibg. I use the molokai colorscheme and a terminal and use:</p>
 
 <pre><code>" complete menu
-hi Pmenu           ctermfg=green  ctermbg=black guifg=#66D9EF  guibg=#000000
-hi PmenuSel        ctermfg=green  ctermbg=black                guibg=#808080
-hi PmenuSbar                                                   guibg=#080808
-hi PmenuThumb                                   guifg=#66D9EF
+hi Pmenu       ctermfg=green  ctermbg=black guifg=#66D9EF  guibg=#000000
+hi PmenuSel    ctermfg=green  ctermbg=black                guibg=#808080
+hi PmenuSbar                                               guibg=#080808
+hi PmenuThumb                               guifg=#66D9EF
+</code></pre>
+</li>
+<li>
+<p>If you use Vim on Linux, OS X, and Windows you can configure different paths to complete-dict in your vimrc like:</p>
+
+<pre><code>if has('win32')
+  let g:pydiction_location = 'C:/vim/vimfiles/ftplugin/pydiction/complete-dict'
+else
+  if system('uname')=~'Darwin'
+    let g:pydiction_location = '/Users/you/.vim/bundle/pydiction/complete-dict'
+  else
+    let g:pydiction_location = '/home/you/.vim/bundle/pydiction/complete-dict'
+  endif
+endif
 </code></pre>
 </li>
 </ul><h1>
@@ -579,13 +584,23 @@ hi PmenuThumb                                   guifg=#66D9EF
 <p><a href="http://docs.python.org/2/py-modindex.html">http://docs.python.org/2/py-modindex.html</a></p>
         </section>
 
-        <footer>
-          Pydiction is maintained by <a href="https://github.com/rkulla">rkulla</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
+        <aside id="sidebar">
+          <a href="https://github.com/rkulla/pydiction/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/rkulla/pydiction/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
 
-        
+          <p class="repo-owner"><a href="https://github.com/rkulla/pydiction"></a> is maintained by <a href="https://github.com/rkulla">rkulla</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
       </div>
     </div>
+
+  
   </body>
 </html>
