@@ -28,21 +28,21 @@ Installation
 ============
 If you have Pathogen installed:
 
-  cd ~/.vim/bundle
-  git clone https://github.com/rkulla/pydiction.git
+    cd ~/.vim/bundle
+    git clone https://github.com/rkulla/pydiction.git
 
 or use a plugin manager like Vimogen (https://github.com/rkulla/vimogen) to install and manage Pydiction and all of your plugins.
 
 Otherwise:
 
     - UNIX/LINUX/OSX: Put python_pydiction.vim in ~/.vim/after/ftplugin/ 
-    (Create this directory if doesn't yet exist. Vim looks there automatically)
+    Create this directory if doesn't yet exist. Vim looks there automatically
 
     - WINDOWS: Put python_pydiction.vim in C:\vim\vimfiles\ftplugin\
-    (Assuming you installed Vim to C:\vim\)
+    Assuming you installed Vim to C:\vim\
 
-    You may install complete-dict and pydiction.py anywhere (see the Configuration section),
-    but only python_pydiction.vim in the ftplugin directory because for .vim files only.
+You may install complete-dict and pydiction.py anywhere (see the Configuration section),
+but only python_pydiction.vim in the ftplugin directory because for .vim files only.
 
 Configuration
 =============
@@ -432,7 +432,7 @@ Tips
 
  In fact, complete-dict contains some of this already for certain conventions, such as `Psycopg2` conventions of using `conn` and `cur` for connection and cursor objects, respectively. Near the top of the bundled complete-dict I've taken the liberty of adding:
          
-        --- Psycopg2 / PEP 249 (Entered manually. Assumes conventional variable names: conn and cur) ---
+        --- Psycopg2 / PEP 249 (Assumes conventional object names: conn and cur) ---
         conn.close(
         conn.commit(
         conn.rollback(
@@ -463,10 +463,10 @@ As you can see, pydiction.py also adds other information such as which version o
 - You can change the colors of the popup menu by editing your vim color scheme's source file and changing the values of `Pmenu` `PmenuSel` `PmenuSBar` and `PmenuThumb`. If you're using Vim in a terminal, change the values of ctermfg and ctermbg, otherwise change guifg and guibg. I use the molokai colorscheme and a terminal and use:
 
         " complete menu
-        hi Pmenu           ctermfg=green  ctermbg=black guifg=#66D9EF  guibg=#000000
-        hi PmenuSel        ctermfg=green  ctermbg=black                guibg=#808080
-        hi PmenuSbar                                                   guibg=#080808
-        hi PmenuThumb                                   guifg=#66D9EF
+        hi Pmenu       ctermfg=green  ctermbg=black guifg=#66D9EF  guibg=#000000
+        hi PmenuSel    ctermfg=green  ctermbg=black                guibg=#808080
+        hi PmenuSbar                                               guibg=#080808
+        hi PmenuThumb                               guifg=#66D9EF
 
 Further reading
 ===============
