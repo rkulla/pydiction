@@ -343,8 +343,9 @@ Pydiction doesn't ignore "private" attributes or methods. I.e., those starting (
 
 Pydiction vs other forms of completion
 ======================================
-- Pydiction can complete Python Keywords, as well as Python module names and their attributes and methods. It can also complete both the fully-qualified and non-fully qualified names. For example: `string.upper(`, `upper(`,
-`''.upper(`, and so forth.
+- Pydiction doesn't require any dependencies to be installs and you don't even need Python support to be compiled into your version of Vim.
+
+- Pydiction can complete Python Keywords, built-ins, and Python module names and their attributes and methods. It can complete both the fully-qualified and non-fully qualified names. For example: `string.upper(`, `upper(`, `''.upper(`, and so forth.
 
 - Pydiction only uses the "Tab" key to complete, uses a special dictionary file to complete from, and only attempts to complete while editing Python files. This has the advantage of only requiring one keystroke to do completion and of not polluting all of the completion menus that you might be using for other types of completion, such as Vim's regular omni-completion or other completion scripts that you may be running.
 
@@ -356,14 +357,11 @@ Pydiction vs other forms of completion
 
 - And because the dictionary file is just a static text file, you re-arrange how you want things to appear in the popup menus. By default things are sorted alphabetically, but if ou want `else` to come before `elif`, you can customize.
 
-- If you want to you can use use Pydiction in tandem with Vim 7's builtin omni-completion for Python (pythoncomplete.vim) as well as other forms of ins-completion. In fact, they can all make a great team.
+- If you want to you can use use Pydiction in tandem with Vim 7's builtin omni-completion for Python (pythoncomplete.vim) as well as other forms of completion like SnipMate or Python-mode (see the Tips section). In fact, they can all make a great team.
 
 - Pydiction knows when you're completing an attribute vs a callable method. If it's a callable then it will automatically insert an opening parentheses.
 
 - The Tab key will work as normal for everything else. Pydiction will only try to use the Tab key to complete Python code if you're editing a Python file and you first type part of some Python module or keyword.
-
-- Pydiction doesn't even require Python support to be compiled into your version of Vim.
-
 
 Tips
 ====
