@@ -304,9 +304,9 @@ Make sure you download the latest version of Pydiction to get the most up-to-dat
 If you open complete-dict in your text editor you'll see sections in it for each module, such as:
 
     --- import os ---
-    os.EX_CANTCREAT
-    os.EX_CONFIG
-    os.EX_DATAERR
+    os.path
+    os.chdir(
+    os.chmod(
     ...
 
     --- from os import * ---
@@ -315,21 +315,13 @@ If you open complete-dict in your text editor you'll see sections in it for each
     EX_DATAERR
     ...
 
-If certain attributes seem to be missing, it's probably because Pydiction removed them because they were duplicates. This mainly happens with the non-fully qualified module sections. So first try searching the entire file for whatever string you assume is missing before you try adding it. For example, if you don't see:
+If certain attributes seem to be missing, it's probably because Pydiction removed them because they were duplicates. So first try searching the entire file for whatever string you assume is missing before you try adding it. 
 
-    __doc__
-
-under:
-
-    --- import sys ---
-
-it's probably because a previous module, such as "os", already has it.
-    
 If you try to recreate complete-dict from scratch, you'll need to manually add the Python keywords and non-module stuff back into it. See the top few sections of the bundled complete-dict file for what I mean. Instead of deleting the file, I would use those manually added sections as a starting point, and then just append your own stuff from there.
 
-If you don't want certain things to Tab-complete, such as Python keywords or certain modules, delete them by hand from complete-dict.
+If you don't want certain things to Tab-complete, such as Python keywords or certain modules, you can just delete them by hand from complete-dict.
 
-Pydiction doesn't ignore "private" attributes or methods. I.e., those starting (but not ending) with one or two underscores, e.g., "_foo" or "__foo".  I have deleted things starting with a single underscore from the included complete-dict just to keep it a little more sane since there were so many.  In sticking with the Python tradition of not forcing things to be private, I have left it up to the user to decide how they want to treat their own things. If you want to delete them from your custom complete-dict's, you can use a regex to try to delete them, such as:
+Pydiction doesn't ignore "private" attributes or methods. I.e., those starting (but not ending) with one or two underscores, e.g., "_foo" or "__foo".  I have deleted most things starting with single underscore or double underscores from the included complete-dict just to keep it a little more sane since there were so many.  Python doesn't force things to be private, and you're free to add them if and when you want them. If you find any that you want to delete, open complete-dict in vim and run
 
     :g/\._[a-zA-Z]/d
     :g/^_[a-zA-Z]/d
