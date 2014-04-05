@@ -48,6 +48,12 @@ then make sure you set g:pydiction_location to the full path of where you instal
     
     let g:pydiction_location = '/path/to/complete-dict'
 
+for example, if you used Pathogen to install Pydiction, you would set this to:
+
+    let g:pydiction_location = '/home/user/.vim/bundle/pydiction/complete-dict'
+
+and the dictionary will be available to all of your virtualenv's as well.
+
 You can change the height of the completion menu by setting g:pydiction_menu_height in your vimrc:
     
     let g:pydiction_menu_height = 3
