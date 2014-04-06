@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """
 
-pydiction.py 1.2.2 by Ryan Kulla (rkulla AT gmail DOT com).
+pydiction.py 1.2.3 by Ryan Kulla (rkulla AT gmail DOT com).
 License: BSD.
 
 Description: Creates a Vim dictionary of Python module attributes for Vim's
@@ -23,7 +23,7 @@ Example: The following will append all the "time" and "math" modules'
 
 
 __author__ = "Ryan Kulla (rkulla AT gmail DOT com)"
-__version__ = "1.2.2"
+__version__ = "1.2.3"
 __copyright__ = "Copyright (c) 2003-2014 Ryan Kulla"
 
 

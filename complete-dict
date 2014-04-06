@@ -37,8 +37,10 @@ HttpResponse
 expat
 flask
 Flask
+.forms
 kwargs
 models
+.models
 MySQLdb
 numpy
 patterns
@@ -52,6 +54,7 @@ protocol
 reactor
 twisted
 views
+.views
 xml
 __add__
 __copy__(

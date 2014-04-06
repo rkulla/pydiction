@@ -151,6 +151,8 @@ Python's newer "import module as X" syntax isn't supported by default, since it 
     i = 3
     i.b<Ctrl-x><Ctrl-o>   # expands to: i.bit_length(
 
+The same goes for relative import syntax. I have included a few common Django relative import words such as `.models` `.views` and `.forms` and you can add more.
+
 See my Tips section below for more.
 
 

@@ -3,7 +3,7 @@
 " ============================================================================
 "
 " Author: Ryan Kulla (rkulla AT gmail DOT com)
-" Version: 1.2.2, for Vim 7+
+" Version: 1.2.3, for Vim 7+
 " URL: http://www.vim.org/scripts/script.php?script_id=850
 " Installation: The easiest way is to use Pathogen and simply install
 "               everything to ~/.vim/bundle
