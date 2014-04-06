@@ -190,7 +190,7 @@ django.template
 def __iter__(
 </code></pre>
 
-<p>As of Pydiction 1.2, there's support for completing modules that were imported via "from module import submodule". For example, you could do:</p>
+<p>As of Pydiction 1.2, there is support for completing modules that were imported with the syntax <code>from module import submodule</code>. For example, you can do:</p>
 
 <pre><code>from xml.parsers import expat
 expat.P&lt;Tab&gt;
@@ -207,9 +207,11 @@ expat.P&lt;Tab&gt;
 i.b&lt;Ctrl-x&gt;&lt;Ctrl-o&gt;   # expands to: i.bit_length(
 </code></pre>
 
+The same goes for relative import syntax. I have included a few common Django relative import words such as <code>.models</code> <code>.views</code> and <code>.forms</code> and you can add more.
+
 <p>See my Tips section below for more.</p>
 
-<p>If you feel you're getting different results in your completion menu, it's probably because you don't have Vim set to ignore case. You can remedy this with ":set noic"</p>
+<p>If you feel you're getting different results in your completion menu, it's probably because you don't have Vim set to ignore case. You can remedy this with ":set noic". It also helps to type at least 2 letters before hitting Tab, to help Vim narrow down what you mean to complete.</p>
 
 <h1>
 <a name="usage-dictionary-generator" class="anchor" href="#usage-dictionary-generator"><span class="octicon octicon-link"></span></a>Usage (Dictionary generator)</h1>
