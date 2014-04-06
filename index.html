@@ -196,12 +196,12 @@ def __iter__(
 expat.P&lt;Tab&gt;
 </code></pre>
 
-<p>which expands to:</p>
+<p>expands to:</p>
 
 <pre><code>expat.ParserCreate(
 </code></pre>
 
-<p>Python's newer "import module as X" syntax isn't supported by default, since it would be impossible for Pydiction to know what you'll alias a module to. However, you can either add the alias to complete-dict or just use pythoncomplete.vim's Omnicompletition by typing <code>&lt;C-X&gt;&lt;C-O&gt;</code>. You can also use the omni-completion to complete other things that aren't in the complete-dict dictionary, such as variables:</p>
+<p>Python's newer <code>import module as X</code> syntax isn't supported by default, since it would be impossible for Pydiction to know what you'll alias a module to. However, you can either add the alias to complete-dict or just use pythoncomplete.vim's Omnicompletition by typing <code>&lt;C-X&gt;&lt;C-O&gt;</code>. You can also use the omni-completion to complete other things that aren't in the complete-dict dictionary, such as variables:</p>
 
 <pre><code>i = 3
 i.b&lt;Ctrl-x&gt;&lt;Ctrl-o&gt;   # expands to: i.bit_length(
