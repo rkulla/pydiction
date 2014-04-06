@@ -137,16 +137,16 @@ pops up:
     def __init__(
     def __iter__(
 
-As of Pydiction 1.2, there's support for completing modules that were imported via "from module import submodule". For example, you could do:
+You can complete modules that were imported via `from module import submodule`. For example:
 
     from xml.parsers import expat
     expat.P<Tab>
 
-which expands to:
+expands to:
 
     expat.ParserCreate(
 
-Python's newer "import module as X" syntax isn't supported by default, since it would be impossible for Pydiction to know what you'll alias a module to. However, you can either add the alias to complete-dict or just use pythoncomplete.vim's Omnicompletition by typing `<C-X><C-O>`. You can also use the omni-completion to complete other things that aren't in the complete-dict dictionary, such as variables:
+Python's newer `import module as X` syntax isn't supported by default, since it would be impossible for Pydiction to know what you'll alias a module to. However, you can either add the alias to complete-dict or just use pythoncomplete.vim's Omnicompletition by typing `<C-X><C-O>`. You can also use the omni-completion to complete other things that aren't in the complete-dict dictionary, such as variables:
 
     i = 3
     i.b<Ctrl-x><Ctrl-o>   # expands to: i.bit_length(
@@ -156,7 +156,7 @@ The same goes for relative import syntax. I have included a few common Django re
 See my Tips section below for more.
 
 
-If you feel you're getting different results in your completion menu, it's probably because you don't have Vim set to ignore case. You can remedy this with ":set noic"
+If you feel you're getting different results in your completion menu, it's probably because you don't have Vim set to ignore case. You can remedy this with ":set noic". It also helps to type at least 2 letters before hitting Tab, to help Vim narrow down what you mean to complete.
         
 Usage (Dictionary generator)
 ============================
