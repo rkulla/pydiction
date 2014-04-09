@@ -283,7 +283,7 @@ Pydiction version 1.0 and greater uses a file called python_pydiction.vim, which
 
 Past versions of pydiction didn't use a plugin but only required you to change the value of "isk" in your vimrc, which was not desirable. Version 1.0 and greater do not require you to manually change the value of isk. It now safely changes isk for you temporarily by only setting it while you're doing Tab-completion of Python code. It automatically changes isk back to its original value whenever Tab-completion isn't being activated. Again, only Tab-completion causes Pydiction to activate; not even other forms of ins-completion, such as `<Ctrl-x>` or `<Ctrl-n>` completion will activate Pydiction. So you're still free to use those other types of completion whenever you want to.
 
-Pydiction works by using Vim's ins-completion functionality by temporarily remapping the Tab key to do the same thing as `I_CTRL-X_CTRL_K` (dictionary only completion). So when you are editing a Python file and you start typing the name of a Python keyword or module, you can press the Tab key to complete it. For example, if you type os.pa then press Tab, a pop up completion menu opens with:
+Pydiction works by using Vim's dictionary ins-completion functionality by temporarily remapping the Tab key to do the same thing as `I_CTRL-X_CTRL_K` (dictionary only completion). So when you are editing a Python file and you start typing the name of a Python keyword or module, you can press the Tab key to complete it. For example, if you type os.pa then press Tab, a pop up completion menu opens with:
 
     os.pardir
     os.path
@@ -444,6 +444,24 @@ Tips
         cur.executemany(
         cur.fetchall(
         ...
+
+- Vim comes with other forms of insert completion, such as completing keywords in the current file. Here's the full list:
+
+        1. Whole lines                                  |i_CTRL-X_CTRL-L|
+        2. keywords in the current file                 |i_CTRL-X_CTRL-N|
+        3. keywords in 'dictionary'                     |i_CTRL-X_CTRL-K|
+        4. keywords in 'thesaurus', thesaurus-style     |i_CTRL-X_CTRL-T|
+        5. keywords in the current and included files   |i_CTRL-X_CTRL-I|
+        6. tags                                         |i_CTRL-X_CTRL-]|
+        7. file names                                   |i_CTRL-X_CTRL-F|
+        8. definitions or macros                        |i_CTRL-X_CTRL-D|
+        9. Vim command-line                             |i_CTRL-X_CTRL-V|
+        10. User defined completion                     |i_CTRL-X_CTRL-U|
+        11. omni completion                             |i_CTRL-X_CTRL-O|
+        12. Spelling suggestions                        |i_CTRL-X_s|
+        13. keywords in 'complete'                      |i_CTRL-N|
+
+  Number 3 is what Pydiction does for you when you press Tab.
 
 - Because pydiction.py will complain if you try to add a module that already exists, this can make updating an existing module a little harder.
 The workaround is to edit complete-dict and manually delete the related module sections. For example to update `__future__`, delete the sections `-- import __future__ ---` and `--- from __future__ import * ---`.
