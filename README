@@ -321,7 +321,7 @@ The default complete-dict currently contains python keywords: `and` `as` `assert
 
 It also contains most of the standard library and built-ins:  `__builtin__` `__future__` `os` `sys` `time` `re` `string` `str` `Tkinter` `urllib` etc.
 
-It even contains complete-dict even comes with many third-party libraries such as: `Django` `Twisted` `Flask` `Requests` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `ZSI` `LDAP` `OpenGL` `Pygame` `wxPython` `PyGTK` `PyQT4` `PyOgg` `Bcrypt` `OpenID` `GnuPGInterface` `OpenSSL` `Pygments` and more.
+It even contains complete-dict even comes with many third-party libraries such as: `Django` `Twisted` `Flask` `Requests` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `ZSI` `LDAP` `OpenGL` `Pygame` `wxPython` `PyGTK` `PyQT4` `PyOgg` `Bcrypt` `OpenID` `GnuPGInterface` `OpenSSL` `lxml` `Pygments` and more.
 
 And it contains useful dunder methods, conventions, etc such as: `self` `object` `__init__(` `__name__` `__main__` etc. This type of thing was manually added near the top of the bundled file. Anything you want to always appear first should go near the top of the file since it reads top-down.
 
