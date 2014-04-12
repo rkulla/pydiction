@@ -49,6 +49,14 @@ render
 render_template
 requests
 self
+self.assertEquals(
+self.assertTrue(
+self.assertGreater(
+self.assertGreaterEqual(
+self.assertLess(
+self.assertLessEqual(
+self.assertRaises(
+self.assertRaisesRegexp(
 object
 protocol
 reactor
