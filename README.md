@@ -12,7 +12,7 @@ The bundled dictionary comes with most things you will likely need in your day-t
 Python script allows you to easily append new modules to the dictionary. So you don't have to wait around for me to add them.
 And you can teach Pydiction to complete your project's own API very quickly. Some third-party libraries already supported are:
 `Django` `Flask` `Requests` `Twisted` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `OpenGL` `Pygame` `wxPython` `PyGTK` 
-`PyQT4` `OpenID` and more.
+`PyQT4` `OpenID` `Scrapy` and more.
 
 Since Pydiction just uses a flat dictionary file, it's extremely flexible because you can do things like re-order how you want
 things to appear in your popup completion menus. By default it will be in alphabetical order, but if you want `else` to come 
@@ -162,7 +162,7 @@ Usage (Dictionary generator)
 ============================
 You can skip this section if you don't plan to add more modules to complete-dict yourself. Consult complete-dict to see if it already has the modules you intend to use.
 
-This is the Python script used to create the "complete-dict" Vim dictionary file. I have created and bundled a default complete-dict for your use. I created it using a Linux system, so there won't be many real win32 specific modules in it. You're free to run pydiction.py to add or upgrade as many modules as you need. The dictionary file will still work if you're using windows, but it won't complete win32 related modules unless you tell it to. 
+This is the Python script used to create the "complete-dict" Vim dictionary file. I have curated and bundled a default complete-dict for your use. I created it using a Linux system, so there won't be many real win32 specific modules in it. You're free to run pydiction.py to add or upgrade as many modules as you need. The dictionary file will still work if you're using windows, but it won't complete win32 related modules unless you tell it to. 
 
 USAGE: At a command prompt, run:
 
@@ -321,7 +321,8 @@ The default complete-dict currently contains python keywords: `and` `as` `assert
 
 It also contains most of the standard library and built-ins:  `__builtin__` `__future__` `os` `sys` `time` `re` `string` `str` `Tkinter` `urllib` etc.
 
-It even contains complete-dict even comes with many third-party libraries such as: `Django` `Twisted` `Flask` `Requests` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `ZSI` `LDAP` `OpenGL` `Pygame` `wxPython` `PyGTK` `PyQT4` `PyOgg` `Bcrypt` `OpenID` `GnuPGInterface` `OpenSSL` `lxml` `Pygments` and more.
+It even contains complete-dict even comes with many third-party libraries such
+as: `Django` `Twisted` `Flask` `Requests` `Numpy` `Psycopg2` `PyGreSQL` `SQLite3` `MySQLdb` `ZSI` `LDAP` `OpenGL` `Pygame` `wxPython` `PyGTK` `PyQT4` `Urwid` `PyOgg` `Bcrypt` `OpenID` `GnuPGInterface` `OpenSSL` `lxml` `Scrapy` `Pygments` and more.
 
 And it contains useful dunder methods, conventions, etc such as: `self` `object` `__init__(` `__name__` `__main__` etc. This type of thing was manually added near the top of the bundled file. Anything you want to always appear first should go near the top of the file since it reads top-down.
 
@@ -373,7 +374,7 @@ Pydiction vs other forms of completion
 
 - Because Pydiction uses a dictionary file of possible completion items, it can complete 3rd party modules more accurately than other methods. You have full control over what it can and cannot complete. If it's unable to complete anything you can use pydiction.py to add a new module's contents to the dictionary, or you can manually add them using a text editor. In other words, you can teach Pydiction to learn what new things it can complete, just like you can with any snippet-based system -- except the snippets are for autocompleting the rest of a word and not for pasting entire templates like SnipMate does.
 
-- The dictionary is just a text file, which makes it portable across all platforms. For example, if you're a Pyramid user you can add all the Pyramid related modules to the dictionary file.py. The latest default complete-dict already contains all of the standard library, Python keywords, and many 3rd party modules like Django, Twisted, Numpy, Flask, Requests, Pygame, wxPython, PyQT4, PyGTK, ZSI, LDAP, MySQLdb, Psycopg2, PyGreSQL, OpenId, OpenSSL, Pygments and much more. To see the full-list of python modules Pydiction knows about, open complete-dict in Vim and run `:g/root modules`.
+- The dictionary is just a text file, which makes it portable across all platforms. For example, if you're a Pyramid user you can add all the Pyramid related modules to the dictionary file.py. The latest default complete-dict already contains all of the standard library, Python keywords, and many 3rd party modules like Django, Twisted, Numpy, Flask, Requests, Pygame, wxPython, PyQT4, PyGTK, Urwid, ZSI, LDAP, MySQLdb, Psycopg2, PyGreSQL, OpenId, OpenSSL, Scrapy, lxml, Pygments and much more. To see the full-list of python modules Pydiction knows about, open complete-dict in Vim and run `:g/root modules`.
 
 - If you want to you can use use Pydiction in tandem with Vim 7's builtin omni-completion for Python (pythoncomplete.vim) as well as other forms of completion like SnipMate or Python-mode (see the Tips section). In fact, they can all make a great team.
 

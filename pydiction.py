@@ -54,18 +54,37 @@ def get_submodules(module_name, submodules):
     mod_attrs = dir(imported_module)
 
     for mod_attr in mod_attrs:
-        if isinstance(getattr(imported_module, mod_attr), types.ModuleType):
-            submodules.append(module_name + '.' + mod_attr)
+        try:
+            if isinstance(getattr(imported_module, mod_attr), types.ModuleType):
+                submodules.append(module_name + '.' + mod_attr)
+        except AttributeError as e:
+            print e
 
     return submodules
 
+def get_format(imported_module, mod_attr, use_prefix):
+    format = ''
+
+    if use_prefix:
+        format_noncallable = '%s.%s'
+        format_callable = '%s.%s('
+    else:
+        format_noncallable = '%s'
+        format_callable = '%s('
+
+    try:
+        if callable(getattr(imported_module, mod_attr)):
+            # If an attribute is callable, show an opening parentheses:
+            format = format_callable
+        else:
+            format = format_noncallable
+    except AttributeError as e:
+        print e
+
+    return format
 
 def write_dictionary(module_name):
     """Write to module attributes to the vim dictionary file."""
-    prefix_on = '%s.%s'
-    prefix_on_callable = '%s.%s('
-    prefix_off = '%s'
-    prefix_off_callable = '%s('
     python_version = '%s.%s.%s' % get_python_version()
 
     try:
@@ -89,12 +108,9 @@ def write_dictionary(module_name):
     write_to.write('\n--- import %s %s---\n' % (module_name, module_info))
 
     for mod_attr in mod_attrs:
-        if callable(getattr(imported_module, mod_attr)):
-            # If an attribute is callable, show an opening parentheses:
-            format = prefix_on_callable
-        else:
-            format = prefix_on
-        write_to.write(format % (module_name, mod_attr) + '\n')
+        format = get_format(imported_module, mod_attr, True)
+        if format != '':
+            write_to.write(format % (module_name, mod_attr) + '\n')
 
     # Generate submodule names by themselves, for when someone does
     # "from foo import bar" and wants to complete bar.baz.
@@ -109,20 +125,16 @@ def write_dictionary(module_name):
         write_to.write('\n--- from %s import %s ---\n' %
                        (first_part, second_part))
         for mod_attr in mod_attrs:
-            if callable(getattr(imported_module, mod_attr)):
-                format = prefix_on_callable
-            else:
-                format = prefix_on
-            write_to.write(format % (second_part, mod_attr) + '\n')
+            format = get_format(imported_module, mod_attr, True)
+            if format != '':
+                write_to.write(format % (second_part, mod_attr) + '\n')
 
     # Generate non-fully-qualified module names:
     write_to.write('\n--- from %s import * ---\n' % module_name)
     for mod_attr in mod_attrs:
-        if callable(getattr(imported_module, mod_attr)):
-            format = prefix_off_callable
-        else:
-            format = prefix_off
-        write_to.write(format % mod_attr + '\n')
+        format = get_format(imported_module, mod_attr, False)
+        if format != '':
+            write_to.write(format % mod_attr + '\n')
 
 
 def my_import(name):
