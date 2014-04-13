@@ -14084,10 +14084,8 @@ warn_unwanted_files(
 
 blit_array(
 
-
 make_sound(
 samples(
-
 
 array2d(
 array3d(
@@ -22366,8 +22364,6 @@ wxEVT_UPDATE_UI
 wxEVT_USER_FIRST
 wxTR_AQUA_BUTTONS
 
-
-
 BitmapButton_Create(
 BitmapButton_GetBitmapDisabled(
 BitmapButton_GetBitmapFocus(
@@ -23445,8 +23441,6 @@ new_TreeItemData(
 new_TreeItemId(
 new_Treebook(
 new_TreebookEvent(
-
-
 
 ANIHandler_swiginit(
 ANIHandler_swigregister(
@@ -24976,8 +24970,6 @@ new_WindowDestroyEvent(
 new_XPMHandler(
 new_ZipFSHandler(
 
-
-
 AlphaPixelData_Accessor_Get(
 AlphaPixelData_Accessor_IsOk(
 AlphaPixelData_Accessor_MoveTo(
@@ -25876,8 +25868,6 @@ new_SplitterRenderParams(
 new_StockCursor(
 new_StockGDI(
 new_WindowDC(
-
-
 
 AboutDialogInfo_AddArtist(
 AboutDialogInfo_AddDeveloper(
@@ -26797,8 +26787,6 @@ new_ToolTip(
 new_URLDataObject(
 new_VideoMode(
 new_WindowDisabler(
-
-
 
 CalculateLayoutEvent_GetFlags(
 CalculateLayoutEvent_GetRect(
@@ -36493,7 +36481,6 @@ twisted.version
 --- from twisted import * ---
 python
 
-
 versions
 
 --- import twisted.python ---
@@ -36567,7 +36554,6 @@ twisted.conch.version
 conch.version
 
 --- from twisted.conch import * ---
-
 
 --- import twisted.conch.avatar (py2.7.3/linux2/root module) ---
 twisted.conch.avatar.ConchError(
@@ -39780,7 +39766,6 @@ cred.strcred
 
 --- from twisted.cred import * ---
 
-
 algorithms
 calcHA1(
 calcHA2(
@@ -40131,20 +40116,17 @@ udp
 wxreactor
 wxsupport
 
-
 BaseProcess(
 Ephemeral(
 Failure(
 err(
 getWarningMethod(
 
-
 GlibReactorBase(
 GlibWaker(
 IReactorFDSet(
 PortableGlibReactorBase(
 ensureNotImported(
-
 
 ClientMixin(
 ConnectionMixin(
@@ -40157,12 +40139,10 @@ TLSMemoryBIOProtocol(
 directlyProvides(
 startTLS(
 
-
 CONNECTION_DONE
 CONNECTION_LOST
 SSL
 platformType
-
 
 BaseSerialPort(
 EIGHTBITS
@@ -40177,17 +40157,12 @@ STOPBITS_TWO
 SerialPort(
 serial
 
-
 PipeAddress(
 StandardIO(
 
-
 isDefaultHandler(
 
-
 msg(
-
-
 
 CertBase(
 Certificate(
@@ -40201,7 +40176,6 @@ OpenSSLCertificateOptions(
 PrivateCertificate(
 PublicKey(
 VerifyError(
-
 
 ThreadedSelectReactor(
 dictRemove(
@@ -42095,7 +42069,6 @@ scripts
 slides
 tree
 
-
 --- import twisted.lore.default (py2.7.3/linux2/root module) ---
 twisted.lore.default.ProcessingFunctionFactory(
 twisted.lore.default.dom
@@ -42772,7 +42745,6 @@ relay
 relaymanager
 smtp
 tap
-
 
 --- import twisted.mail.alias (py2.7.3/linux2/root module) ---
 twisted.mail.alias.AddressAlias(
@@ -44080,7 +44052,6 @@ secondary
 server
 srvconnect
 
-
 --- import twisted.names.authority (py2.7.3/linux2/root module) ---
 twisted.names.authority.BindAuthority(
 twisted.names.authority.FileAuthority(
@@ -44859,7 +44830,6 @@ news.version
 database
 news
 nntp
-
 
 --- import twisted.news.database (py2.7.3/linux2/root module) ---
 twisted.news.database.Article(
@@ -47381,11 +47351,8 @@ Subunit
 Timing
 Tree
 
-
-
 initializeModule(
 libc
-
 
 APIBuilder(
 BookBuilder(
@@ -47414,7 +47381,6 @@ runCommand(
 tarfile
 twisted_subprojects
 updateTwistedVersionInformation(
-
 
 SubcommandAction(
 ZshArgumentsGenerator(
@@ -49004,7 +48970,6 @@ portmap
 procmon
 procmontap
 
-
 --- import twisted.runner.inetd (py2.7.3/linux2/root module) ---
 twisted.runner.inetd.InetdFactory(
 twisted.runner.inetd.InetdProtocol(
@@ -49199,14 +49164,12 @@ tkunzip
 trial
 twistd
 
-
 UnixAppLogger(
 UnixApplicationRunner(
 app
 checkPID(
 daemonize(
 launchWithName(
-
 
 WindowsApplicationRunner(
 
@@ -106816,9 +106779,7 @@ submit_form(
 xhtml_parser
 xhtml_to_html(
 
-
 --- from lxml.html import _setmixin ---
-
 
 --- import lxml.html.defs ---
 lxml.html.defs.block_tags
@@ -109320,3 +109281,1059 @@ wimp.is_mouse_press(
 wimp.python3_repr(
 
 --- from urwid.wimp import * ---
+
+--- import scrapy (0.22.2/py2.7.3/linux2/root module) ---
+scrapy.optional_features
+scrapy.os
+scrapy.pkgutil
+scrapy.print_function
+scrapy.sys
+scrapy.twisted_version
+scrapy.urlparse_monkeypatches
+scrapy.version_info
+scrapy.warnings
+scrapy.xlib
+
+--- from scrapy import * ---
+optional_features
+twisted_version
+urlparse_monkeypatches
+xlib
+
+--- import scrapy.xlib ---
+scrapy.xlib.urlparse_monkeypatches
+
+--- from scrapy import xlib ---
+xlib.urlparse_monkeypatches
+
+--- from scrapy.xlib import * ---
+
+--- import scrapy.xlib.urlparse_monkeypatches ---
+scrapy.xlib.urlparse_monkeypatches.sys
+scrapy.xlib.urlparse_monkeypatches.urlparse(
+
+--- from scrapy.xlib import urlparse_monkeypatches ---
+urlparse_monkeypatches.sys
+urlparse_monkeypatches.urlparse(
+
+--- from scrapy.xlib.urlparse_monkeypatches import * ---
+
+--- import scrapy.item (py2.7.3/linux2/root module) ---
+scrapy.item.BaseItem(
+scrapy.item.DictItem(
+scrapy.item.DictMixin(
+scrapy.item.Field(
+scrapy.item.Item(
+scrapy.item.ItemMeta(
+scrapy.item.object_ref(
+scrapy.item.pformat(
+
+--- from scrapy import item ---
+item.BaseItem(
+item.DictItem(
+item.DictMixin(
+item.Field(
+item.Item(
+item.ItemMeta(
+item.object_ref(
+item.pformat(
+
+--- from scrapy.item import * ---
+BaseItem(
+DictItem(
+ItemMeta(
+object_ref(
+
+--- import scrapy.contrib (py2.7.3/linux2/root module) ---
+
+--- from scrapy import contrib ---
+
+--- from scrapy.contrib import * ---
+
+--- import scrapy.contrib.spiders (py2.7.3/linux2/root module) ---
+scrapy.contrib.spiders.CSVFeedSpider(
+scrapy.contrib.spiders.CrawlSpider(
+scrapy.contrib.spiders.Rule(
+scrapy.contrib.spiders.SitemapSpider(
+scrapy.contrib.spiders.XMLFeedSpider(
+scrapy.contrib.spiders.crawl
+scrapy.contrib.spiders.feed
+scrapy.contrib.spiders.sitemap
+
+--- from scrapy.contrib import spiders ---
+spiders.CSVFeedSpider(
+spiders.CrawlSpider(
+spiders.Rule(
+spiders.SitemapSpider(
+spiders.XMLFeedSpider(
+spiders.crawl
+spiders.feed
+spiders.sitemap
+
+--- from scrapy.contrib.spiders import * ---
+CSVFeedSpider(
+CrawlSpider(
+SitemapSpider(
+XMLFeedSpider(
+crawl
+feed
+sitemap
+
+--- import scrapy.contrib.spiders.crawl ---
+scrapy.contrib.spiders.crawl.CrawlSpider(
+scrapy.contrib.spiders.crawl.HtmlResponse(
+scrapy.contrib.spiders.crawl.Request(
+scrapy.contrib.spiders.crawl.Rule(
+scrapy.contrib.spiders.crawl.Spider(
+scrapy.contrib.spiders.crawl.copy
+scrapy.contrib.spiders.crawl.identity(
+scrapy.contrib.spiders.crawl.iterate_spider_output(
+
+--- from scrapy.contrib.spiders import crawl ---
+crawl.CrawlSpider(
+crawl.HtmlResponse(
+crawl.Request(
+crawl.Rule(
+crawl.Spider(
+crawl.copy
+crawl.identity(
+crawl.iterate_spider_output(
+
+--- from scrapy.contrib.spiders.crawl import * ---
+HtmlResponse(
+Spider(
+iterate_spider_output(
+
+--- import scrapy.contrib.spiders.feed ---
+scrapy.contrib.spiders.feed.BaseItem(
+scrapy.contrib.spiders.feed.CSVFeedSpider(
+scrapy.contrib.spiders.feed.NotConfigured(
+scrapy.contrib.spiders.feed.NotSupported(
+scrapy.contrib.spiders.feed.Request(
+scrapy.contrib.spiders.feed.Selector(
+scrapy.contrib.spiders.feed.Spider(
+scrapy.contrib.spiders.feed.XMLFeedSpider(
+scrapy.contrib.spiders.feed.csviter(
+scrapy.contrib.spiders.feed.iterate_spider_output(
+scrapy.contrib.spiders.feed.xmliter(
+
+--- from scrapy.contrib.spiders import feed ---
+feed.BaseItem(
+feed.CSVFeedSpider(
+feed.NotConfigured(
+feed.NotSupported(
+feed.Request(
+feed.Selector(
+feed.Spider(
+feed.XMLFeedSpider(
+feed.csviter(
+feed.iterate_spider_output(
+feed.xmliter(
+
+--- from scrapy.contrib.spiders.feed import * ---
+NotConfigured(
+NotSupported(
+Selector(
+csviter(
+xmliter(
+
+--- import scrapy.contrib.spiders.sitemap ---
+scrapy.contrib.spiders.sitemap.Request(
+scrapy.contrib.spiders.sitemap.Sitemap(
+scrapy.contrib.spiders.sitemap.SitemapSpider(
+scrapy.contrib.spiders.sitemap.Spider(
+scrapy.contrib.spiders.sitemap.XmlResponse(
+scrapy.contrib.spiders.sitemap.gunzip(
+scrapy.contrib.spiders.sitemap.is_gzipped(
+scrapy.contrib.spiders.sitemap.iterloc(
+scrapy.contrib.spiders.sitemap.log
+scrapy.contrib.spiders.sitemap.re
+scrapy.contrib.spiders.sitemap.regex(
+scrapy.contrib.spiders.sitemap.sitemap_urls_from_robots(
+
+--- from scrapy.contrib.spiders import sitemap ---
+sitemap.Request(
+sitemap.Sitemap(
+sitemap.SitemapSpider(
+sitemap.Spider(
+sitemap.XmlResponse(
+sitemap.gunzip(
+sitemap.is_gzipped(
+sitemap.iterloc(
+sitemap.log
+sitemap.re
+sitemap.regex(
+sitemap.sitemap_urls_from_robots(
+
+--- from scrapy.contrib.spiders.sitemap import * ---
+XmlResponse(
+gunzip(
+is_gzipped(
+iterloc(
+regex(
+sitemap_urls_from_robots(
+
+--- import scrapy.spider (py2.7.3/linux2/root module) ---
+scrapy.spider.BaseSpider(
+scrapy.spider.ObsoleteClass(
+scrapy.spider.Request(
+scrapy.spider.Spider(
+scrapy.spider.create_deprecated_class(
+scrapy.spider.log
+scrapy.spider.object_ref(
+scrapy.spider.spiders
+scrapy.spider.url_is_from_spider(
+
+--- from scrapy import spider ---
+spider.BaseSpider(
+spider.ObsoleteClass(
+spider.Request(
+spider.Spider(
+spider.create_deprecated_class(
+spider.log
+spider.object_ref(
+spider.spiders
+spider.url_is_from_spider(
+
+--- from scrapy.spider import * ---
+BaseSpider(
+ObsoleteClass(
+create_deprecated_class(
+spiders
+url_is_from_spider(
+
+--- import scrapy.http (py2.7.3/linux2/root module) ---
+scrapy.http.FormRequest(
+scrapy.http.Headers(
+scrapy.http.HtmlResponse(
+scrapy.http.Request(
+scrapy.http.Response(
+scrapy.http.TextResponse(
+scrapy.http.XmlResponse(
+scrapy.http.XmlRpcRequest(
+scrapy.http.common
+scrapy.http.headers
+scrapy.http.request
+scrapy.http.response
+
+--- from scrapy import http ---
+http.FormRequest(
+http.HtmlResponse(
+http.Response(
+http.TextResponse(
+http.XmlResponse(
+http.XmlRpcRequest(
+http.common
+http.headers
+
+--- from scrapy.http import * ---
+FormRequest(
+Headers(
+TextResponse(
+XmlRpcRequest(
+
+--- import scrapy.http.common ---
+scrapy.http.common.obsolete_setter(
+
+--- from scrapy.http import common ---
+common.obsolete_setter(
+
+--- from scrapy.http.common import * ---
+obsolete_setter(
+
+--- import scrapy.http.headers ---
+scrapy.http.headers.CaselessDict(
+scrapy.http.headers.Headers(
+scrapy.http.headers.headers_dict_to_raw(
+
+--- from scrapy.http import headers ---
+headers.CaselessDict(
+headers.headers_dict_to_raw(
+
+--- from scrapy.http.headers import * ---
+CaselessDict(
+headers_dict_to_raw(
+
+--- import scrapy.http.request ---
+scrapy.http.request.Headers(
+scrapy.http.request.Request(
+scrapy.http.request.copy
+scrapy.http.request.deprecated(
+scrapy.http.request.escape_ajax(
+scrapy.http.request.form
+scrapy.http.request.object_ref(
+scrapy.http.request.obsolete_setter(
+scrapy.http.request.rpc
+scrapy.http.request.safe_url_string(
+
+--- from scrapy.http import request ---
+request.Headers(
+request.Request(
+request.deprecated(
+request.escape_ajax(
+request.form
+request.object_ref(
+request.obsolete_setter(
+request.rpc
+request.safe_url_string(
+
+--- from scrapy.http.request import * ---
+escape_ajax(
+form
+rpc
+safe_url_string(
+
+--- import scrapy.http.request.form ---
+scrapy.http.request.form.FormRequest(
+scrapy.http.request.form.Request(
+scrapy.http.request.form.lxml
+scrapy.http.request.form.unicode_to_str(
+scrapy.http.request.form.urllib
+scrapy.http.request.form.urlparse
+
+--- from scrapy.http.request import form ---
+form.FormRequest(
+form.Request(
+form.lxml
+form.unicode_to_str(
+form.urllib
+form.urlparse
+
+--- from scrapy.http.request.form import * ---
+lxml
+unicode_to_str(
+
+--- import scrapy.http.request.rpc ---
+scrapy.http.request.rpc.DUMPS_ARGS
+scrapy.http.request.rpc.Request(
+scrapy.http.request.rpc.XmlRpcRequest(
+scrapy.http.request.rpc.get_func_args(
+scrapy.http.request.rpc.xmlrpclib
+
+--- from scrapy.http.request import rpc ---
+rpc.DUMPS_ARGS
+rpc.Request(
+rpc.XmlRpcRequest(
+rpc.get_func_args(
+rpc.xmlrpclib
+
+--- from scrapy.http.request.rpc import * ---
+DUMPS_ARGS
+get_func_args(
+
+--- import scrapy.http.response ---
+scrapy.http.response.Headers(
+scrapy.http.response.Response(
+scrapy.http.response.copy
+scrapy.http.response.html
+scrapy.http.response.object_ref(
+scrapy.http.response.obsolete_setter(
+scrapy.http.response.text
+scrapy.http.response.xml
+
+--- from scrapy.http import response ---
+response.Headers(
+response.Response(
+response.copy
+response.html
+response.object_ref(
+response.obsolete_setter(
+response.text
+response.xml
+
+--- from scrapy.http.response import * ---
+
+--- import scrapy.http.response.html ---
+scrapy.http.response.html.HtmlResponse(
+scrapy.http.response.html.TextResponse(
+
+--- from scrapy.http.response import html ---
+html.HtmlResponse(
+html.TextResponse(
+
+--- from scrapy.http.response.html import * ---
+
+--- import scrapy.http.response.text ---
+scrapy.http.response.text.Response(
+scrapy.http.response.text.TextResponse(
+scrapy.http.response.text.html_body_declared_encoding(
+scrapy.http.response.text.html_to_unicode(
+scrapy.http.response.text.http_content_type_encoding(
+scrapy.http.response.text.memoizemethod_noargs(
+scrapy.http.response.text.resolve_encoding(
+
+--- from scrapy.http.response import text ---
+text.Response(
+text.TextResponse(
+text.html_body_declared_encoding(
+text.html_to_unicode(
+text.http_content_type_encoding(
+text.memoizemethod_noargs(
+text.resolve_encoding(
+
+--- from scrapy.http.response.text import * ---
+html_body_declared_encoding(
+html_to_unicode(
+http_content_type_encoding(
+memoizemethod_noargs(
+resolve_encoding(
+
+--- import scrapy.http.response.xml ---
+scrapy.http.response.xml.TextResponse(
+scrapy.http.response.xml.XmlResponse(
+
+--- from scrapy.http.response import xml ---
+xml.TextResponse(
+xml.XmlResponse(
+
+--- from scrapy.http.response.xml import * ---
+
+--- import scrapy.selector (py2.7.3/linux2/root module) ---
+scrapy.selector.HtmlXPathSelector(
+scrapy.selector.Selector(
+scrapy.selector.SelectorList(
+scrapy.selector.XPathSelector(
+scrapy.selector.XPathSelectorList(
+scrapy.selector.XmlXPathSelector(
+scrapy.selector.csstranslator
+scrapy.selector.lxmldocument
+scrapy.selector.lxmlsel
+scrapy.selector.unified
+
+--- from scrapy import selector ---
+selector.HtmlXPathSelector(
+selector.Selector(
+selector.SelectorList(
+selector.XPathSelector(
+selector.XPathSelectorList(
+selector.XmlXPathSelector(
+selector.csstranslator
+selector.lxmldocument
+selector.lxmlsel
+selector.unified
+
+--- from scrapy.selector import * ---
+HtmlXPathSelector(
+SelectorList(
+XPathSelector(
+XPathSelectorList(
+XmlXPathSelector(
+csstranslator
+lxmldocument
+lxmlsel
+unified
+
+--- import scrapy.selector.csstranslator ---
+scrapy.selector.csstranslator.ExpressionError(
+scrapy.selector.csstranslator.FunctionalPseudoElement(
+scrapy.selector.csstranslator.GenericTranslator(
+scrapy.selector.csstranslator.HTMLTranslator(
+scrapy.selector.csstranslator.ScrapyGenericTranslator(
+scrapy.selector.csstranslator.ScrapyHTMLTranslator(
+scrapy.selector.csstranslator.ScrapyXPathExpr(
+scrapy.selector.csstranslator.TranslatorMixin(
+scrapy.selector.csstranslator.XPathExpr(
+
+--- from scrapy.selector import csstranslator ---
+csstranslator.ExpressionError(
+csstranslator.FunctionalPseudoElement(
+csstranslator.GenericTranslator(
+csstranslator.HTMLTranslator(
+csstranslator.ScrapyGenericTranslator(
+csstranslator.ScrapyHTMLTranslator(
+csstranslator.ScrapyXPathExpr(
+csstranslator.TranslatorMixin(
+csstranslator.XPathExpr(
+
+--- from scrapy.selector.csstranslator import * ---
+FunctionalPseudoElement(
+GenericTranslator(
+HTMLTranslator(
+ScrapyGenericTranslator(
+ScrapyHTMLTranslator(
+ScrapyXPathExpr(
+TranslatorMixin(
+XPathExpr(
+
+--- import scrapy.selector.lxmldocument ---
+scrapy.selector.lxmldocument.LxmlDocument(
+scrapy.selector.lxmldocument.etree
+scrapy.selector.lxmldocument.object_ref(
+scrapy.selector.lxmldocument.weakref
+
+--- from scrapy.selector import lxmldocument ---
+lxmldocument.LxmlDocument(
+lxmldocument.etree
+lxmldocument.object_ref(
+lxmldocument.weakref
+
+--- from scrapy.selector.lxmldocument import * ---
+LxmlDocument(
+
+--- import scrapy.selector.lxmlsel ---
+scrapy.selector.lxmlsel.HtmlXPathSelector(
+scrapy.selector.lxmlsel.Selector(
+scrapy.selector.lxmlsel.SelectorList(
+scrapy.selector.lxmlsel.XPathSelector(
+scrapy.selector.lxmlsel.XPathSelectorList(
+scrapy.selector.lxmlsel.XmlXPathSelector(
+scrapy.selector.lxmlsel.create_deprecated_class(
+
+--- from scrapy.selector import lxmlsel ---
+lxmlsel.HtmlXPathSelector(
+lxmlsel.Selector(
+lxmlsel.SelectorList(
+lxmlsel.XPathSelector(
+lxmlsel.XPathSelectorList(
+lxmlsel.XmlXPathSelector(
+lxmlsel.create_deprecated_class(
+
+--- from scrapy.selector.lxmlsel import * ---
+
+--- import scrapy.selector.unified ---
+scrapy.selector.unified.HtmlResponse(
+scrapy.selector.unified.LxmlDocument(
+scrapy.selector.unified.ScrapyGenericTranslator(
+scrapy.selector.unified.ScrapyHTMLTranslator(
+scrapy.selector.unified.Selector(
+scrapy.selector.unified.SelectorList(
+scrapy.selector.unified.XmlResponse(
+scrapy.selector.unified.deprecated(
+scrapy.selector.unified.etree
+scrapy.selector.unified.extract_regex(
+scrapy.selector.unified.flatten(
+scrapy.selector.unified.object_ref(
+scrapy.selector.unified.unicode_to_str(
+
+--- from scrapy.selector import unified ---
+unified.HtmlResponse(
+unified.LxmlDocument(
+unified.ScrapyGenericTranslator(
+unified.ScrapyHTMLTranslator(
+unified.Selector(
+unified.SelectorList(
+unified.XmlResponse(
+unified.deprecated(
+unified.etree
+unified.extract_regex(
+unified.flatten(
+unified.object_ref(
+unified.unicode_to_str(
+
+--- from scrapy.selector.unified import * ---
+extract_regex(
+
+--- import scrapy.contrib.loader (py2.7.3/linux2/root module) ---
+scrapy.contrib.loader.Identity(
+scrapy.contrib.loader.Item(
+scrapy.contrib.loader.ItemLoader(
+scrapy.contrib.loader.Selector(
+scrapy.contrib.loader.XPathItemLoader(
+scrapy.contrib.loader.arg_to_iter(
+scrapy.contrib.loader.common
+scrapy.contrib.loader.create_deprecated_class(
+scrapy.contrib.loader.defaultdict(
+scrapy.contrib.loader.deprecated(
+scrapy.contrib.loader.extract_regex(
+scrapy.contrib.loader.flatten(
+scrapy.contrib.loader.processor
+scrapy.contrib.loader.wrap_loader_context(
+
+--- from scrapy.contrib import loader ---
+loader.Identity(
+loader.Item(
+loader.ItemLoader(
+loader.Selector(
+loader.XPathItemLoader(
+loader.arg_to_iter(
+loader.common
+loader.create_deprecated_class(
+loader.defaultdict(
+loader.deprecated(
+loader.extract_regex(
+loader.flatten(
+loader.processor
+loader.wrap_loader_context(
+
+--- from scrapy.contrib.loader import * ---
+Identity(
+ItemLoader(
+XPathItemLoader(
+arg_to_iter(
+processor
+wrap_loader_context(
+
+--- import scrapy.contrib.loader.common ---
+scrapy.contrib.loader.common.get_func_args(
+scrapy.contrib.loader.common.partial(
+scrapy.contrib.loader.common.wrap_loader_context(
+
+--- from scrapy.contrib.loader import common ---
+common.get_func_args(
+common.partial(
+common.wrap_loader_context(
+
+--- from scrapy.contrib.loader.common import * ---
+
+--- import scrapy.contrib.loader.processor ---
+scrapy.contrib.loader.processor.Compose(
+scrapy.contrib.loader.processor.Identity(
+scrapy.contrib.loader.processor.Join(
+scrapy.contrib.loader.processor.MapCompose(
+scrapy.contrib.loader.processor.MergeDict(
+scrapy.contrib.loader.processor.TakeFirst(
+scrapy.contrib.loader.processor.arg_to_iter(
+scrapy.contrib.loader.processor.wrap_loader_context(
+
+--- from scrapy.contrib.loader import processor ---
+processor.Compose(
+processor.Identity(
+processor.Join(
+processor.MapCompose(
+processor.MergeDict(
+processor.TakeFirst(
+processor.arg_to_iter(
+processor.wrap_loader_context(
+
+--- from scrapy.contrib.loader.processor import * ---
+Compose(
+Join(
+MapCompose(
+TakeFirst(
+
+--- import scrapy.log (py2.7.3/linux2/root module) ---
+scrapy.log.CRITICAL
+scrapy.log.DEBUG
+scrapy.log.ERROR
+scrapy.log.INFO
+scrapy.log.SILENT
+scrapy.log.ScrapyFileLogObserver(
+scrapy.log.WARNING
+scrapy.log.err(
+scrapy.log.level_names
+scrapy.log.log
+scrapy.log.logging
+scrapy.log.msg(
+scrapy.log.overridden_settings(
+scrapy.log.scrapy
+scrapy.log.scrapy_info(
+scrapy.log.start(
+scrapy.log.start_from_crawler(
+scrapy.log.start_from_settings(
+scrapy.log.sys
+scrapy.log.unicode_to_str(
+scrapy.log.warnings
+
+--- from scrapy import log ---
+log.CRITICAL
+log.DEBUG
+log.ERROR
+log.INFO
+log.SILENT
+log.ScrapyFileLogObserver(
+log.WARNING
+log.level_names
+log.log
+log.overridden_settings(
+log.scrapy
+log.scrapy_info(
+log.start(
+log.start_from_crawler(
+log.start_from_settings(
+log.unicode_to_str(
+
+--- from scrapy.log import * ---
+SILENT
+ScrapyFileLogObserver(
+level_names
+overridden_settings(
+scrapy
+scrapy_info(
+start(
+start_from_crawler(
+start_from_settings(
+
+--- import scrapy.contrib.linkextractors (py2.7.3/linux2/root module) ---
+
+--- from scrapy.contrib import linkextractors ---
+
+--- from scrapy.contrib.linkextractors import * ---
+
+--- import scrapy.contrib.linkextractors.sgml (py2.7.3/linux2/root module) ---
+scrapy.contrib.linkextractors.sgml.BaseSgmlLinkExtractor(
+scrapy.contrib.linkextractors.sgml.FixedSGMLParser(
+scrapy.contrib.linkextractors.sgml.IGNORED_EXTENSIONS
+scrapy.contrib.linkextractors.sgml.Link(
+scrapy.contrib.linkextractors.sgml.Selector(
+scrapy.contrib.linkextractors.sgml.SgmlLinkExtractor(
+scrapy.contrib.linkextractors.sgml.arg_to_iter(
+scrapy.contrib.linkextractors.sgml.canonicalize_url(
+scrapy.contrib.linkextractors.sgml.get_base_url(
+scrapy.contrib.linkextractors.sgml.re
+scrapy.contrib.linkextractors.sgml.safe_url_string(
+scrapy.contrib.linkextractors.sgml.str_to_unicode(
+scrapy.contrib.linkextractors.sgml.unique_list(
+scrapy.contrib.linkextractors.sgml.url_has_any_extension(
+scrapy.contrib.linkextractors.sgml.url_is_from_any_domain(
+scrapy.contrib.linkextractors.sgml.urljoin(
+scrapy.contrib.linkextractors.sgml.urlparse(
+
+--- from scrapy.contrib.linkextractors import sgml ---
+sgml.BaseSgmlLinkExtractor(
+sgml.FixedSGMLParser(
+sgml.IGNORED_EXTENSIONS
+sgml.Link(
+sgml.Selector(
+sgml.SgmlLinkExtractor(
+sgml.arg_to_iter(
+sgml.canonicalize_url(
+sgml.get_base_url(
+sgml.re
+sgml.safe_url_string(
+sgml.str_to_unicode(
+sgml.unique_list(
+sgml.url_has_any_extension(
+sgml.url_is_from_any_domain(
+sgml.urljoin(
+sgml.urlparse(
+
+--- from scrapy.contrib.linkextractors.sgml import * ---
+BaseSgmlLinkExtractor(
+FixedSGMLParser(
+IGNORED_EXTENSIONS
+Link(
+SgmlLinkExtractor(
+canonicalize_url(
+get_base_url(
+str_to_unicode(
+unique_list(
+url_has_any_extension(
+url_is_from_any_domain(
+
+--- import scrapy.statscol (py2.7.3/linux2/root module) ---
+scrapy.statscol.DummyStatsCollector(
+scrapy.statscol.MemoryStatsCollector(
+scrapy.statscol.StatsCollector(
+scrapy.statscol.log
+scrapy.statscol.pprint
+
+--- from scrapy import statscol ---
+statscol.DummyStatsCollector(
+statscol.MemoryStatsCollector(
+statscol.StatsCollector(
+statscol.log
+statscol.pprint
+
+--- from scrapy.statscol import * ---
+DummyStatsCollector(
+MemoryStatsCollector(
+StatsCollector(
+
+--- import scrapy.mail (py2.7.3/linux2/root module) ---
+scrapy.mail.COMMASPACE
+scrapy.mail.ESMTPSenderFactory(
+scrapy.mail.Encoders
+scrapy.mail.MIMEBase(
+scrapy.mail.MIMEMultipart(
+scrapy.mail.MIMENonMultipart(
+scrapy.mail.MIMEText(
+scrapy.mail.MailSender(
+scrapy.mail.StringIO(
+scrapy.mail.defer
+scrapy.mail.formatdate(
+scrapy.mail.log
+scrapy.mail.reactor
+scrapy.mail.ssl
+
+--- from scrapy import mail ---
+mail.COMMASPACE
+mail.ESMTPSenderFactory(
+mail.Encoders
+mail.MIMEBase(
+mail.MIMEMultipart(
+mail.MIMENonMultipart(
+mail.MIMEText(
+mail.MailSender(
+mail.StringIO(
+mail.formatdate(
+mail.reactor
+mail.ssl
+
+--- from scrapy.mail import * ---
+MIMENonMultipart(
+MailSender(
+
+--- import scrapy.contrib.webservice (py2.7.3/linux2/root module) ---
+
+--- from scrapy.contrib import webservice ---
+
+--- from scrapy.contrib.webservice import * ---
+
+--- import scrapy.contrib.webservice.crawler (py2.7.3/linux2/root module) ---
+scrapy.contrib.webservice.crawler.CrawlerResource(
+scrapy.contrib.webservice.crawler.JsonRpcResource(
+
+--- from scrapy.contrib.webservice import crawler ---
+crawler.CrawlerResource(
+crawler.JsonRpcResource(
+
+--- from scrapy.contrib.webservice.crawler import * ---
+CrawlerResource(
+JsonRpcResource(
+
+--- import scrapy.contrib.webservice.stats (py2.7.3/linux2/root module) ---
+scrapy.contrib.webservice.stats.JsonRpcResource(
+scrapy.contrib.webservice.stats.StatsResource(
+
+--- from scrapy.contrib.webservice import stats ---
+stats.JsonRpcResource(
+stats.StatsResource(
+
+--- from scrapy.contrib.webservice.stats import * ---
+StatsResource(
+
+--- import scrapy.webservice (py2.7.3/linux2/root module) ---
+scrapy.webservice.JsonResource(
+scrapy.webservice.JsonResource_(
+scrapy.webservice.JsonRpcResource(
+scrapy.webservice.NotConfigured(
+scrapy.webservice.RootResource(
+scrapy.webservice.ScrapyJSONDecoder(
+scrapy.webservice.ScrapyJSONEncoder(
+scrapy.webservice.WebService(
+scrapy.webservice.build_component_list(
+scrapy.webservice.jsonrpc_server_call(
+scrapy.webservice.listen_tcp(
+scrapy.webservice.load_object(
+scrapy.webservice.log
+scrapy.webservice.resource
+scrapy.webservice.server
+scrapy.webservice.signals
+
+--- from scrapy import webservice ---
+webservice.JsonResource(
+webservice.JsonResource_(
+webservice.JsonRpcResource(
+webservice.NotConfigured(
+webservice.RootResource(
+webservice.ScrapyJSONDecoder(
+webservice.ScrapyJSONEncoder(
+webservice.WebService(
+webservice.build_component_list(
+webservice.jsonrpc_server_call(
+webservice.listen_tcp(
+webservice.load_object(
+webservice.log
+webservice.resource
+webservice.server
+webservice.signals
+
+--- from scrapy.webservice import * ---
+JsonResource(
+JsonResource_(
+RootResource(
+ScrapyJSONDecoder(
+ScrapyJSONEncoder(
+WebService(
+build_component_list(
+jsonrpc_server_call(
+listen_tcp(
+load_object(
+
+--- import scrapy.utils (py2.7.3/linux2/root module) ---
+
+--- from scrapy import utils ---
+
+--- from scrapy.utils import * ---
+
+--- import scrapy.utils.engine (py2.7.3/linux2/root module) ---
+scrapy.utils.engine.format_engine_status(
+scrapy.utils.engine.get_engine_status(
+scrapy.utils.engine.print_engine_status(
+scrapy.utils.engine.print_function
+scrapy.utils.engine.time(
+
+--- from scrapy.utils import engine ---
+engine.format_engine_status(
+engine.get_engine_status(
+engine.print_engine_status(
+engine.print_function
+engine.time(
+
+--- from scrapy.utils.engine import * ---
+format_engine_status(
+get_engine_status(
+print_engine_status(
+
+--- import scrapy.shell (py2.7.3/linux2/root module) ---
+scrapy.shell.BaseItem(
+scrapy.shell.Crawler(
+scrapy.shell.IgnoreRequest(
+scrapy.shell.Request(
+scrapy.shell.Response(
+scrapy.shell.Selector(
+scrapy.shell.Settings(
+scrapy.shell.Shell(
+scrapy.shell.Spider(
+scrapy.shell.any_to_uri(
+scrapy.shell.create_spider_for_request(
+scrapy.shell.defer
+scrapy.shell.inspect_response(
+scrapy.shell.load_object(
+scrapy.shell.open_in_browser(
+scrapy.shell.print_function
+scrapy.shell.reactor
+scrapy.shell.signal
+scrapy.shell.start_python_console(
+scrapy.shell.threadable
+scrapy.shell.threads
+
+--- from scrapy import shell ---
+shell.BaseItem(
+shell.Crawler(
+shell.IgnoreRequest(
+shell.Request(
+shell.Response(
+shell.Selector(
+shell.Settings(
+shell.Spider(
+shell.any_to_uri(
+shell.create_spider_for_request(
+shell.defer
+shell.inspect_response(
+shell.load_object(
+shell.open_in_browser(
+shell.print_function
+shell.reactor
+shell.signal
+shell.start_python_console(
+shell.threadable
+shell.threads
+
+--- from scrapy.shell import * ---
+Crawler(
+IgnoreRequest(
+any_to_uri(
+create_spider_for_request(
+inspect_response(
+start_python_console(
+
+--- import scrapy.utils.response (py2.7.3/linux2/root module) ---
+scrapy.utils.response.HtmlResponse(
+scrapy.utils.response.RESPONSES
+scrapy.utils.response.TextResponse(
+scrapy.utils.response.body_or_str(
+scrapy.utils.response.deprecated(
+scrapy.utils.response.get_base_url(
+scrapy.utils.response.get_meta_refresh(
+scrapy.utils.response.html
+scrapy.utils.response.http
+scrapy.utils.response.open_in_browser(
+scrapy.utils.response.os
+scrapy.utils.response.re
+scrapy.utils.response.response_httprepr(
+scrapy.utils.response.response_status_message(
+scrapy.utils.response.tempfile
+scrapy.utils.response.weakref
+scrapy.utils.response.webbrowser
+
+--- from scrapy.utils import response ---
+response.HtmlResponse(
+response.RESPONSES
+response.TextResponse(
+response.body_or_str(
+response.deprecated(
+response.get_base_url(
+response.get_meta_refresh(
+response.http
+response.open_in_browser(
+response.os
+response.re
+response.response_httprepr(
+response.response_status_message(
+response.tempfile
+response.weakref
+response.webbrowser
+
+--- from scrapy.utils.response import * ---
+body_or_str(
+get_meta_refresh(
+response_httprepr(
+response_status_message(
+webbrowser
+
+--- import scrapy.utils.request (py2.7.3/linux2/root module) ---
+scrapy.utils.request.Deferred(
+scrapy.utils.request.basic_auth_header(
+scrapy.utils.request.canonicalize_url(
+scrapy.utils.request.hashlib
+scrapy.utils.request.print_function
+scrapy.utils.request.request_authenticate(
+scrapy.utils.request.request_fingerprint(
+scrapy.utils.request.request_httprepr(
+scrapy.utils.request.urlparse_cached(
+scrapy.utils.request.urlunparse(
+scrapy.utils.request.weakref
+
+--- from scrapy.utils import request ---
+request.Deferred(
+request.basic_auth_header(
+request.canonicalize_url(
+request.hashlib
+request.print_function
+request.request_authenticate(
+request.request_fingerprint(
+request.request_httprepr(
+request.urlparse_cached(
+request.urlunparse(
+request.weakref
+
+--- from scrapy.utils.request import * ---
+basic_auth_header(
+request_authenticate(
+request_fingerprint(
+request_httprepr(
+urlparse_cached(
+
+--- import scrapy.contrib.pipeline (py2.7.3/linux2/root module) ---
+scrapy.contrib.pipeline.ItemPipelineManager(
+scrapy.contrib.pipeline.MiddlewareManager(
+scrapy.contrib.pipeline.build_component_list(
+
+--- from scrapy.contrib import pipeline ---
+pipeline.ItemPipelineManager(
+pipeline.MiddlewareManager(
+pipeline.build_component_list(
+
+--- from scrapy.contrib.pipeline import * ---
+ItemPipelineManager(
+MiddlewareManager(
+
+--- import scrapy.exceptions (py2.7.3/linux2/root module) ---
+scrapy.exceptions.CloseSpider(
+scrapy.exceptions.ContractFail(
+scrapy.exceptions.DontCloseSpider(
+scrapy.exceptions.DropItem(
+scrapy.exceptions.IgnoreRequest(
+scrapy.exceptions.NotConfigured(
+scrapy.exceptions.NotSupported(
+scrapy.exceptions.ScrapyDeprecationWarning(
+scrapy.exceptions.UsageError(
+
+--- from scrapy import exceptions ---
+exceptions.CloseSpider(
+exceptions.ContractFail(
+exceptions.DontCloseSpider(
+exceptions.DropItem(
+exceptions.IgnoreRequest(
+exceptions.NotConfigured(
+exceptions.NotSupported(
+exceptions.ScrapyDeprecationWarning(
+exceptions.UsageError(
+
+--- from scrapy.exceptions import * ---
+CloseSpider(
+ContractFail(
+DontCloseSpider(
+DropItem(
+ScrapyDeprecationWarning(
