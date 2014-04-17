@@ -105,7 +105,7 @@ def write_dictionary(module_name, module_list):
     else:
         module_info = ''
 
-    write_to.write('\n--- import %s %s---\n' % (module_name, module_info))
+    write_to.write('--- import %s %s---\n' % (module_name, module_info))
 
     for mod_attr in mod_attrs:
         format = get_format(imported_module, mod_attr, True)
@@ -122,7 +122,7 @@ def write_dictionary(module_name, module_list):
         # Get the "import" part of the module. E.g., 'expat'
         # if the module name was 'xml.parsers.expat'
         second_part = module_name[module_name.rfind('.') + 1:]
-        write_to.write('\n--- from %s import %s ---\n' %
+        write_to.write('--- from %s import %s ---\n' %
                        (first_part, second_part))
         for mod_attr in mod_attrs:
             format = get_format(imported_module, mod_attr, True)
@@ -130,7 +130,7 @@ def write_dictionary(module_name, module_list):
                 write_to.write(format % (second_part, mod_attr) + '\n')
 
     # Generate non-fully-qualified module names:
-    write_to.write('\n--- from %s import * ---\n' % module_name)
+    write_to.write('--- from %s import * ---\n' % module_name)
     for mod_attr in mod_attrs:
         format = get_format(imported_module, mod_attr, False)
         if format != '':
@@ -217,7 +217,7 @@ def main(write_to, module_list):
     for module_name in module_list:
         submodules.append(module_name)
 
-    submodules = remove_duplicates(submodules, ('\n'))
+    submodules = remove_duplicates(submodules)
     submodules.sort()
 
     # Step through all of the modules and submodules to create the dict file:
@@ -232,7 +232,7 @@ def main(write_to, module_list):
     print "Removing duplicates..."
     f = open(PYDICTION_DICT, 'r')
     file_lines = f.readlines()
-    file_lines = remove_duplicates(file_lines, ('\n'))
+    file_lines = remove_duplicates(file_lines)
     f.close()
 
     # Delete the original file:
