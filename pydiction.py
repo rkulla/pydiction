@@ -267,43 +267,43 @@ if __name__ == '__main__':
         sys.argv.remove('-v')
         STDOUT_ONLY = True
     elif os.path.exists(PYDICTION_DICT):
-            # See if any of the given modules have already been pydiction'd:
-            f = open(PYDICTION_DICT, 'r')
-            file_lines = f.readlines()
-            for module_name in sys.argv[1:]:
-                for line in file_lines:
-                    if line.find('--- import %s ' % module_name) != -1:
-                        print '"%s" already exists in %s. Skipping...' % \
-                            (module_name, PYDICTION_DICT)
-                        sys.argv.remove(module_name)
-                        break
-            f.close()
+        # See if any of the given modules have already been pydiction'd:
+        f = open(PYDICTION_DICT, 'r')
+        file_lines = f.readlines()
+        for module_name in sys.argv[1:]:
+            for line in file_lines:
+                if line.find('--- import %s ' % module_name) != -1:
+                    print '"%s" already exists in %s. Skipping...' % \
+                        (module_name, PYDICTION_DICT)
+                    sys.argv.remove(module_name)
+                    break
+        f.close()
 
-            if len(sys.argv) < 2:
-                # Check if there's still enough command-line arguments:
-                sys.exit("Nothing new to do. Aborting.")
+        if len(sys.argv) < 2:
+            # Check if there's still enough command-line arguments:
+            sys.exit("Nothing new to do. Aborting.")
 
-            if os.path.exists(PYDICTION_DICT_BACKUP):
-                answer = get_yesno('Overwrite existing backup "%s" [Y/n]? ' %
-                                   PYDICTION_DICT_BACKUP)
-                if (answer):
-                    print "Backing up old dictionary to: %s" % \
-                        PYDICTION_DICT_BACKUP
-                    try:
-                        shutil.copyfile(PYDICTION_DICT, PYDICTION_DICT_BACKUP)
-                    except IOError, err:
-                        print "Couldn't back up %s. %s" % (PYDICTION_DICT, err)
-                else:
-                    print "Skipping backup..."
-
-                print 'Appending to: "%s"' % PYDICTION_DICT
-            else:
-                print "Backing up current %s to %s" % \
-                    (PYDICTION_DICT, PYDICTION_DICT_BACKUP)
+        if os.path.exists(PYDICTION_DICT_BACKUP):
+            answer = get_yesno('Overwrite existing backup "%s" [Y/n]? ' %
+                                PYDICTION_DICT_BACKUP)
+            if (answer):
+                print "Backing up old dictionary to: %s" % \
+                    PYDICTION_DICT_BACKUP
                 try:
                     shutil.copyfile(PYDICTION_DICT, PYDICTION_DICT_BACKUP)
                 except IOError, err:
                     print "Couldn't back up %s. %s" % (PYDICTION_DICT, err)
+            else:
+                print "Skipping backup..."
+
+            print 'Appending to: "%s"' % PYDICTION_DICT
+        else:
+            print "Backing up current %s to %s" % \
+                (PYDICTION_DICT, PYDICTION_DICT_BACKUP)
+            try:
+                shutil.copyfile(PYDICTION_DICT, PYDICTION_DICT_BACKUP)
+            except IOError, err:
+                print "Couldn't back up %s. %s" % (PYDICTION_DICT, err)
     else:
         print 'Creating file: "%s"' % PYDICTION_DICT
 
