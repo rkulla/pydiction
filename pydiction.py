@@ -58,7 +58,7 @@ def get_submodules(module_name, submodules):
             if isinstance(getattr(imported_module, mod_attr), types.ModuleType):
                 submodules.append(module_name + '.' + mod_attr)
         except AttributeError as e:
-            print e
+            print(e)
 
     return submodules
 
@@ -79,7 +79,7 @@ def get_format(imported_module, mod_attr, use_prefix):
         else:
             format = format_noncallable
     except AttributeError as e:
-        print e
+        print(e)
 
     return format
 
@@ -189,7 +189,7 @@ def get_yesno(msg="[Y/n]?"):
                 return False
                 break
             else:
-                print "Invalid option. Please try again."
+                print("Invalid option. Please try again.")
                 continue
 
 
@@ -200,13 +200,13 @@ def main(write_to, module_list):
     for module_name in module_list:
         try:
             my_import(module_name)
-        except ImportError, err:
-            print "Couldn't import: %s. %s" % (module_name, err)
+        except ImportError as err:
+            print("Couldn't import: %s. %s" % (module_name, err))
             module_list.remove(module_name)
 
     # Step through each command line argument:
     for module_name in module_list:
-        print "Trying module: %s" % module_name
+        print("Trying module: %s" % module_name)
         submodules = get_submodules(module_name, submodules)
 
         # Step through the current module's submodules:
@@ -229,7 +229,7 @@ def main(write_to, module_list):
 
     # Close and Reopen the file for reading and remove all duplicate lines:
     write_to.close()
-    print "Removing duplicates..."
+    print("Removing duplicates...")
     f = open(PYDICTION_DICT, 'r')
     file_lines = f.readlines()
     file_lines = remove_duplicates(file_lines)
@@ -243,7 +243,7 @@ def main(write_to, module_list):
     for attr in file_lines:
         f.write(attr)
     f.close()
-    print "Done."
+    print("Done.")
 
 
 def get_python_version():
@@ -259,8 +259,8 @@ def remove_existing_modules(module_list):
     for module_name in module_list:
         for line in file_lines:
             if line.find('--- import %s ' % module_name) != -1:
-                print '"%s" already exists in %s. Skipping...' % \
-                    (module_name, PYDICTION_DICT)
+                print('"%s" already exists in %s. Skipping...' % \
+                        (module_name, PYDICTION_DICT))
                 module_list.remove(module_name)
                 break
     f.close()
@@ -294,25 +294,25 @@ if __name__ == '__main__':
             answer = get_yesno('Overwrite existing backup "%s" [Y/n]? ' %
                                 PYDICTION_DICT_BACKUP)
             if (answer):
-                print "Backing up old dictionary to: %s" % \
-                    PYDICTION_DICT_BACKUP
+                print("Backing up old dictionary to: %s" % \
+                    PYDICTION_DICT_BACKUP)
                 try:
                     shutil.copyfile(PYDICTION_DICT, PYDICTION_DICT_BACKUP)
-                except IOError, err:
-                    print "Couldn't back up %s. %s" % (PYDICTION_DICT, err)
+                except IOError as err:
+                    print("Couldn't back up %s. %s" % (PYDICTION_DICT, err))
             else:
-                print "Skipping backup..."
+                print("Skipping backup...")
 
-            print 'Appending to: "%s"' % PYDICTION_DICT
+            print('Appending to: "%s"' % PYDICTION_DICT)
         else:
-            print "Backing up current %s to %s" % \
-                (PYDICTION_DICT, PYDICTION_DICT_BACKUP)
+            print("Backing up current %s to %s" % \
+                (PYDICTION_DICT, PYDICTION_DICT_BACKUP))
             try:
                 shutil.copyfile(PYDICTION_DICT, PYDICTION_DICT_BACKUP)
-            except IOError, err:
-                print "Couldn't back up %s. %s" % (PYDICTION_DICT, err)
+            except IOError as err:
+                print("Couldn't back up %s. %s" % (PYDICTION_DICT, err))
     else:
-        print 'Creating file: "%s"' % PYDICTION_DICT
+        print('Creating file: "%s"' % PYDICTION_DICT)
 
     if not STDOUT_ONLY:
         write_to = open(PYDICTION_DICT, 'a')
