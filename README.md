@@ -35,6 +35,8 @@ or use a plugin manager like Vimogen (https://github.com/rkulla/vimogen) to inst
 
 Otherwise:
 
+    In the after/ftplugin/ directory, there's a file called python_pydiction.vim.
+
     - UNIX/LINUX/OSX: Put python_pydiction.vim in ~/.vim/after/ftplugin/ 
     Create this directory if doesn't yet exist. Vim looks there automatically
 
@@ -279,7 +281,7 @@ About python_pydiction.vim
 ==========================
 See the `Usage (vim)` section if you just want to know how to use Pydiction inside of Vim. This section will go into detail what this plugin does behind the scenes.
 
-Pydiction version 1.0 and greater uses a file called python_pydiction.vim, which is an ftplugin that only activates when you're editing a python file (e.g., you're editing a file with a .py extension or you've manually typed `:set filetype=python`). 
+Pydiction version 1.0 and greater uses a file called python_pydiction.vim (it lives in the after/ftplugin/ directory), which is an ftplugin that only activates when you're editing a python file (e.g., you're editing a file with a .py extension or you've manually typed `:set filetype=python`). 
 
 Past versions of pydiction didn't use a plugin but only required you to change the value of "isk" in your vimrc, which was not desirable. Version 1.0 and greater do not require you to manually change the value of isk. It now safely changes isk for you temporarily by only setting it while you're doing Tab-completion of Python code. It automatically changes isk back to its original value whenever Tab-completion isn't being activated. Again, only Tab-completion causes Pydiction to activate; not even other forms of ins-completion, such as `<Ctrl-x>` or `<Ctrl-n>` completion will activate Pydiction. So you're still free to use those other types of completion whenever you want to.
 
