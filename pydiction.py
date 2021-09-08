@@ -149,9 +149,9 @@ def my_import(name):
 def remove_duplicates(seq, keep=()):
     """
 
-    Remove duplicates from a sequence while perserving order.
+    Remove duplicates from a sequence while preserving order.
 
-    The optional tuple argument "keep" can be given to specificy
+    The optional tuple argument "keep" can be given to specify
     each string you don't want to be removed as a duplicate.
     """
     seq2 = []
